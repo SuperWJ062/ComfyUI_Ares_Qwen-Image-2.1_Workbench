@@ -234,7 +234,7 @@ git pull
 
 ## 示例工作流
 
-[`example_workflows/Ares-Qwen2.1-全能版Turbo.json`](example_workflows/Ares-Qwen2.1-全能版Turbo.json) — 全功能装配示例：风格模板 + 参考图 + 批量提示词 + PE 改写，接 `TextEncodeQwenImage21` 直出。JSON 拖进 ComfyUI 即可加载（Turbo 蒸馏 LoRA 快速出图配置）。
+[`example_workflows/Ares-Qwen2.1-全能版Turbo.json`](example_workflows/Ares-Qwen2.1-全能版Turbo.json) — 全功能装配示例：风格模板 + 参考图 + 批量提示词 + PE 改写，接 `TextEncodeQwenImage21` 直出。**采样采用官方西格玛值，8 步，基于最新 Turbo 模型**。JSON 拖进 ComfyUI 即可加载。
 
 ## 使用须知
 
