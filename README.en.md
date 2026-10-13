@@ -239,7 +239,7 @@ Restart ComfyUI to take effect; frontend-only changes under `web/` need just a p
 ## Usage Notes
 
 - Description text is always English; text to be rendered in the image keeps its own language.
-- PE sampling: er_sde, simple, 25 steps.
+- PE sampling: er_sde, simple, 8 steps.
 - PE decode speed is bound by memory bandwidth (int8: 60 tokens/s on a 4090); disabling thinking gives a large speedup.
 - Canvas page changes take effect by reopening the editor; main frontend / Python changes require a restart.
 
