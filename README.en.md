@@ -2,9 +2,9 @@
 
 [简体中文](README.md) · **English**
 
-![comfyui](https://img.shields.io/badge/ComfyUI-custom--node-8de7ff) ![styles](https://img.shields.io/badge/style--library-3941%20entries-71f6d2) ![license](https://img.shields.io/badge/license-MIT-8291aa)
+![version](https://img.shields.io/badge/version-v1.0-71f6d2) ![comfyui](https://img.shields.io/badge/ComfyUI-custom--node-8de7ff) ![styles](https://img.shields.io/badge/style--library-3941%20entries-b79cff) ![license](https://img.shields.io/badge/license-MIT-8291aa)
 
-<!-- README spec: Strata v1.0 -->
+**Current release v1.0** (2026-10-13)
 
 One node handles the entire pre-generation assembly for Qwen-Image-2.1 — style templates, reference images (canvas editing / mask annotation / crop-and-redraw), line-based batch prompts, with optional per-line rewriting through PE (the Prompt-Enhance model) before output. Bundled with an interactive 3D Pose Studio for one-stop control-map generation.
 

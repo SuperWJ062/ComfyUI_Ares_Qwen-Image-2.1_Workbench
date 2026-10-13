@@ -2,9 +2,9 @@
 
 **简体中文** · [English](README.en.md)
 
-![comfyui](https://img.shields.io/badge/ComfyUI-custom--node-8de7ff) ![styles](https://img.shields.io/badge/风格库-3941条-71f6d2) ![license](https://img.shields.io/badge/license-MIT-8291aa)
+![version](https://img.shields.io/badge/version-v1.0-71f6d2) ![comfyui](https://img.shields.io/badge/ComfyUI-custom--node-8de7ff) ![styles](https://img.shields.io/badge/风格库-3941条-b79cff) ![license](https://img.shields.io/badge/license-MIT-8291aa)
 
-<!-- README 规范：Strata v1.0 -->
+**当前版本 v1.0**（2026-10-13）
 
 一个节点完成 Qwen-Image-2.1 出图前的全部装配——风格模板、参考图（画布编辑 / 遮罩标注 / 裁剪重绘）、按行批量提示词，可选经 PE（提示词改写模型）逐行改写后输出。附带交互式 3D 姿态工作室，一站式出控制图。
 
