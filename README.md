@@ -28,7 +28,7 @@
 | Ares 局部缝合 | `AresInpaintStitch` | 把裁剪区的采样结果按羽化掩膜缝回原图（配合工作台裁剪重绘） |
 | Ares Pose Studio | `Ares_PoseStudio`（分类 `Ares/pose`） | 交互式 3D 姿态工作室：体型滑块、多姿态、动画时间线、SAM 3D 图片转姿态、Mixamo FBX、姿态库，出控制图（mesh / canny / soft_edge / lineart / depth / openpose）与相机提示词 |
 
-工作台、文本增强、多样性增强、局部缝合走 `comfy_entrypoint`（新式）注册；Pose Studio 在 `pose_studio/` + `web/pose_studio/`，从 ComfyUI_VNCCS_Utils 复制改名而来，与原插件可并存。
+工作台、文本增强、多样性增强、局部缝合走 `comfy_entrypoint`（新式）注册；Pose Studio 在 `pose_studio/` + `web/pose_studio/`，与 ComfyUI_VNCCS_Utils 原插件可并存。
 
 ## 功能特性
 

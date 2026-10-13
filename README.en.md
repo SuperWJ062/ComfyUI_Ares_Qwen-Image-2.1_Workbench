@@ -28,7 +28,7 @@ One node handles the entire pre-generation assembly for Qwen-Image-2.1 — style
 | Ares Inpaint Stitch | `AresInpaintStitch` | Stitches sampled results from the cropped region back into the original image with a feathered mask (pairs with Workbench crop-and-redraw) |
 | Ares Pose Studio | `Ares_PoseStudio` (category `Ares/pose`) | Interactive 3D pose studio: body sliders, multi-pose tabs, animation timeline, SAM 3D image-to-pose, Mixamo FBX, pose library; outputs control maps (mesh / canny / soft_edge / lineart / depth / openpose) and camera prompts |
 
-Workbench, Text Enhance, Seed Variance and Inpaint Stitch register via `comfy_entrypoint` (modern API); Pose Studio lives in `pose_studio/` + `web/pose_studio/`, adapted from ComfyUI_VNCCS_Utils and can coexist with the original plugin.
+Workbench, Text Enhance, Seed Variance and Inpaint Stitch register via `comfy_entrypoint` (modern API); Pose Studio lives in `pose_studio/` + `web/pose_studio/`, and can coexist with the original ComfyUI_VNCCS_Utils plugin.
 
 ## Features
 
