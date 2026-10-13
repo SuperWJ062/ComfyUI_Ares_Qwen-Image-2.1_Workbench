@@ -14,6 +14,10 @@
 
 ![工作台](shots/workbench.png)
 
+**画布编辑器** — 多图层合成 / PS 式 8 向手柄 / 比例预设 / 对齐 32，图层文档按卡保存
+
+![画布编辑器](shots/canvas.png)
+
 ## 节点一览
 
 | 节点 | node id | 用途 |
@@ -205,6 +209,10 @@ git pull
 ```
 
 重启 ComfyUI 生效；仅改 `web/` 前端时刷新页面即可（插件响应已带 no-cache 头）。模型权重、风格收藏（`ares_style_favorites.json`）不在仓库内，更新不碰。
+
+## 示例工作流
+
+[`example_workflows/Ares-Qwen2.1-全能版Turbo.json`](example_workflows/Ares-Qwen2.1-全能版Turbo.json) — 全功能装配示例：风格模板 + 参考图 + 批量提示词 + PE 改写，接 `TextEncodeQwenImage21` 直出。JSON 拖进 ComfyUI 即可加载（Turbo 蒸馏 LoRA 快速出图配置）。
 
 ## 使用须知
 

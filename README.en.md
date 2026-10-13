@@ -14,6 +14,10 @@ One node handles the entire pre-generation assembly for Qwen-Image-2.1 — style
 
 ![Workbench](shots/workbench.png)
 
+**Canvas editor** — multi-layer compositing / PS-style 8-direction handles / ratio presets / snap-to-32, layer documents saved per card
+
+![Canvas editor](shots/canvas.png)
+
 ## Nodes
 
 | Node | node id | Purpose |
@@ -205,6 +209,10 @@ git pull
 ```
 
 Restart ComfyUI to take effect; frontend-only changes under `web/` need just a page refresh (plugin responses already carry no-cache headers). Model weights and style favorites (`ares_style_favorites.json`) live outside the repo — updates never touch them.
+
+## Example Workflow
+
+[`example_workflows/Ares-Qwen2.1-全能版Turbo.json`](example_workflows/Ares-Qwen2.1-全能版Turbo.json) — full-feature assembly demo: style template + reference images + batch prompts + PE rewrite, wired straight into `TextEncodeQwenImage21`. Drag the JSON into ComfyUI to load (configured for fast Turbo distilled-LoRA output).
 
 ## Usage Notes
 
