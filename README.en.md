@@ -69,6 +69,17 @@ seed       ← empty = random per line; filled = same seed per line for reproduc
 
 **Automatic rules**: lines containing keywords such as transparent / cutout / remove background / PNG skip PE automatically (PE drops transparency requirements); reference image outputs are RGB / RGBA based on the source file.
 
+### PE Rewrite Engine (official PE model, engineered further)
+
+Built directly on the **official Qwen PE weights** (`qwen3.5_9b_qwen_image_2.1_pe` T2I / I2I) — no retraining, with a full set of engineering improvements on top:
+
+- **Dual-weight auto swap**: only the T2I / I2I weight matching the current mode loads; the other moves back to memory automatically — saves VRAM, zero manual work on mode switch
+- **Image-anchored rewriting (`{pe}` seed type)**: goes beyond pure text input — the I2I weight refines the rewrite against the actual reference images; the template guarantees constraint completeness while PE refines against the real picture, markedly better for fine tasks like face / head swaps
+- **thinking toggle**: PE reasons before emitting JSON (better quality, slower); switch off for speed
+- **Transparency guard**: lines containing keywords like transparent / cutout / remove background / PNG skip PE automatically — the official PE drops transparency requirements, this catches it
+- **Failure fallback**: PE parse failures fall back to the original text instead of killing the queue
+- **Plug-and-swap**: community Heretic (abliterated) versions share the same format — just swap the file
+
 ### Style Library
 
 - 3941 styles in 12 categories: 3D / Anime / Cartoon / Experimental / Cover Art / Photography / Atmosphere / Comics / Sketch / Painting / Design / Other; browse by sub-category tags within each category, 120 cards per page + "show more";
