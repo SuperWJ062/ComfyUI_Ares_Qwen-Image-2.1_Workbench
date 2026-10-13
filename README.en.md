@@ -183,6 +183,16 @@ Place the PE weights in `models/text_encoders/`, loaded via `CLIPLoader` (type=q
 | T2I rewrite | `qwen3.5_9b_qwen_image_2.1_pe_t2i.int8_convrot.safetensors` |
 | I2I rewrite | `qwen3.5_9b_qwen_image_2.1_pe_i2i.int8_convrot.safetensors` |
 
+**Official download sources**
+
+| Source | URL | Notes |
+|---|---|---|
+| Qwen official PE repos | https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I · https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I | Official original releases (origin of the files above) |
+| Comfy-Org repackaged repo | https://huggingface.co/Comfy-Org/Qwen-Image-2.1 | `text_encoders/` folder — the int8_convrot files in the table come from here (9.47 GB each, SHA256 provided) |
+| Base model | https://huggingface.co/Qwen/Qwen-Image-2.1 | Official base model |
+
+> Mainland China: replace `huggingface.co` with `hf-mirror.com` in any URL for the mirror.
+
 When both are connected, only the one matching the current mode loads; the other is automatically moved back to memory. The community also offers Heretic (abliteration-refusal-removed) versions with identical formats — directly swappable.
 
 ## Relationship to Source Projects

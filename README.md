@@ -183,6 +183,16 @@ PE 权重放 `models/text_encoders/`，`CLIPLoader`（type=qwen_image）加载�
 | T2I 改写 | `qwen3.5_9b_qwen_image_2.1_pe_t2i.int8_convrot.safetensors` |
 | I2I 改写 | `qwen3.5_9b_qwen_image_2.1_pe_i2i.int8_convrot.safetensors` |
 
+**官方下载地址**
+
+| 来源 | 地址 | 说明 |
+|---|---|---|
+| Qwen 官方 PE 原始仓库 | https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I · https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I | 官方原始发布（本文件的出处） |
+| Comfy-Org 重打包仓库 | https://huggingface.co/Comfy-Org/Qwen-Image-2.1 | `text_encoders/` 目录，上表 int8_convrot 文件即出自此仓（9.47GB/个，附带 SHA256 校验） |
+| 基座模型 | https://huggingface.co/Qwen/Qwen-Image-2.1 | 官方基座 |
+
+> 大陆网络：把地址里的 `huggingface.co` 换成 `hf-mirror.com` 即为镜像。
+
 两个都接时按模式只加载用到的那个，另一个自动移回内存。社区另有 Heretic（消融拒绝）版本，格式相同可直接替换。
 
 ## 与来源项目的关系
