@@ -147,10 +147,12 @@ def _parse_media_json(raw) -> list[dict]:
 
 
 def _prompt_lines(text, start_index=0, max_rows=1000, remove_empty=False) -> list[str]:
-    """按行切分。空文本只保留一段空提示，避免多出空图。"""
+    """按行切分。勾选去除空行时，全部非空行合并为一条提示词（一段被换行/空行
+    拆开的长提示词算一段，不按行切多张图）。空文本只保留一段空提示。"""
     lines = str(text or "").splitlines()
     if remove_empty:
-        lines = [ln for ln in lines if ln.strip()]
+        merged = " ".join(ln.strip() for ln in lines if ln.strip()).strip()
+        return [merged] if merged else [""]
     if not lines:
         return [""]
     start = max(0, min(int(start_index or 0), len(lines) - 1))
@@ -333,7 +335,7 @@ class AresQwenWorkbench(io.ComfyNode):
                 ),
                 io.Boolean.Input(
                     "去除空行", default=False,
-                    tooltip="切片前先去掉空行。",
+                    tooltip="勾选后忽略所有换行，全部文本合并为一条提示词（适合一段提示词被换行拆开的写法）。",
                 ),
                 io.Clip.Input("clip_t2i", optional=True, tooltip="Qwen-Image-2.1-PE-T2I 文本编码器（文生图改写用）"),
                 io.Clip.Input("clip_i2i", optional=True, tooltip="Qwen-Image-2.1-PE-I2I 文本编码器（图片编辑改写用）"),
