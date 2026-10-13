@@ -1,0 +1,290 @@
+[
+  {
+    "name": "Bold Graphic Printcraft",
+    "prompt": "linocut print style, halftone dot shading, high contrast graphic illustration, heavy black ink outlines, screenprint aesthetic, minimalist poster art, textured organic edges. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "大胆图形印刷工艺",
+    "thumbnail": "samples/Bold_Graphic_Printcraft.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "Ethereal Topographic Surrealism",
+    "prompt": "topographic contour lines, surrealist linocut texture, glowing energy aura, high-contrast duotone, psychedelic wave patterns, mythic silhouette, vintage print grain. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵地形超现实",
+    "thumbnail": "samples/Ethereal_Topographic_Surrealism.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "Neon Psychedelic Pop",
+    "prompt": "psychedelic pop art, bold black outlines, vibrant neon palette, surreal vector illustration, retro 70s aesthetic, metaphysical iconography, grainy paper texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹迷幻波普",
+    "thumbnail": "samples/Neon_Psychedelic_Pop.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Neon Stippled Noir",
+    "prompt": "high-contrast silhouette, stippled grain texture, airbrushed gradient, minimalist surrealism, saturated neon palette, graphic poster art, synthetic humanoid form. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹点绘黑色",
+    "thumbnail": "samples/Neon_Stippled_Noir.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Prismatic Cosmic Retro-Surrealism",
+    "prompt": "1970s sci-fi book cover art, prismatic light leaks, surreal scale juxtaposition, analog film grain, cosmic airbrush illustration, dramatic silhouette, psychedelic retro-futurism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜宇宙复古超现实",
+    "thumbnail": "samples/Prismatic_Cosmic_Retro-Surrealism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Prismatic Retro Cosmicism",
+    "prompt": "vintage airbrush texture, prismatic lens flare, retro-futuristic surrealism, twilight color gradient, analog film grain, mystical starburst glow, 70s sci-fi aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜复古宇宙主义",
+    "thumbnail": "samples/Prismatic_Retro_Cosmicism.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Vintage Cosmic Surrealism — Pulp Ink Stipple",
+    "prompt": "vintage sci-fi book cover, Moebius style, halftone print texture, retro-futuristic illustration, surreal cosmic landscape, volumetric clouds, stippling and cross-hatching. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古宇宙超现实纸浆墨点彩",
+    "thumbnail": "samples/Vintage_Cosmic_Surrealism_—_Pulp_Ink_Stipple.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Cover Art",
+    "prompt": "Style: highly polished illustration aesthetics designed for immediate visual impact, characterized by strong focal hierarchy, compelling composition, refined rendering, premium surface treatment, and memorable storytelling cues, blending commercial appeal with artistic sophistication through meticulous craftsmanship, dramatic presentation, and collector-quality execution, reminiscent of Drew Struzan and Frank Frazetta, inspired by Star Wars theatrical posters and Conan the Barbarian paperback covers.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "封面艺术",
+    "thumbnail": "samples/Cover_Art.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Interplay of Shadow and Light",
+    "prompt": "Style: A dramatically balanced illustration style built entirely on the tension between two forces, with sharply divided planes of illumination and darkness meeting along crisp, deliberate boundaries rather than gradual transition, form constructed almost sculpturally through the push and pull of what is revealed versus what is withheld, a rhythmic alternation of exposed and concealed detail that guides the eye across the composition like a visual heartbeat, a quiet, contemplative gravity carried through the deliberate restraint of full illumination, and a masterful, chiaroscuro-driven intensity where absence carries as much weight as presence. Influenced by: Caravaggio, chiaroscuro painting tradition, dramatic studio-lighting technique, classical tenebrist illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光影交织",
+    "thumbnail": "samples/Interplay_of_Shadow_and_Light.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Kekai Kotaki Style",
+    "prompt": "Style: A richly atmospheric fantasy concept-art style built on loose, confident brushwork that favors mood and light over crisp detail, dramatic soft-edged lighting that dissolves forms into glowing haze at the peripheries, richly layered painterly texture giving textures a lived-in, tactile weight, sweeping atmospheric depth that lets grand scale breathe through soft value transitions, and an evocative, immersive painterly intensity built for epic fantasy world-building. Influenced by: Kekai Kotaki, Guild Wars 2 concept art, painterly fantasy illustration, atmospheric concept-art technique.,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "Kekai Kotaki风格",
+    "thumbnail": "samples/Kekai_Kotaki_Style.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Robin Eley Style",
+    "prompt": "Style: A photorealistic figurative painting style defined by translucent elments, rendered with uncanny material precision, cool, clinical studio lighting that reveals every fold, wrinkle, and light-refraction in the material textures, skin rendered with hyperreal softness, neutral backgrounds that keep full focus on the interplay between body and translucency, and a quiet, conceptual tension between concealment and exposure rendered with immaculate painterly control. Influenced by: Robin Eley, hyperrealist oil painting, contemporary figurative fine art, photorealism technique.,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "罗宾·伊利风格",
+    "thumbnail": "samples/Robin_Eley_Style.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Dark Fantasy Illustration",
+    "prompt": "Style: A brooding, atmospheric fantasy painting style built on deep tenebrist shadow that swallows the edges of every composition, a single dramatic source of light carving form out of near-total darkness, richly textured painterly surfaces giving textures a weathered, visceral weight, an oppressive, foreboding stillness charged with looming threat, and a heavy, mythic gravitas that feels both epic and quietly menacing. Influenced by: dark fantasy concept-art tradition, Zdzisław Beksiński, tenebrist oil painting technique, gothic fantasy illustration.,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "黑暗奇幻插画",
+    "thumbnail": "samples/Dark_Fantasy_Illustration.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "GTA V Polished Cover Art",
+    "prompt": "Style: A bold, stylized illustration style built on crisp airbrushed rendering with confident graphic outline separating the subject into clean, poster-ready silhouette, saturated high-contrast lighting that punches the subject  forward against a dynamic collage-style arrangement, exaggerated attitude-driven posing charged with kinetic swagger, meticulous costume and prop detail rendered with commercial illustration polish, and a slick, larger-than-life pop-culture cover intensity built for instant, iconic recognition. Influenced by: Stephen Bliss, Rockstar Games box-art tradition, contemporary commercial illustration practice, pop-culture collage cover-design method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "GTA V精致封面艺术",
+    "thumbnail": "samples/GTA_V_Polished_Cover_Art.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Expressive Character Illustration",
+    "prompt": "Style: A vividly emotive illustration style built on confident, deliberate linework calibrated to amplify feeling over anatomical precision, exaggerated facial and postural modeling that pushes emotional readability to the forefront of every composition, loose, energetic shading applied to reinforce mood rather than achieve full rendering, a spirited, immediate mark-making quality that keeps the piece feeling alive and reactive, and a spontaneous, character-driven intensity that treats emotional truth as the primary compositional goal. Influenced by: contemporary character-design illustration practice, expressive digital-sketch technique, gesture-driven concept-art tradition, animation-adjacent character-study method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "表现力角色插画",
+    "thumbnail": "samples/Expressive_Character_Illustration.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Splatterpunk Horror Illustration",
+    "prompt": "Style: A visceral, unflinching horror-illustration style built on dense, chaotic mark-making that mirrors uncontrolled violence and bodily rupture, harsh, high-contrast rendering that swallows the composition in engulfing darkness broken by sudden, brutal illumination, deliberately crude, raw texture that rejects polish in favor of primal shock, aggressive, fragmented composition charged with confrontational intensity, and a relentless, extreme atmosphere built to overwhelm rather than merely unsettle. Influenced by: splatterpunk horror-fiction illustration tradition, extreme body-horror illustration practice, underground horror-zine technique, visceral pulp-horror rendering method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "溅血朋克恐怖插画",
+    "thumbnail": "samples/Splatterpunk_Horror_Illustration.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "James Jean Style",
+    "prompt": "Style: A richly symbolic, dreamlike illustration style built on flowing, intricate linework that weaves organic pattern seamlessly through composition, delicate translucent washes blending soft color transition with sharply rendered focal detail, a hushed, contemplative surrealism where imagery seems to grow and dissolve into itself, meticulous ornamental density balanced against generous atmospheric space, and a poetic, otherworldly elegance that feels both meticulously crafted and effortlessly dreamlike. Influenced by: James Jean, contemporary illustrative surrealism, ink-and-wash painting technique, gallery-adjacent narrative-illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "詹姆斯·让风格",
+    "thumbnail": "samples/James_Jean_Style.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Victo Ngai Style",
+    "prompt": "Style: A luminous, decorative illustration style built on richly patterned ornamental linework woven seamlessly through flowing, dreamlike composition, soft glowing color transitions blending seamlessly across intricate layered detail, a hushed, whimsical stillness carried through generous negative space balanced against dense focal ornamentation, meticulous narrative symbolism embedded within every decorative flourish, and a poetic, storybook elegance that feels both meticulously crafted and effortlessly enchanting. Influenced by: Victo Ngai, contemporary editorial-illustration tradition, decorative gouache-painting technique, narrative symbolic-illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "魏菊风格",
+    "thumbnail": "samples/Victo_Ngai_Style.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Kay Nielsen Style",
+    "prompt": "Style: An elegant, ornamental fairy-tale illustration style built on sinuous, decorative linework that flows with calligraphic grace, flat decorative patterning applied with meticulous restraint rather than painterly shading, elongated, stylized delicacy, a hushed, dreamlike stillness pervading every composition, and a refined, storybook elegance that feels simultaneously ancient and timeless in its decorative precision. Influenced by: Kay Nielsen, Golden Age children's book illustration, Art Nouveau decorative technique, Scandinavian fairy-tale illustration.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "凯·尼尔森风格",
+    "thumbnail": "samples/Kay_Nielsen_Style.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Hyper-Stylized Digital Painting",
+    "prompt": "Style: A boldly exaggerated painterly illustration style built on confident distortion of proportion pushed far beyond naturalistic reference, rich, layered brushwork rendering dramatically simplified or elongated form with total painterly conviction, saturated tonal contrast applied with deliberate, controlled boldness rather than restraint, an assertive, larger-than-life visual rhythm carried through exaggerated posing and dynamic composition, and a striking, unapologetically stylized painterly intensity that treats distortion itself as the core creative statement. Influenced by: contemporary stylized digital-painting tradition, exaggerated-proportion character-illustration technique, bold painterly concept-art practice, confident stylization-driven rendering method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超风格化数字绘画",
+    "thumbnail": "samples/Hyper-Stylized_Digital_Painting.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "Movie Digital art",
+    "prompt": "Style: A bold, high-octane action-movie poster illustration style built on dramatic low-angle framing that conveys raw power and momentum, intensely saturated directional lighting carving sharp, aggressive contrast across confident, larger-than-life composition, dynamic diagonal energy suggesting explosive forward motion even in stillness, meticulous photoreal rendering blended with graphic poster-ready boldness, and a bold, adrenaline-charged blockbuster intensity built for instant, high-impact visual spectacle. Influenced by: contemporary action-movie poster-illustration tradition, cinematic key-art rendering technique, high-octane blockbuster marketing practice, dynamic photoreal-composite illustration method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影数字艺术",
+    "thumbnail": "samples/Movie_Digital_art.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "RossDraws Style",
+    "prompt": "Style: An energetic, glowing painterly illustration style built on bold, confident brushwork radiating vibrant internal luminosity, a dynamic push-and-pull between crisp focal rendering and loose, expressive atmospheric edges, gentle bloom and glow accents scattered across the composition for lively visual rhythm, an upbeat, spontaneous energy carried through confident gestural mark-making, and a warm, charismatic painterly polish that feels enthusiastic, immediate, and effortlessly appealing. Influenced by: RossDraws, painterly digital-illustration technique, glow-driven character-illustration practice, contemporary streaming-artist rendering method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "RossDraws风格",
+    "thumbnail": "samples/RossDraws_Style.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Loish Ultrarealism",
+    "prompt": "Style: A luminous, painterly digital illustration style blending soft ultrarealistic rendering with expressive, loosely gestural brushwork at the edges, richly glowing skin built through translucent layered glazing rather than flat shading, delicate visible brushstrokes preserved even within highly refined facial detail, a dreamy, romantic softness radiating from confident directional lighting, and a warm, emotionally intimate polish that balances technical realism with unmistakably hand-painted feeling. Influenced by: Loish (Lois van Baarle), digital gouache painting, painterly portrait illustration, semi-realistic character art.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "Loish超写实",
+    "thumbnail": "samples/Loish_Ultrarealism.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "J.C. Leyendecker Style",
+    "prompt": "Style: A crisp, confident golden-age illustration style built on bold, brushy strokes that define form with economical precision rather than exhaustive detail, richly modeled rendering through sweeping tonal transition that suggests weight and movement, idealized, statuesque figures posed with theatrical poise and confident presence, a smooth, glowing painterly light that wraps forms in graduated highlight, and a polished, commercial-art elegance that feels both classical and unmistakably iconic. Influenced by: J.C. Leyendecker, Golden Age American illustration, oil-painting technique, classic advertising-illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "J.C.莱恩德克风格",
+    "thumbnail": "samples/J.C._Leyendecker_Style.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Ismail Inceoglu Style",
+    "prompt": "Style: A moody, luminous digital-painting style built on soft glowing directional light that carves powerful, sculptural dimensionality against enveloping darkness, richly layered painterly brushwork blending into smooth atmospheric transition, dramatic anatomical grounding rendered with confident, almost hyperreal muscular tension, a hushed, cinematic intensity carried through restrained, dramatic contrast, and a technically masterful, contemporary painterly gravitas that feels both epic and intimately grounded. Influenced by: Ismail Inceoglu, contemporary digital-painting technique, cinematic figurative-illustration practice, dramatic chiaroscuro rendering method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "伊斯梅尔·因杰奥卢风格",
+    "thumbnail": "samples/Ismail_Inceoglu_Style.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "Faceted Painterly Digital painting",
+    "prompt": "Style: A confidently stylized digital-painting style built on sharp, angular brushwork that constructs form through faceted, geometric planes of light and shadow rather than smooth blending, crisp specular highlight catching every sharp transitional edge with glossy precision, a soft-to-graphic tension between rendered texture and boldly simplified surrounding shape, meticulous attention to expressive, softly rendered detail set against otherwise confident graphic construction, and a polished, editorial-illustration finish that feels contemporary, stylish, and effortlessly striking. Influenced by: contemporary faceted digital-painting technique, semi-realistic editorial-illustration practice, stylized rendering method, painterly geometric-shading tradition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "切面绘画数字绘画",
+    "thumbnail": "samples/Faceted_Painterly_Digital_painting.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "Sharp-Lined Glossy Semi-Realistic Portrait",
+    "prompt": "Style: A striking digital-illustration style built on confident, angular linework combined with smooth airbrushed shading, glassy, high-shine specular highlight concentrated in the eyes and lips for immediate emotional focus, meticulous attention to soft luminous rendering contrasted against crisp, decisive contour, a hushed, contemplative intimacy carried through close, direct framing, and a polished, contemporary character-illustration intensity that feels both painterly and graphically sharp. Influenced by: Ilya Kuvshinov, WLOP, Guweiz, semi-realistic anime-portrait rendering technique.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "锐利线条光泽半写实肖像",
+    "thumbnail": "samples/Sharp-Lined_Glossy_Semi-Realistic_Portrait.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "Aleksi Briclot and Sparth-Inspired Art",
+    "prompt": "Style: A moody, cinematic concept-illustration style built on dramatic low-key lighting that carves powerful form out of dense, atmospheric shadow, richly textured painterly rendering giving costume and structure convincing weight balanced against sleek, architectural minimalism in the surrounding composition, dynamic, foreshortened posing charged with kinetic tension set against calm, monumental spatial restraint, meticulous material detail contrasted with soft, moody atmospheric dissolution at the edges, and a polished, epic-scale intensity built for high-stakes fantasy and sci-fi key-art. Influenced by: Aleksi Briclot, Sparth (Nicolas Bouvier), painterly concept-art technique, cinematic key-art composition practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "阿莱克西·布里克洛与Sparth启发艺术",
+    "thumbnail": "samples/Aleksi_Briclot_and_Sparth-Inspired_Art.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Marvel Rivals Character Design (Painterly Comic Illustration)",
+    "prompt": "Style: A polished, high-production character-illustration style built on confident, digital-art brushstrokes that feels hand-made, small impact-driven imperfections conveying dynamism and energy, sharp digital linework merged with dense, painterly cel-to-gradient shading, dramatic effects rendered with crisp graphic linework against soft ambient glow,  clean, readable heroic silhouette, Influenced by: Marvel Rivals, NetEase Games character-art direction, painterly hero-shooter illustration technique, cinematic key-art composition practice, contemporary superhero-game character-design method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "漫威争锋角色设计（绘画漫画插画）",
+    "thumbnail": "samples/Marvel_Rivals_Character_Design_(Painterly_Comic_Illustration).webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Crisp Semi-Realistic Anime Illustration",
+    "prompt": "Style: A polished, glossy digital-illustration style built on confident, clean linework merged seamlessly with smooth cel-to-gradient shading, luminous semi-realistic skin rendering with sharp specular highlight concentrated in the eyes for immediate emotional focus, meticulous attention to reflective glassy detail rendered with crisp precision, a bright, high-key illumination logic keeping the whole composition feeling vivid and immediate, and a vibrant, contemporary character-illustration polish that feels editorial, lively, and effortlessly appealing. Influenced by: Ilya Kuvshinov, WLOP, semi-realistic anime-portrait rendering technique, contemporary gacha-adjacent character-illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "清晰半写实动漫插画",
+    "thumbnail": "samples/Crisp_Semi-Realistic_Anime_Illustration.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "Glossy Semi-Realistic",
+    "prompt": "Style: A striking digital-illustration style built on confident, clean digital-gradient-linework combined with extremely smooth airbrushed shading, very glassy specular highlights for immediate emotional focus, meticulous attention to soft luminous rendering contrasted against crisp, decisive contour, a hushed, moody intimacy carried through close, direct framing, and a polished, contemporary illustration intensity that feels both delicate and graphically sharp. Influenced by: Sakimichan,  Ilya Kuvshinov, WLOP, semi-realistic anime rendering technique, contemporary gacha-adjacent illustration practice.  ray-tracing-adjacent aesthetics,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光泽半写实",
+    "thumbnail": "samples/Glossy_Semi-Realistic.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "Ilya Kuvshinov Style",
+    "prompt": "Style: A soft, luminous anime-realism illustration style built on delicately blended airbrushed shading that gives skin a gentle glowing translucency, fine detailed linework reserved for hair and eyes while broader forms stay softly rendered, a hushed, contemplative stillness carried through gentle ambient lighting, subtle painterly texture in hair strands contrasted against smooth porcelain-like skin, and a quietly elegant, understated polish that feels intimate, modern, and effortlessly refined. Influenced by: Ilya Kuvshinov, modern anime-realism illustration, digital airbrush technique, semi-realistic character art.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "伊利亚·库夫希诺夫风格",
+    "thumbnail": "samples/Ilya_Kuvshinov_Style.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Luminous Pastel",
+    "prompt": "Style: A softly radiant illustration style built on gentle, powdery tonal layering that blends effortlessly at every transition, a diffused, glowing luminosity emerging from within rather than reflecting off the exterior, delicate, unhurried blending replacing any sharp contrast or hard edge, a hushed, tender softness carried through subtle textural graininess reminiscent of layered chalk, and a quietly graceful, dreamlike gentleness that feels intimate, delicate, and effortlessly warm. Influenced by: pastel painting tradition, soft-chalk blending technique, classical photographic drawing practice, contemporary digital pastel-rendering method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "发光粉彩",
+    "thumbnail": "samples/Luminous_Pastel.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Melancholic Hyperrealism",
+    "prompt": "Style: A quietly haunting hyperrealist illustration style built on obsessive photographic precision applied with restrained, contemplative sensitivity rather than clinical detachment, soft, muted directional light casting long, wistful shadow across meticulously rendered form, a hushed, introspective stillness carried through subtle, unhurried tonal transition, painstaking attention to subtle emotional nuance in expression rendered with the same devotion as physical detail, and a technically masterful yet deeply tender intensity that treats sorrow itself as worthy of meticulous, patient craft. Influenced by: hyperrealist oil-painting technique, contemporary photorealism tradition, emotionally driven fine-art portraiture practice, melancholic figurative-painting method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "忧郁超写实",
+    "thumbnail": "samples/Melancholic_Hyperrealism.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "MTG (Magic: The Gathering) Style",
+    "prompt": "Style: A richly painterly fantasy card-illustration style built on confident traditional-media brushwork rendered with meticulous narrative clarity, dramatic atmospheric lighting that establishes mood and magical energy within a single evocative frame, richly textured surface detail across textures, and environment rendered with tactile painterly weight, a wide range of stylistic voices unified by strong storytelling composition and evocative world-building intensity, and a polished, collectible-card-art gravitas built to spark imagination within a small frame. Influenced by: Rebecca Guay, Wizards of the Coast card-art tradition, painterly fantasy illustration technique, narrative concept-art composition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "万智牌风格",
+    "thumbnail": "samples/MTG_(Magic_The_Gathering)_Style.webp",
+    "group": "手绘封面"
+  },
+  {
+    "name": "Tom Bagshaw-Inspired Digital Painting",
+    "prompt": "Style: A hauntingly elegant digital painting style built on desaturated color palettes broken by a single striking accent hue, porcelain-pale skin rendered with soft painterly translucency, richly detailed fabric, rendered in fine contrasting detail against loosely blurred or minimal backgrounds, subjects posed with a still, melancholic, intimacy, and a delicate, painterly restraint that favors quiet mood and texture over dramatic action. Influenced by: Tom Bagshaw,  digital matte painting technique, muted chiaroscuro illustration.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "汤姆·巴格肖启发数字绘画",
+    "thumbnail": "samples/Tom_Bagshaw-Inspired_Digital_Painting.webp",
+    "group": "数字封面"
+  },
+  {
+    "name": "Action Movie Poster with Diagonal Speed Strokes",
+    "prompt": "Style: A composition built on aggressive diagonal motion streaks slashing behind the subject,  the strokes applied with a dry, fractured drag that skips across the canvas creating an explosive backlit burst of velocity and impact, the subject rendered with razor-sharp clarity and cinematic rim lighting while the surrounding strokes dissolve into raw kinetic abstraction, the atmosphere charged with high-stakes intensity, the contrast between the hyper-detailed subject and the chaotic streaked background amplifying the sense of motion, power, and larger-than-life heroism. Influenced by: Drew Struzan's illustrated movie poster compositions, the fractured-speed aesthetic of Marvel Studios key art, Saul Bass's dynamic diagonal poster design, Hollywood blockbuster marketing,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动作电影海报（对角线速度笔触）",
+    "thumbnail": "samples/Action_Movie_Poster_with_Diagonal_Speed_Strokes.webp",
+    "group": "其他"
+  }
+]

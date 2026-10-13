@@ -1,0 +1,1730 @@
+[
+  {
+    "name": "Analog Glitch Nostalgia — Neon Cel Smear",
+    "prompt": "retro 90s anime style, analog VHS distortion, chromatic aberration, bold cel-shaded outlines, vibrant neon color palette, CRT scanlines, motion blur glitch, lo-fi digital artifacting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "模拟 故障 怀旧 — 霓虹 赛璐璐 涂抹",
+    "thumbnail": "samples/Analog_Glitch_Nostalgia_—_Neon_Cel_Smear.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Bioluminescent Cosmic Abyss",
+    "prompt": "90s anime aesthetic, bioluminescent blue palette, cosmic surrealism, monumental scale contrast, ethereal atmospheric depth, futuristic city silhouettes, high-contrast lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "生物荧光宇宙深渊",
+    "thumbnail": "samples/Bioluminescent_Cosmic_Abyss.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Bold Cel-Shaded Realism",
+    "prompt": "bold ink outlines, sharp cel shading, muscular anatomy, high contrast shadows, graphic novel style, isolated on white background, vector art aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "大胆赛璐璐着色写实",
+    "thumbnail": "samples/Bold_Cel-Shaded_Realism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Bold Crimson Anime Art",
+    "prompt": "solid crimson red background, high-contrast anime portrait, painterly digital illustration, bold graphic silhouette, vibrant color blocking, expressive character design. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "大胆绯红动漫艺术",
+    "thumbnail": "samples/Bold_Crimson_Anime_Art.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Bold Graphic Anime",
+    "prompt": "clean bold line art, anime illustration, flat color fills, high-contrast graphic style, expressive character design, vibrant color blocking, modern anime aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "大胆图形动漫",
+    "thumbnail": "samples/Bold_Graphic_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Bold Graphic Vectorism",
+    "prompt": "vector illustration, bold graphic outlines, high-contrast cel shading, minimalist composition, earthy and crimson palette, clean vector linework. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "大胆图形矢量主义",
+    "thumbnail": "samples/Bold_Graphic_Vectorism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Celestial Graphic Noir",
+    "prompt": "graphic black silhouette, intricate gold line art, high-contrast illustration, celestial dark background, vintage cel-shaded aesthetic, ornate art nouveau details, muted jewel tone palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天体图形黑色",
+    "thumbnail": "samples/Celestial_Graphic_Noir.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Celestial Kinetic Anime",
+    "prompt": "90s anime aesthetic, cel-shaded energy explosion, vibrant cyan and deep blue palette, cosmic scale, cinematic lighting, volumetric clouds, mystical atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天体动态动漫",
+    "thumbnail": "samples/Celestial_Kinetic_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Cinematic Anime Nature",
+    "prompt": "high-quality 2D anime style, painterly background, expressive character art, cel-shaded, cinematic storytelling, lush natural environment, vibrant color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感动漫自然",
+    "thumbnail": "samples/Cinematic_Anime_Nature.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Cinematic Cyber-Noir Anime",
+    "prompt": "cinematic 90s anime style, high-contrast cel-shading, cyberpunk noir, moody desaturated palette, dramatic low-key lighting, sharp ink outlines, atmospheric depth of field. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感赛博黑色动漫",
+    "thumbnail": "samples/Cinematic_Cyber-Noir_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Cinematic Nocturnal Anime",
+    "prompt": "cinematic retro anime style, nocturnal atmosphere, deep indigo and navy palette, high-contrast warm light, industrial silhouette, lo-fi melancholy, atmospheric twilight gradient, hand-drawn cel-shaded texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感夜行动漫",
+    "thumbnail": "samples/Cinematic_Nocturnal_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Cinematic Nocturnal Melancholy — Cel-Shaded Calm",
+    "prompt": "cinematic anime style, cool blue color palette, atmospheric lighting, desaturated tones, cel-shaded, melancholic mood, sharp line art, nocturnal cityscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感夜行忧郁赛璐璐着色平静",
+    "thumbnail": "samples/Cinematic_Nocturnal_Melancholy_—_Cel-Shaded_Calm.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Cinematic Nocturnal Melancholy — Rainy Violet Anime",
+    "prompt": "melancholic anime style, cinematic urban nightscape, cool blue and purple tones, rain-soaked atmosphere, soft bokeh lighting, introspective emotional close-up, dramatic shadow play. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感夜行忧郁雨天紫罗兰动漫",
+    "thumbnail": "samples/Cinematic_Nocturnal_Melancholy_—_Rainy_Violet_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Cinematic Retro Noir",
+    "prompt": "1990s anime cel style, dramatic chiaroscuro lighting, analog film grain, saturated retro palette, star lens flare, hand-drawn ink outlines, noir cinematic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感复古黑色",
+    "thumbnail": "samples/Cinematic_Retro_Noir.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Classic Cel Animation",
+    "prompt": "1990s anime style, hand-drawn line art, cel animation, painterly gouache background, soft natural daylight, retro anime aesthetic, expressive character design. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "经典 赛璐璐 动画",
+    "thumbnail": "samples/Classic_Cel_Animation.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Cobalt Neon Pop",
+    "prompt": "vibrant anime illustration, cobalt blue palette, neon paint splatters, sharp cell-shading, graphic pop art, high contrast, expressive character portrait. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "钴蓝霓虹波普",
+    "thumbnail": "samples/Cobalt_Neon_Pop.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Distorted Graphic Pop",
+    "prompt": "extreme fisheye lens distortion, bold black ink outlines, textured risograph grain, dynamic spherical perspective, vibrant flat cell shading, nostalgic pop illustration, high-angle dramatic composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "扭曲图形波普",
+    "thumbnail": "samples/Distorted_Graphic_Pop.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Dynamic Gritty Heroism",
+    "prompt": "character concept sheet, bold ink outlines, stylized digital illustration, dynamic heroic pose, high contrast lighting, cel-shaded textures, geometric anatomy, vibrant glowing accents. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态粗粝英雄",
+    "thumbnail": "samples/Dynamic_Gritty_Heroism.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Dynamic Stylized Character Design",
+    "prompt": "character concept art sheet, clean bold line art, flat cel-shaded, dynamic poses, stylized anatomy, minimalist neutral background, expressive character design. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态风格化角色设计",
+    "thumbnail": "samples/Dynamic_Stylized_Character_Design.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Ethereal Anime Vistas",
+    "prompt": "Studio Ghibli aesthetic, towering cumulus clouds, vibrant anime background, lush green landscape, hand-painted digital style, scenic panoramic vista, nostalgic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵动漫远景",
+    "thumbnail": "samples/Ethereal_Anime_Vistas.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Ethereal Luminescent Fantasy",
+    "prompt": "bioluminescent glow, ethereal pastel fantasy, soft light diffusion, translucent glass-like textures, fluid organic shapes, dreamy digital illustration, iridescent watercolor gradients. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵荧光幻想",
+    "thumbnail": "samples/Ethereal_Luminescent_Fantasy.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Ethereal Pastel Anime — High-Key Mint",
+    "prompt": "soft painterly anime, pastel color palette, ethereal glowing light, wind-blown hair, delicate line art, dreamy atmosphere, sun-kissed lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵 粉彩 动漫 — 高调 薄荷",
+    "thumbnail": "samples/Ethereal_Pastel_Anime_—_High-Key_Mint.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Ethereal Pastel Anime — Woodblock Twilight",
+    "prompt": "anime aesthetic, pastel color palette, mirror water reflection, cumulus clouds, nostalgic solitude, twilight glow, clean line art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵粉彩动漫木刻暮光",
+    "thumbnail": "samples/Ethereal_Pastel_Anime_—_Woodblock_Twilight.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Ethereal Pastel Dreamcore",
+    "prompt": "pastel dreamcore, ethereal whimsical fantasy, soft gradient sky, retro anime aesthetic, shimmering glitter overlay, delicate line art, magical realism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵粉彩梦核",
+    "thumbnail": "samples/Ethereal_Pastel_Dreamcore.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Ethereal Pastel Dreamscape — Bubblegum Cel",
+    "prompt": "retro anime style, pastel pop art, whimsical surrealism, bold clean line art, dreamy color palette, cel-shaded illustration, nostalgic fantasy, soft gradient textures. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵粉彩梦境泡泡糖赛璐璐",
+    "thumbnail": "samples/Ethereal_Pastel_Dreamscape_—_Bubblegum_Cel.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Ethereal Pastel Kawaii — Sparkling Lens Flare",
+    "prompt": "pastel anime style, ethereal high-key lighting, sparkling expressive eyes, cherry blossom background, clean digital line art, whimsical dreamlike atmosphere, soft focus lens flare. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵粉彩可爱闪亮镜头光晕",
+    "thumbnail": "samples/Ethereal_Pastel_Kawaii_—_Sparkling_Lens_Flare.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Ethereal Pastel Kawaii — Translucent Floral Glow",
+    "prompt": "kawaii anime illustration, pastel color palette, ethereal lighting, shimmering expressive eyes, whimsical dreamlike atmosphere, delicate line art, lolita fashion elements. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵 粉彩 可爱 — 半透明 花卉 辉光",
+    "thumbnail": "samples/Ethereal_Pastel_Kawaii_—_Translucent_Floral_Glow.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Ethereal Pastel Melancholia",
+    "prompt": "ethereal dreamlike atmosphere, high-key overexposed lighting, delicate pencil and watercolor mix, cobalt and pastel color palette, soft glowing halo effect, nostalgic anime aesthetic, diffused iridescent glow. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵粉彩忧郁",
+    "thumbnail": "samples/Ethereal_Pastel_Melancholia.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Ethereal Pastel Surrealism — 90s Cel Ink",
+    "prompt": "lofi anime aesthetic, pastel color palette, surreal floating marine life, clean ink line art, nostalgic urban fantasy, magical realism, soft gradient lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵粉彩超现实90赛璐璐墨",
+    "thumbnail": "samples/Ethereal_Pastel_Surrealism_—_90s_Cel_Ink.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Ethereal Pastoral Dreamcore",
+    "prompt": "surreal pastoral landscape, painterly anime aesthetic, pastel golden hour lighting, colossal fluffy cumulus clouds, nostalgic dreamcore atmosphere, whimsical rolling green hills. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵田园梦核",
+    "thumbnail": "samples/Ethereal_Pastoral_Dreamcore.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Ethereal Twilight Horizons",
+    "prompt": "Makoto Shinkai style, anime aesthetic, twilight sky gradient, glowing bokeh particles, cinematic landscape, pastel cloud formations, nostalgic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵暮光地平线",
+    "thumbnail": "samples/Ethereal_Twilight_Horizons.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Graphic Angular Urbanism",
+    "prompt": "cel-shaded, bold ink outlines, sharp angular proportions, vector art style, dynamic character design, high contrast graphic illustration, isolated on white background. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形棱角都市",
+    "thumbnail": "samples/Graphic_Angular_Urbanism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Graphic Melancholic Futurism",
+    "prompt": "ligne claire, retro anime aesthetic, bold ink outlines, high-contrast cel shading, minimalist composition, saturated crimson and blue, vast atmospheric landscapes. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形忧郁未来主义",
+    "thumbnail": "samples/Graphic_Melancholic_Futurism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Graphic Melancholic Surrealism",
+    "prompt": "clean graphic outlines, flat cell-shaded aesthetic, stark color contrast, melancholic indie animation style, surreal minimalist composition, vibrant pop accents, expressive ink linework. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形忧郁超现实",
+    "thumbnail": "samples/Graphic_Melancholic_Surrealism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Graphic Minimalist Pop-Anime",
+    "prompt": "minimalist manga illustration, bold ink line art, solid vibrant background, flat color blocking, high contrast graphic art, slice of life anime, pop art aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形极简波普动漫",
+    "thumbnail": "samples/Graphic_Minimalist_Pop-Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Graphic Neo-Anime Synthesis",
+    "prompt": "graphic anime illustration, bold line art, high-contrast flat shading, symmetrical composition, vibrant neon palette, mythological pop art, cyberpunk aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形新动漫合成",
+    "thumbnail": "samples/Graphic_Neo-Anime_Synthesis.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Graphic Noir Anime",
+    "prompt": "vintage manga illustration, high contrast ink, fine-line hatching, muted cream background, gothic fashion portrait, cel-shaded noir, surreal ink art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形黑色动漫",
+    "thumbnail": "samples/Graphic_Noir_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Graphic Pop Synthesis",
+    "prompt": "bold black outlines, flat color illustration, vibrant saturated palette, high-contrast graphic style, ligne claire influence, modern anime aesthetics, solid minimalist background. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形波普合成",
+    "thumbnail": "samples/Graphic_Pop_Synthesis.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Graphic Retro Nostalgia",
+    "prompt": "cel-shaded illustration, bold ink outlines, sun-drenched lighting, vintage retro aesthetic, high-contrast shadows, nostalgic atmosphere, flat color blocks. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形复古怀旧",
+    "thumbnail": "samples/Graphic_Retro_Nostalgia.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Graphic Risograph Pop",
+    "prompt": "risograph texture, bold graphic illustration, flat color blocking, retro anime style, high-contrast palette, minimalist vector art, halftone grain, sharp ink outlines. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形孔版波普",
+    "thumbnail": "samples/Graphic_Risograph_Pop.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Graphic Surreal Pop — Cherry Mint Anime",
+    "prompt": "bold graphic illustration, saturated pop art palette, clean vector outlines, halftone and spiral textures, 90s retro anime influence, high-contrast color blocking, whimsical surrealism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形超现实波普樱桃薄荷动漫",
+    "thumbnail": "samples/Graphic_Surreal_Pop_—_Cherry_Mint_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Graphic Surrealist Anime",
+    "prompt": "clean graphic line art, minimalist anime illustration, flat color vector style, surrealist dreamlike composition, vibrant high-contrast palette, melancholic serene atmosphere, cel-shaded digital aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形超现实动漫",
+    "thumbnail": "samples/Graphic_Surrealist_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Iridescent Retro Futurist",
+    "prompt": "retro-futuristic airbrush art, iridescent holographic sheen, neon synthwave palette, starburst lens flares, chrome and metallic reflections, nostalgic 80s anime style, high-gloss cosmic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "虹彩复古未来主义",
+    "thumbnail": "samples/Iridescent_Retro_Futurist.webp",
+    "group": "怀旧复古"
+  },
+  {
+    "name": "Luminous Anime Fantasy",
+    "prompt": "vibrant anime style, sun-drenched lighting, ethereal lens flare, sky blue and white palette, wind-blown hair, whimsical fantasy elements, dreamy high-key aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮动漫幻想",
+    "thumbnail": "samples/Luminous_Anime_Fantasy.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Anime Horizon — Painterly God-Rays",
+    "prompt": "anime aesthetic, towering cumulus clouds, painterly background, volumetric lighting, vibrant saturated landscape, Makoto Shinkai style, nostalgic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮动漫地平线绘画感神光",
+    "thumbnail": "samples/Luminous_Anime_Horizon_—_Painterly_God-Rays.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Anime Horizon — Turquoise Cel Shading",
+    "prompt": "vibrant anime background, voluminous cumulus clouds, saturated color palette, high-altitude aerial perspective, cel-shaded digital illustration, lush green landscape, pristine turquoise water, painterly dreamlike aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮动漫地平线绿松石赛璐璐",
+    "thumbnail": "samples/Luminous_Anime_Horizon_—_Turquoise_Cel_Shading.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Anime Pastoralism",
+    "prompt": "Studio Ghibli style, painterly anime background, lush pastoral landscape, dramatic cumulus clouds, sun-drenched backlighting, nostalgic summer atmosphere, vibrant color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮动漫田园主义",
+    "thumbnail": "samples/Luminous_Anime_Pastoralism.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Luminous Aquatic Impressionism — Dappled Emerald Gold",
+    "prompt": "high-angle overhead view, shimmering turquoise emerald water, painterly anime aesthetic, dappled light reflections, fluid liquid distortion, ethereal surrealism, vibrant teal and gold palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮水生印象派斑驳翠绿金",
+    "thumbnail": "samples/Luminous_Aquatic_Impressionism_—_Dappled_Emerald_Gold.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Azure Dreamscape",
+    "prompt": "luminous anime illustration, deep cobalt and indigo, bioluminescent highlights, surreal dreamlike atmosphere, ethereal soft glow, melancholic aquatic fantasy, high contrast dark background. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮蔚蓝梦境",
+    "thumbnail": "samples/Luminous_Azure_Dreamscape.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Celestial Anime",
+    "prompt": "celestial anime fantasy, ethereal glowing highlights, deep space background, soft digital bloom, bioluminescent magical elements, vibrant neon rim light, clean digital line art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮天体动漫",
+    "thumbnail": "samples/Luminous_Celestial_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Celestial Fantasy",
+    "prompt": "celestial fantasy anime, bioluminescent glow, deep indigo night sky, ethereal magical lighting, glowing crystalline elements, surreal cosmic dreamscape, vibrant high-contrast palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮天体幻想",
+    "thumbnail": "samples/Luminous_Celestial_Fantasy.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Coastal Graphicism",
+    "prompt": "coastal impressionism, digital gouache painting, high-contrast sunlit landscape, saturated turquoise and earth tones, graphic cel-shaded illustration, visible painterly brushstrokes, minimalist composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮海岸图形主义",
+    "thumbnail": "samples/Luminous_Coastal_Graphicism.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Luminous Cosmic Ethereal",
+    "prompt": "celestial anime aesthetic, glowing liquid elements, deep indigo and teal palette, painterly ethereal atmosphere, high-contrast starlight, surreal cosmic illustration. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮宇宙空灵",
+    "thumbnail": "samples/Luminous_Cosmic_Ethereal.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Crimson Arcana",
+    "prompt": "high-contrast dark fantasy, volumetric lighting, crimson and bioluminescent palette, cinematic anime illustration, intricate architectural detail, magical atmosphere, dramatic chiaroscuro. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮绯红秘仪",
+    "thumbnail": "samples/Luminous_Crimson_Arcana.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Luminous Dreamcore Anime",
+    "prompt": "painterly anime style, ethereal soft lighting, dreamy pastel palette, iridescent highlights, magical realism, intimate close-up portrait, whimsical fantasy elements. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮梦核动漫",
+    "thumbnail": "samples/Luminous_Dreamcore_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Ethereal Pastel — Pink-Gold Sunset Anime",
+    "prompt": "dreamy pastel palette, shimmering light refraction, painterly anime style, ethereal soft-focus glow, luminous sunset hues, translucent iridescent textures, nostalgic summer mood. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮 空灵 粉彩 — 粉金 日落 动漫",
+    "thumbnail": "samples/Luminous_Ethereal_Pastel_—_Pink-Gold_Sunset_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Nocturnal Dreamscapes — Cosmic Indigo Anime",
+    "prompt": "deep indigo and cobalt palette, ethereal celestial light, painterly brushstrokes, cinematic anime aesthetic, starlit nocturnal dreamscape, surreal cosmic scale, high contrast silhouettes. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮夜行梦境宇宙靛蓝动漫",
+    "thumbnail": "samples/Luminous_Nocturnal_Dreamscapes_—_Cosmic_Indigo_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Nostalgic Anime — Crisp Cel Linework",
+    "prompt": "clean anime line art, slice of life, cinematic depth of field, soft natural lighting, nostalgic atmosphere, detailed background, vibrant cel-shaded. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮 怀旧 动漫 — 清冽 赛璐璐 线稿",
+    "thumbnail": "samples/Luminous_Nostalgic_Anime_—_Crisp_Cel_Linework.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Painterly Anime",
+    "prompt": "painterly digital art, expressive brushstrokes, cinematic lighting, vibrant saturated palette, sun-drenched atmosphere, dynamic anime style, nostalgic slice of life. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮绘画感动漫",
+    "thumbnail": "samples/Luminous_Painterly_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Prismatic Dreamscape — Iridescent Caustic Bokeh",
+    "prompt": "prismatic light leaks, chromatic aberration, iridescent glass caustics, dreamlike ethereal atmosphere, vibrant saturated palette, soft-focus bokeh, digital anime aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮棱镜梦境虹彩焦散散景",
+    "thumbnail": "samples/Luminous_Prismatic_Dreamscape_—_Iridescent_Caustic_Bokeh.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Luminous Twilight Fantasy",
+    "prompt": "painterly anime style, twilight blue and warm orange, glowing lanterns, whimsical fantasy landscape, starlit night sky, cozy cottagecore, magical realism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮暮光幻想",
+    "thumbnail": "samples/Luminous_Twilight_Fantasy.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Twilight Nostalgia — Amber-Magenta Clouds",
+    "prompt": "painterly digital art, twilight color palette, volumetric sunset clouds, cinematic lighting, high contrast silhouettes, nostalgic anime aesthetic, vibrant indigo and orange. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮 暮色 怀旧 — 琥珀洋红 云",
+    "thumbnail": "samples/Luminous_Twilight_Nostalgia_—_Amber-Magenta_Clouds.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Luminous Twilight Nostalgia — Indigo-Orange Dusk",
+    "prompt": "anime background style, golden hour sunset, towering cumulonimbus clouds, painterly digital art, nostalgic twilight, vibrant dusk gradients, silhouette elements. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮 暮色 怀旧 — 靛蓝橙 黄昏",
+    "thumbnail": "samples/Luminous_Twilight_Nostalgia_—_Indigo-Orange_Dusk.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Twilight Nostalgia — Retro Violet Anime",
+    "prompt": "golden hour glow, painterly digital illustration, twilight silhouette, soft dreamlike atmosphere, retro anime aesthetic, vibrant sunset gradient, textured brushstrokes. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮暮光怀旧复古紫罗兰动漫",
+    "thumbnail": "samples/Luminous_Twilight_Nostalgia_—_Retro_Violet_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Luminous Whimsical Nostalgia",
+    "prompt": "golden hour lighting, soft focus bokeh, nostalgic anime aesthetic, warm sun-drenched atmosphere, painterly digital illustration, whimsical storytelling, volumetric light. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮奇想怀旧",
+    "thumbnail": "samples/Luminous_Whimsical_Nostalgia.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Lush Arcane Cel-Animation",
+    "prompt": "90s fantasy anime style, cel-shaded illustration, hand-painted gouache background, dappled sunlight, glowing magic effects, lush forest atmosphere, sharp expressive line art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "繁茂 秘法 赛璐璐动画",
+    "thumbnail": "samples/Lush_Arcane_Cel-Animation.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Melancholic Academic Realism",
+    "prompt": "detailed anime style, painterly textures, atmospheric lighting, muted earthy palette, melancholic introspection, intricate environmental storytelling. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "忧郁学院写实",
+    "thumbnail": "samples/Melancholic_Academic_Realism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Midnight Cel Aesthetic",
+    "prompt": "1990s retro anime cel, hand-drawn ink linework, nocturnal moody color palette, cinematic atmospheric lighting, vintage OVA aesthetic, high contrast cell shading, nostalgic sci-fi design. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "午夜赛璐璐美学",
+    "thumbnail": "samples/Midnight_Cel_Aesthetic.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Minimalist Pastel Anime",
+    "prompt": "minimalist anime illustration, clean line art, flat color blocks, pastel color palette, sharp graphic quality, surreal symbolic motifs, modern Japanese aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "极简粉彩动漫",
+    "thumbnail": "samples/Minimalist_Pastel_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Monochromatic Blue Narrative",
+    "prompt": "monochromatic blue color palette, clean digital line art, lo-fi anime aesthetic, dreamy slice of life, soft airbrush shading, minimalist graphic composition, cozy bedroom interior. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "单色蓝叙事",
+    "thumbnail": "samples/Monochromatic_Blue_Narrative.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Monumental Twilight Cloudscapes",
+    "prompt": "towering cumulus clouds, golden hour lighting, painterly anime style, deep indigo sky, surreal monumental scale, cinematic atmosphere, vibrant warm glow. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "宏大 暮色 云景",
+    "thumbnail": "samples/Monumental_Twilight_Cloudscapes.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Neon Cosmic Retro-Futurism",
+    "prompt": "retro-futuristic anime style, chromatic aberration, neon gradient lighting, chrome iridescence, cosmic surrealism, vintage 90s grain texture, synthwave color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹宇宙复古未来主义",
+    "thumbnail": "samples/Neon_Cosmic_Retro-Futurism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Neon Gritty Cyber-Graphic",
+    "prompt": "cyberpunk graphic illustration, neon noir palette, bold ink outlines, halftone dot texture, 90s anime aesthetic, high-contrast screenprint, retro-futuristic style. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹粗粝赛博图形",
+    "thumbnail": "samples/Neon_Gritty_Cyber-Graphic.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Neon Nocturnal Illustrative",
+    "prompt": "vibrant neon palette, dreamy nocturnal atmosphere, retro illustrative style, high contrast lighting, grainy digital texture, cel-shaded graphic elements, surreal cosmic influence. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹夜行插画",
+    "thumbnail": "samples/Neon_Nocturnal_Illustrative.webp",
+    "group": "怀旧复古"
+  },
+  {
+    "name": "Neon Noir Retro-Futurism",
+    "prompt": "90s anime cel shading, retro neon noir, liquid chrome textures, high contrast moody lighting, vintage film grain, saturated cyberpunk palette, atmospheric airbrush art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹黑色复古未来主义",
+    "thumbnail": "samples/Neon_Noir_Retro-Futurism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Neon Noir VHS",
+    "prompt": "neon noir, lo-fi VHS aesthetic, chromatic aberration, 90s retro anime style, heavy analog film grain, cyberpunk atmosphere, saturated magenta and blue lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹黑色录像带",
+    "thumbnail": "samples/Neon_Noir_VHS.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Neon Pastel Kawaii Core",
+    "prompt": "kawaii anime style, bold clean line art, pastel pop palette, vibrant neon accents, halftone textures, dreamy whimsical motifs, harajuku streetwear aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹粉彩可爱核心",
+    "thumbnail": "samples/Neon_Pastel_Kawaii_Core.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Neon Psychedelic Retro-Noir",
+    "prompt": "1990s retro anime style, psychedelic airbrush gradients, glowing neon aura, solarized high contrast, hazy atmospheric glow, grainy analog texture, iridescent rim lighting, cosmic surrealism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹迷幻复古黑色",
+    "thumbnail": "samples/Neon_Psychedelic_Retro-Noir.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Neon Punk Vectorism",
+    "prompt": "bold black vector outlines, vibrant neon lime and cyan, high-contrast cel-shading, sharp graphic design style, cyberpunk street-art influence, aggressive mascot aesthetic, clean digital vector art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹朋克矢量",
+    "thumbnail": "samples/Neon_Punk_Vectorism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Neon Surreal Folklore",
+    "prompt": "bold black linework, psychedelic neon palette, Japanese folklore motifs, high-contrast anime aesthetic, surreal pop illustration, flat graphic composition, retro digital texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹超现实民俗",
+    "thumbnail": "samples/Neon_Surreal_Folklore.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Neon Synthwave Graphic Noir",
+    "prompt": "cyberpunk graphic novel style, bold ink outlines, neon synthwave palette, high-contrast cel-shading, dynamic action lines, halftone textures, retro-futuristic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹合成波图形黑色",
+    "thumbnail": "samples/Neon_Synthwave_Graphic_Noir.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Nocturnal Glitch Surrealism",
+    "prompt": "vintage anime aesthetic, bioluminescent glow, CRT scanlines, surreal dreamlike atmosphere, indigo and amber palette, fine ink crosshatching, analog glitch artifacts. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行故障超现实",
+    "thumbnail": "samples/Nocturnal_Glitch_Surrealism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nocturnal Graphic Cloudscapes",
+    "prompt": "stippled texture, indigo and cerulean palette, stylized cumulus clouds, woodblock print aesthetic, clean ink outlines, nocturnal atmosphere, cel-shaded graphic art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行图形云景",
+    "thumbnail": "samples/Nocturnal_Graphic_Cloudscapes.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Nocturnal Pastel Anime",
+    "prompt": "clean anime line art, high-contrast color palette, nocturnal atmosphere, pastel and neon fusion, surreal botanical elements, melancholic mood, 90s retro anime aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行粉彩动漫",
+    "thumbnail": "samples/Nocturnal_Pastel_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nocturnal Spectral Anime",
+    "prompt": "90s retro anime style, hand-painted watercolor background, deep indigo twilight, ethereal magenta bioluminescence, high-contrast moody lighting, gothic fantasy atmosphere, cel-shaded 2D illustration. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行光谱动漫",
+    "thumbnail": "samples/Nocturnal_Spectral_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Anime Blueprint",
+    "prompt": "90s anime style, character model sheet, cel animation, clean line art, flat color fills, retro aesthetic, hand-drawn charm, minimalist background. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 动漫 蓝图",
+    "thumbnail": "samples/Nostalgic_Anime_Blueprint.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Anime Cloudscapes",
+    "prompt": "Studio Ghibli inspired background, towering cumulonimbus clouds, saturated cobalt blue sky, painterly gouache texture, nostalgic anime aesthetic, high-contrast silhouette, vast atmospheric scale. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 动漫 云景",
+    "thumbnail": "samples/Nostalgic_Anime_Cloudscapes.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Anime Still Life",
+    "prompt": "90s anime style, cel-shaded illustration, cozy domestic atmosphere, Studio Ghibli inspired, vibrant saturated palette, high-contrast lighting, hand-drawn digital art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧动漫静止生命",
+    "thumbnail": "samples/Nostalgic_Anime_Still_Life.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Anime Summer",
+    "prompt": "studio ghibli background style, towering cumulonimbus clouds, vibrant cobalt blue sky, nostalgic anime aesthetic, painterly digital brushstrokes, high-contrast sunlit landscape, minimalist composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧动漫夏",
+    "thumbnail": "samples/Nostalgic_Anime_Summer.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Cel Animation — Gouache Screencap Softness",
+    "prompt": "90s anime cel style, hand-drawn aesthetic, soft diffused lighting, slice of life, nostalgic color palette, vintage anime screencap. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 赛璐璐 动画 — 水粉 截屏 柔",
+    "thumbnail": "samples/Nostalgic_Cel_Animation_—_Gouache_Screencap_Softness.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Cel Animation — Retro OVA Glow",
+    "prompt": "1990s anime aesthetic, vintage hand-drawn cel animation, soft-focus glow, painterly background, retro film grain, dramatic ambient lighting, nostalgic color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧赛璐璐动画复古OVA发光",
+    "thumbnail": "samples/Nostalgic_Cel_Animation_—_Retro_OVA_Glow.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Cel-Shaded Aviation",
+    "prompt": "1980s 1990s cel animation style, hand-painted gouache background, vintage aviation adventure, bold ink line art, nostalgic anime aesthetic, Studio Ghibli inspired, vibrant primary colors. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 赛璐璐着色 航空",
+    "thumbnail": "samples/Nostalgic_Cel-Shaded_Aviation.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Cel-Shaded Storytelling",
+    "prompt": "retro anime aesthetic, clean ink line art, soft cel-shaded coloring, expressive character design, nostalgic cottagecore vibes, muted pastel palette, graphic indie comic style. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 赛璐璐着色 叙事",
+    "thumbnail": "samples/Nostalgic_Cel-Shaded_Storytelling.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Cinematic Anime",
+    "prompt": "classic 2D anime style, painterly backgrounds, golden hour rim lighting, dramatic sky palettes, cel-shaded characters, nostalgic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧电影感动漫",
+    "thumbnail": "samples/Nostalgic_Cinematic_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Cobalt Surrealism",
+    "prompt": "cobalt blue sky, cumulonimbus clouds, painterly anime aesthetic, high-contrast shadows, nostalgic summer atmosphere, low-angle perspective, minimalist urban geometry, surreal illustration. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧钴蓝超现实",
+    "thumbnail": "samples/Nostalgic_Cobalt_Surrealism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Cozy Illustration",
+    "prompt": "cozy retro anime style, warm golden hour lighting, soft textured brushwork, earthy color palette, nostalgic slice of life, detailed hand-drawn illustration, intimate domestic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧温馨插画",
+    "thumbnail": "samples/Nostalgic_Cozy_Illustration.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Forest Anime",
+    "prompt": "classic 2D anime style, painterly forest background, nostalgic cel-shaded aesthetic, soft dappled lighting, Studio Ghibli inspired, atmospheric fantasy scenery, organic earth tones. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧森林动漫",
+    "thumbnail": "samples/Nostalgic_Forest_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Ghibli Pastoralism",
+    "prompt": "studio ghibli aesthetic, hand-drawn anime style, painterly background art, vibrant cel shading, nostalgic fantasy landscape, idyllic pastoral scenery, bright blue sky with fluffy clouds. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 吉卜力 田园主义",
+    "thumbnail": "samples/Nostalgic_Ghibli_Pastoralism.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Ghibli Summer — Dappled Watercolor Gold",
+    "prompt": "studio ghibli style, dappled sunlight, painterly anime background, lush green foliage, nostalgic summer mood, hand-painted texture, pastoral countryside. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 吉卜力 夏日 — 斑驳 水彩 金",
+    "thumbnail": "samples/Nostalgic_Ghibli_Summer_—_Dappled_Watercolor_Gold.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Ghibli Summer — Mediterranean Terracotta",
+    "prompt": "Studio Ghibli style, hand-painted anime background, vibrant Mediterranean summer, sun-drenched coastal town, dappled sunlight and shadows, saturated color palette, nostalgic whimsical atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 吉卜力 夏日 — 地中海 陶土",
+    "thumbnail": "samples/Nostalgic_Ghibli_Summer_—_Mediterranean_Terracotta.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Ghibli Verdancy",
+    "prompt": "Studio Ghibli background style, hand-painted gouache and watercolor texture, lush green foliage, dappled sunlight, high-angle master shot, nostalgic anime aesthetic, serene atmospheric perspective. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 吉卜力 葱郁",
+    "thumbnail": "samples/Nostalgic_Ghibli_Verdancy.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Ghibli Woodlands",
+    "prompt": "Studio Ghibli style, painterly anime background, dappled sunlight, lush forest canopy, nostalgic atmosphere, hand-painted texture, serene nature sanctuary. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 吉卜力 林地",
+    "thumbnail": "samples/Nostalgic_Ghibli_Woodlands.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Golden Anime",
+    "prompt": "cinematic anime background, golden hour lighting, nostalgic atmosphere, soft digital painting, volumetric sunset clouds, Japanese urban landscape, warm amber color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧黄金动漫",
+    "thumbnail": "samples/Nostalgic_Golden_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Hand-Drawn Anime",
+    "prompt": "1990s anime style, Studio Ghibli aesthetic, hand-painted background, nostalgic warm lighting, slice of life, rich jewel tones, detailed cel animation. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 手绘 动漫",
+    "thumbnail": "samples/Nostalgic_Hand-Drawn_Anime.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Midnight Solitude",
+    "prompt": "90s retro anime style, melancholic nocturnal mood, muted cool color palette, hand-drawn cel animation, soft cinematic lighting, introspective urban solitude, lo-fi aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 午夜 孤寂",
+    "thumbnail": "samples/Nostalgic_Midnight_Solitude.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Nocturnal Anime",
+    "prompt": "1990s anime style, hand-painted cel animation, nocturnal city lighting, vintage VHS film grain, cinematic retro anime, moody atmospheric color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧夜行动漫",
+    "thumbnail": "samples/Nostalgic_Nocturnal_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic OVA Aesthetic",
+    "prompt": "1990s anime style, hand-painted cel animation, vintage OVA aesthetic, painterly gouache background, bold ink outlines, cinematic lighting, subtle film grain. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧OVA美学",
+    "thumbnail": "samples/Nostalgic_OVA_Aesthetic.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Painterly Melancholy",
+    "prompt": "90s anime aesthetic, painterly brushstrokes, atmospheric lighting, nostalgic melancholia, desaturated color palette, urban and rural decay, chiaroscuro. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧绘画感忧郁",
+    "thumbnail": "samples/Nostalgic_Painterly_Melancholy.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Pastoral Anime",
+    "prompt": "studio ghibli aesthetic, hand-painted watercolor background, 90s anime style, cel-shaded characters, pastoral landscape, nostalgic atmosphere, lush green scenery. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧田园动漫",
+    "thumbnail": "samples/Nostalgic_Pastoral_Anime.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Pastoral Fantasy",
+    "prompt": "Studio Ghibli inspired, nostalgic 2d hand-drawn animation, warm golden hour lighting, painterly lush landscapes, whimsical storybook fantasy, soft cel-shaded style, volumetric clouds. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧田园幻想",
+    "thumbnail": "samples/Nostalgic_Pastoral_Fantasy.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Retro Anime",
+    "prompt": "90s retro anime style, hand-painted watercolor background, cel-shaded animation, nostalgic atmosphere, lush landscape, soft natural lighting, vintage film grain. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧复古动漫",
+    "thumbnail": "samples/Nostalgic_Retro_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Retro Cinematic Illustration",
+    "prompt": "hand-drawn cel animation, retro 90s anime style, muted earth tones, detailed background art, vintage graphic novel aesthetic, soft natural lighting, melancholic slice of life. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧复古电影感插画",
+    "thumbnail": "samples/Nostalgic_Retro_Cinematic_Illustration.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Solarpunk Cottagecore",
+    "prompt": "retro anime style, Ghibli inspired, lush green landscape, whimsical cottagecore, hand-drawn line art, vibrant saturated colors, fluffy cumulus clouds, solarpunk fantasy. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 太阳朋克 田园核",
+    "thumbnail": "samples/Nostalgic_Solarpunk_Cottagecore.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Summer Anime — Cobalt Sky Volume",
+    "prompt": "studio ghibli style, cumulonimbus clouds, vibrant blue sky, painterly digital art, nostalgic summer mood, high contrast lighting, anime background illustration. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 夏日 动漫 — 钴蓝 天空 体积",
+    "thumbnail": "samples/Nostalgic_Summer_Anime_—_Cobalt_Sky_Volume.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Summer Anime — Golden Cel Silhouette",
+    "prompt": "anime aesthetic, cumulonimbus clouds, golden hour lighting, nostalgic summer, graphic silhouettes, cel-shaded illustration, scenic background art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧夏动漫黄金赛璐璐剪影",
+    "thumbnail": "samples/Nostalgic_Summer_Anime_—_Golden_Cel_Silhouette.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Surreal Dreamscape",
+    "prompt": "retro anime style, saturated pastel palette, volumetric cumulus clouds, clean ink outlines, surreal dreamscape, lo-fi aesthetic, vibrant twilight lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 超现实 梦境·动漫",
+    "thumbnail": "samples/Nostalgic_Surreal_Dreamscape.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Twilight Anime — Lo-Fi Ambient Glimmer",
+    "prompt": "1990s anime aesthetic, cel-shaded illustration, twilight color palette, urban nostalgia, atmospheric cityscape, lo-fi melancholic mood, cinematic composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 暮色 动漫 — 低保真 氛围 微光",
+    "thumbnail": "samples/Nostalgic_Twilight_Anime_—_Lo-Fi_Ambient_Glimmer.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Twilight Anime — Retro-Broadcast Cel",
+    "prompt": "retro anime aesthetic, twilight gradient sky, silhouette landscape, vibrant purple and orange sunset, lo-fi digital painting, nostalgic atmosphere, cel-shaded texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 暮色 动漫 — 复古广播 赛璐璐",
+    "thumbnail": "samples/Nostalgic_Twilight_Anime_—_Retro-Broadcast_Cel.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Twilight Anime — Watercolor Sunset Wash",
+    "prompt": "anime aesthetic, twilight sky, solitary silhouette, painterly cumulus clouds, nostalgic mood, golden hour lighting, urban infrastructure, lo-fi atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 暮色 动漫 — 水彩 日落 水洗",
+    "thumbnail": "samples/Nostalgic_Twilight_Anime_—_Watercolor_Sunset_Wash.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Nostalgic Twilight Surrealism — Inked Cumulonimbus",
+    "prompt": "anime aesthetic, twilight color palette, cumulonimbus clouds, nostalgic atmosphere, bold ink outlines, surreal whimsical elements, saturated sunset gradients. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 暮色 超现实主义 — 墨线 积雨云",
+    "thumbnail": "samples/Nostalgic_Twilight_Surrealism_—_Inked_Cumulonimbus.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Painterly Anime Surrealism",
+    "prompt": "Studio Ghibli aesthetic, painterly gouache texture, towering cumulus clouds, vibrant anime landscape, whimsical fantasy, high-contrast saturated lighting, nostalgic scenic scale. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绘画感动漫超现实",
+    "thumbnail": "samples/Painterly_Anime_Surrealism.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Prismatic Anime Apocalypse",
+    "prompt": "vibrant anime style, hyper-saturated sunset, bold silhouette, geometric sky fragmentation, prismatic light leaks, painterly dramatic clouds, dynamic digital illustration. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜动漫末世",
+    "thumbnail": "samples/Prismatic_Anime_Apocalypse.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Retro Graphic Cel-Shaded",
+    "prompt": "90s anime cel shading, bold ink outlines, vintage graphic illustration, high contrast teal and red palette, dynamic composition, retro manga style. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古图形赛璐璐着色",
+    "thumbnail": "samples/Retro_Graphic_Cel-Shaded.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Retro Neon Anime",
+    "prompt": "90s anime style, bold ink outlines, cel-shaded illustration, high-contrast color palette, halftone textures, cyberpunk aesthetic, retro-futuristic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古霓虹动漫",
+    "thumbnail": "samples/Retro_Neon_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Retro Pop Anime",
+    "prompt": "90s anime style, bold cel-shading, graphic ink outlines, saturated pop palette, retro city pop aesthetic, high-contrast shadows, vintage hand-drawn look. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古波普动漫",
+    "thumbnail": "samples/Retro_Pop_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Serene Pastel Surrealism",
+    "prompt": "flat digital illustration, clean delicate line art, dreamy surreal atmosphere, pastel and saturated palette, symmetrical composition, lofi anime aesthetic, minimalist tropical landscape, subtle paper grain texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "宁静粉彩超现实",
+    "thumbnail": "samples/Serene_Pastel_Surrealism.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Stark Mythic Illustration",
+    "prompt": "cel-shaded character design, bold clean line art, minimalist neutral background, tactical streetwear fusion, high-contrast color palette, expressive silhouettes, mythical fantasy elements. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "冷峻神话插画",
+    "thumbnail": "samples/Stark_Mythic_Illustration.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Surreal Pastel Dreamscape",
+    "prompt": "pastel anime aesthetic, surreal whimsical landscape, clean line art, bubblegum pink and sky blue, fisheye perspective, floating sea creatures, lofi dreamscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实粉彩梦境",
+    "thumbnail": "samples/Surreal_Pastel_Dreamscape.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Vibrant Anime Dreamscapes",
+    "prompt": "vibrant anime aesthetic, saturated color palette, painterly fantasy environment, dynamic lighting, whimsical surrealism, high-contrast highlights, cinematic composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳动漫梦境",
+    "thumbnail": "samples/Vibrant_Anime_Dreamscapes.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Vibrant Anime Nostalgia",
+    "prompt": "anime art style, vibrant blue sky, towering cumulus clouds, sun-drenched lighting, painterly aesthetic, nostalgic atmosphere, saturated color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳动漫怀旧",
+    "thumbnail": "samples/Vibrant_Anime_Nostalgia.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Vibrant Anime Still-Life",
+    "prompt": "anime aesthetic, cel-shaded illustration, vibrant saturated colors, bold ink outlines, warm sun-drenched lighting, slice-of-life atmosphere, detailed still life. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳动漫静止生命",
+    "thumbnail": "samples/Vibrant_Anime_Still-Life.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Vibrant Neo-Gothic Pop",
+    "prompt": "bold cel-shaded line art, vibrant high-contrast palette, expressive character illustration, graphic vector style, neon accents, contemporary comic aesthetic, sharp geometric composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳新哥特波普",
+    "thumbnail": "samples/Vibrant_Neo-Gothic_Pop.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Vibrant Nostalgic Anime",
+    "prompt": "painterly anime style, expressive brushstrokes, sun-drenched lighting, nostalgic Japanese atmosphere, vibrant saturated colors, slice of life, high contrast composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳怀旧动漫",
+    "thumbnail": "samples/Vibrant_Nostalgic_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Vibrant Summer Anime",
+    "prompt": "vibrant anime illustration, sun-drenched lighting, cumulus clouds, cel-shaded, dynamic low-angle perspective, saturated blue skies, nostalgic summer atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳夏动漫",
+    "thumbnail": "samples/Vibrant_Summer_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Vibrant Webcomic Character Art",
+    "prompt": "bold ink outlines, expressive character design, cel shaded, vibrant color palette, stylized 2D illustration, modern webcomic aesthetic, clean digital line art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳网络漫画角色艺术",
+    "thumbnail": "samples/Vibrant_Webcomic_Character_Art.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Vintage Cybernetic Pulp",
+    "prompt": "retro sci-fi illustration, bold ink outlines, halftone texture, 90s anime aesthetic, cyberpunk atmosphere, vintage film grain, high contrast lighting, distressed paper texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古控制论纸浆",
+    "thumbnail": "samples/Vintage_Cybernetic_Pulp.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Warm Earthy Illustration",
+    "prompt": "warm earthy color palette, expressive ink linework, cross-hatched shading, stylized illustrative portrait, tactile hand-drawn texture, vintage engraving style, character-focused composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "暖泥土色插画",
+    "thumbnail": "samples/Warm_Earthy_Illustration.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Whimsical Nostalgic Maximalism",
+    "prompt": "cozy maximalism, retro anime aesthetic, intricate line art, warm pastel palette, whimsical surrealism, cluttercore composition, nostalgic storytelling. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "奇想 怀旧 极繁主义",
+    "thumbnail": "samples/Whimsical_Nostalgic_Maximalism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Cinematic Monochrome Noir — Inked Lineart",
+    "prompt": "high-contrast monochrome manga, dramatic ink wash, chiaroscuro lighting, expressive line art, screentone textures, gritty noir atmosphere, detailed hatching. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感单色黑色墨线稿",
+    "thumbnail": "samples/Cinematic_Monochrome_Noir_—_Inked_Lineart.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Cinematic Monochrome Noir — Manga Ink Hatch",
+    "prompt": "high-contrast manga ink, dramatic noir shadows, sharp cross-hatching, monochrome graphic novel, expressive brushwork, chiaroscuro lighting, seinen aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感单色黑色漫画墨排线",
+    "thumbnail": "samples/Cinematic_Monochrome_Noir_—_Manga_Ink_Hatch.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Cyber-Gothic Noir Manga",
+    "prompt": "high contrast manga illustration, sharp ink linework, chiaroscuro lighting, gothic cyberpunk fusion, screentone and halftone textures, moody atmospheric composition, edgy character design. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "赛博哥特黑色漫画",
+    "thumbnail": "samples/Cyber-Gothic_Noir_Manga.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Graphic Monochrome Narrative",
+    "prompt": "manga screentone, high-contrast ink illustration, detailed cross-hatching, dynamic perspective, monochrome graphic style, slice of life atmosphere, cyanotype blue palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形单色叙事",
+    "thumbnail": "samples/Graphic_Monochrome_Narrative.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Gritty Analog Halftone",
+    "prompt": "halftone dot matrix, high-contrast monochrome, distressed analog print, grungy screentone, vintage zine texture, photocopy artifact, stark chiaroscuro. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "粗粝模拟半色调",
+    "thumbnail": "samples/Gritty_Analog_Halftone.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Gritty Chiaroscuro Noir — Kinetic Crosshatch Ink",
+    "prompt": "high-contrast monochrome, stippling and cross-hatching, halftone screentone texture, chiaroscuro lighting, gritty ink illustration, distressed graphic aesthetic, low-key noir mood. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "粗粝 明暗对比 黑色电影 — 动感 交叉排线 水墨",
+    "thumbnail": "samples/Gritty_Chiaroscuro_Noir_—_Kinetic_Crosshatch_Ink.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Gritty Graphic Macabre",
+    "prompt": "heavy ink outlines, dark fantasy graphic novel, high-contrast chiaroscuro, screentone and stipple texture, gritty pulp horror, saturated neon accents, aggressive linework. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "粗粝图形恐怖怪诞",
+    "thumbnail": "samples/Gritty_Graphic_Macabre.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Gritty Xerox Punk",
+    "prompt": "high contrast black and white, xerox photocopy texture, punk zine aesthetic, halftone screentone, distressed collage, toner grain, gritty analog print. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "粗粝 静电复印 朋克",
+    "thumbnail": "samples/Gritty_Xerox_Punk.webp",
+    "group": "其他"
+  },
+  {
+    "name": "High-Contrast Ink Expressionism",
+    "prompt": "high-contrast ink illustration, expressive cross-hatching, bold graphic linework, screentone textures, chiaroscuro shading, stark negative space, monochrome manga aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "高对比墨表现主义",
+    "thumbnail": "samples/High-Contrast_Ink_Expressionism.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Monochrome Manga Noir",
+    "prompt": "high contrast monochrome, manga ink linework, screentone texture, halftone print, dramatic shadows, graphic novel aesthetic, stippling, retro manga style. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "单色漫画黑色",
+    "thumbnail": "samples/Monochrome_Manga_Noir.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Visceral Ink Manga",
+    "prompt": "monochrome manga, high contrast ink, expressive linework, gritty cross-hatching, dynamic action pose, dark fantasy aesthetic, screentone textures. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "内脏感墨漫画",
+    "thumbnail": "samples/Visceral_Ink_Manga.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Luminous Nostalgic Anime — Dappled Pencil Warmth",
+    "prompt": "studio ghibli inspired, watercolor and colored pencil texture, dappled sunlight, lush green foliage, nostalgic slice of life, hand-drawn ink outlines, warm summer atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮 怀旧 动漫 — 斑驳 铅笔 暖意",
+    "thumbnail": "samples/Luminous_Nostalgic_Anime_—_Dappled_Pencil_Warmth.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Luminous Pastoral Fantasy",
+    "prompt": "studio ghibli style, vibrant pastoral landscape, fluffy cumulus clouds, lush green hills, saturated watercolor aesthetic, nostalgic summer mood, sunny fantasy world. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮田园幻想",
+    "thumbnail": "samples/Luminous_Pastoral_Fantasy.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Luminous Pastoral Impressionism",
+    "prompt": "painterly brushstrokes, vibrant gouache texture, high-contrast lighting, nostalgic atmosphere, Ghibli-esque, impasto techniques, golden hour glow, expansive landscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮田园印象派",
+    "thumbnail": "samples/Luminous_Pastoral_Impressionism.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Luminous Solarpunk Sanctuary",
+    "prompt": "Studio Ghibli aesthetic, dappled sunlight, lush emerald foliage, painterly textures, serene turquoise water, solarpunk atmosphere, warm cinematic lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮太阳朋克圣所",
+    "thumbnail": "samples/Luminous_Solarpunk_Sanctuary.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Luminous Surreal Pastoral",
+    "prompt": "studio ghibli style, painterly landscape, vibrant green hills, atmospheric depth, surreal pastoral, dappled sunlight, dreamlike atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮超现实田园",
+    "thumbnail": "samples/Luminous_Surreal_Pastoral.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Ghibli Pastoral — Azure Storybook Warmth",
+    "prompt": "Ghibli-inspired, vibrant painterly landscape, nostalgic summer atmosphere, soft atmospheric lighting, lush green meadows, dreamy digital illustration, whimsical storybook aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 吉卜力 田园 — 蔚蓝 绘本 暖意",
+    "thumbnail": "samples/Nostalgic_Ghibli_Pastoral_—_Azure_Storybook_Warmth.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Ghibli Pastoral — Cumulus Summer Light",
+    "prompt": "Studio Ghibli style, hand-painted anime background, lush green hills, towering cumulus clouds, nostalgic summer atmosphere, vibrant landscape painting, scenic pastoral vista. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧吉卜力田园积云夏浅",
+    "thumbnail": "samples/Nostalgic_Ghibli_Pastoral_—_Cumulus_Summer_Light.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Nostalgic Ghibli Summer — Towering Gouache Clouds",
+    "prompt": "Studio Ghibli style, vibrant gouache painting, saturated summer colors, cumulonimbus clouds, painterly brushstrokes, nostalgic rural landscape, anime background art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 吉卜力 夏日 — 高耸 水粉 云",
+    "thumbnail": "samples/Nostalgic_Ghibli_Summer_—_Towering_Gouache_Clouds.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Sun-Drenched Whimsical Nostalgia",
+    "prompt": "storybook illustration style, soft painterly gouache texture, sun-drenched golden light, whimsical nostalgic atmosphere, vibrant pastel color palette, gentle backlit glow, Ghibli-inspired landscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "日浸润奇想怀旧",
+    "thumbnail": "samples/Sun-Drenched_Whimsical_Nostalgia.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Surreal Pastoral Impressionism",
+    "prompt": "surreal pastoral landscape, vibrant saturated greens, painterly digital art, dramatic lighting, whimsical narrative elements, monumental natural forms, Ghibli-inspired atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实田园印象派",
+    "thumbnail": "samples/Surreal_Pastoral_Impressionism.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Vibrant Ghibli Fantasy",
+    "prompt": "Ghibli-inspired, vibrant digital painting, lush green landscape, fluffy cumulus clouds, majestic fantasy vista, bright daylight, stylized adventure art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳吉卜力幻想",
+    "thumbnail": "samples/Vibrant_Ghibli_Fantasy.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Vibrant Skyward Perspective",
+    "prompt": "low angle shot, vivid blue sky, bright natural light, minimalist composition, airy atmosphere, crisp photography, wide angle perspective. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳仰望天空透视",
+    "thumbnail": "samples/Vibrant_Skyward_Perspective.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Vibrant Whimsical Fantasy",
+    "prompt": "stylized digital painting, whimsical fantasy landscape, vibrant saturated pastel palette, studio ghibli inspired, fluffy volumetric clouds, storybook illustration style, cozy adventure atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳奇想幻想",
+    "thumbnail": "samples/Vibrant_Whimsical_Fantasy.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Vibrant Whimsical Solarpunk",
+    "prompt": "vibrant vector art, Ghibli-inspired aesthetic, saturated landscape, bold outlines, sunny day, whimsical adventure, fluffy cumulus clouds, clean line art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳奇想太阳朋克",
+    "thumbnail": "samples/Vibrant_Whimsical_Solarpunk.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "Anime Style",
+    "prompt": "Style: A clean, expressive illustration style built on confident, simplified linework defining stylized, appealing proportions, flat-to-cel-based shading applied with straightforward graphic clarity, large expressive eyes carrying the primary emotional weight of the design, a bright, approachable simplicity that favors instant readability over rendering complexity, and a versatile, universally recognizable animated charm rooted in broad contemporary Japanese animation convention. Influenced by: contemporary anime illustration tradition, cel-shaded character-design technique, Japanese animation studio practice, mainstream manga-adaptation method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动漫风格",
+    "thumbnail": "samples/Anime_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Ghibli Style",
+    "prompt": "Style: A gentle, hand-painted animation illustration style built on soft watercolor-inspired shading that gives every plane a breathable, tender texture, meticulous naturalistic detail applied with unhurried patience, rounded, expressive proportions carrying quiet emotional sincerity, a hushed, wondrous stillness pervading even the most fantastical scenes, and a nostalgic, wholesome hand-crafted intensity that feels timeless and deeply human. Influenced by: Hayao Miyazaki, Studio Ghibli production technique, traditional cel-animation painting method, naturalist watercolor illustration tradition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "吉卜力风格",
+    "thumbnail": "samples/Ghibli_Style.webp",
+    "group": "吉卜力"
+  },
+  {
+    "name": "70s Anime",
+    "prompt": "Style: vintage Japanese animation aesthetics characterized by bold graphic draftsmanship, angular yet elegant character construction, expressive hand-drawn linework, simplified cel-painted rendering, dramatic visual staging, and a strong sense of romantic adventure. The style favors iconic silhouettes, emotional intensity, mechanical precision, and cinematic composition over contemporary polish, embracing the charm of traditional animation techniques, visible artistic craftsmanship, and classic storytelling sensibilities. Its visual identity balances dynamism, sincerity, and retro-futurist imagination, reminiscent of Leiji Matsumoto and Yoshikazu Yasuhiko, inspired by Space Battleship Yamato and Mobile Suit Gundam.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "70年代动漫",
+    "thumbnail": "samples/70s_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Manga Style",
+    "prompt": "Style: A clean, expressive black-and-white illustration style built on confident, precise linework defining stylized, appealing proportions, restrained tonal shading achieved through screentone patterning or fine cross-hatching rather than continuous gradation, large expressive eyes carrying much of the emotional weight, a dynamic, panel-ready clarity favoring instant visual readability, and a versatile, universally recognizable illustrative charm rooted in mainstream Japanese comic-illustration convention. Influenced by: mainstream manga illustration tradition, screentone-shading technique, Weekly Shōnen Jump publishing convention, Japanese comic-art practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "漫画风格",
+    "thumbnail": "samples/Manga_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Akira Style",
+    "prompt": "Style: A meticulously detailed retro-futurist anime illustration style built on dense, precise linework rendering technology and urban decay with obsessive mechanical accuracy, flat cel-shaded color fields laid beneath sharp confident outline, dramatic neon and shadow contrast that carves gritty cyberpunk atmosphere across every surface, kinetic motion conveyed through bold speed-line dynamism, and a gritty, dystopian animation gravitas that feels both hand-crafted and technologically obsessive. Influenced by: Katsuhiro Otomo, 1980s cel-animation technique, cyberpunk anime tradition, retro-futurist manga illustration.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "阿基拉风格",
+    "thumbnail": "samples/Akira_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Akira Toriyama Style",
+    "prompt": "Style: clean and highly readable linework, appealing character-focused design language, expressive forms, dynamic silhouettes, polished cel-style rendering, balanced stylization, energetic visual storytelling, strong graphic clarity, and a playful yet technically disciplined aesthetic that emphasizes personality and visual impact, reminiscent of Akira Toriyama and Toyotarou, inspired by Dragon Ball and Chrono Trigger.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鸟山明风格",
+    "thumbnail": "samples/Akira_Toriyama_Style.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Atsushi Ohkubo Style",
+    "prompt": "Style: bold graphic aesthetics characterized by sharp silhouette design, dynamic linework, stylized anatomy, exaggerated visual rhythm, striking contrast, and highly recognizable shape language, blending manga expressiveness with contemporary illustration sensibilities through energetic compositions, refined ink work, and a distinctive balance between elegance and intensity, reminiscent of Atsushi Ohkubo and Tite Kubo, inspired by Soul Eater and Fire Force.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "大久保笃风格",
+    "thumbnail": "samples/Atsushi_Ohkubo_Style.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Attack on Titan Style",
+    "prompt": "Style: A gritty, high-tension manga-anime illustration style built on dense, realistic linework rendering musculature and gear with mechanical precision, dramatic dark shading and heavy cross-hatched texture that carves grim, intensity into every surface, dynamic extreme-perspective framing charged with kinetic urgency and scale, desaturated tonal harmony broken by stark high-contrast lighting in moments of violence or dread, and a grim, visceral action-illustration gravitas suffused with existential tension. Influenced by: Hajime Isayama, dark shōnen manga tradition, cel-shaded action-anime technique, gritty military-fantasy illustration.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "进击的巨人风格",
+    "thumbnail": "samples/Attack_on_Titan_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Chainsaw Man Style",
+    "prompt": "Style: A raw, gritty manga-illustration style built on loose, aggressive linework carrying deliberately unpolished, visceral energy, stark high-contrast shading that swallows much of the composition in engulfing shadow , a chaotic, kinetic sense of motion charged with unpredictable, feral intensity, meticulous grotesque body-horror rendering balanced against darkly comedic character design, and a raw, unflinching contemporary shōnen edge that feels equal parts brutal and irreverently funny. Influenced by: Tatsuki Fujimoto, contemporary dark-shōnen manga tradition, raw ink-heavy illustration technique, body-horror action-manga practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电锯人风格",
+    "thumbnail": "samples/Chainsaw_Man_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Jujutsu Kaisen Style",
+    "prompt": "Style: A dynamic, high-contrast shōnen-manga illustration style built on confident, angular linework carrying sharp, kinetic action-driven posing, dense, moody shading with dramatic ink-heavy shadow blocking, a stylish, contemporary silhouette design balancing realism with graphic exaggeration, meticulous attention to fluid, high-impact motion within otherwise tightly controlled composition, and a fierce, cinematic shōnen intensity that feels equal parts stylish and visceral. Influenced by: Gege Akutami, MAPPA animation-adaptation tradition, cel-shaded dark-shōnen technique, contemporary action-manga character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "咒术回战风格",
+    "thumbnail": "samples/Jujutsu_Kaisen_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "My Hero Academia Style",
+    "prompt": "Style: A bold, dynamic shōnen-manga illustration style built on clean, confident linework carrying energetic, superhero-inspired posing, bright cel-based shading with punchy, graphic contrast reinforcing dramatic action, a hopeful, larger-than-life visual energy balanced against grounded emotional character work, meticulous costume and power-effect detail rendered with crisp graphic clarity, and an earnest, high-energy shōnen intensity that feels equal parts heroic spectacle and heartfelt coming-of-age drama. Influenced by: Kōhei Horikoshi, Studio Bones animation-adaptation tradition, cel-shaded superhero-manga technique, contemporary shōnen character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "我的英雄学院风格",
+    "thumbnail": "samples/My_Hero_Academia_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Berserk Manga Style",
+    "prompt": "Style: monumental dark fantasy manga aesthetics characterized by obsessive crosshatched detail, rugged textural density, dramatic black-and-white value structure, intricate ornamental craftsmanship, and an overwhelming sense of weight, scale, and historical depth. The style emphasizes brutal realism, weathered material rendering, architectural complexity, and emotionally intense visual storytelling, constructing imagery through countless layers of inked detail and highly disciplined draftsmanship. Rather than stylized simplification, it pursues visual immersion through realism, atmosphere, and relentless craftsmanship, creating artwork that feels ancient, tragic, and profoundly human. The visual language balances violence and beauty, grandeur and decay, with extraordinary attention to texture, structure, and narrative gravitas, reminiscent of Kentaro Miura and Hal Foster, inspired by Berserk and Prince Valiant.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "剑风传奇漫画风格",
+    "thumbnail": "samples/Berserk_Manga_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Bleach Style",
+    "prompt": "Style: A sleek, high-contrast shōnen-anime illustration style built on confident, angular linework carrying sharp, stylish silhouette design, bold cel-based shading with dramatic, graphic shadow blocking rather than smooth gradation, a moody, atmospheric restraint balanced against dynamic, action-charged posing, meticulous attention to elegant, flowing motion within otherwise crisp, controlled composition, and a stylish, brooding shōnen intensity that feels equal parts fashionable and fiercely kinetic. Influenced by: Tite Kubo, Studio Pierrot animation tradition, cel-shaded shōnen illustration technique, stylish action-anime character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "死神风格",
+    "thumbnail": "samples/Bleach_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Frieren Style",
+    "prompt": "Style: A gentle, atmospheric anime-illustration style built on soft, delicate linework carrying a quiet, contemplative restraint, muted cel-based shading with subtle gradation rather than dramatic contrast, a hushed, melancholic stillness pervading even fantastical composition, meticulous attention to naturalistic environmental detail balanced against calm, understated character design, and a serene, wistful anime intensity that feels contemplative, tender, and quietly profound. Influenced by: Kanehito Yamada (original), Studio Madhouse animation-adaptation tradition, atmospheric anime-illustration technique, contemplative fantasy character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "葬送的芙莉莲风格",
+    "thumbnail": "samples/Frieren_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Boichi Style",
+    "prompt": "Style: A meticulously rendered manga-illustration style built on dense, hyper-precise linework that treats anatomy and mechanical detail with equal obsessive accuracy, dramatic high-contrast shading that carves powerful, sculptural form through confident cross-hatched shadow, a technically disciplined realism balancing muscular anatomical grounding with dynamic, kinetic posing, meticulous attention to material and structural logic rewarding close inspection, and a bold, technically virtuosic manga intensity that feels equal parts scientific precision and explosive physicality. Influenced by: Boichi, Dr. Stone manga art tradition, hyper-detailed manga illustration technique, technical-precision character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "Boichi风格",
+    "thumbnail": "samples/Boichi_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Cinematic Anime",
+    "prompt": "Style: premium animation aesthetics characterized by refined linework, sophisticated lighting design, cinematic composition, nuanced atmospheric depth, polished rendering, and emotionally driven visual storytelling, blending the clarity of high-end anime production with filmic realism through controlled detail, expressive staging, and exceptional artistic cohesion, reminiscent of Makoto Shinkai and Yoshiyuki Sadamoto, inspired by Your Name and Evangelion: 3.0+1.0 Thrice Upon a Time.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感动漫",
+    "thumbnail": "samples/Cinematic_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Classic Shojo Illustration",
+    "prompt": "Style: elegant manga-inspired aesthetics characterized by graceful linework, refined visual delicacy, expressive emotional storytelling, sophisticated composition, ornamental detailing, and a strong sense of romantic atmosphere, blending stylized beauty with polished illustration craftsmanship through airy visual rhythms, nuanced rendering, and timeless narrative charm, reminiscent of Riyoko Ikeda and CLAMP, inspired by The Rose of Versailles and Cardcaptor Sakura.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "经典少女漫画插画",
+    "thumbnail": "samples/Classic_Shojo_Illustration.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Euromanga Style",
+    "prompt": "Style: A hybrid illustration style built on Japanese manga-derived clean linework merged with European bande-dessinée compositional discipline, cel-based shading softened by more naturalistic tonal transition than typical manga convention, anatomically grounded proportions carrying a slightly more realistic weight than mainstream shōnen or shōjo tradition, meticulous, patient rendering of environment and costume detail rewarding close inspection, and a polished, cross-cultural illustration sensibility that bridges Eastern character-design fluency with Western graphic-novel craftsmanship. Influenced by: Franco-Belgian manga-influenced illustration movement, European graphic-novel tradition, hybrid manga-bande-dessinée technique, contemporary Euromanga publishing practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "欧式漫画风格",
+    "thumbnail": "samples/Euromanga_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Watercolor Anime Illustration",
+    "prompt": "Style: A soft, luminous illustration style built on delicate translucent washes blending seamlessly with clean anime-adjacent linework, gentle bleeding and diffusion at the edges lending each plane a tender, organic softness, restrained tonal layering achieved through patient, unhurried wash-building rather than opaque coverage, a hushed, dreamlike stillness carried through soft directional light, and a poetic, wistful character-illustration finish that feels equally hand-painted and anime-refined. Influenced by: traditional watercolor-and-wash technique, contemporary anime-illustration tradition, gentle wash-blending practice, semi-realistic character-art method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "水彩动漫插画",
+    "thumbnail": "samples/Watercolor_Anime_Illustration.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Granblue Fantasy Pin-Up Style",
+    "prompt": "Style: A richly detailed JRPG character-illustration style built on crisp painterly linework blended seamlessly into soft airbrushed shading, glossy semi-realistic rendering that gives skin and hair a polished, luminous finish without tipping into full photorealism, confident glamorous pin-up posing framed with clean graphic composition, delicately layered ornamental costume detail rendered with meticulous craftsmanship, and a vibrant, high-production mobile-gacha polish that feels equally at home as key art and collectible card illustration. Influenced by: Minaba Hideo, Cygames character-art direction, JRPG gacha illustration technique, semi-realistic anime rendering.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "碧蓝幻想海报风格",
+    "thumbnail": "samples/Granblue_Fantasy_Pin-Up_Style.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Katsuya Terada Style",
+    "prompt": "Style: A ferociously energetic illustration style built on wild, gestural linework that captures raw movement and muscular dynamism in every stroke, loose ink-driven cross-hatching layered with confident painterly color, chaotic yet controlled compositions bursting with kinetic tension, richly textured surface detail giving textures a visceral, almost sculptural intensity, and a bold, untamed painterly ferocity that feels equally at home in fine art and manga tradition. Influenced by: Katsuya Terada, Japanese gekiga illustration, ink-and-color technique, fantasy creature illustration.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "寺田克也风格",
+    "thumbnail": "samples/Katsuya_Terada_Style.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Manhwa Ultradetailed Art",
+    "prompt": "Style: A richly polished Korean digital-comic illustration style built on crisp, precise linework merged seamlessly with dense, meticulous rendering across skin, hair, and costume, exhaustive layered shading that builds photographic depth while retaining a clean, semi-realistic anime-adjacent finish, luminous soft-gradient highlights giving every surface a glossy, high-production sheen, obsessive attention to fine ornamental and textural detail rewarding close inspection, and a polished, high-stakes cinematic webtoon intensity built for full-screen serialized impact. Influenced by: Redice Studio digital-coloring technique, Korean manhwa production standard, semi-realistic webtoon rendering practice, high-detail digital-comic illustration tradition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "韩漫超精细画风",
+    "thumbnail": "samples/Manhwa_Ultradetailed_Art.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Murata Hyperrealism",
+    "prompt": "Style: A meticulously rendered manga-illustration style built on obsessive anatomical precision that treats musculature and material detail with near-photographic exactness, dramatic high-contrast shading carving powerful, sculptural form through confident cross-hatched shadow, a technically disciplined realism that pushes traditional manga linework toward hyperreal density, dynamic, kinetic posing charged with explosive physical presence, and a bold, virtuosic manga intensity that feels equal parts scientific precision and raw physical spectacle. Influenced by: Yusuke Murata, One-Punch Man manga tradition, hyper-detailed manga illustration technique, technical-precision character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "村田雄介超写实",
+    "thumbnail": "samples/Murata_Hyperrealism.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "MidJourney Niji-Inspired Digital Illustration",
+    "prompt": "Style: A vibrant, painterly anime-fusion illustration style defined by luminous soft-gradient shading, glowing rim light and dreamy bloom haloing the figure, richly saturated color palettes that lean pastel-fantasy or neon-vivid by turns, delicate linework blended seamlessly into airbrushed color rather than hard-outlined cel shading, whimsical atmospheric particles or floating light motes drifting through the scene, and a lush, otherworldly polish that feels equally at home as a fantasy book cover or a modern anime key visual. Influenced by: Niji Journey model aesthetics, modern anime key visual art, Makoto Shinkai lighting style, digital gouache illustration.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "MidJourney Niji风格数字插画",
+    "thumbnail": "samples/MidJourney_Niji-Inspired_Digital_Illustration.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Shindol Style",
+    "prompt": "Style: A polished Korean webtoon illustration style rendered with soft cel-shaded gradients over cleanly inked linework, realistically proportioned yet subtly idealized figures with smooth, luminous skin and delicately blushed cheeks, expressive detailed eyes rendered with glossy multi-layered highlights, soft ambient studio-like lighting that keeps shadows gentle and skin tones warm, and a clean, contemporary digital-comic polish characteristic of modern webtoon romance and drama art. Influenced by: Shindol, Korean webtoon illustration, Manhwa digital coloring technique, romance webtoon art direction.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "Shindol风格",
+    "thumbnail": "samples/Shindol_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Solo Leveling Art",
+    "prompt": "Style: A high-impact cinematic manhwa illustration style combining hyper-detailed digital rendering with dramatic low-angle, action-movie framing, richly saturated dark color palettes cut through by glowing violet, blue, or crimson, meticulously rendered textures with sharp specular highlighting, dynamic motion lines heightening a sense of raw power, and a sleek, high-production webtoon polish that reads as equal parts video-game key art and blockbuster action illustration. Influenced by: DUBU (Redice Studio), Solo Leveling webtoon art direction, Korean manhwa digital coloring technique, cinematic video-game concept art.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "我独自升级画风",
+    "thumbnail": "samples/Solo_Leveling_Art.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Pony 2.5D Realism",
+    "prompt": "Style: A hybrid illustration style built on flat anime-derived linework pushed toward volumetric, near-photographic shading, smooth gradient rendering that gives skin and hair a soft three-dimensional depth while retaining crisp graphic outline at the edges, meticulously blended highlight transitions that bridge cel-shading simplicity with painterly light behavior, confident anatomical grounding that leans semi-realistic without abandoning stylized facial proportion, and a polished, technically ambitious rendering intensity that sits deliberately between flat illustration and full photorealism. Influenced by: checkpoint-trained diffusion-model 2.5D aesthetic, semi-realistic anime rendering tradition, gacha-game character-art technique, hybrid cel-to-painterly shading practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "小马 2.5D写实",
+    "thumbnail": "samples/Pony_2.5D_Realism.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Pony/Illustrious Checkpoint Style",
+    "prompt": "Style: A vibrant, high-saturation anime-illustration style built on crisp, confidently defined linework paired with smooth cel-to-airbrush hybrid shading, glossy specular highlights concentrated on eyes, lips, and skin for an immediately eye-catching finish, exaggerated yet anatomically coherent proportions calibrated for instant visual appeal, densely rendered hair and costume detail balanced against relatively simplified background treatment, and a polished, community-model illustration intensity optimized for striking, shareable single-character compositions. Influenced by: Danbooru-tagged anime illustration convention, checkpoint-trained diffusion-model aesthetic, gacha/booru community art style, semi-realistic anime rendering practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "小马/Illustrious模型风格",
+    "thumbnail": "samples/Pony_Illustrious_Checkpoint_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Yoshitaka Amano Style",
+    "prompt": "Style: An ethereal, elongated illustration style built on delicate, flowing linework that stretches anatomy into graceful, almost weightless proportion, translucent layered washes that let ink and pigment bleed softly into one another rather than sit as flat color, a dreamlike fragility carried through sparse, deliberate mark-making surrounded by generous negative space, ornamental fine detail concentrated in hair and fabric while the broader form stays airy and unresolved, and a haunting, otherworldly elegance that feels simultaneously fragile and mythic. Influenced by: Yoshitaka Amano, Final Fantasy character-art tradition, ink-wash illustration technique, Vampire Hunter D illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天野喜孝风格",
+    "thumbnail": "samples/Yoshitaka_Amano_Style.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Yoshitaka Amano Fine Art",
+    "prompt": "Style: ethereal fine art aesthetics characterized by calligraphic linework, graceful visual ambiguity, flowing ornamental forms, delicate painterly textures, and a dreamlike fusion of elegance and abstraction. The style favors suggestion over definition, using elongated proportions, layered decorative motifs, atmospheric negative space, and fluid visual rhythms to create imagery that feels poetic, otherworldly, and timeless. Rather than pursuing realism, it embraces expressive symbolism, visual fragility, and emotional resonance through sophisticated composition and refined artistic intuition. The result evokes the feeling of an illuminated myth, balancing luxury, mystery, and imagination with an unmistakably lyrical sensibility, reminiscent of Yoshitaka Amano and Erté, inspired by Vampire Hunter D and Final Fantasy VI concept artwork.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天野喜孝纯艺术",
+    "thumbnail": "samples/Yoshitaka_Amano_Fine_Art.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Death Note Style",
+    "prompt": "Style: A dark, meticulously detailed manga-illustration style built on dense, precise linework rendering both anatomy and psychological tension with obsessive control, dramatic high-contrast shading that carves stark, engulfing shadow across brooding, angular composition, a restrained, cerebral intensity conveyed through sharp facial modeling and calculated posing, richly rendered fine detail balanced against vast negative space charged with unspoken menace, and a somber, suspenseful gravitas that feels equal parts psychological thriller and gothic elegance. Influenced by: Takeshi Obata, dark shōnen-manga illustration tradition, high-contrast cel-shaded technique, psychological-thriller manga practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "死亡笔记风格",
+    "thumbnail": "samples/Death_Note_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "JoJo's Bizarre Adventure Style",
+    "prompt": "Style: A flamboyant, hyper-stylized manga-illustration style built on exaggerated, statuesque anatomy carrying dramatic fashion-forward posing, bold, high-contrast linework rendering musculature with sculptural, almost architectural precision, saturated graphic patterning integrated directly into confident silhouette design, dynamic, theatrical composition charged with operatic intensity and flair, and a bold, unapologetically stylish shōnen extravagance that feels equal parts high fashion and larger-than-life spectacle. Influenced by: Hirohiko Araki, flamboyant shōnen-manga tradition, sculptural anatomical-illustration technique, theatrical fashion-forward character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "JOJO的奇妙冒险风格",
+    "thumbnail": "samples/JoJo's_Bizarre_Adventure_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "One Piece Style",
+    "prompt": "Style: A bold, expressive shōnen-manga illustration style built on confident, energetic linework carrying exaggerated, rubber-hose-adjacent proportion flexibility, dynamic, kinetic posing charged with over-the-top comedic and dramatic range in equal measure, simplified cel-based shading that prioritizes bold graphic readability over subtle gradation, richly imaginative silhouette design that pushes anatomy and costume into instantly iconic exaggeration, and an adventurous, larger-than-life shōnen energy that balances whimsical humor with genuine emotional weight. Influenced by: Eiichiro Oda, Weekly Shōnen Jump illustration tradition, cel-shaded anime-adaptation technique, adventure-shōnen character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "海贼王风格",
+    "thumbnail": "samples/One_Piece_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Sailor Moon Style",
+    "prompt": "Style: A luminous, romantic shōjo-anime illustration style built on delicate, sparkling linework paired with soft cel shading punctuated by dreamy glow and starburst highlight accents, large, deeply detailed eyes carrying the emotional core of every expression, flowing, elongated proportions with a graceful, idealized elegance, decorative sparkle and floral motif woven lightly through hair and costume rendering, and a nostalgic, magical-girl radiance that feels tender, whimsical, and unmistakably 90s-shōjo. Influenced by: Naoko Takeuchi, 90s shōjo-anime tradition, magical-girl cel-animation technique, Toei Animation production practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "美少女战士风格",
+    "thumbnail": "samples/Sailor_Moon_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Chibi Anime",
+    "prompt": "Style: A super-deformed illustration style built on drastically compressed proportion where the head dominates a tiny, simplified body, minimal, rounded linework carrying maximum cuteness with minimal detail, flat-to-cel-based shading applied with cheerful simplicity, oversized expressive eyes and features exaggerated for instant emotional charm, and an endearing, playful miniature intensity that feels irresistibly cute and effortlessly lighthearted. Influenced by: chibi/super-deformed anime tradition, kawaii character-design technique, gag-manga illustration practice, cute-culture Japanese comic method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "Q版动漫",
+    "thumbnail": "samples/Chibi_Anime.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Anime Key Visual",
+    "prompt": "Style: A polished, high-production anime-illustration style built on crisp, confident linework merged with meticulously blended cel-to-gradient shading, dramatic promotional-grade lighting establishing bold mood within a single striking composition, richly detailed costume and character rendering balanced against clean, poster-ready silhouette clarity, dynamic yet composed posing calibrated for maximum visual impact at a glance, and a polished, franchise-defining illustration intensity built for instant recognition and promotional impact. Influenced by: contemporary anime-production key-visual tradition, promotional illustration technique, franchise-defining character-art practice, high-production anime-studio rendering method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动漫主视觉图",
+    "thumbnail": "samples/Anime_Key_Visual.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Junji Ito Style",
+    "prompt": "Style: A meticulously detailed horror-manga illustration style built on dense, obsessive fine linework and cross-hatching that renders skin, hair, and texture with unsettling hyper-precision, ordinary human forms twisted into spiraling, biologically wrong distortions and body horror, stark black-and-white contrast with pools of inky shadow swallowing the edges of the frame, wide unblinking eyes carrying quiet dawning dread, and a slow-building, deeply unsettling atmosphere of cosmic horror seeping into mundane settings. Influenced by: Junji Ito, Tomie and Uzumaki manga art, body-horror illustration, ink cross-hatching technique.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "伊藤润二风格",
+    "thumbnail": "samples/Junji_Ito_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Anime Illustration",
+    "prompt": "Style: polished anime-inspired artwork featuring clean linework, expressive design language, refined cel-shading, controlled stylization, appealing visual clarity, carefully structured forms, and high-quality rendering that balances readability with emotional impact, emphasizing professional animation aesthetics and contemporary illustration craftsmanship, reminiscent of Yoshiyuki Sadamoto and Shingo Abe, inspired by Neon Genesis Evangelion and Your Name.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动漫插画",
+    "thumbnail": "samples/Anime_Illustration.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Ultradetailed Manga Illustration",
+    "prompt": "Style: exceptionally dense manga aesthetics characterized by obsessive line fidelity, intricate textural rendering, advanced visual layering, meticulous hatch work, precise structural draftsmanship, and an extraordinary concentration of graphical information. The style emphasizes complexity, craftsmanship, and prolonged visual exploration, rewarding close inspection through micro-detail, architectural precision, elaborate costume design, and highly refined material interpretation. Rather than relying on simplified manga shorthand, it pursues visual richness, technical virtuosity, and immersive image construction while preserving strong readability and compositional control. The overall effect feels ambitious, authoritative, and intensely crafted, balancing narrative clarity with astonishing detail density and artistic dedication, reminiscent of Kentaro Miura and Tsutomu Nihei, inspired by Berserk and BLAME!.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超精细漫画插画",
+    "thumbnail": "samples/Ultradetailed_Manga_Illustration.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Polished Ultrarealistic Anime Pin-Up",
+    "prompt": "Style: A high-gloss digital illustration style merging ultrarealistic rendering of skin, hair, and fabric with idealized anime facial structure and expressive large eyes, glassy specular highlights coating lips, skin, and hair strands like fresh lacquer, a confident pin-up pose with exaggerated curves softened by airbrush-smooth shading gradients, vibrant saturated color palettes popping against clean or softly blurred backdrops, and a glossy, collectible-print polish that reads as equal parts anime key visual and glamour illustration. Influenced by: Range Murata, SakimiChan, gacha-game character art, airbrush pin-up illustration.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "精致超写实动漫海报",
+    "thumbnail": "samples/Polished_Ultrarealistic_Anime_Pin-Up.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Thin Delicate Outline Romantic Anime-Photographic Hybrid",
+    "prompt": "Style: A tenderly rendered illustration style built on impossibly fine, barely-there contour linework that whispers rather than defines, seamlessly merged with photographically convincing tonal depth and light behavior, a gentle, wistful softness carried through delicate gradient transition rather than any hard graphic edge, meticulous realism in structural modeling coexisting quietly with idealized anime-adjacent proportion, a hushed, sentimental intimacy pervading every composition, and a quietly luminous, emotionally tender finish that feels equally drawn and photographed. Influenced by: Ilya Kuvshinov, semi-realistic anime-illustration technique, photobashing rendering practice, contemporary romantic-portrait illustration method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "细线浪漫动漫摄影混合",
+    "thumbnail": "samples/Thin_Delicate_Outline_Romantic_Anime-Photographic_Hybrid.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Cel Shading",
+    "prompt": "Style: A crisp, flat-shaded rendering style built on hard-edged tonal division that separates each plane of light and shadow into distinct, uniform steps rather than smooth gradation, confident bold outline holding every shape with graphic clarity, minimal color banding replacing any continuous blending, a clean, deliberate simplicity that mimics hand-drawn animation logic within a fully dimensional render, and a punchy, graphic-meets-dimensional intensity that feels stylized, crisp, and instantly readable. Influenced by: cel-shading rendering technique, non-photorealistic 3D-rendering practice, anime-adjacent toon-shader method, stylized game-rendering tradition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "赛璐珞着色",
+    "thumbnail": "samples/Cel_Shading.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Khyleri Style",
+    "prompt": "Style: A vibrant, expressive anime-illustration style built on clean, confident linework carrying a distinctly whimsical, slightly exaggerated character sensibility, smooth cel-to-gradient shading blending polished anime rendering with playful, quirky proportion, a surreal, dreamlike compositional sensibility that mixes humor and melancholy within the same frame, meticulous attention to expressive, emotionally readable posing and gesture, and a distinctive, contemporary fan-art vibrancy that feels both technically polished and unmistakably personal. Influenced by: Khyleri, contemporary anime fan-art illustration tradition, semi-realistic cel-shaded technique, whimsical character-illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "Khyleri风格",
+    "thumbnail": "samples/Khyleri_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "80s Anime Style",
+    "prompt": "Style: A soft, nostalgic retro-anime illustration style built on gentle, rounded linework carrying warm, understated charm, muted cel-based shading with restrained, naturalistic gradation applied by hand rather than digital blending, a hazy, film-grain-adjacent softness pervading every composition, delicate attention to expressive, large eyes rendered with a gentler, less angular sensibility than contemporary anime convention, and a wistful, retro-romantic sincerity that feels tender, sincere, and quietly of its era. Influenced by: Studio Pierrot and Sunrise 1980s animation tradition, retro cel-animation painting technique, hand-inked classic-anime illustration practice, vintage animation-cel rendering method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "80年代动漫风格",
+    "thumbnail": "samples/80s_Anime_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Modern Pokémon Anime Style",
+    "prompt": "Style: A bright, clean animation-illustration style built on confident, simplified linework carrying appealing, rounded proportion, smooth cel-based shading applied with cheerful graphic clarity, expressive large eyes carrying much of the emotional warmth of the design, a vivid, high-energy compositional vibrancy favoring instant readability, and a wholesome, adventurous anime charm that feels bright, friendly, and unmistakably contemporary. Influenced by: OLM Inc. animation-production technique, contemporary anime cel-shaded illustration practice, Ken Sugimori character-design tradition, mainstream Japanese animation-studio method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "现代宝可梦动漫风格",
+    "thumbnail": "samples/Modern_Pokémon_Anime_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "CLAMP Style",
+    "prompt": "Style: An elegant, elongated shōjo-manga illustration style built on sweeping, fluid linework that stretches proportion into graceful, dramatic exaggeration, richly detailed, ornately layered rendering that treats intricate pattern-work with obsessive linear precision, delicate cross-hatched shading applied with restrained, refined subtlety, a hushed, theatrical elegance carried through elongated, willowy posing, and a dramatic, gothic-romantic manga intensity that feels lavish, sophisticated, and unmistakably distinctive. Influenced by: CLAMP, contemporary shōjo-manga illustration tradition, ornate linework technique, gothic-romantic character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "CLAMP风格",
+    "thumbnail": "samples/CLAMP_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Naruto Style",
+    "prompt": "Style: A bold, expressive shōnen-manga illustration style built on confident, energetic linework carrying dynamic, action-driven proportion, cel-based shading applied with punchy, graphic clarity rather than smooth gradation, high-impact composition, meticulous attention to fluid, high-speed motion balanced against grounded emotional character work. Influenced by: Masashi Kishimoto, Studio Pierrot animation-adaptation tradition, cel-shaded shōnen illustration technique, Naruto Manga, Boruto Manga, adventure-shōnen character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "火影忍者风格",
+    "thumbnail": "samples/Naruto_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Polished Mobile Gacha Style",
+    "prompt": "Style: A glossy, high-production character-illustration style built on crisp painterly linework blended seamlessly into soft airbrushed shading, richly luminous textures and rendering that reads as premium and collectible at a glance, confident dynamic vibes framed for maximum instant appeal within a compact card format,  vibrant, high-polish mobile-game key-art sheen optimized for eye-catching showcase. Influenced by: Cygames art direction, Hoyoverse gacha illustration technique, semi-realistic anime rendering, mobile key-art production standard.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "精致手游抽卡风格",
+    "thumbnail": "samples/Polished_Mobile_Gacha_Style.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Crayon Shin-chan Style",
+    "prompt": "Style: A bold, flat cartoon illustration style built on thick, confident outline holding simplified, blocky proportions, bright, evenly applied flat color with minimal shading complexity, an exaggerated, oversized-head simplicity favoring instant graphic readability over anatomical detail, a loose, wobbly linework carrying deliberately crude, comedic charm, and a cheeky, irreverent cartoon energy that feels playful, satirical, and effortlessly recognizable. Influenced by: Yoshito Usui, crayon Shin-Chan character style, Studio Shin-Ei Animation tradition, flat-color cartoon technique, satirical children's-cartoon character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "蜡笔小新风格",
+    "thumbnail": "samples/Crayon_Shin-chan_Style.webp",
+    "group": "厚涂插画"
+  },
+  {
+    "name": "Yoshiyuki Sadamoto Style",
+    "prompt": "Style: A refined, elegant anime-illustration style built on confident, restrained linework carrying a subtly stylized proportion, muted cel-based shading with delicate gradation rather than sharp contrast, and a sophisticated. Influenced by: Yoshiyuki Sadamoto, Studio Gainax animation-adaptation tradition, cel-shaded design technique, Neon Genesis Evangelion illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "贞本义行风格",
+    "thumbnail": "samples/Yoshiyuki_Sadamoto_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Mecha Anime Style",
+    "prompt": "Style: A crisp, mechanically precise anime-illustration style built on confident, angular linework rendering paneled hardware with technical exactness, dense cel-based shading punctuated by sharp specular highlight along every mechanical contour, a dynamic, imposing scale conveyed through dramatic low-angle composition, meticulous attention to intricate joint and thruster detail rewarding close inspection, and a bold, cinematic mecha intensity that feels powerful, technical, and unmistakably kinetic. Influenced by: Yoshiyuki Sadamoto, Studio Gainax mecha-design tradition, technical cel-shaded illustration technique, Neon Genesis Evangelion mecha-illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "机甲动漫风格",
+    "thumbnail": "samples/Mecha_Anime_Style.webp",
+    "group": "赛璐璐"
+  },
+  {
+    "name": "Osamu Tezuka Style",
+    "prompt": "Style: A charming, expressive manga-illustration style built on confident, rounded linework carrying a distinctly whimsical, animation-influenced simplicity,  conveying deep emotional sincerity within otherwise simplified design, unmistakably classic. Influenced by: Osamu Tezuka, Astro boy, Black Jack manga, foundational manga-illustration tradition, early Japanese cel-animation technique,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "手冢治虫风格",
+    "thumbnail": "samples/Osamu_Tezuka_Style.webp",
+    "group": "漫画线稿"
+  },
+  {
+    "name": "Yu-Gi-Oh! Style",
+    "prompt": "Style: A bold, expressive shōnen-manga illustration style built on confident, angular linework carrying dramatic, dynamic design, dense cel-based shading punctuated by sharp specular highlight detail, a theatrical, high-stakes intensity conveyed through dramatic composition, meticulous attention to costume and design rendering rewarding close inspection. Influenced by: Kazuki Takahashi,   Yu-Gi-Oh! Anime, Studio Gallop animation, cel-shaded shōnen illustration technique,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "游戏王风格",
+    "thumbnail": "samples/Yu-Gi-Oh!_Style.webp",
+    "group": "漫画线稿"
+  }
+]

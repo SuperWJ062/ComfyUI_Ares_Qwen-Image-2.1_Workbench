@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Ares 画布 · 图层记忆 验证台</title>
+<style>
+  html,body{margin:0;height:100%;background:#0b0e13;color:#cfe3f2;font:13px/1.6 "Segoe UI",system-ui,sans-serif;}
+  #bar{padding:10px 14px;background:#141a22;border-bottom:1px solid #263040;display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+  button{background:#1d2733;color:#d6e7f5;border:1px solid #33445a;border-radius:5px;padding:5px 11px;cursor:pointer;font-size:12px;}
+  button:hover{background:#25323f;}
+  button.p{background:#1c4a63;border-color:#2f6f92;}
+  button.d{background:#4a1f28;border-color:#7d3444;}
+  #log{padding:8px 14px;background:#0d1218;border-bottom:1px solid #1d2632;height:150px;overflow:auto;font:12px/1.65 Consolas,monospace;color:#8fb2cc;}
+  #log b{color:#8de7ff;}
+  #log .ok{color:#7ee08a;}
+  #log .bad{color:#ff8080;}
+  iframe{width:100%;height:calc(100% - 218px);border:0;background:#090b0f;}
+</style>
+</head>
+<body>
+<div id="bar">
+  <b style="color:#8de7ff">图层记忆验证台</b>
+  <button id="t1" class="p">① 打开编辑器（3 层）</button>
+  <button id="t2">② 模拟"存 doc"</button>
+  <button id="t3" class="p">③ 二次打开（应还原 3 层）</button>
+  <button id="t4">④ 看 doc 内容</button>
+  <button id="t6" class="p">⑥ 动图层+改画板后存</button>
+  <button id="t7" class="p">⑦ 再开：几何应全等</button>
+  <button id="t5" class="d">清空日志</button>
+</div>
+<div id="log"></div>
+<iframe id="fr" src="ares_canvas_editor_v2.html"></iframe>
+<script>
+window.__errs = [];
+window.__docs = [];
+window.addEventListener('error', function(e){ window.__errs.push(String(e.message)); });
+window.addEventListener('unhandledrejection', function(e){ window.__errs.push('rej: ' + String(e.reason)); });
+const fr = document.getElementById('fr');
+const log = document.getElementById('log');
+let savedDoc = null;
+let layerCount = 0;
+
+function L(msg, cls){ const d=document.createElement('div'); if(cls)d.className=cls; d.innerHTML=msg; log.appendChild(d); log.scrollTop=log.scrollHeight; }
+function send(type, payload){ fr.contentWindow.postMessage({type, payload}, '*'); }
+
+// 造 3 张不同颜色的图，当作"三张图片层"
+function mkPic(color, label, w, h){
+  const c=document.createElement('canvas'); c.width=w; c.height=h;
+  const g=c.getContext('2d');
+  g.fillStyle=color; g.fillRect(0,0,w,h);
+  g.fillStyle='rgba(255,255,255,.9)'; g.font='bold 64px sans-serif';
+  g.textAlign='center'; g.textBaseline='middle'; g.fillText(label, w/2, h/2);
+  return c.toDataURL('image/png');
+}
+
+window.addEventListener('message', function(ev){
+  if (ev.source !== fr.contentWindow) return;
+  const d = ev.data;
+  if (!d || d.type !== 'ARES_CANVAS_RESULT') return;
+  if (!d.result){ L('收到「取消」，无结果', 'bad'); return; }
+  const doc = d.result.doc;
+  if (doc && doc.layers){
+    savedDoc = doc;
+    window.__docs = window.__docs || [];
+    window.__docs.push(JSON.parse(JSON.stringify(doc)));
+    layerCount = doc.layers.length;
+    L('收到结果：图 ' + d.result.width + '×' + d.result.height +
+      '，doc 图层数 = <b>' + doc.layers.length + '</b>', layerCount===3?'ok':'bad');
+    doc.layers.forEach((l,i)=>L('&nbsp;&nbsp;层'+(i+1)+' ' + l.name +
+      ' @('+l.x+','+l.y+') '+l.w+'×'+l.h+' rot'+l.rotation+' op'+l.opacity+
+      (l.visible?'':' [隐藏]')+' src='+(l.url?l.url.slice(0,42):'<空>')));
+  } else {
+    L('结果里没有 doc！', 'bad');
+  }
+});
+
+document.getElementById('t1').onclick = () => {
+  L('—— ① 首次打开：底图 + 2 个追加图层 ——');
+  send('ARES_CANVAS_INIT', {
+    baseUrl: mkPic('#1f4d5e','BASE',1024,768), baseName:'底图',
+    layerUrls:[
+      {url: mkPic('#7d3f9c','OBJ-A',512,512), name:'物体A'},
+      {url: mkPic('#9c6b2f','OBJ-B',256,256), name:'物体B'},
+    ],
+    presetW:1024, presetH:768, title:'验证台 · 首次', doc:null,
+  });
+  L('已下发 INIT（无 doc）');
+};
+
+document.getElementById('t2').onclick = () => {
+  L('—— ② 在编辑器里点「完成」即会回传 doc ——');
+  L('提示：可先拖动图层、改改画板尺寸，再点右下「完成」');
+};
+
+document.getElementById('t3').onclick = () => {
+  if (!savedDoc){ L('还没有保存的 doc，先做第 ①② 步', 'bad'); return; }
+  L('—— ③ 二次打开：带 doc 还原 ——');
+  send('ARES_CANVAS_INIT', {
+    baseUrl:'', baseName:'', layerUrls:[],
+    presetW:1024, presetH:768, title:'验证台 · 二次（记忆）',
+    doc: savedDoc,
+  });
+  L('已下发 INIT（含 doc，' + savedDoc.layers.length + ' 层）');
+};
+
+document.getElementById('t4').onclick = () => {
+  if (!savedDoc){ L('暂无 doc', 'bad'); return; }
+  L('—— ④ doc 全文 ——');
+  L('<pre style="color:#a8d5f0;white-space:pre-wrap">' +
+    JSON.stringify(savedDoc, null, 2).slice(0, 2200).replace(/</g,'&lt;') + '</pre>');
+};
+
+document.getElementById('t5').onclick = () => { log.innerHTML=''; };
+
+// ⑥ 在编辑器内部改图层几何 + 画板尺寸 + 透明度 + 旋转，再"完成"
+document.getElementById('t6').onclick = () => {
+  const d = fr.contentDocument;
+  const c = d.getElementById('canvas');
+  if (!c){ L('拿不到画布', 'bad'); return; }
+  L('—— ⑥ 程序化改动：拖图层 / 改不透明度 / 改旋转 ——');
+  // 用真实指针事件在画布中心附近拖第一层，触发 move 分支
+  const r = c.getBoundingClientRect();
+  const px = r.left + r.width * 0.5, py = r.top + r.height * 0.5;
+  c.dispatchEvent(new PointerEvent('pointerdown', {clientX:px, clientY:py, bubbles:true, pointerId:1, button:0, buttons:1}));
+  c.dispatchEvent(new PointerEvent('pointermove', {clientX:px+60, clientY:py+40, bubbles:true, pointerId:1, buttons:1}));
+  c.dispatchEvent(new PointerEvent('pointerup',   {clientX:px+60, clientY:py+40, bubbles:true, pointerId:1, button:0}));
+  L('已派发一次拖动（+60,+40 屏幕像素）');
+  setTimeout(()=>{
+    L('现在点「完成」把 doc 回传');
+    d.getElementById('confirm').click();
+  }, 400);
+};
+
+// ⑦ 再开并比对几何
+document.getElementById('t7').onclick = () => {
+  L('—— ⑦ 再开：比对 doc 序列化后的几何是否与期望一致 ——');
+  if (!savedDoc){ L('没有 doc', 'bad'); return; }
+  // 记录期望值供人工核对
+  savedDoc.layers.forEach((l,i)=>L('期望 层'+(i+1)+' @('+l.x+','+l.y+') '+l.w+'×'+l.h+' rot'+l.rotation+' op'+l.opacity));
+  lastExpect = JSON.parse(JSON.stringify(savedDoc));
+  send('ARES_CANVAS_INIT', { baseUrl:'', layerUrls:[], presetW:savedDoc.artW||1024, presetH:savedDoc.artH||768, title:'验证台 · 几何比对', doc:savedDoc });
+  setTimeout(()=>{
+    const dd = fr.contentDocument;
+    const items = dd.querySelectorAll('#layers .layer');
+    L('还原后层数 = ' + items.length + (items.length===lastExpect.layers.length ? ' ✔' : ' ✘'), items.length===lastExpect.layers.length?'ok':'bad');
+  }, 1600);
+};
+let lastExpect = null;
+
+L('验证台就绪。点 ① → 等编辑器渲染完 → 点右下「完成」→ 点 ③ 看是否还原为 3 层。');
+L('进阶：① → ⑥（程序化拖动）→ ⑦ 比对几何');
+</script>
+</body>
+</html>

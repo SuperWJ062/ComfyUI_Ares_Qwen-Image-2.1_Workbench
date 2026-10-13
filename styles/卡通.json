@@ -1,0 +1,226 @@
+[
+  {
+    "name": "Graphic Cartoon Expressionism",
+    "prompt": "character model sheet, bold black linework, expressive cartoon style, flat digital color, indie animation aesthetic, exaggerated proportions, minimalist solid background. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形卡通表现主义",
+    "thumbnail": "samples/Graphic_Cartoon_Expressionism.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Playful Rubber-Hose Pop",
+    "prompt": "rubber hose animation, bold black outlines, kawaii mascot design, vibrant flat colors, die-cut sticker style, pie-eyed character, retro cartoon aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "俏皮 橡皮管 波普",
+    "thumbnail": "samples/Playful_Rubber-Hose_Pop.webp",
+    "group": "橡皮管"
+  },
+  {
+    "name": "Sharp Geometric Retro-Futurism",
+    "prompt": "sharp angular vector art, exaggerated heroic proportions, minimalist geometric character design, high-contrast solid background, retro-futuristic cartoon style, clean digital line work, bold flat colors. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "锐利几何复古未来主义",
+    "thumbnail": "samples/Sharp_Geometric_Retro-Futurism.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Vibrant Vector Pop",
+    "prompt": "flat vector illustration, bold black outlines, rubber hose aesthetic, exaggerated character proportions, saturated color palette, minimalist graphic design, playful cartoon style. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳矢量波普",
+    "thumbnail": "samples/Vibrant_Vector_Pop.webp",
+    "group": "橡皮管"
+  },
+  {
+    "name": "Vintage Graphic Mascotry",
+    "prompt": "rubber hose animation style, bold ink outlines, vintage print texture, halftone shading, mid-century commercial art, minimalist graphic illustration, risograph aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古图形吉祥物",
+    "thumbnail": "samples/Vintage_Graphic_Mascotry.webp",
+    "group": "橡皮管"
+  },
+  {
+    "name": "Vintage Rubber Hose Revival",
+    "prompt": "rubber hose animation style, vintage mascot illustration, bold black outlines, mid-century cartoon aesthetic, limited flat color palette, retro screen print texture, pie-cut eyes. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古橡皮管复兴",
+    "thumbnail": "samples/Vintage_Rubber_Hose_Revival.webp",
+    "group": "橡皮管"
+  },
+  {
+    "name": "Whimsical Crayon Narrative",
+    "prompt": "crayon texture, naive illustration, childrens book aesthetic, hand-drawn strokes, soft pastel palette, minimalist white background, vintage cartoon style. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "奇想蜡笔叙事",
+    "thumbnail": "samples/Whimsical_Crayon_Narrative.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Cartoon Style",
+    "prompt": "Style: A simplified, graphic illustration style built on confident, evenly weighted outline defining exaggerated, readable proportions, flat color fill with minimal shading complexity, an appealing, elastic sense of form that favors expressive readability over anatomical accuracy, cheerful, uncomplicated composition prioritizing instant visual clarity, and a lighthearted, accessible illustrative charm rooted in broad, universal animation tradition. Influenced by: classic American cel-animation tradition, flat-color character-design technique, squash-and-stretch animation practice, newspaper-syndicate cartoon method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "卡通风格",
+    "thumbnail": "samples/Cartoon_Style.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Invader Zim Style",
+    "prompt": "Style: A jagged, angular cartoon-illustration style built on sharply exaggerated, gothic-adjacent proportion with elongated limbs and spiky, unstable silhouette construction, bold, high-contrast shading applied in stark graphic blocks rather than smooth gradation, an unsettling, off-kilter energy carried through asymmetrical, twitchy posing, confident thick outline holding chaotic, exaggerated expression, and a darkly quirky, kinetic cartoon intensity that feels equal parts manic and stylish. Influenced by: Jhonen Vasquez, gothic-adjacent cartoon-design tradition, angular limited-animation technique, early-2000s cult-cartoon practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "外星入侵者Zim风格",
+    "thumbnail": "samples/Invader_Zim_Style.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Nickelodeon Animation Style",
+    "prompt": "Style: A bold, energetic flat-cartoon illustration style built on thick, confident outline holding exaggerated, rubbery proportions, bright, evenly saturated flat-color fill with minimal shading complexity, a loose, elastic sense of squash-and-stretch built directly into character design, expressive, oversized facial features prioritizing comedic timing over anatomical accuracy, and a irreverent, kid-friendly energy that feels loud, playful, and unmistakably 90s-cartoon in spirit. Influenced by: classic 90s Nickelodeon cel-animation tradition, flat-color character-design technique, squash-and-stretch animation practice, irreverent kids'-cartoon design method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "尼克动画风格",
+    "thumbnail": "samples/Nickelodeon_Animation_Style.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Rick and Morty Style",
+    "prompt": "Style: A loose, deliberately imperfect cartoon illustration style built on wobbly, slightly rubbery linework that embraces visible inconsistency over polished precision, flat, simple fill with minimal rendering complexity, exaggerated elastic proportions carrying manic, unpredictable expressiveness, a scrappy, DIY animation looseness that favors comedic energy over visual refinement, and an irreverent, chaotic indie-animation charm that feels intentionally rough around the edges. Influenced by: Justin Roiland, adult-swim animation tradition, flat cel-shading technique, indie sitcom-cartoon character design.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "瑞克和莫蒂风格",
+    "thumbnail": "samples/Rick_and_Morty_Style.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Simpsons Style",
+    "prompt": "Style: A bold, flat cartoon illustration style built on thick confident outline holding simplified exaggerated proportions, bright even flat fill with minimal shading or gradient, an overbite-heavy, wide-eyed character-design language prioritizing instant graphic readability, loose, bouncy proportion distortion for comedic expressiveness, and a cheerful, satirical, unmistakably mass-market animated-sitcom energy. Influenced by: Matt Groening, classic American cel-animation technique, flat-color sitcom cartoon tradition, satirical animated character design.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "辛普森一家风格",
+    "thumbnail": "samples/Simpsons_Style.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "South Park Style",
+    "prompt": "Style: A crude, deliberately flat cutout-illustration style built on rigid, geometric construction that mimics paper-cutout assembly rather than fluid drawing, minimal internal shading applied in flat, uniform blocks with almost no gradation, an intentionally stiff, limited sense of motion and pose that embraces its own construction-paper simplicity, bold, thick outline separating each simplified shape with graphic clarity, and a crude, deadpan comedic charm that feels deliberately unpolished and instantly recognizable. Influenced by: Trey Parker and Matt Stone, construction-paper stop-motion-inspired animation technique, flat cutout-illustration tradition, deadpan cartoon-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "南方公园风格",
+    "thumbnail": "samples/South_Park_Style.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Steven Universe Style",
+    "prompt": "Style: A soft, rounded flat-cartoon illustration style built on gentle, simplified geometric shapes carrying warm, approachable proportion, even flat-color fill applied with minimal shading beyond soft contact shadow, a pastel-adjacent restraint in tonal contrast that keeps every composition feeling calm and gentle, expressive, oversized eyes and rounded facial design prioritizing emotional warmth over detail, and a wholesome, tender animated sincerity that feels comforting, gentle, and quietly heartfelt. Influenced by: Rebecca Sugar, Cartoon Network flat-color animation tradition, gentle geometric character-design technique, contemporary emotionally-driven cartoon practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "史蒂文宇宙风格",
+    "thumbnail": "samples/Steven_Universe_Style.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Adventure Time Style",
+    "prompt": "Style: A playful, flat cartoon illustration style built on bold, simplified outline with minimal internal detail, rubber-hose-adjacent proportions that stretch and simplify anatomy into loose, expressive shapes, even flat cel shading with almost no gradient or rendering complexity, a cheerful, whimsical simplicity that favors charm and readability over realism, and a lighthearted, surreal storybook energy that feels effortlessly hand-drawn. Influenced by: Pendleton Ward, modern American cartoon illustration, flat cel-shading technique, indie animation character design.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "探险活宝风格",
+    "thumbnail": "samples/Adventure_Time_Style.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Hanna-Barbera Style",
+    "prompt": "Style: A bold, economical flat-cartoon illustration style built on confident, simplified outline holding limited, efficient character design, flat, evenly applied color fill with minimal shading complexity, a charmingly stiff, limited-animation-friendly sense of proportion and pose, cheerful, uncomplicated composition favoring instant readability over rendering nuance, and a nostalgic, mid-century Saturday-morning charm that feels effortlessly bright and universally appealing. Influenced by: Hanna-Barbera Productions, mid-century American limited-animation tradition, flat-color cartoon technique, Saturday-morning cartoon design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "汉纳-巴伯拉风格",
+    "thumbnail": "samples/Hanna-Barbera_Style.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Family Guy Style",
+    "prompt": "Style: A bold, flat cartoon illustration style built on thick, confident outline holding simplified, blocky proportions, bright, evenly applied flat color with minimal shading complexity, an exaggerated, oval-headed character-design language prioritizing instant graphic readability, static, stiff posing typical of limited-animation efficiency, and a satirical, unmistakably mass-market animated-sitcom energy rooted in broad American cartoon convention. Influenced by: Seth MacFarlane, flat-color limited-animation technique, prime-time animated-sitcom tradition, satirical cartoon-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "恶搞之家风格",
+    "thumbnail": "samples/Family_Guy_Style.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Modern Cartoon",
+    "prompt": "Style: A clean, flat illustration style built on confident, simplified outline holding contemporary, streamlined proportions, bright flat-color fill with minimal shading beyond basic form-defining contact shadow, an appealing, geometrically simplified sense of form balancing charm with graphic efficiency, cheerful, uncomplicated composition favoring instant digital-platform readability, and a versatile, contemporary animated charm rooted in current streaming-era cartoon convention. Influenced by: contemporary streaming-animation tradition, flat-color character-design technique, digital-native cartoon practice, modern indie-animation method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "现代卡通",
+    "thumbnail": "samples/Modern_Cartoon.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Rubber Hose Cartoon",
+    "prompt": "Style: A bouncy, elastic illustration style built on limbs and forms constructed as smooth, tubular curves entirely free of joints or rigid structure, confident thick, uniform outline holding simplified, exaggerated proportions, flat, minimal shading applied with cheerful graphic simplicity, a springy, perpetually-in-motion sense of pose even in stillness, and a nostalgic, early-animation charm that feels playful, fluid, and unmistakably vintage. Influenced by: 1920s-30s American cel-animation tradition, Fleischer Studios technique, rubber-hose character-design practice, early Disney/Warner Bros animation method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "橡胶管卡通",
+    "thumbnail": "samples/Rubber_Hose_Cartoon.webp",
+    "group": "橡皮管"
+  },
+  {
+    "name": "Disney Ultradetailed Illustration",
+    "prompt": "Style: premium feature-animation aesthetics characterized by exceptionally refined draftsmanship, expressive form design, sophisticated visual appeal, advanced material rendering, cinematic staging, and meticulous attention to every surface and design element. The style emphasizes clarity, emotional readability, graceful shape language, polished visual storytelling, and a remarkable balance between realism and stylization, combining the charm of classical animation with the fidelity of contemporary digital illustration. Rather than relying on simplified cartoon conventions, it pursues richness, precision, and production-level craftsmanship through nuanced lighting, intricate textures, elegant composition, and highly controlled rendering. The resulting imagery feels aspirational, immersive, and masterfully produced, with every element contributing to a cohesive sense of wonder, artistry, and visual sophistication, reminiscent of Glen Keane and James Baxter, Inspired by Walt Disney.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "迪士尼超精细插画",
+    "thumbnail": "samples/Disney_Ultradetailed_Illustration.webp",
+    "group": "复古动画"
+  },
+  {
+    "name": "Classic disney Feature Animation",
+    "prompt": "Style: A warm, hand-painted animation-illustration style built on rounded, appealing character proportions carrying expressive, exaggerated readability, smooth cel-shaded color application with gentle, naturalistic gradation, meticulous attention to fluid, principle-driven motion even within a single still frame, a nostalgic, wholesome sincerity carried through soft, inviting lighting logic, and a timeless, storybook grandeur rooted in decades of golden-age feature-animation craftsmanship. Influenced by: Disney and Walt Disney, golden-age American feature-animation tradition, classical cel-animation painting technique, expressive character-animation principles, mid-century studio illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "经典迪士尼剧场动画",
+    "thumbnail": "samples/Classic_disney_Feature_Animation.webp",
+    "group": "复古动画"
+  },
+  {
+    "name": "Cyberpunk: Edgerunners Style",
+    "prompt": "Style: A frenetic, high-contrast animation illustration style built on jagged, aggressive linework that fractures form into sharp angular fragments during moments of intensity, saturated glow-drenched lighting that bleeds and blooms aggressively around every luminous edge, gritty textural noise layered beneath clean cel-shaded color to keep the surface feeling raw and lived-in, dynamic, chaotic framing charged with kinetic violence and manic energy, and a visceral, dystopian animation intensity that feels equal parts stylish and feral. Influenced by: Studio Trigger animation technique, cyberpunk anime tradition, glow-bloom digital compositing practice, gritty dystopian character-design method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "赛博朋克：边缘行者风格",
+    "thumbnail": "samples/Cyberpunk_Edgerunners_Style.webp",
+    "group": "复古动画"
+  },
+  {
+    "name": "Bruce Timm Noir",
+    "prompt": "Style: stylish noir-inspired illustration aesthetics characterized by confident silhouette design, elegant simplification, clean geometric construction, dramatic shadow composition, strong graphic readability, and cinematic visual storytelling, blending classic animation principles with crime-fiction atmosphere through disciplined linework, refined staging, and timeless visual sophistication, reminiscent of Bruce Timm and Darwyn Cooke, inspired by Batman: The Animated Series and DC: The New Frontier.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "布鲁斯·蒂姆黑色风格",
+    "thumbnail": "samples/Bruce_Timm_Noir.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Arcane Animation Still",
+    "prompt": "Style: A richly painterly animated-illustration style built on visible, confident brushstroke texture layered directly into rendering rather than smoothed away, dramatic chiaroscuro lighting that carves bold graphic shadow across stylized angular form, a fusion of hand-painted textural depth with clean animation-ready linework, moody atmospheric tonal harmony charged with cinematic tension, and a bold, painterly-meets-graphic animation intensity that feels both illustrated and alive. Influenced by: Fortiche Production, League of Legends concept-art tradition, painterly animation technique, cinematic stylized character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "双城之战动画静帧",
+    "thumbnail": "samples/Arcane_Animation_Still.webp",
+    "group": "复古动画"
+  },
+  {
+    "name": "Tex Avery Style",
+    "prompt": "Style: A wildly exaggerated cartoon illustration style built on rubbery, elastic anatomy that stretches, squashes, and pops with manic comedic energy, confident thick outline holding extreme, cartoonish reaction poses pushed far beyond naturalistic limits, bright, flat color fill with minimal shading complexity, an unrestrained, gag-driven sense of comedic timing embedded in every exaggerated expression, and a hyper-kinetic, gleefully absurd animation intensity that feels loud, frantic, and effortlessly zany. Influenced by: Tex Avery, MGM/Warner Bros golden-age cartoon tradition, squash-and-stretch animation technique, classic gag-cartoon character-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "特克斯·艾弗里风格",
+    "thumbnail": "samples/Tex_Avery_Style.webp",
+    "group": "橡皮管"
+  },
+  {
+    "name": "Gravity Falls Style",
+    "prompt": "Style: A bold, flat cartoon illustration style built on confident, evenly weighted outline holding simplified, slightly angular proportions, bright, evenly applied flat color with minimal shading beyond basic form-defining contact shadow, a quirky, endearing character-design language balancing comedic exaggeration with grounded charm, cheerful yet mysterious compositional tone favoring instant readability, and a nostalgic, small-town animated warmth that feels playful, whimsical, and quietly adventurous. Influenced by: Alex Hirsch, Disney Television Animation tradition, flat-color cartoon technique, contemporary mystery-adventure cartoon practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怪诞小镇风格",
+    "thumbnail": "samples/Gravity_Falls_Style.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Futurama Style",
+    "prompt": "Style: A bold, flat cartoon illustration style built on confident, evenly weighted outline holding rounded, slightly angular proportions, bright, evenly applied flat color with minimal shading beyond basic form-defining contact shadow, a retro-futurist visual sensibility balancing comedic exaggeration with sleek design confidence, cheerful, uncomplicated composition prioritizing instant readability, and a witty, satirical animated energy that feels playful, imaginative, and unmistakably adult-oriented. Influenced by: Matt Groening, David X. Cohen, flat-color adult-animation tradition, retro-futurist cartoon-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "飞出个未来风格",
+    "thumbnail": "samples/Futurama_Style.webp",
+    "group": "扁平矢量"
+  },
+  {
+    "name": "Peanuts Cartoon Style",
+    "prompt": "Style: A charming, simplified illustration style built on confident, minimal outline holding rounded, flat, evenly applied color fill, an endearing, understated character-design language favoring gentle simplicity, expressive dot-eyes and economical facial gesture carrying quiet emotional depth, and a timeless, wholesome sincerity that feels tender, nostalgic, and effortlessly comforting. Influenced by: Charles Schulz, Peanuts cartoon, mid-century newspaper-comic-strip tradition, flat-color minimalist design technique, gentle everyday-life illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "花生漫画卡通风格",
+    "thumbnail": "samples/Peanuts_Cartoon_Style.webp",
+    "group": "其他"
+  }
+]

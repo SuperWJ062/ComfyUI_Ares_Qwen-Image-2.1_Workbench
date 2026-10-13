@@ -1,0 +1,2420 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Ares Canvas</title>
+<style>
+*{box-sizing:border-box}
+:root{
+  --bg:#090b0f;--panel:#0d1015;--line:#20262e;--line2:#2b333d;
+  --text:#e8edf2;--muted:#7d8792;--accent:#8de7ff;--accent2:#b79cff;
+  --danger:#ff7a7a;
+}
+html,body{width:100%;height:100%;margin:0;overflow:hidden;background:var(--bg);color:var(--text);
+font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif;user-select:none}
+button,input,select{font:inherit;color:inherit}
+button{border:0;background:none;cursor:pointer}
+.app{height:100%;display:grid;grid-template-rows:54px 1fr 32px;background:
+radial-gradient(circle at 50% 45%,rgba(50,70,90,.08),transparent 42%),var(--bg)}
+.top{display:flex;align-items:center;padding:0 18px;border-bottom:1px solid var(--line);position:relative}
+.brand{display:flex;align-items:center;gap:10px;min-width:210px}
+.mark{width:18px;height:18px;position:relative;border:1px solid var(--accent);transform:rotate(45deg);opacity:.9}
+.mark:after{content:"";position:absolute;inset:4px;border:1px solid var(--accent2)}
+.title{font-size:13px;letter-spacing:.08em;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:290px}
+.sep{height:18px;width:1px;background:var(--line2);margin:0 13px}
+.meta{font-size:11px;color:var(--muted);letter-spacing:.04em;white-space:nowrap}
+.top-center{position:absolute;left:50%;transform:translateX(-50%);font-size:10px;color:#69737e;letter-spacing:.18em;text-transform:uppercase}
+.top-actions{margin-left:auto;display:flex;align-items:center;gap:5px}
+.icon-btn,.action{height:30px;padding:0 10px;color:#89939d;border:1px solid transparent;border-radius:5px;transition:.18s}
+.icon-btn{width:32px;padding:0;font-size:15px}
+.icon-btn:hover,.action:hover{color:var(--text);border-color:var(--line2);background:#11151b}
+.icon-btn:disabled,.action:disabled{opacity:.32;cursor:not-allowed}
+.icon-btn:disabled:hover{border-color:transparent;background:none;color:#89939d}
+.action.confirm{color:#061014;background:var(--accent);border-color:var(--accent);font-weight:600}
+.action.confirm:hover{filter:brightness(1.08)}
+.body{min-height:0;display:grid;grid-template-columns:58px 1fr 246px;grid-template-rows:minmax(0,1fr)}
+.tools{border-right:1px solid var(--line);display:flex;flex-direction:column;align-items:center;padding:13px 0;gap:7px;background:rgba(10,12,16,.72)}
+.tool{width:34px;height:34px;border-radius:6px;color:#6e7882;position:relative;display:grid;place-items:center;font-size:15px;transition:.18s}
+.tool:hover{color:#cbd4dc;background:#11161c}
+.tool.active{color:var(--accent);background:#10171c}
+.tool.active:before{content:"";position:absolute;left:-1px;top:8px;bottom:8px;width:1px;background:var(--accent);box-shadow:0 0 8px rgba(141,231,255,.5)}
+.tool:disabled{opacity:.3;cursor:not-allowed}
+.tool:disabled:hover{color:#6e7882;background:none}
+/* 图标用 inline SVG：不依赖系统字体，避免符号缺字形变豆腐块 */
+.tool svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linejoin:round;stroke-linecap:round}
+.tool[data-tool="move"] svg path:first-child,
+.tool[data-tool="move"] svg path:nth-child(2),
+.tool[data-tool="move"] svg path:nth-child(3),
+.tool[data-tool="move"] svg path:nth-child(4),
+.tool[data-tool="move"] svg circle,
+#layerUp svg path,#layerDown svg path{fill:currentColor;stroke:none}
+.tool-sep{height:1px;width:22px;background:var(--line);margin:4px 0}
+.workspace{position:relative;min-width:0;min-height:0;overflow:hidden;cursor:default}
+.workspace.panning{cursor:grabbing}
+.workspace.panready{cursor:grab}
+/* 画板绝对定位到 (0,0)，位置完全由 applyView() 的 translate 决定。
+   不能用 flex 居中：flex 会先摆一次，translate 再摆一次，两次叠加必偏。 */
+.canvas-wrap{position:absolute;left:0;top:0;box-shadow:0 18px 60px rgba(0,0,0,.45);transform-origin:0 0;will-change:transform}
+.canvas-wrap:before{content:"";position:absolute;inset:-1px;border:1px solid rgba(141,231,255,.16);pointer-events:none;z-index:4}
+/* 画板棋盘格（透明区可视化） —— 固定在 wrap 背景，随缩放一起走 */
+.canvas-wrap.board-on{background-color:#15181c;background-image:
+linear-gradient(45deg,#1b1e23 25%,transparent 25%),
+linear-gradient(-45deg,#1b1e23 25%,transparent 25%),
+linear-gradient(45deg,transparent 75%,#1b1e23 75%),
+linear-gradient(-45deg,transparent 75%,#1b1e23 75%);
+background-size:32px 32px;background-position:0 0,0 16px,16px -16px,-16px 0}
+.canvas{display:block;position:relative;z-index:1}
+.canvas.opaque{background:#ffffff}
+.empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#525d67;font-size:11px;letter-spacing:.12em;pointer-events:none}
+/* 画板八向缩放手柄。--inv = 1/视图缩放，用来抵消 wrap 的 scale，
+   保证手柄在屏幕上恒定 8~12px，缩到 5% 也不会变成亚像素抓不到。 */
+.handles{position:absolute;inset:0;pointer-events:none;z-index:6;--inv:1}
+.hd{position:absolute;pointer-events:auto}
+.hd.n{left:calc(10px * var(--inv));right:calc(10px * var(--inv));top:calc(-4px * var(--inv));height:calc(8px * var(--inv));cursor:ns-resize}
+.hd.s{left:calc(10px * var(--inv));right:calc(10px * var(--inv));bottom:calc(-4px * var(--inv));height:calc(8px * var(--inv));cursor:ns-resize}
+.hd.w{top:calc(10px * var(--inv));bottom:calc(10px * var(--inv));left:calc(-4px * var(--inv));width:calc(8px * var(--inv));cursor:ew-resize}
+.hd.e{top:calc(10px * var(--inv));bottom:calc(10px * var(--inv));right:calc(-4px * var(--inv));width:calc(8px * var(--inv));cursor:ew-resize}
+.hd.nw{left:calc(-4px * var(--inv));top:calc(-4px * var(--inv));width:calc(12px * var(--inv));height:calc(12px * var(--inv));cursor:nwse-resize;border-left:calc(2px * var(--inv)) solid var(--accent);border-top:calc(2px * var(--inv)) solid var(--accent);background:rgba(141,231,255,.001)}
+.hd.ne{right:calc(-4px * var(--inv));top:calc(-4px * var(--inv));width:calc(12px * var(--inv));height:calc(12px * var(--inv));cursor:nesw-resize;border-right:calc(2px * var(--inv)) solid var(--accent);border-top:calc(2px * var(--inv)) solid var(--accent);background:rgba(141,231,255,.001)}
+.hd.sw{left:calc(-4px * var(--inv));bottom:calc(-4px * var(--inv));width:calc(12px * var(--inv));height:calc(12px * var(--inv));cursor:nesw-resize;border-left:calc(2px * var(--inv)) solid var(--accent);border-bottom:calc(2px * var(--inv)) solid var(--accent);background:rgba(141,231,255,.001)}
+.hd.se{right:calc(-4px * var(--inv));bottom:calc(-4px * var(--inv));width:calc(12px * var(--inv));height:calc(12px * var(--inv));cursor:nwse-resize;border-right:calc(2px * var(--inv)) solid var(--accent);border-bottom:calc(2px * var(--inv)) solid var(--accent);background:rgba(141,231,255,.001)}
+.handles.off{display:none}
+.size-tip{position:absolute;padding:3px 7px;background:rgba(9,11,15,.94);border:1px solid var(--line2);border-radius:4px;
+font-size:10px;color:var(--accent);white-space:nowrap;pointer-events:none;z-index:9;display:none}
+/* 橡皮笔刷圈：跟随光标，直径 = 笔刷大小 × 视图缩放 */
+.brush-ring{position:absolute;border:1px solid rgba(141,231,255,.85);border-radius:50%;pointer-events:none;z-index:9;
+display:none;transform:translate(-50%,-50%);box-shadow:0 0 0 1px rgba(0,0,0,.45), inset 0 0 0 1px rgba(0,0,0,.3)}
+.zoom{position:absolute;right:17px;bottom:14px;display:flex;align-items:center;gap:3px;z-index:8}
+.zoom button{height:26px;width:28px;border:1px solid var(--line);color:#737e88;background:#0d1014}
+.zoom button:hover{color:var(--text);border-color:var(--line2)}
+.zoom span{height:26px;min-width:54px;padding:0 8px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;place-items:center;font-size:10px;color:#89949f}
+.side{border-left:1px solid var(--line);background:rgba(11,14,18,.88);display:flex;flex-direction:column;min-width:0;overflow-y:auto}
+.side::-webkit-scrollbar{width:6px}
+.side::-webkit-scrollbar-thumb{background:#252c34;border-radius:3px}
+.side-head{height:45px;padding:0 15px;display:flex;align-items:center;border-bottom:1px solid var(--line);gap:8px}
+.side-title{font-size:10px;letter-spacing:.15em;color:#9da7b0}
+.add-btn{margin-left:auto;height:23px;padding:0 9px;border:1px solid var(--line);border-radius:4px;color:#8b959f;font-size:10px;transition:.16s}
+.add-btn:hover{color:var(--text);border-color:var(--line2);background:#11151b}
+.layers{padding:10px 10px 4px;overflow:auto;flex:0 0 auto;max-height:34vh;min-height:0}
+.layers::-webkit-scrollbar{width:6px}
+.layers::-webkit-scrollbar-thumb{background:#252c34;border-radius:3px}
+.layer{height:44px;border:1px solid transparent;border-radius:5px;display:flex;align-items:center;gap:9px;padding:0 9px;margin-bottom:4px;transition:.16s;position:relative;cursor:pointer}
+.layer:hover{background:#11151a}
+.layer.selected{border-color:#27343d;background:#10161b}
+.layer.selected:after{content:"";position:absolute;left:-1px;top:8px;bottom:8px;width:1px;background:var(--accent)}
+.layer.drag-over{border-top-color:var(--accent)}
+.layer-icon{width:27px;height:27px;border:1px solid #28313a;border-radius:3px;display:grid;place-items:center;color:#78838d;font-size:11px;overflow:hidden;flex:0 0 auto;
+background-color:#171a1f;background-image:linear-gradient(45deg,#262b32 25%,transparent 25%),linear-gradient(-45deg,#262b32 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#262b32 75%),linear-gradient(-45deg,transparent 75%,#262b32 75%);background-size:10px 10px;background-position:0 0,0 5px,5px -5px,-5px 0}
+.layer-icon img{width:100%;height:100%;object-fit:cover}
+.layer-name{font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}
+.layer-eye{color:#68737d;font-size:12px;opacity:.8;width:20px;height:20px;display:grid;place-items:center;border-radius:3px;flex:0 0 auto}
+.layer-eye svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round}
+.layer-eye:hover{color:var(--accent);background:#151b21}
+.layer-eye.off{opacity:.45}
+.section{border-top:1px solid var(--line);padding:13px 14px}
+.section-title{font-size:9px;color:#68737d;letter-spacing:.15em;margin-bottom:12px}
+.row{display:flex;align-items:center;justify-content:space-between;margin:9px 0}
+.label{font-size:10px;color:#7e8993}
+.value{font-size:10px;color:#b7c0c8}
+.range{width:100%;appearance:none;height:2px;background:#293139;outline:0}
+.range::-webkit-slider-thumb{appearance:none;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px rgba(141,231,255,.25)}
+/* 顶栏 / 缩放条图标 */
+.icon-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.zoom button svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round}
+.zoom button{display:grid;place-items:center}
+/* 图层缩略图占位图标 */
+.layer-icon svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+.small-btn{height:28px;border:1px solid var(--line);border-radius:4px;color:#7d8892;font-size:10px;transition:.16s}
+.small-btn:hover{color:var(--text);border-color:var(--line2);background:#11151b}
+.small-btn.on{color:var(--accent);border-color:#2c4a55;background:#0f1a1f}
+.status{display:flex;align-items:center;padding:0 13px;border-top:1px solid var(--line);font-size:9px;color:#5f6a74;letter-spacing:.04em}
+.status .dot{width:5px;height:5px;border-radius:50%;background:#75d8b0;margin-right:7px;box-shadow:0 0 6px #75d8b0}
+.status-right{margin-left:auto;display:flex;gap:18px}
+.hidden{display:none!important}
+input[type=text]{width:100%;height:29px;border:1px solid var(--line);background:#0b0e12;border-radius:4px;padding:0 8px;font-size:10px;outline:none}
+input[type=text]:focus{border-color:#35434d}
+.mask{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:50}
+.mask.on{display:flex}
+.dlg{background:var(--panel);border:1px solid var(--line2);border-radius:8px;padding:20px;min-width:280px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.dlg h3{margin:0 0 14px;font-size:12px;font-weight:600;letter-spacing:.06em}
+.dlg .row{gap:10px}
+.dlg input{width:96px;text-align:center}
+.dlg-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:18px}
+@media(max-width:900px){.body{grid-template-columns:52px 1fr 210px}.brand{min-width:150px}.meta{display:none}.top-center{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="brand"><span class="mark"></span><span class="title" id="appTitle">ARES CANVAS</span></div>
+    <div class="sep"></div><div class="meta" id="sizeMeta">— × —</div>
+    <div class="top-center">IMAGE / CANVAS</div>
+    <div class="top-actions">
+      <button class="icon-btn" id="undo" title="撤销"><svg viewBox="0 0 16 16"><path d="M3.4 6.4h6.2a3.6 3.6 0 0 1 0 7.2H6"/><path d="M6 3 3.2 6.4 6 9.8"/></svg></button>
+      <button class="icon-btn" id="redo" title="重做"><svg viewBox="0 0 16 16"><path d="M12.6 6.4H6.4a3.6 3.6 0 0 0 0 7.2H10"/><path d="M10 3l2.8 3.4L10 9.8"/></svg></button>
+      <button class="action" id="preview" title="新窗口预览导出结果">预览</button>
+      <button class="action" id="cancel">取消</button>
+      <button class="action confirm" id="confirm">完成</button>
+    </div>
+  </header>
+
+  <main class="body">
+    <aside class="tools">
+      <button class="tool active" data-tool="move" title="移动（拖动图层）"><svg viewBox="0 0 16 16"><path d="M8 1.6 10.2 4.6H5.8Z"/><path d="M8 14.4 5.8 11.4h4.4Z"/><path d="M1.6 8 4.6 5.8v4.4Z"/><path d="M14.4 8 11.4 10.2V5.8Z"/><circle cx="8" cy="8" r="1.4"/></svg></button>
+      <button class="tool" data-tool="eraser" title="橡皮（擦当前图层）"><svg viewBox="0 0 16 16"><path d="M6.2 12.6 2.4 8.8a1 1 0 0 1 0-1.4l4.6-4.6a1 1 0 0 1 1.4 0l3.8 3.8a1 1 0 0 1 0 1.4l-4.4 4.4Z"/><path d="M3.2 13.4h9.6"/></svg></button>
+      <button class="tool" data-tool="crop" title="裁切（框选当前图层的区域）"><svg viewBox="0 0 16 16"><path d="M5 1.5V11h9.5"/><path d="M1.5 5H11v9.5"/></svg></button>
+      <button class="tool" data-tool="rcrop" id="rcropBtn" title="重绘范围（框选局部重绘的裁切区域）" style="display:none"><svg viewBox="0 0 16 16"><rect x="2" y="2" width="12" height="12" stroke-dasharray="2.4 1.8"/><rect x="5.6" y="5.6" width="4.8" height="4.8"/></svg></button>
+      <div class="tool-sep"></div>
+      <button class="tool" id="fitAll" title="适应窗口"><svg viewBox="0 0 16 16"><path d="M2 6V2h4"/><path d="M10 2h4v4"/><path d="M14 10v4h-4"/><path d="M6 14H2v-4"/><rect x="5.6" y="5.6" width="4.8" height="4.8"/></svg></button>
+      <button class="tool" id="zoom100" title="100%">1:1</button>
+      <div class="tool-sep"></div>
+      <button class="tool" id="boardSize" title="修改画板尺寸"><svg viewBox="0 0 16 16"><path d="M1.4 4.6h13.2v6.8H1.4Z"/><path d="M5 2.6h6"/><path d="M5 13.4h6"/></svg></button>
+      <button class="tool" id="growBoard" title="扩板：包住所有图层"><svg viewBox="0 0 16 16"><path d="M1.6 1.6h5"/><path d="M1.6 1.6v5"/><path d="M14.4 14.4h-5"/><path d="M14.4 14.4v-5"/><rect x="4.4" y="4.4" width="7.2" height="7.2"/></svg></button>
+      <div class="tool-sep"></div>
+      <button class="tool" id="layerUp" title="上移一层"><svg viewBox="0 0 16 16"><path d="M8 2.6 12.4 8H3.6Z"/></svg></button>
+      <button class="tool" id="layerDown" title="下移一层"><svg viewBox="0 0 16 16"><path d="M8 13.4 3.6 8h8.8Z"/></svg></button>
+      <button class="tool" id="layerCenter" title="图层居中"><svg viewBox="0 0 16 16"><path d="M6.2 6.2h3.6v3.6H6.2Z"/><path d="M8 1.4v3.2"/><path d="M8 11.4v3.2"/><path d="M1.4 8h3.2"/><path d="M11.4 8h3.2"/></svg></button>
+    </aside>
+
+    <section class="workspace" id="workspace">
+      <div class="canvas-wrap" id="canvasWrap">
+        <canvas class="canvas" id="canvas" width="900" height="600"></canvas>
+        <div class="handles" id="handles">
+          <div class="hd n" data-h="n"></div><div class="hd s" data-h="s"></div>
+          <div class="hd w" data-h="w"></div><div class="hd e" data-h="e"></div>
+          <div class="hd nw" data-h="nw"></div><div class="hd ne" data-h="ne"></div>
+          <div class="hd sw" data-h="sw"></div><div class="hd se" data-h="se"></div>
+        </div>
+        <div class="empty hidden" id="empty">NO IMAGE</div>
+      </div>
+      <div class="size-tip" id="sizeTip"></div>
+      <div class="brush-ring" id="brushRing"></div>
+      <div class="zoom">
+        <button id="zoomOut"><svg viewBox="0 0 16 16"><path d="M3.6 8h8.8"/></svg></button><span id="zoomValue">100%</span><button id="zoomIn"><svg viewBox="0 0 16 16"><path d="M3.6 8h8.8"/><path d="M8 3.6v8.8"/></svg></button>
+      </div>
+    </section>
+
+    <aside class="side">
+      <div class="side-head">
+        <span class="side-title">LAYERS</span>
+        <button class="add-btn" id="addLayer">+ 添加</button>
+      </div>
+      <div class="layers" id="layers"></div>
+      <div class="section">
+        <div class="section-title">PROPERTIES</div>
+        <div class="row"><span class="label">不透明度</span><span class="value" id="opacityVal">100%</span></div>
+        <input class="range" id="opacity" type="range" min="0" max="100" value="100">
+        <div class="row" style="margin-top:15px"><span class="label">旋转</span><span class="value" id="rotationVal">0°</span></div>
+        <input class="range" id="rotation" type="range" min="-180" max="180" value="0">
+        <div class="row" style="margin-top:15px"><span class="label">缩放</span><span class="value" id="scaleVal">100%</span></div>
+        <input class="range" id="scale" type="range" min="10" max="300" value="100">
+        <div class="grid2" style="margin-top:12px">
+          <button class="small-btn" id="center">居中</button>
+          <button class="small-btn" id="fitLayer">铺满</button>
+        </div>
+        <div class="grid2" style="margin-top:6px">
+          <button class="small-btn" id="resetLayer">还原</button>
+          <button class="small-btn" id="delete">删除</button>
+        </div>
+      </div>
+      <div class="section" id="eraserSection" style="display:none">
+        <div class="section-title">ERASER</div>
+        <div class="row"><span class="label">大小</span><span class="value" id="erSizeVal">24 px</span></div>
+        <input class="range" id="erSize" type="range" min="2" max="256" value="24">
+        <div class="row" style="margin-top:12px"><span class="label">边缘羽化</span><span class="value" id="erSoftVal">0%</span></div>
+        <input class="range" id="erSoft" type="range" min="0" max="100" value="0">
+      </div>
+      <div class="section" id="cropSection" style="display:none">
+        <div class="section-title">CROP</div>
+        <div style="font-size:9px;color:#5f6a74;margin-bottom:8px;line-height:1.5">只裁当前选中的图层（保留旋转）。在画布拖出裁切框，重画可改；双击画布或回车应用。</div>
+        <div class="grid2">
+          <button class="small-btn on" id="cropApply">应用裁切</button>
+          <button class="small-btn" id="cropCancel">取消</button>
+        </div>
+      </div>
+      <div class="section" id="rcropSection" style="display:none">
+        <div class="section-title">REPAINT AREA</div>
+        <div style="font-size:9px;color:#5f6a74;margin-bottom:8px;line-height:1.5">框选局部重绘的裁切范围（只作用于第 1 张参考图，自动对齐 32），范围内重绘、范围外保持原样。上下文=裁剪区外扩倍数，给模型看周围像素（越大越连贯、越慢）；采样分辨率自动适配物体大小：小物体放大到 512、大物体保留原生细节、超大限幅 2048，比例不变。拖出即生效，重画可改；只标注范围，不会画进导出图。</div>
+        <div class="row"><span class="label">范围</span><span class="value" id="rcropInfo">未设置</span></div>
+        <div class="row" style="margin-top:8px"><span class="label">缝合羽化</span><span class="value" id="rcropFeatherVal">32 px</span></div>
+        <input class="range" id="rcropFeather" type="range" min="0" max="256" value="32">
+        <div class="row" style="margin-top:8px"><span class="label">上下文</span><span class="value" id="rcropCtxVal">×1.2</span></div>
+        <input class="range" id="rcropCtx" type="range" min="10" max="30" value="12">
+        <div class="grid2" style="margin-top:6px">
+          <button class="small-btn" id="rcropDone">完成</button>
+          <button class="small-btn" id="rcropClear">清除</button>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title">CANVAS</div>
+        <div class="row"><span class="label">画板</span><span class="value" id="canvasSize">900 × 600</span></div>
+        <div class="grid3" style="margin-top:10px">
+          <button class="small-btn" id="bgTrans" >透明</button>
+          <button class="small-btn on" id="bgWhite">白底</button>
+          <button class="small-btn" id="bgBlack">黑底</button>
+        </div>
+        <div class="grid3" style="margin-top:6px">
+          <button class="small-btn" id="ratio1">1:1</button>
+          <button class="small-btn" id="ratio43">4:3</button>
+          <button class="small-btn" id="ratio169">16:9</button>
+        </div>
+        <div class="grid3" style="margin-top:6px">
+          <button class="small-btn" id="ratio34">3:4</button>
+          <button class="small-btn" id="ratio23">2:3</button>
+          <button class="small-btn" id="ratio916">9:16</button>
+        </div>
+        <div class="row" style="margin-top:12px"><span class="label">对齐</span><span class="value" id="snapInfo">32 px</span></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="status">
+    <span class="dot"></span><span id="statusText">READY</span>
+    <div class="status-right"><span id="cursorPos">0, 0</span><span id="hintPos">滚轮缩放 · 中键平移 · Ctrl+拖动框选 · 图外拖动旋转</span></div>
+  </footer>
+</div>
+
+<!-- 画板尺寸对话框 -->
+<div class="mask" id="sizeMask">
+  <div class="dlg">
+    <h3>画板尺寸</h3>
+    <div class="row"><span class="label">宽</span><input type="text" id="szW"></div>
+    <div class="row"><span class="label">高</span><input type="text" id="szH"></div>
+    <div class="row" style="margin-top:4px"><span class="label" style="font-size:9px;color:#5f6a74">自动对齐到 32 的整倍数（64 ~ 8192）</span></div>
+    <div class="dlg-actions">
+      <button class="small-btn" id="szCancel" style="padding:0 14px">取消</button>
+      <button class="small-btn on" id="szOk" style="padding:0 14px">确定</button>
+    </div>
+  </div>
+</div>
+
+<input type="file" id="filePick" accept="image/*" multiple class="hidden">
+
+<script>
+(function(){
+'use strict';
+
+/* ============================================================
+   Ares Canvas Editor v2  ——  iframe 独立页
+   与宿主（ares_canvas_editor.js）契约：
+     in : window.postMessage({type:'ARES_CANVAS_INIT', payload:{...}})
+     out: window.parent.postMessage({type:'ARES_CANVAS_RESULT', result:{blob,width,height}|null})
+   也可脱离宿主单独打开调样式（自动进入 demo 模式）。
+   ============================================================ */
+
+var SNAP = 32, MIN_SIDE = 64, MAX_SIDE = 8192;
+var ZOOM_MIN = 0.05, ZOOM_MAX = 8;
+// 滚轮手感：一格只放大 3%，单次事件最多 2 格 —— 避免"一点就飞"
+var ZOOM_STEP = 1.03;
+var MAX_WHEEL_STEPS = 2;
+var MIN_WHEEL_STEP = 0.15;
+
+var $ = function(id){ return document.getElementById(id); };
+var clamp = function(v,a,b){ return Math.max(a, Math.min(b, v)); };
+var snap32 = function(v){
+  v = Math.round(Number(v) || 0);
+  v = Math.round(v / SNAP) * SNAP;
+  return clamp(v, MIN_SIDE, MAX_SIDE);
+};
+/**
+ * 拖拽吸附：相对**起始尺寸**(anchor) 位移不足一格时保持不动，避免微动翻格；
+ * 超过一格后直接吸到最近的 32 倍数（不做滞后，否则会粘滞）。
+ * 注意 anchor 必须是按下时的固定值 —— 若用上一帧结果做锚点，
+ * 阈值会被逐帧吃掉导致手柄"卡住不走"。
+ */
+var snap32Dead = function(v, anchor){
+  v = Math.round(Number(v) || 0);
+  anchor = Math.round(Number(anchor) || 0);
+  if (Math.abs(v - anchor) < SNAP) return clamp(anchor, MIN_SIDE, MAX_SIDE);
+  return snap32(v);
+};
+var esc = function(s){
+  return String(s).replace(/[&<>"']/g, function(m){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m];
+  });
+};
+
+/* ---------- DOM ---------- */
+var canvas = $('canvas');
+var ctx = canvas.getContext('2d');
+var wrap = $('canvasWrap');
+var workspace = $('workspace');
+var handles = $('handles');
+var sizeTip = $('sizeTip');
+
+/* ---------- 状态 ---------- */
+var artW = 900, artH = 600;          // 画板尺寸（= canvas.width/height）
+var layers = [];                     // [{id,name,type,img,visible,opacity,rotation,x,y,w,h,natW,natH}]
+var selected = -1;
+var multiSel = [];                   // Ctrl 框选的多选图层 id 列表（约定：非空时 length >= 2）
+var viewScale = 1;                   // 视图缩放（与数据无关）
+var viewX = 0, viewY = 0;            // 视图平移
+var tool = 'move';
+var bgMode = 'white';                // 'transparent' | 'white' | 'black'
+var seq = 1;
+var dirty = false;
+
+/* 交互瞬时态 */
+var drawState = null;                // 移动/擦除 起手快照
+var resizeState = null;              // 画板缩放手柄
+var panState = null;                 // 中键平移
+var cropRect = null;                 // 裁切框（画板坐标，裁切工具用）
+var inpaintRect = null;              // 重绘范围 {x0,y0,x1,y1}（画板坐标，重绘范围工具用）
+var rcropEnabled = false;            // 仅第 1 张参考图的编辑器启用（宿主传入）
+var rcropFeather = 32;               // 缝合羽化（像素），随重绘范围一起带给后端
+var rcropContext = 1.2;              // 上下文系数：裁剪区相对框选范围的外扩倍数
+var spaceDown = false;
+
+/* 历史（快照式，只存可序列化字段） */
+var history = [], future = [];
+var HISTORY_MAX = 50;
+
+/* ============================================================
+   工具函数
+   ============================================================ */
+function sameOrigin(url){
+  var s = String(url || '');
+  if (/^(data|blob):/i.test(s)) return true;
+  try { return new URL(s, window.location.href).origin === window.location.origin; }
+  catch (_) { return true; }
+}
+function loadImageEl(url){
+  return new Promise(function(resolve, reject){
+    var im = new Image();
+    if (!sameOrigin(url)) im.crossOrigin = 'anonymous';
+    im.onload = function(){ resolve(im); };
+    im.onerror = function(){ reject(new Error('图片加载失败: ' + url)); };
+    im.src = url;
+  });
+}
+function newLayer(o){
+  return Object.assign({
+    id: 'L' + (seq++), name: '图层', type: 'image', img: null,
+    visible: true, opacity: 100, rotation: 0,
+    x: 0, y: 0, w: 0, h: 0, natW: 0, natH: 0
+  }, o || {});
+}
+
+/* ============================================================
+   历史
+   ============================================================ */
+function snapshot(){
+  return {
+    artW: artW, artH: artH, selected: selected, bgMode: bgMode,
+    layers: layers.map(function(l){
+      return {
+        id: l.id, name: l.name, type: l.type, img: l.img, // img 引用共享，不深拷
+        // srcUrl/thumb 一并快照：撤销后 buildDoc 才能导出正确图源、面板缩略图不丢
+        srcUrl: l.srcUrl, thumb: l.thumb, ref: l.ref,
+        visible: l.visible, opacity: l.opacity, rotation: l.rotation,
+        x: l.x, y: l.y, w: l.w, h: l.h, natW: l.natW, natH: l.natH
+      };
+    })
+  };
+}
+function pushHistory(){
+  history.push(snapshot());
+  if (history.length > HISTORY_MAX) history.shift();
+  future.length = 0;
+  syncUndoBtns();
+}
+function applySnapshot(s){
+  artW = s.artW; artH = s.artH; bgMode = s.bgMode;
+  layers = s.layers.map(function(l){ return Object.assign({}, l); });
+  selected = s.selected;
+  if (selected >= layers.length) selected = layers.length - 1;
+  // 多选里可能引用了已被撤销掉（删除）的图层，剪掉
+  multiSel = multiSel.filter(function(id){ return layers.some(function(x){ return x.id === id; }); });
+  if (multiSel.length === 1){
+    selected = layers.findIndex(function(x){ return x.id === multiSel[0]; });
+    multiSel = [];
+  } else if (multiSel.length > 1){
+    // 多选仍有效时不恢复快照里的旧单选，否则单层手柄和整组手柄会同时画在画布上
+    selected = -1;
+  }
+  resizeBackingStore();
+  renderAll();
+}
+function undo(){
+  if (!history.length) return;
+  future.push(snapshot());
+  applySnapshot(history.pop());
+  syncUndoBtns();
+  setStatus('已撤销');
+}
+function redo(){
+  if (!future.length) return;
+  history.push(snapshot());
+  applySnapshot(future.pop());
+  syncUndoBtns();
+  setStatus('已重做');
+}
+function syncUndoBtns(){
+  $('undo').disabled = !history.length;
+  $('redo').disabled = !future.length;
+}
+function setStatus(t){ $('statusText').textContent = t; }
+
+/* ============================================================
+   画板 / 渲染
+   ============================================================ */
+function resizeBackingStore(){
+  if (canvas.width !== artW) canvas.width = artW;
+  if (canvas.height !== artH) canvas.height = artH;
+}
+function applyView(){
+  wrap.style.transform = 'translate(' + viewX + 'px,' + viewY + 'px) scale(' + viewScale + ')';
+  wrap.style.transformOrigin = '0 0';
+  // 手柄是画板内的绝对像素，会被 wrap 的 scale 一起缩放；
+  // 反相补偿一次，让它在屏幕上始终是固定大小，缩多小都抓得住。
+  var inv = 1 / viewScale;
+  handles.style.setProperty('--inv', String(inv));
+  $('zoomValue').textContent = Math.round(viewScale * 100) + '%';
+  syncHandlesVisible();
+}
+function syncHandlesVisible(){
+  // 缩得太小或正在平移时隐藏八向手柄，避免误触
+  handles.classList.toggle('off', viewScale < 0.18 || !!panState);
+}
+/* 图层 w/h 是"未旋转的显示尺寸"，rotation 绕中心 */
+function layerRect(l){
+  return { x: l.x, y: l.y, w: l.w, h: l.h };
+}
+function draw(){
+  ctx.clearRect(0, 0, artW, artH);
+  if (bgMode !== 'transparent'){
+    ctx.fillStyle = bgMode === 'black' ? '#000000' : '#ffffff';
+    ctx.fillRect(0, 0, artW, artH);
+  }
+  for (var i = 0; i < layers.length; i++){
+    var l = layers[i];
+    if (!l.visible) continue;
+    ctx.save();
+    ctx.globalAlpha = l.opacity == null ? 1 : l.opacity / 100;
+    var cx = l.x + l.w / 2, cy = l.y + l.h / 2;
+    ctx.translate(cx, cy);
+    if (l.rotation) ctx.rotate(l.rotation * Math.PI / 180);
+    if (l.type === 'image' && l.img){
+      ctx.drawImage(l.img, -l.w / 2, -l.h / 2, l.w, l.h);
+    }
+    ctx.restore();
+  }
+  drawSelectionOverlay();
+  drawMultiOverlay();
+  drawMarquee();
+  drawCropOverlay();
+  drawRcropOverlay();
+  syncMeta();
+}
+
+/** 重绘范围：框外压暗（仅工具内）+ 绿色虚线框 + 尺寸标注。只显示，不参与导出。 */
+function drawRcropOverlay(){
+  if (!inpaintRect) return;
+  var r = inpaintRect;
+  var inTool = tool === 'rcrop';
+  ctx.save();
+  if (inTool){
+    ctx.fillStyle = 'rgba(0,0,0,.45)';
+    ctx.beginPath();
+    ctx.rect(0, 0, artW, artH);
+    ctx.rect(r.x0, r.y0, r.x1 - r.x0, r.y1 - r.y0);
+    ctx.fill('evenodd');
+  }
+  ctx.strokeStyle = inTool ? '#8dffb2' : 'rgba(141,255,178,.75)';
+  ctx.lineWidth = (inTool ? 1.5 : 1) / viewScale;
+  ctx.setLineDash([6 / viewScale, 4 / viewScale]);
+  ctx.strokeRect(r.x0, r.y0, r.x1 - r.x0, r.y1 - r.y0);
+  if (inTool){
+    var label = Math.round(r.x1 - r.x0) + ' × ' + Math.round(r.y1 - r.y0);
+    ctx.setLineDash([]);
+    ctx.font = 11 / viewScale + 'px sans-serif';
+    var tw = ctx.measureText(label).width + 8 / viewScale;
+    var lx = Math.max(1, Math.min(r.x0, artW - tw - 1));
+    var ly = r.y0 - 18 / viewScale;
+    if (ly < 2) ly = r.y0 + 4 / viewScale;
+    ctx.fillStyle = 'rgba(10,20,14,.85)';
+    ctx.fillRect(lx, ly, tw, 15 / viewScale);
+    ctx.fillStyle = '#8dffb2';
+    ctx.fillText(label, lx + 4 / viewScale, ly + 11 / viewScale);
+  }
+  ctx.restore();
+}
+
+/** 重绘范围收进画板内；缩完不足 16px 视为清除 */
+function clampInpaintRect(){
+  if (!inpaintRect) return;
+  var x0 = clamp(inpaintRect.x0, 0, artW), x1 = clamp(inpaintRect.x1, 0, artW);
+  var y0 = clamp(inpaintRect.y0, 0, artH), y1 = clamp(inpaintRect.y1, 0, artH);
+  inpaintRect = (x1 - x0 >= 16 && y1 - y0 >= 16)
+    ? { x0: x0, y0: y0, x1: x1, y1: y1 } : null;
+  syncRcropInfo();
+}
+
+function syncRcropInfo(){
+  var el = $('rcropInfo');
+  if (!el) return;
+  el.textContent = inpaintRect
+    ? Math.round(inpaintRect.x1 - inpaintRect.x0) + ' × ' + Math.round(inpaintRect.y1 - inpaintRect.y0)
+    : '未设置';
+}
+
+/** 多选的合并包围盒（选中层 < 2 时返回 null） */
+function multiAABB(){
+  if (multiSel.length < 2) return null;
+  var x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity, n = 0;
+  layers.forEach(function(l){
+    if (!l.visible || multiSel.indexOf(l.id) < 0) return;
+    var b = layerAABB(l);
+    x0 = Math.min(x0, b.x); y0 = Math.min(y0, b.y);
+    x1 = Math.max(x1, b.x + b.w); y1 = Math.max(y1, b.y + b.h);
+    n++;
+  });
+  if (n < 2) return null;
+  return { x: x0, y: y0, w: x1 - x0, h: y1 - y0 };
+}
+
+/** 多选框：每个图层画紫色虚线外框，合并包围盒上画整组变换手柄 */
+function drawMultiOverlay(){
+  if (multiSel.length < 2) return;
+  ctx.save();
+  ctx.strokeStyle = '#b79cff';
+  ctx.lineWidth = 1 / viewScale;
+  ctx.setLineDash([5 / viewScale, 4 / viewScale]);
+  layers.forEach(function(l){
+    if (!l.visible || multiSel.indexOf(l.id) < 0) return;
+    var b = layerAABB(l);
+    ctx.strokeRect(b.x, b.y, b.w, b.h);
+  });
+  ctx.restore();
+  var g = multiAABB();
+  if (g) drawBoxHandles({ x: g.x, y: g.y, w: g.w, h: g.h, rotation: 0 }, '#8de7ff');
+}
+
+/** Ctrl 框选的橡皮筋矩形 */
+function drawMarquee(){
+  if (!drawState || drawState.mode !== 'marquee') return;
+  var x = Math.min(drawState.x0, drawState.x1), y = Math.min(drawState.y0, drawState.y1);
+  var w = Math.abs(drawState.x1 - drawState.x0), h = Math.abs(drawState.y1 - drawState.y0);
+  ctx.save();
+  ctx.fillStyle = 'rgba(141,231,255,.08)';
+  ctx.strokeStyle = '#8de7ff';
+  ctx.lineWidth = 1 / viewScale;
+  ctx.setLineDash([4 / viewScale, 3 / viewScale]);
+  ctx.fillRect(x, y, w, h);
+  ctx.strokeRect(x, y, w, h);
+  ctx.restore();
+}
+
+/** 裁切模式：框外压暗 + 虚线框 */
+function drawCropOverlay(){
+  if (tool !== 'crop' || !cropRect) return;
+  var r = cropRect;
+  ctx.save();
+  ctx.fillStyle = 'rgba(0,0,0,.55)';
+  ctx.beginPath();
+  ctx.rect(0, 0, artW, artH);
+  ctx.rect(r.x0, r.y0, r.x1 - r.x0, r.y1 - r.y0);
+  ctx.fill('evenodd');
+  ctx.strokeStyle = '#8de7ff';
+  ctx.lineWidth = 1.5 / viewScale;
+  ctx.setLineDash([6 / viewScale, 4 / viewScale]);
+  ctx.strokeRect(r.x0, r.y0, r.x1 - r.x0, r.y1 - r.y0);
+  ctx.restore();
+}
+
+/* ============================================================
+   裁切（单图层；框 → 图层局部系求交 → 裁图源 + 平移几何）
+   ============================================================ */
+function cropApply(){
+  var l = curLayer();
+  if (!l || l.type !== 'image' || !l.img){ setStatus('裁切需要先选中一个图片图层'); return; }
+  if (!cropRect){ setStatus('先在画布上拖出裁切框'); return; }
+  // 裁切框四角反旋转到图层局部系（中心为原点），取外接框
+  var cx = l.x + l.w / 2, cy = l.y + l.h / 2;
+  var rad = -(l.rotation || 0) * Math.PI / 180;
+  var cos = Math.cos(rad), sin = Math.sin(rad);
+  var corners = [[cropRect.x0, cropRect.y0], [cropRect.x1, cropRect.y0],
+                 [cropRect.x1, cropRect.y1], [cropRect.x0, cropRect.y1]];
+  var minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  corners.forEach(function(cpt){
+    var dx = cpt[0] - cx, dy = cpt[1] - cy;
+    var lx = dx * cos - dy * sin, ly = dx * sin + dy * cos;
+    if (lx < minX) minX = lx;
+    if (lx > maxX) maxX = lx;
+    if (ly < minY) minY = ly;
+    if (ly > maxY) maxY = ly;
+  });
+  // 不能裁到图外：与图层范围求交
+  minX = Math.max(minX, -l.w / 2); maxX = Math.min(maxX, l.w / 2);
+  minY = Math.max(minY, -l.h / 2); maxY = Math.min(maxY, l.h / 2);
+  if (maxX - minX < 4 || maxY - minY < 4){ setStatus('裁切区域与图层不相交'); return; }
+  var iw = l.img.naturalWidth || l.img.width, ih = l.img.naturalHeight || l.img.height;
+  var sx = clamp(Math.round((minX + l.w / 2) / l.w * iw), 0, iw - 1);
+  var sy = clamp(Math.round((minY + l.h / 2) / l.h * ih), 0, ih - 1);
+  var sw = Math.min(iw - sx, Math.max(1, Math.round((maxX - minX) / l.w * iw)));
+  var sh = Math.min(ih - sy, Math.max(1, Math.round((maxY - minY) / l.h * ih)));
+  pushHistory();
+  var c = document.createElement('canvas');
+  c.width = sw; c.height = sh;
+  c.getContext('2d').drawImage(l.img, sx, sy, sw, sh, 0, 0, sw, sh);
+  var url = c.toDataURL('image/png');
+  var im = new Image();
+  (function(cx0, cy0, lx0, ly0, lw0, lh0, rot){
+    im.onload = function(){
+      l.img = im;
+      l.natW = sw; l.natH = sh;
+      l.w = Math.max(4, Math.round(lw0));
+      l.h = Math.max(4, Math.round(lh0));
+      // 新中心 = 旧中心 + 局部 bbox 中心（随旋转回画板系）
+      var rr = rot * Math.PI / 180;
+      var mx = (lx0 + lw0) / 2, my = (ly0 + lh0) / 2;
+      var rc = Math.cos(rr), rs = Math.sin(rr);
+      l.x = Math.round(cx0 + mx * rc - my * rs - l.w / 2);
+      l.y = Math.round(cy0 + mx * rs + my * rc - l.h / 2);
+      l.srcUrl = url;
+      l.thumb = makeThumb(im);
+      cropRect = null;
+      renderAll();
+      setStatus('已裁切');
+      setTool('move');
+    };
+    im.src = url;
+  })(cx, cy, minX, minY, maxX - minX, maxY - minY, l.rotation || 0);
+}
+function cropCancel(){
+  cropRect = null;
+  draw();
+  setTool('move');
+  setStatus('已取消裁切');
+}
+
+/* ============================================================
+   选中框与变换手柄（PS 风格：画在图层外框外，屏幕尺寸恒定）
+   ============================================================ */
+var HS_HALF = 4;      // 手柄半径（屏幕像素）
+var ROT_DIST = 22;    // 旋转柄离顶边的距离（屏幕像素）
+
+/** 返回选中图层的四角/四边中点 + 旋转柄位置（画板坐标系） */
+function selectionPoints(l){
+  var cx = l.x + l.w / 2, cy = l.y + l.h / 2;
+  var rad = (l.rotation || 0) * Math.PI / 180;
+  var cos = Math.cos(rad), sin = Math.sin(rad);
+  // 以中心为原点的局部坐标
+  var hw = l.w / 2, hh = l.h / 2;
+  var local = {
+    nw: [-hw, -hh], n: [0, -hh], ne: [hw, -hh],
+    w:  [-hw, 0],               e: [hw, 0],
+    sw: [-hw, hh],  s: [0, hh],  se: [hw, hh]
+  };
+  var out = {};
+  for (var k in local){
+    var lx = local[k][0], ly = local[k][1];
+    out[k] = {
+      x: cx + lx * cos - ly * sin,
+      y: cy + lx * sin + ly * cos
+    };
+  }
+  // 旋转柄：从顶边中点朝"上"（局部 -y）再外推 ROT_DIST 屏幕像素
+  var d = ROT_DIST / viewScale;
+  out.rot = {
+    x: cx + (0 * cos - (-hh - d) * sin),
+    y: cy + (0 * sin + (-hh - d) * cos)
+  };
+  return out;
+}
+
+function drawSelectionOverlay(){
+  var l = curLayer();
+  if (!l || !l.visible) return;
+  drawBoxHandles(l, '#8de7ff');
+}
+
+/** 在图层/包围盒外框画虚线框 + 8 向手柄 + 旋转柄（屏幕尺寸恒定），单选多选共用 */
+function drawBoxHandles(l, color){
+  var p = selectionPoints(l);
+
+  ctx.save();
+  // 画板坐标系 → 用 lineWidth 反相，让描边在屏幕上恒为 1.5px
+  ctx.lineWidth = 1.5 / viewScale;
+  ctx.strokeStyle = color;
+  ctx.setLineDash([6 / viewScale, 4 / viewScale]);
+
+  ctx.beginPath();
+  ctx.moveTo(p.nw.x, p.nw.y);
+  ctx.lineTo(p.ne.x, p.ne.y);
+  ctx.lineTo(p.se.x, p.se.y);
+  ctx.lineTo(p.sw.x, p.sw.y);
+  ctx.closePath();
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  // 旋转柄连接线
+  ctx.beginPath();
+  ctx.moveTo(p.n.x, p.n.y);
+  ctx.lineTo(p.rot.x, p.rot.y);
+  ctx.stroke();
+
+  // 手柄方块（实心，带描边）
+  var hs = HS_HALF / viewScale;      // 屏幕恒定 8px
+  ctx.fillStyle = '#0d1015';
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1.5 / viewScale;
+  ['nw','n','ne','w','e','sw','s','se'].forEach(function(k){
+    var q = p[k];
+    ctx.beginPath();
+    ctx.rect(q.x - hs, q.y - hs, hs * 2, hs * 2);
+    ctx.fill();
+    ctx.stroke();
+  });
+
+  // 旋转柄（圆形）
+  var rr = 5 / viewScale;
+  ctx.beginPath();
+  ctx.arc(p.rot.x, p.rot.y, rr, 0, Math.PI * 2);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.restore();
+}
+
+/** 命中测试：给定画板坐标，返回命中 l（图层或包围盒）的手柄名（无则 null） */
+function hitBoxHandle(pt, l){
+  if (!l || !l.visible) return null;
+  var p = selectionPoints(l);
+  var tol = 7 / viewScale;    // 命中容差（屏幕 7px）
+  var names = ['nw','n','ne','w','e','sw','s','se'];
+  for (var i = 0; i < names.length; i++){
+    var q = p[names[i]];
+    if (Math.abs(pt.x - q.x) <= tol && Math.abs(pt.y - q.y) <= tol) return names[i];
+  }
+  if (Math.hypot(pt.x - p.rot.x, pt.y - p.rot.y) <= 9 / viewScale) return 'rot';
+  return null;
+}
+function hitHandle(pt){ return hitBoxHandle(pt, curLayer()); }
+/** 命中测试：点 pt 是否落在图层 l 内（含旋转）；l 省略时取当前选中层 */
+function hitLayer(pt, l){
+  if (l === undefined) l = curLayer();
+  if (!l || !l.visible) return false;
+  var cx = l.x + l.w / 2, cy = l.y + l.h / 2;
+  var rad = -(l.rotation || 0) * Math.PI / 180;   // 反向旋转，把点转回图层局部系
+  var cos = Math.cos(rad), sin = Math.sin(rad);
+  var dx = pt.x - cx, dy = pt.y - cy;
+  var lx = dx * cos - dy * sin;
+  var ly = dx * sin + dy * cos;
+  return Math.abs(lx) <= l.w / 2 && Math.abs(ly) <= l.h / 2;
+}
+/** 点图选图：从最上层往下找第一个被点中的可见图层，返回索引（无则 -1） */
+function topLayerAt(pt){
+  for (var i = layers.length - 1; i >= 0; i--){
+    var l = layers[i];
+    if (!l.visible) continue;
+    // 全透明图层（如被擦空的层）不吃点击，避免挡住下面的图
+    if (l.img && imgAlphaBBox(l.img) === null) continue;
+    if (hitLayer(pt, l)) return i;
+  }
+  return -1;
+}
+/**
+ * 图像实际内容的包围盒（img 像素空间）：降采样扫 alpha。
+ * 返回 null = 整张全透明；undefined = 判定不了（跨域污染等），按原样处理。
+ * 结果缓存在 img 对象上，悬停命中测试每次 move 都会用到。
+ */
+function imgAlphaBBox(img){
+  if (img && img.__aresBBox !== undefined) return img.__aresBBox;
+  var result;
+  try {
+    var iw = img.naturalWidth || img.width, ih = img.naturalHeight || img.height;
+    if (!iw || !ih){
+      result = null;
+    } else {
+      var S = 256;
+      var sc = Math.min(1, S / Math.max(iw, ih));
+      var w = Math.max(1, Math.round(iw * sc)), h = Math.max(1, Math.round(ih * sc));
+      var c = document.createElement('canvas');
+      c.width = w; c.height = h;
+      var g = c.getContext('2d');
+      g.drawImage(img, 0, 0, w, h);
+      var d = g.getImageData(0, 0, w, h).data;
+      var minX = w, minY = h, maxX = -1, maxY = -1;
+      for (var y = 0; y < h; y++){
+        for (var x = 0; x < w; x++){
+          if (d[(y * w + x) * 4 + 3] > 2){
+            if (x < minX) minX = x;
+            if (x > maxX) maxX = x;
+            if (y < minY) minY = y;
+            if (y > maxY) maxY = y;
+          }
+        }
+      }
+      if (maxX < 0){
+        result = null;
+      } else {
+        var inv = 1 / sc;
+        var x0 = Math.max(0, Math.floor(minX * inv) - 1);
+        var y0 = Math.max(0, Math.floor(minY * inv) - 1);
+        result = {
+          x: x0, y: y0,
+          w: Math.min(iw, Math.ceil((maxX + 1) * inv) + 2) - x0,
+          h: Math.min(ih, Math.ceil((maxY + 1) * inv) + 2) - y0
+        };
+      }
+    }
+  } catch (_) {
+    result = undefined;
+  }
+  if (img) img.__aresBBox = result;
+  return result;
+}
+/** 图层的轴对齐包围盒（旋转层取外接矩形） */
+function layerAABB(l){
+  if (!l.rotation) return { x: l.x, y: l.y, w: l.w, h: l.h };
+  var cx = l.x + l.w / 2, cy = l.y + l.h / 2;
+  var rad = Math.abs(l.rotation) * Math.PI / 180;
+  var bw = Math.abs(l.w * Math.cos(rad)) + Math.abs(l.h * Math.sin(rad));
+  var bh = Math.abs(l.w * Math.sin(rad)) + Math.abs(l.h * Math.cos(rad));
+  return { x: cx - bw / 2, y: cy - bh / 2, w: bw, h: bh };
+}
+/** 矩形与图层包围盒是否相交（框选判定） */
+function rectHitsLayer(x0, y0, x1, y1, l){
+  var b = layerAABB(l);
+  return b.x < x1 && b.x + b.w > x0 && b.y < y1 && b.y + b.h > y0;
+}
+function syncMeta(){
+  $('canvasSize').textContent = artW + ' × ' + artH;
+  $('sizeMeta').textContent = artW + ' × ' + artH + ' · ' + Math.round(viewScale * 100) + '%';
+  $('empty').classList.toggle('hidden', layers.length > 0);
+}
+
+/* ============================================================
+   图层列表
+   ============================================================ */
+/** 图层显隐图标（inline SVG，不依赖字体字形） */
+function EYE_SVG(on){
+  return on
+    ? '<svg viewBox="0 0 16 16"><path d="M1.2 8s2.6-4.6 6.8-4.6S14.8 8 14.8 8s-2.6 4.6-6.8 4.6S1.2 8 1.2 8Z"/><circle cx="8" cy="8" r="2"/></svg>'
+    : '<svg viewBox="0 0 16 16"><path d="M1.2 8s2.6-4.6 6.8-4.6c1.2 0 2.3.4 3.2.9M14.8 8s-1.4 2.5-3.9 3.7M2.4 2.4l11.2 11.2"/></svg>';
+}
+
+function renderLayers(){
+  var box = $('layers');
+  box.innerHTML = '';
+  for (var i = layers.length - 1; i >= 0; i--){
+    (function(i){
+      var l = layers[i];
+      var el = document.createElement('div');
+      el.className = 'layer' + (i === selected || multiSel.indexOf(l.id) >= 0 ? ' selected' : '');
+      el.draggable = true;
+      el.dataset.idx = String(i);
+
+      var thumb = '';
+      if (l.type === 'image' && l.thumb){
+        thumb = '<img src="' + l.thumb + '" alt="">';
+      } else {
+        thumb = '<svg viewBox="0 0 16 16"><path d="M1.6 3.2h12.8v9.6H1.6Z"/><path d="M1.6 10.4 5.6 7l3.2 2.8L12 7.6l2.4 2.4"/><circle cx="5.6" cy="5.8" r="1"/></svg>';
+      }
+
+      el.innerHTML =
+        '<div class="layer-icon">' + thumb + '</div>' +
+        '<div class="layer-name">' + esc(l.name || '图层') + '</div>' +
+        '<button class="layer-eye' + (l.visible ? '' : ' off') + '" title="显示/隐藏">' +
+          EYE_SVG(l.visible) + '</button>';
+
+      el.addEventListener('click', function(e){
+        if (e.target.closest('.layer-eye')){
+          pushHistory();
+          l.visible = !l.visible;
+          renderAll();
+          return;
+        }
+        selected = i;
+        renderAll();
+      });
+
+      el.addEventListener('dragstart', function(e){
+        e.dataTransfer.setData('text/plain', String(i));
+        e.dataTransfer.effectAllowed = 'move';
+      });
+      el.addEventListener('dragover', function(e){
+        e.preventDefault();
+        el.classList.add('drag-over');
+      });
+      el.addEventListener('dragleave', function(){ el.classList.remove('drag-over'); });
+      el.addEventListener('drop', function(e){
+        e.preventDefault(); el.classList.remove('drag-over');
+        var from = parseInt(e.dataTransfer.getData('text/plain'), 10);
+        if (isNaN(from) || from === i) return;
+        pushHistory();
+        var moved = layers.splice(from, 1)[0];
+        var to = from < i ? i - 1 : i;
+        layers.splice(to, 0, moved);
+        var curId = selected >= 0 && layers[selected] ? layers[selected].id : null;
+        selected = curId ? layers.findIndex(function(x){ return x.id === curId; }) : -1;
+        renderAll();
+      });
+
+      box.appendChild(el);
+    })(i);
+  }
+  syncProps();
+}
+
+/* ============================================================
+   属性面板
+   ============================================================ */
+function curLayer(){ return selected >= 0 ? layers[selected] : null; }
+function syncProps(){
+  var l = curLayer();
+  var op = l ? (l.opacity == null ? 100 : l.opacity) : 100;
+  var ro = l ? (l.rotation || 0) : 0;
+  var sc = l && l.natW ? Math.round(l.w / l.natW * 100) : 100;
+  $('opacity').value = op; $('opacityVal').textContent = Math.round(op) + '%';
+  $('rotation').value = ro; $('rotationVal').textContent = Math.round(ro) + '°';
+  $('scale').value = clamp(sc, 10, 300); $('scaleVal').textContent = sc + '%';
+  var on = !!l;
+  ['opacity','rotation','scale','center','fitLayer','resetLayer','delete'].forEach(function(id){
+    $(id).disabled = !on;
+  });
+  $('layerUp').disabled = !on || selected >= layers.length - 1;
+  $('layerDown').disabled = !on || selected <= 0;
+  $('layerCenter').disabled = !on;
+}
+
+/* ============================================================
+   视图：缩放 / 平移
+   ============================================================ */
+function fitView(retry){
+  retry = retry || 0;
+  // 用 getBoundingClientRect 而不是 clientWidth/Height：
+  // 前者含边框且是精确的屏幕矩形，避免因 padding/border 导致的居中偏差。
+  var r = workspace.getBoundingClientRect();
+  var vw = r.width, vh = r.height;
+  if (vw < 20 || vh < 20){
+    if (retry < 30) requestAnimationFrame(function(){ fitView(retry + 1); });
+    return;
+  }
+  var PAD = 24;   // 四周固定留白（屏幕像素），比按比例留白更可控
+  var availW = Math.max(40, vw - PAD * 2);
+  var availH = Math.max(40, vh - PAD * 2);
+  var s = Math.min(availW / artW, availH / artH);
+  viewScale = clamp(s, ZOOM_MIN, ZOOM_MAX);
+  // 居中：以 workspace 的 padding box 为基准
+  viewX = (vw - artW * viewScale) / 2;
+  viewY = (vh - artH * viewScale) / 2;
+  applyView();
+  syncMeta();
+}
+function zoomAt(clientX, clientY, factor){
+  var r = workspace.getBoundingClientRect();
+  var mx = clientX - r.left, my = clientY - r.top;
+  var next = clamp(viewScale * factor, ZOOM_MIN, ZOOM_MAX);
+  if (next === viewScale) return;
+  var k = next / viewScale;
+  viewX = mx - (mx - viewX) * k;
+  viewY = my - (my - viewY) * k;
+  viewScale = next;
+  applyView();
+  syncMeta();
+}
+function setZoomCentered(z){
+  var r = workspace.getBoundingClientRect();
+  zoomAt(r.left + r.width / 2, r.top + r.height / 2, z / viewScale);
+}
+workspace.addEventListener('wheel', function(e){
+  e.preventDefault();
+  var mode = e.deltaMode;
+  var unit = mode === 1 ? 16 : mode === 2 ? 100 : 100;
+  var steps = (e.deltaY || 0) / unit;
+  var abs = Math.abs(steps);
+  if (abs > 0 && abs < MIN_WHEEL_STEP) steps = Math.sign(steps) * MIN_WHEEL_STEP;
+  steps = clamp(steps, -MAX_WHEEL_STEPS, MAX_WHEEL_STEPS);
+  if (!steps) return;
+  var factor = Math.pow(ZOOM_STEP, -steps);
+  zoomAt(e.clientX, e.clientY, factor);
+}, { passive: false });
+
+/* 平移：中键 或 空格+左键 */
+function isPanBtn(e){ return e.button === 1 || (e.button === 0 && spaceDown); }
+workspace.addEventListener('pointerdown', function(e){
+  if (!isPanBtn(e)) return;
+  e.preventDefault(); e.stopPropagation();
+  panState = { x: e.clientX, y: e.clientY, vx: viewX, vy: viewY, id: e.pointerId };
+  workspace.classList.add('panning');
+  syncHandlesVisible();
+  try { workspace.setPointerCapture(e.pointerId); } catch (_) {}
+});
+workspace.addEventListener('pointermove', function(e){
+  if (!panState) return;
+  e.preventDefault();
+  viewX = panState.vx + (e.clientX - panState.x);
+  viewY = panState.vy + (e.clientY - panState.y);
+  applyView();
+});
+function endPan(e){
+  if (!panState) return;
+  try { if (e && e.pointerId != null) workspace.releasePointerCapture(e.pointerId); } catch (_) {}
+  panState = null;
+  workspace.classList.remove('panning');
+  workspace.classList.toggle('panready', spaceDown);
+  syncHandlesVisible();
+}
+workspace.addEventListener('pointerup', endPan);
+workspace.addEventListener('pointercancel', endPan);
+window.addEventListener('blur', function(){ endPan(null); });
+window.addEventListener('keydown', function(e){
+  if (tool === 'crop' && !e.ctrlKey && !e.metaKey){
+    var ct = e.target;
+    if (!(ct && (ct.tagName === 'INPUT' || ct.tagName === 'TEXTAREA'))){
+      if (e.key === 'Enter'){ e.preventDefault(); cropApply(); return; }
+      if (e.key === 'Escape'){ e.preventDefault(); cropCancel(); return; }
+    }
+  }
+  if (tool === 'rcrop' && !e.ctrlKey && !e.metaKey){
+    var ct = e.target;
+    if (!(ct && (ct.tagName === 'INPUT' || ct.tagName === 'TEXTAREA'))){
+      if (e.key === 'Enter'){ e.preventDefault(); setTool('move'); return; }
+      if (e.key === 'Escape'){ e.preventDefault(); inpaintRect = null; drawState = null; syncRcropInfo(); draw(); setStatus('已清除重绘范围'); return; }
+    }
+  }
+  if (e.code === 'Space' && !spaceDown){
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA')) return;
+    spaceDown = true;
+    workspace.classList.add('panready');
+    e.preventDefault();
+  }
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z'){ e.preventDefault(); e.shiftKey ? redo() : undo(); }
+});
+window.addEventListener('keyup', function(e){
+  if (e.code === 'Space'){
+    spaceDown = false;
+    if (!panState) workspace.classList.remove('panready');
+  }
+});
+// 中键不触发自动滚动
+workspace.addEventListener('auxclick', function(e){ if (e.button === 1) e.preventDefault(); });
+document.addEventListener('contextmenu', function(e){
+  var t = e.target;
+  if (t && t.nodeType === 1 && t.closest('.workspace')) e.preventDefault();
+});
+
+/* ============================================================
+   坐标换算
+   ============================================================ */
+function toArt(clientX, clientY){
+  var r = wrap.getBoundingClientRect();
+  return { x: (clientX - r.left) / viewScale, y: (clientY - r.top) / viewScale };
+}
+
+/* ============================================================
+   画布交互：移动 / 擦除
+   ============================================================ */
+canvas.addEventListener('pointerdown', function(e){
+  if (e.button !== 0) return;
+  // 空格按住 = 平移模式，交给 workspace 处理，不要在这里拖图层
+  if (spaceDown) return;
+  var p = toArt(e.clientX, e.clientY);
+  var l = curLayer();
+
+  if (tool === 'move'){
+
+    // 0) Ctrl + 左键：框选多选（松开选中相交图层；原位轻点 = 单击切换该图多选）
+    if (e.ctrlKey || e.metaKey){
+      drawState = { mode: 'marquee', x0: p.x, y0: p.y, x1: p.x, y1: p.y };
+      canvas.setPointerCapture(e.pointerId);
+      setStatus('框选中…');
+      return;
+    }
+
+    // 1) 先判手柄：旋转柄 / 四角等比缩放 / 四边单向缩放（手柄属于当前选中层）
+    var hd = hitHandle(p);
+    if (hd){
+      pushHistory();
+      drawState = {
+        mode: hd === 'rot' ? 'rotate' : 'scale',
+        handle: hd,
+        id: l.id,
+        moved: false,
+        // 起始快照：以图层中心为锚，记录尺寸/位置/旋转，每帧从基准重算（不累积）
+        cx0: l.x + l.w / 2, cy0: l.y + l.h / 2,
+        w0: l.w, h0: l.h, x0: l.x, y0: l.y,
+        rot0: l.rotation || 0,
+        // 指针相对中心的起始角度（旋转用）
+        a0: Math.atan2(p.y - (l.y + l.h / 2), p.x - (l.x + l.w / 2)),
+        natW: l.natW || l.w, natH: l.natH || l.h
+      };
+      canvas.setPointerCapture(e.pointerId);
+      setStatus(hd === 'rot' ? '旋转中…' : '缩放中…');
+      return;
+    }
+
+    // 1m) 多选：合并包围盒上的整组手柄（缩放/旋转整组）优先
+    if (multiSel.length > 1){
+      var mb = multiAABB();
+      var mhd = mb ? hitBoxHandle(p, { x: mb.x, y: mb.y, w: mb.w, h: mb.h, rotation: 0, visible: true }) : null;
+      if (mhd){
+        pushHistory();
+        drawState = {
+          mode: mhd === 'rot' ? 'mrotate' : 'mscale',
+          handle: mhd,
+          moved: false,
+          // 组中心为锚，每帧从各层起始快照重算
+          cx0: mb.x + mb.w / 2, cy0: mb.y + mb.h / 2,
+          gw0: mb.w, gh0: mb.h,
+          a0: Math.atan2(p.y - (mb.y + mb.h / 2), p.x - (mb.x + mb.w / 2)),
+          start: layers.filter(function(x){ return multiSel.indexOf(x.id) >= 0; })
+                      .map(function(x){ return { ref: x, x: x.x, y: x.y, w: x.w, h: x.h, rotation: x.rotation || 0 }; })
+        };
+        canvas.setPointerCapture(e.pointerId);
+        setStatus(mhd === 'rot' ? '旋转整组…' : '缩放整组…');
+        return;
+      }
+    }
+
+    // 2) 点图选图：从最上层往下找被点中的可见图层 —— 点任何图片都能直接选中
+    var picked = topLayerAt(p);
+    if (picked < 0){
+      // 2z) 图外起手：选中态下拖动 = 绕中心旋转（单击不拖仍是取消选中）
+      var rotTgt = null, rcx = 0, rcy = 0;
+      if (multiSel.length > 1){
+        var gb = multiAABB();
+        if (gb){ rotTgt = 'multi'; rcx = gb.x + gb.w / 2; rcy = gb.y + gb.h / 2; }
+      } else if (l && l.visible){
+        rotTgt = 'one'; rcx = l.x + l.w / 2; rcy = l.y + l.h / 2;
+      }
+      if (rotTgt){
+        pushHistory();
+        drawState = {
+          mode: 'mrotate', free: true, moved: false,
+          cx0: rcx, cy0: rcy,
+          a0: Math.atan2(p.y - rcy, p.x - rcx),
+          start: (rotTgt === 'multi'
+            ? layers.filter(function(x){ return multiSel.indexOf(x.id) >= 0; })
+            : [l]).map(function(x){
+              return { ref: x, x: x.x, y: x.y, w: x.w, h: x.h, rotation: x.rotation || 0 };
+            })
+        };
+        canvas.setPointerCapture(e.pointerId);
+        canvas.style.cursor = 'grabbing';
+        setStatus('旋转中…');
+        return;
+      }
+      selected = -1;
+      multiSel = [];
+      renderAll();
+      return;
+    }
+    // 2a) 点在多选集合里 → 一起拖（整体平移）
+    if (multiSel.length > 1 && multiSel.indexOf(layers[picked].id) >= 0){
+      pushHistory();
+      var start = layers.filter(function(x){ return multiSel.indexOf(x.id) >= 0; })
+                        .map(function(x){ return { ref: x, x: x.x, y: x.y }; });
+      drawState = { mode: 'multiMove', start: start, sx: p.x, sy: p.y, moved: false };
+      canvas.setPointerCapture(e.pointerId);
+      canvas.style.cursor = 'grabbing';
+      return;
+    }
+    // 2b) 普通单击：收拢为单选
+    if (multiSel.length) multiSel = [];
+    if (picked !== selected){ selected = picked; renderAll(); }
+    l = layers[picked];
+
+    // 3) 点在图内 → 按住拖动
+    pushHistory();
+    drawState = { mode: 'move', id: l.id, sx: p.x - l.x, sy: p.y - l.y, moved: false };
+    canvas.setPointerCapture(e.pointerId);
+    canvas.style.cursor = 'grabbing';
+    return;
+  }
+  if (tool === 'eraser'){
+    if (!l || l.type !== 'image' || !l.img) { setStatus('橡皮需要选中一个图片图层'); return; }
+    pushHistory();
+    // 把图层当前形态（缩放/旋转/位置）烘焙到画板坐标系的一张离屏图上，
+    // 之后无论怎么擦，图层坐标系都固定为 (0,0,artW,artH)，不会跳位。
+    var baked = document.createElement('canvas');
+    baked.width = artW; baked.height = artH;
+    var bctx = baked.getContext('2d');
+    bctx.save();
+    bctx.translate(l.x + l.w / 2, l.y + l.h / 2);
+    if (l.rotation) bctx.rotate(l.rotation * Math.PI / 180);
+    bctx.drawImage(l.img, -l.w / 2, -l.h / 2, l.w, l.h);
+    bctx.restore();
+
+    var mask = document.createElement('canvas');   // 只累积擦除笔迹
+    mask.width = artW; mask.height = artH;
+    var mctx = mask.getContext('2d');
+    mctx.globalCompositeOperation = 'source-over';
+    stampErase(mctx, p.x, p.y);
+
+    var live = document.createElement('canvas');   // 合成结果（供实时预览）
+    live.width = artW; live.height = artH;
+
+    // 先把图层切成"整画板尺寸"的形态，之后只更新图源即可
+    l.x = 0; l.y = 0; l.w = artW; l.h = artH; l.rotation = 0;
+    l.natW = artW; l.natH = artH;
+    l.img = baked;
+    drawState = {
+      mode: 'erase', id: l.id,
+      baked: baked, mask: mask, mctx: mctx, live: live,
+      last: { x: p.x, y: p.y }
+    };
+    canvas.setPointerCapture(e.pointerId);
+    setStatus('擦除中…');
+    return;
+  }
+  if (tool === 'crop'){
+    if (multiSel.length > 1){ setStatus('裁切需要单选图层，请先收拢多选'); return; }
+    if (!curLayer() || curLayer().type !== 'image' || !curLayer().img){ setStatus('裁切需要先选中一个图片图层'); return; }
+    drawState = { mode: 'cropRect', x0: p.x, y0: p.y, x1: p.x, y1: p.y };
+    canvas.setPointerCapture(e.pointerId);
+    return;
+  }
+  if (tool === 'rcrop'){
+    drawState = { mode: 'rcropRect', x0: p.x, y0: p.y, x1: p.x, y1: p.y };
+    inpaintRect = { x0: p.x, y0: p.y, x1: p.x, y1: p.y };
+    canvas.setPointerCapture(e.pointerId);
+    setStatus('框选重绘范围中…');
+    return;
+  }
+});
+
+/** 悬停时光标形状：手柄位置给对应 resize 光标，图层内给 move */
+function hoverCursor(p){
+  var hd = null;
+  if (multiSel.length > 1){
+    var mb = multiAABB();
+    hd = mb ? hitBoxHandle(p, { x: mb.x, y: mb.y, w: mb.w, h: mb.h, rotation: 0, visible: true }) : null;
+  } else {
+    hd = curLayer() ? hitHandle(p) : null;
+  }
+  if (hd){
+    if (hd === 'rot') return 'grab';
+    if (hd === 'n' || hd === 's') return 'ns-resize';
+    if (hd === 'e' || hd === 'w') return 'ew-resize';
+    if (hd === 'nw' || hd === 'se') return 'nwse-resize';
+    return 'nesw-resize';
+  }
+  return topLayerAt(p) >= 0 ? 'move' : 'default';
+}
+
+var eraserSize = 24;      // 笔刷直径（画板像素），侧栏 ERASER 可调
+var eraserSoft = 0;       // 边缘羽化 0~1，0 = 硬边
+var eraserStamp = null, eraserStampKey = '';
+/** 当前笔刷图章：径向渐变圆，边缘按羽化比例淡出。参数没变就复用缓存 */
+function eraserStampCanvas(){
+  var key = eraserSize + '|' + eraserSoft;
+  if (eraserStampKey === key) return eraserStamp;
+  var s = Math.max(2, Math.round(eraserSize));
+  var c = document.createElement('canvas');
+  c.width = s; c.height = s;
+  var g = c.getContext('2d');
+  var r = s / 2;
+  var grad = g.createRadialGradient(r, r, 0, r, r, r);
+  var inner = Math.max(0, Math.min(0.99, 1 - eraserSoft));
+  grad.addColorStop(0, 'rgba(0,0,0,1)');
+  grad.addColorStop(inner, 'rgba(0,0,0,1)');
+  grad.addColorStop(1, 'rgba(0,0,0,0)');
+  g.fillStyle = grad;
+  g.fillRect(0, 0, s, s);
+  eraserStamp = c; eraserStampKey = key;
+  return c;
+}
+function stampErase(mctx, x, y){
+  var st = eraserStampCanvas();
+  mctx.drawImage(st, x - st.width / 2, y - st.height / 2);
+}
+function composeErase(st){
+  var lctx = st.live.getContext('2d');
+  lctx.clearRect(0, 0, artW, artH);
+  lctx.drawImage(st.baked, 0, 0);
+  lctx.globalCompositeOperation = 'destination-out';
+  lctx.drawImage(st.mask, 0, 0);
+  lctx.globalCompositeOperation = 'source-over';
+}
+canvas.addEventListener('pointermove', function(e){
+  var p = toArt(e.clientX, e.clientY);
+  $('cursorPos').textContent = Math.round(p.x) + ', ' + Math.round(p.y);
+
+  // 未拖动时更新光标形状（悬停手柄给出对应 resize 光标）
+  if (!drawState){
+    if (tool === 'move'){
+      canvas.style.cursor = hoverCursor(p);
+    }
+    return;
+  }
+
+  var st = drawState;
+
+  if (st.mode === 'cropRect'){
+    st.x1 = p.x; st.y1 = p.y;
+    cropRect = {
+      x0: Math.min(st.x0, st.x1), y0: Math.min(st.y0, st.y1),
+      x1: Math.max(st.x0, st.x1), y1: Math.max(st.y0, st.y1)
+    };
+    draw();
+    return;
+  }
+  if (st.mode === 'rcropRect'){
+    st.x1 = p.x; st.y1 = p.y;
+    // 对齐 32 的整数倍（向外扩，不缩水），与画板对齐粒度一致
+    var sx0 = Math.max(0, Math.floor(Math.min(st.x0, st.x1) / 32) * 32);
+    var sy0 = Math.max(0, Math.floor(Math.min(st.y0, st.y1) / 32) * 32);
+    var sx1 = Math.min(artW, Math.ceil(Math.max(st.x0, st.x1) / 32) * 32);
+    var sy1 = Math.min(artH, Math.ceil(Math.max(st.y0, st.y1) / 32) * 32);
+    inpaintRect = { x0: sx0, y0: sy0, x1: sx1, y1: sy1 };
+    draw();
+    return;
+  }
+  if (st.mode === 'marquee'){
+    st.x1 = p.x; st.y1 = p.y;
+    draw();
+    return;
+  }
+  if (st.mode === 'multiMove'){
+    var mdx = p.x - st.sx, mdy = p.y - st.sy;
+    st.start.forEach(function(s){ s.ref.x = s.x + mdx; s.ref.y = s.y + mdy; });
+    st.moved = true;
+    draw();
+    return;
+  }
+
+  if (st.mode === 'mscale'){
+    // 与单层缩放同一套数学：指针转局部系算比例，组中心为锚，各层快照重算
+    var cr = canvas.getBoundingClientRect();
+    var px = (e.clientX - cr.left) / viewScale;
+    var py = (e.clientY - cr.top) / viewScale;
+    var dxc = px - st.cx0, dyc = py - st.cy0;
+    var fx = 1, fy = 1;
+    if (st.handle.indexOf('e') >= 0) fx = st.gw0 > 0 ? dxc / (st.gw0 / 2) : 1;
+    if (st.handle.indexOf('w') >= 0) fx = st.gw0 > 0 ? -dxc / (st.gw0 / 2) : 1;
+    if (st.handle.indexOf('s') >= 0) fy = st.gh0 > 0 ? dyc / (st.gh0 / 2) : 1;
+    if (st.handle.indexOf('n') >= 0) fy = st.gh0 > 0 ? -dyc / (st.gh0 / 2) : 1;
+    if (st.handle.length === 2){
+      var mf = Math.abs(fx) > Math.abs(fy) ? fx : fy;
+      fx = fy = mf;
+    }
+    if (!isFinite(fx) || Math.abs(fx) < 0.02) fx = 0.02 * (fx < 0 ? -1 : 1);
+    if (!isFinite(fy) || Math.abs(fy) < 0.02) fy = 0.02 * (fy < 0 ? -1 : 1);
+    st.start.forEach(function(s){
+      s.ref.w = Math.max(4, Math.round(s.w * fx));
+      s.ref.h = Math.max(4, Math.round(s.h * fy));
+      s.ref.x = Math.round(st.cx0 + (s.x + s.w / 2 - st.cx0) * fx - s.ref.w / 2);
+      s.ref.y = Math.round(st.cy0 + (s.y + s.h / 2 - st.cy0) * fy - s.ref.h / 2);
+    });
+    st.moved = true;
+    draw();
+    return;
+  }
+
+  if (st.mode === 'mrotate'){
+    var a = Math.atan2(p.y - st.cy0, p.x - st.cx0);
+    var deg = (a - st.a0) * 180 / Math.PI;
+    if (!e.shiftKey){
+      var near = Math.round(deg / 15) * 15;
+      if (Math.abs(deg - near) < 2) deg = near;
+    }
+    var rad = deg * Math.PI / 180, cos = Math.cos(rad), sin = Math.sin(rad);
+    st.start.forEach(function(s){
+      s.ref.rotation = Math.round(s.rotation + deg);
+      // 各层中心绕组中心公转，自身再自转 deg
+      var ox = s.x + s.w / 2 - st.cx0, oy = s.y + s.h / 2 - st.cy0;
+      s.ref.x = Math.round(st.cx0 + ox * cos - oy * sin - s.ref.w / 2);
+      s.ref.y = Math.round(st.cy0 + ox * sin + oy * cos - s.ref.h / 2);
+    });
+    st.moved = true;
+    draw();
+    return;
+  }
+
+  var l = layers.find(function(x){ return x.id === drawState.id; });
+  if (!l) return;
+  var st = drawState;
+
+  if (st.mode === 'move'){
+    l.x = p.x - st.sx;
+    l.y = p.y - st.sy;
+    st.moved = true;
+    draw();
+    return;
+  }
+
+  if (st.mode === 'rotate'){
+    // 旋转：以图层中心为锚，指针相对中心的角度差即旋转量
+    var a = Math.atan2(p.y - st.cy0, p.x - st.cx0);
+    var deg = st.rot0 + (a - st.a0) * 180 / Math.PI;
+    // 靠近整 15° 时吸附（按住 Shift 取消吸附）
+    if (!e.shiftKey){
+      var near = Math.round(deg / 15) * 15;
+      if (Math.abs(deg - near) < 2) deg = near;
+    }
+    l.rotation = Math.round(deg);
+    l.x = Math.round(st.cx0 - l.w / 2);
+    l.y = Math.round(st.cy0 - l.h / 2);
+    st.moved = true;
+    draw();
+    syncProps();
+    return;
+  }
+
+  if (st.mode === 'scale'){
+    // 以图层中心为锚。指针位置换算到画板坐标，再反旋转到图层局部系，
+    // 这样旋转后拖角手柄仍然是"沿图层自身方向"缩放。
+    var cr = canvas.getBoundingClientRect();
+    var px = (e.clientX - cr.left) / viewScale;
+    var py = (e.clientY - cr.top) / viewScale;
+    var dxc = px - st.cx0;
+    var dyc = py - st.cy0;
+    var rad = -(st.rot0) * Math.PI / 180;
+    var cos = Math.cos(rad), sin = Math.sin(rad);
+    var lx = dxc * cos - dyc * sin;
+    var ly = dxc * sin + dyc * cos;
+    var halfW0 = st.w0 / 2, halfH0 = st.h0 / 2;
+
+    var fx = 1, fy = 1;
+    if (st.handle.indexOf('e') >= 0) fx = halfW0 > 0 ? lx / halfW0 : 1;
+    if (st.handle.indexOf('w') >= 0) fx = halfW0 > 0 ? -lx / halfW0 : 1;
+    if (st.handle.indexOf('s') >= 0) fy = halfH0 > 0 ? ly / halfH0 : 1;
+    if (st.handle.indexOf('n') >= 0) fy = halfH0 > 0 ? -ly / halfH0 : 1;
+
+    // 角手柄：等比（取较大变化量，保持长宽比）
+    var isCorner = st.handle.length === 2;
+    if (isCorner){
+      var f = Math.abs(fx) > Math.abs(fy) ? fx : fy;
+      fx = fy = f;
+    }
+    // 防止翻转/归零
+    if (!isFinite(fx) || Math.abs(fx) < 0.02) fx = 0.02 * (fx < 0 ? -1 : 1);
+    if (!isFinite(fy) || Math.abs(fy) < 0.02) fy = 0.02 * (fy < 0 ? -1 : 1);
+
+    l.w = Math.max(4, Math.round(st.w0 * fx));
+    l.h = Math.max(4, Math.round(st.h0 * fy));
+    l.x = Math.round(st.cx0 - l.w / 2);
+    l.y = Math.round(st.cy0 - l.h / 2);
+    st.moved = true;
+    draw();
+    syncProps();
+    return;
+  }
+
+  if (st.mode === 'erase'){
+    // 沿笔迹按笔刷直径的 1/4 步进盖章，保证软边笔刷覆盖连续
+    if (st.last){
+      var edx = p.x - st.last.x, edy = p.y - st.last.y;
+      var dist = Math.hypot(edx, edy);
+      var n = Math.max(1, Math.ceil(dist / Math.max(1, eraserSize * 0.25)));
+      for (var k = 1; k <= n; k++){
+        stampErase(st.mctx, st.last.x + edx * k / n, st.last.y + edy * k / n);
+      }
+    }
+    st.last = { x: p.x, y: p.y };
+    composeErase(st);
+    l.img = st.live;              // 图源直接指向实时合成图
+    draw();
+  }
+});
+
+function endDraw(e){
+  if (!drawState) return;
+  var st = drawState;
+  drawState = null;
+  canvas.style.cursor = '';
+  try { if (e && e.pointerId != null) canvas.releasePointerCapture(e.pointerId); } catch (_) {}
+
+  if (st.mode === 'cropRect'){ draw(); return; }
+  if (st.mode === 'rcropRect'){
+    clampInpaintRect();
+    if (!inpaintRect) setStatus('重绘范围过小，已忽略');
+    else setStatus('重绘范围已生效：' + Math.round(inpaintRect.x1 - inpaintRect.x0) + ' × ' + Math.round(inpaintRect.y1 - inpaintRect.y0));
+    syncRcropInfo();
+    draw();
+    return;
+  }
+  if (st.mode === 'marquee'){
+    var dragDist = Math.hypot(st.x1 - st.x0, st.y1 - st.y0);
+    if (dragDist < 4 / viewScale){
+      // Ctrl+单击：把点中的图层加入/移出多选（此前单选的那个也一并算入）
+      var base = multiSel.length ? multiSel.slice()
+               : (selected >= 0 && layers[selected] ? [layers[selected].id] : []);
+      var pi = topLayerAt({ x: st.x0, y: st.y0 });
+      if (pi >= 0){
+        var id = layers[pi].id, at = base.indexOf(id);
+        if (at >= 0) base.splice(at, 1); else base.push(id);
+      }
+      multiSel = base;
+    } else {
+      var rx0 = Math.min(st.x0, st.x1), ry0 = Math.min(st.y0, st.y1);
+      var rx1 = Math.max(st.x0, st.x1), ry1 = Math.max(st.y0, st.y1);
+      multiSel = layers.filter(function(x){
+        return x.visible && rectHitsLayer(rx0, ry0, rx1, ry1, x);
+      }).map(function(x){ return x.id; });
+    }
+    // 只剩一个 → 退化为普通单选（保留变换手柄）
+    if (multiSel.length === 1){
+      selected = layers.findIndex(function(x){ return x.id === multiSel[0]; });
+      multiSel = [];
+    } else if (multiSel.length > 1){
+      selected = -1;
+    } else if (dragDist >= 4 / viewScale){
+      selected = -1;   // 框选落空 → 取消选中
+    }
+    renderAll();
+    setStatus(multiSel.length > 1 ? '已选中 ' + multiSel.length + ' 个图层（拖动平移，手柄缩放/旋转整组）' : '就绪');
+    return;
+  }
+
+  // 多组模式（multiMove/mscale/mrotate）没有 st.id；单层模式图层已不在（中途被删）才拦
+  var l = st.id != null ? layers.find(function(x){ return x.id === st.id; }) : null;
+  if (!l && st.id != null) { draw(); return; }
+
+  if (st.mode === 'move' || st.mode === 'multiMove' || st.mode === 'mscale' || st.mode === 'mrotate' || st.mode === 'scale' || st.mode === 'rotate'){
+    // 没真正动过就撤销这次历史，避免空操作污染撤销栈
+    if (!st.moved){
+      history.pop(); syncUndoBtns();
+      // 图外空点一下 = 取消选中（保持"点图外取消选中"的手感）
+      if (st.free){
+        selected = -1; multiSel = [];
+        renderAll();
+        setStatus('已取消选中');
+        return;
+      }
+    }
+    draw();
+    syncProps();
+    setStatus('就绪');
+    return;
+  }
+  if (st.mode === 'erase'){
+    composeErase(st);
+    // 烘焙会把图层撑成整块画板矩形，选框从此不贴合可见图像；
+    // 按实际像素内容裁一圈（图源与几何一起裁），空擦（全透明）则维持原状
+    var bb = imgAlphaBBox(st.live);
+    var outC = st.live;
+    if (bb && (bb.w < st.live.width || bb.h < st.live.height)){
+      outC = document.createElement('canvas');
+      outC.width = bb.w; outC.height = bb.h;
+      outC.getContext('2d').drawImage(st.live, bb.x, bb.y, bb.w, bb.h, 0, 0, bb.w, bb.h);
+    }
+    // 固化成静态图源，脱离 live canvas 的生命周期
+    var finalUrl = outC.toDataURL('image/png');
+    var im = new Image();
+    (function(bb2, lx0, ly0){
+      im.onload = function(){
+        l.img = im;
+        if (bb2){
+          l.x = lx0 + bb2.x;
+          l.y = ly0 + bb2.y;
+          l.w = bb2.w;
+          l.h = bb2.h;
+          l.natW = bb2.w;
+          l.natH = bb2.h;
+        }
+        // 图源必须同步成擦后像素：buildDoc 导出优先用 srcUrl，
+        // 不更新的话下次进画布会还原成擦除前的原图
+        l.srcUrl = finalUrl;
+        l.thumb = finalUrl;
+        renderAll();
+        setStatus('擦除完成');
+      };
+      im.src = finalUrl;
+    })(bb, l.x, l.y);
+  }
+}
+canvas.addEventListener('pointerup', endDraw);
+canvas.addEventListener('pointercancel', endDraw);
+
+/* 光标提示 */
+canvas.addEventListener('pointerenter', function(){
+  if (tool === 'move') canvas.style.cursor = curLayer() ? 'move' : 'default';
+  else if (tool === 'eraser') canvas.style.cursor = 'crosshair';
+});
+canvas.addEventListener('pointerleave', function(){ if (!drawState) canvas.style.cursor = ''; });
+canvas.addEventListener('dblclick', function(e){
+  if (tool === 'crop'){ cropApply(); return; }
+  if (tool === 'rcrop'){ setTool('move'); return; }
+  // 双击图层外的空白：取消选中
+  if (tool !== 'move') return;
+  if (!hitLayer(toArt(e.clientX, e.clientY))){ selected = -1; renderAll(); }
+});
+
+/* ============================================================
+   画板八向缩放（32 对齐；负方向扩板时整体平移图层）
+   ============================================================ */
+handles.addEventListener('pointerdown', function(e){
+  var hd = e.target.closest('.hd');
+  if (!hd) return;
+  e.preventDefault(); e.stopPropagation();
+  pushHistory();
+  resizeState = {
+    h: hd.dataset.h,
+    sx: e.clientX, sy: e.clientY,
+    w0: artW, h0: artH,
+    // 记录起始视图位置：每帧从基准值重算，绝不能增量累加（会指数飞走）
+    vx0: viewX, vy0: viewY,
+    layers0: layers.map(function(l){ return { id: l.id, x: l.x, y: l.y }; }),
+    rcrop0: inpaintRect ? { x0: inpaintRect.x0, y0: inpaintRect.y0, x1: inpaintRect.x1, y1: inpaintRect.y1 } : null,
+    id: e.pointerId
+  };
+  hd.setPointerCapture(e.pointerId);
+  setStatus('调整画板尺寸…');
+});
+handles.addEventListener('pointermove', function(e){
+  if (!resizeState) return;
+  e.preventDefault();
+  var rs = resizeState;
+  // 用起始点算总量，每帧重算 → 不累积、不漂移
+  var dx = (e.clientX - rs.sx) / viewScale;
+  var dy = (e.clientY - rs.sy) / viewScale;
+  var dir = rs.h;
+  var w = rs.w0, h = rs.h0;
+  if (dir.indexOf('e') >= 0) w = rs.w0 + dx;
+  if (dir.indexOf('w') >= 0) w = rs.w0 - dx;
+  if (dir.indexOf('s') >= 0) h = rs.h0 + dy;
+  if (dir.indexOf('n') >= 0) h = rs.h0 - dy;
+
+  // 死区相对**按下时的起始尺寸**判定（rs.w0/h0 是常量），
+  // 超过一格后取绝对目标的最近 32 倍数 —— 不用上一帧结果当锚点，否则会粘滞。
+  var nw = snap32Dead(w, rs.w0);
+  var nh = snap32Dead(h, rs.h0);
+
+  // 拖 w/n 方向时画板原点在世界中左移/上移。shift = rs.w0 - nw 即原点的世界坐标
+  // （负值 = 原点左移）。图层板坐标 = 世界位置 - 原点，故补 -shift；
+  // 视图平移 = 原点世界坐标 × scale，故取 +shift×scale。
+  // 这样被拖的边缘跟手、对侧边缘不动，图层内容在屏幕上保持原位。
+  // ⚠️ viewX 必须用 "基准值 + 一次性位移" 赋值，不能 `viewX -= ...` 逐帧累加，
+  //    否则位移会按帧数指数放大。
+  var shiftX = 0, shiftY = 0;
+  if (dir.indexOf('w') >= 0) shiftX = rs.w0 - nw;
+  if (dir.indexOf('n') >= 0) shiftY = rs.h0 - nh;
+
+  artW = nw; artH = nh;
+  resizeBackingStore();
+  layers.forEach(function(l, i){
+    var o = rs.layers0[i];
+    if (!o) return;
+    l.x = o.x - shiftX;
+    l.y = o.y - shiftY;
+  });
+  // 重绘范围跟图层一起平移（w/n 方向画板原点移动时）
+  if (rs.rcrop0){
+    inpaintRect = { x0: rs.rcrop0.x0 - shiftX, y0: rs.rcrop0.y0 - shiftY,
+                    x1: rs.rcrop0.x1 - shiftX, y1: rs.rcrop0.y1 - shiftY };
+    clampInpaintRect();
+  }
+  viewX = rs.vx0 + shiftX * viewScale;
+  viewY = rs.vy0 + shiftY * viewScale;
+
+  draw();
+  applyView();
+  showSizeTip(e.clientX, e.clientY, nw, nh);
+});
+function endResize(e){
+  if (!resizeState) return;
+  try { if (e && e.pointerId != null) handles.releasePointerCapture(e.pointerId); } catch (_) {}
+  resizeState = null;
+  hideSizeTip();
+  draw();
+  setStatus('就绪');
+}
+handles.addEventListener('pointerup', endResize);
+handles.addEventListener('pointercancel', endResize);
+function showSizeTip(cx, cy, w, h){
+  var r = workspace.getBoundingClientRect();
+  sizeTip.textContent = w + ' × ' + h;
+  sizeTip.style.display = 'block';
+  sizeTip.style.left = (cx - r.left + 14) + 'px';
+  sizeTip.style.top = (cy - r.top + 14) + 'px';
+}
+function hideSizeTip(){ sizeTip.style.display = 'none'; }
+
+/* ============================================================
+   图层操作
+   ============================================================ */
+function addImageLayer(url, name, opts){
+  opts = opts || {};
+  return loadImageEl(url).then(function(im){
+    var nw = im.naturalWidth, nh = im.naturalHeight;
+    var s = Math.min(artW / nw, artH / nh, 1);
+    var w = Math.round(nw * s), h = Math.round(nh * s);
+    var l = newLayer({
+      name: name || '图层', type: 'image', img: im,
+      natW: nw, natH: nh, w: w, h: h,
+      x: Math.round((artW - w) / 2), y: Math.round((artH - h) / 2)
+    });
+    l.thumb = makeThumb(im);
+    // 图源必须记下：buildDoc 导出靠 srcUrl，兜底 img.src 对 blob:/已 revoke 的地址是死链
+    l.srcUrl = url;
+    if (opts.ref) l.ref = opts.ref;   // 稳定引用 id：标记这张卡对应的图层
+    if (!opts.noHistory) pushHistory();
+    layers.push(l);
+    selected = layers.length - 1;
+    if (!opts.noRender) renderAll();
+    return l;
+  });
+}
+/** 生成 64px 缩略图 dataURL；不用 blob URL，避免被 revoke 后变空白 */
+function makeThumb(img){
+  try {
+    var S = 64;
+    var nw = img.naturalWidth || img.width || 1;
+    var nh = img.naturalHeight || img.height || 1;
+    var s = Math.min(S / nw, S / nh);
+    var c = document.createElement('canvas');
+    c.width = Math.max(1, Math.round(nw * s));
+    c.height = Math.max(1, Math.round(nh * s));
+    var g = c.getContext('2d');
+    g.drawImage(img, 0, 0, c.width, c.height);
+    return c.toDataURL('image/png');
+  } catch (_) { return ''; }
+}
+function addLayerByFile(file){
+  // 图源固化成 data: URL：blob: URL 在 revoke 或 iframe 销毁后失效，
+  // buildDoc 带出去宿主也 fetch 不到，该层下次进画布必丢
+  return new Promise(function(resolve, reject){
+    var fr = new FileReader();
+    fr.onload = function(){ resolve(String(fr.result)); };
+    fr.onerror = function(){ reject(new Error('读取文件失败: ' + file.name)); };
+    fr.readAsDataURL(file);
+  }).then(function(url){
+    return addImageLayer(url, file.name);
+  });
+}
+function reorder(dir){
+  var l = curLayer();
+  if (!l) return;
+  var i = selected, j = i + dir;
+  if (j < 0 || j >= layers.length) return;
+  pushHistory();
+  var t = layers[i]; layers[i] = layers[j]; layers[j] = t;
+  selected = j;
+  renderAll();
+}
+function centerLayer(){
+  var l = curLayer(); if (!l) return;
+  pushHistory();
+  l.x = Math.round((artW - l.w) / 2);
+  l.y = Math.round((artH - l.h) / 2);
+  renderAll();
+}
+function fitLayerToBoard(){
+  var l = curLayer(); if (!l || !l.natW) return;
+  pushHistory();
+  var s = Math.min(artW / l.natW, artH / l.natH);
+  l.w = Math.round(l.natW * s); l.h = Math.round(l.natH * s);
+  l.x = Math.round((artW - l.w) / 2); l.y = Math.round((artH - l.h) / 2);
+  renderAll();
+}
+function resetLayer(){
+  var l = curLayer(); if (!l) return;
+  pushHistory();
+  l.rotation = 0;
+  if (l.natW){ l.w = l.natW; l.h = l.natH; }
+  l.x = Math.round((artW - l.w) / 2);
+  l.y = Math.round((artH - l.h) / 2);
+  renderAll();
+}
+function deleteLayer(){
+  var l = curLayer(); if (!l) return;
+  pushHistory();
+  layers.splice(selected, 1);
+  selected = Math.min(selected, layers.length - 1);
+  renderAll();
+}
+function growBoard(){
+  if (!layers.length) return;
+  var minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  layers.forEach(function(l){
+    if (!l.visible) return;
+    var r = layerRect(l);
+    // 旋转后包围盒
+    if (l.rotation){
+      var cx = l.x + l.w / 2, cy = l.y + l.h / 2;
+      var rad = Math.abs(l.rotation) * Math.PI / 180;
+      var bw = Math.abs(l.w * Math.cos(rad)) + Math.abs(l.h * Math.sin(rad));
+      var bh = Math.abs(l.w * Math.sin(rad)) + Math.abs(l.h * Math.cos(rad));
+      minX = Math.min(minX, cx - bw / 2); maxX = Math.max(maxX, cx + bw / 2);
+      minY = Math.min(minY, cy - bh / 2); maxY = Math.max(maxY, cy + bh / 2);
+    } else {
+      minX = Math.min(minX, r.x); minY = Math.min(minY, r.y);
+      maxX = Math.max(maxX, r.x + r.w); maxY = Math.max(maxY, r.y + r.h);
+    }
+  });
+  if (!isFinite(minX)) return;
+  // 画板要覆盖 [minX, maxX] × [minY, maxY]，且对齐 32
+  var nx0 = Math.floor(Math.min(0, minX) / SNAP) * SNAP;
+  var ny0 = Math.floor(Math.min(0, minY) / SNAP) * SNAP;
+  var nx1 = Math.ceil(Math.max(artW, maxX) / SNAP) * SNAP;
+  var ny1 = Math.ceil(Math.max(artH, maxY) / SNAP) * SNAP;
+  pushHistory();
+  var dx = -nx0, dy = -ny0;   // 画板原点左移/上移量（dx>0 表示原点左移）
+  var vx0 = viewX, vy0 = viewY;
+  // 图层与视图成对补偿（与拖手柄同一套语义），符号必须相反
+  layers.forEach(function(l){ l.x += dx; l.y += dy; });
+  // 重绘范围跟图层一起平移，保持与内容的相对位置
+  if (inpaintRect){
+    inpaintRect = { x0: inpaintRect.x0 + dx, y0: inpaintRect.y0 + dy,
+                    x1: inpaintRect.x1 + dx, y1: inpaintRect.y1 + dy };
+    clampInpaintRect();
+  }
+  artW = clamp(nx1 - nx0, MIN_SIDE, MAX_SIDE);
+  artH = clamp(ny1 - ny0, MIN_SIDE, MAX_SIDE);
+  resizeBackingStore();
+  viewX = vx0 - dx * viewScale;
+  viewY = vy0 - dy * viewScale;
+  renderAll();
+  applyView();
+  setStatus('已扩板至 ' + artW + ' × ' + artH);
+}
+
+/* ============================================================
+   背景 / 比例
+   ============================================================ */
+function setBg(mode){
+  if (bgMode === mode) return;
+  pushHistory();
+  bgMode = mode;
+  [['bgTrans','transparent'],['bgWhite','white'],['bgBlack','black']].forEach(function(p){
+    $(p[0]).classList.toggle('on', bgMode === p[1]);
+  });
+  // 透明模式才用棋盘格示意空白区；白/黑底时整块填充，棋盘格会穿帮
+  wrap.classList.toggle('board-on', bgMode === 'transparent');
+  canvas.classList.toggle('opaque', bgMode !== 'transparent');
+  draw();
+}
+function setRatio(r){
+  var h = snap32(Math.round(artW / r));
+  if (h === artH) return;
+  pushHistory();
+  artH = h;
+  resizeBackingStore();
+  clampInpaintRect();
+  renderAll();
+  setStatus('画板 ' + artW + ' × ' + artH);
+}
+
+/* ============================================================
+   尺寸对话框
+   ============================================================ */
+function openSizeDialog(){
+  $('szW').value = String(artW);
+  $('szH').value = String(artH);
+  $('sizeMask').classList.add('on');
+  $('szW').focus(); $('szW').select();
+}
+function closeSizeDialog(){ $('sizeMask').classList.remove('on'); }
+function commitSize(){
+  var w = snap32(parseInt($('szW').value, 10));
+  var h = snap32(parseInt($('szH').value, 10));
+  pushHistory();
+  var dw = w - artW, dh = h - artH;
+  // 画板变化（自由裁切）：图层不移，只改画板 → 超出部分裁掉，空白部分透明
+  artW = w; artH = h;
+  resizeBackingStore();
+  clampInpaintRect();
+  renderAll();
+  applyView();
+  closeSizeDialog();
+  setStatus('画板 ' + artW + ' × ' + artH + (dw || dh ? '（已裁切）' : ''));
+}
+
+/* ============================================================
+   导出
+   ============================================================ */
+function exportCanvas(){
+  var out = document.createElement('canvas');
+  out.width = artW; out.height = artH;
+  var octx = out.getContext('2d');
+  if (bgMode !== 'transparent'){
+    octx.fillStyle = bgMode === 'black' ? '#000000' : '#ffffff';
+    octx.fillRect(0, 0, artW, artH);
+  }
+  layers.forEach(function(l){
+    if (!l.visible) return;
+    octx.save();
+    octx.globalAlpha = l.opacity == null ? 1 : l.opacity / 100;
+    octx.translate(l.x + l.w / 2, l.y + l.h / 2);
+    if (l.rotation) octx.rotate(l.rotation * Math.PI / 180);
+    if (l.type === 'image' && l.img) octx.drawImage(l.img, -l.w / 2, -l.h / 2, l.w, l.h);
+    octx.restore();
+  });
+  return out;
+}
+
+/* ============================================================
+   渲染总入口
+   ============================================================ */
+function renderAll(){ draw(); renderLayers(); syncProps(); applyView(); syncMeta(); }
+
+/* ============================================================
+   载入
+   ============================================================ */
+function resetSession(o){
+  o = o || {};
+  artW = snap32(o.presetW || 900);
+  artH = snap32(o.presetH || 600);
+  layers = []; selected = -1; history = []; future = [];
+  // 默认透明底：空白区保留 alpha，符合"扩板留白交给出图模型"的用法
+  bgMode = o.bgMode || 'transparent';
+  [['bgTrans','transparent'],['bgWhite','white'],['bgBlack','black']].forEach(function(p){
+    $(p[0]).classList.toggle('on', bgMode === p[1]);
+  });
+  wrap.classList.toggle('board-on', bgMode === 'transparent');
+  canvas.classList.toggle('opaque', bgMode !== 'transparent');
+  resizeBackingStore();
+  $('appTitle').textContent = o.title || 'ARES CANVAS';
+  // 上一轮的导出态可能残留，复位按钮
+  settled = false;
+  cropRect = null;
+  // 重绘范围工具只给第 1 张参考图的编辑器用
+  rcropEnabled = !!o.inpaintCrop;
+  inpaintRect = null;
+  rcropFeather = (o.doc && o.doc.inpaintCrop && o.doc.inpaintCrop.blend != null) ? o.doc.inpaintCrop.blend : 32;
+  rcropContext = (o.doc && o.doc.inpaintCrop && o.doc.inpaintCrop.ctx) ? o.doc.inpaintCrop.ctx : 1.2;
+  $('rcropBtn').style.display = rcropEnabled ? '' : 'none';
+  $('rcropFeather').value = String(rcropFeather);
+  $('rcropFeatherVal').textContent = rcropFeather + ' px';
+  $('rcropCtx').value = String(Math.round(rcropContext * 10));
+  $('rcropCtxVal').textContent = '×' + rcropContext.toFixed(1);
+  $('confirm').disabled = false;
+  $('cancel').disabled = false;
+  setStatus('READY');
+
+  var chain = Promise.resolve();
+
+  // ── 优先：还原上一轮的图层文档（图层模式 + 自动记忆） ──
+  if (o.doc && o.doc.layers && o.doc.layers.length){
+    chain = chain.then(function(){
+      artW = snap32(o.doc.artW || 900);
+      artH = snap32(o.doc.artH || 600);
+      bgMode = o.doc.bgMode || 'transparent';
+      [['bgTrans','transparent'],['bgWhite','white'],['bgBlack','black']].forEach(function(p){
+        $(p[0]).classList.toggle('on', bgMode === p[1]);
+      });
+      wrap.classList.toggle('board-on', bgMode === 'transparent');
+      resizeBackingStore();
+      // 还原上一轮的重绘范围（画板可能改过尺寸 → 收进画板内）
+      if (rcropEnabled && o.doc.inpaintCrop){
+        var c = o.doc.inpaintCrop;
+        inpaintRect = { x0: c.x, y0: c.y, x1: c.x + c.w, y1: c.y + c.h };
+        clampInpaintRect();
+      }
+      // 逐层还原：图源走 URL，几何/属性直接读
+      var seqChain = Promise.resolve();
+      var skipped = 0;
+      o.doc.layers.forEach(function(d){
+        seqChain = seqChain.then(function(){
+          if (!d.url) { skipped++; return null; }
+          return loadImageEl(d.url).then(function(im){
+            // 长宽比守卫：doc 存的显示尺寸必须与本次加载到的图源同长宽比，
+            // 否则 drawImage 硬拉会变形（横向压扁等）。失配超 2% 就以图源为准校正，
+            // 保持较大的那条边不变。正常数据此步是空操作。
+            var iw = im.naturalWidth, ih = im.naturalHeight;
+            var w = d.w || iw, h = d.h || ih;
+            if (iw && ih && w > 0 && h > 0){
+              var imgAr = iw / ih;
+              if (Math.abs(w / h - imgAr) / imgAr > 0.02){
+                if (w >= h) h = Math.round(w / imgAr);
+                else w = Math.round(h * imgAr);
+              }
+            }
+            var l = newLayer({
+              name: d.name || '图层', type: 'image', img: im,
+              natW: iw, natH: ih,
+              w: w, h: h, x: d.x, y: d.y,
+              rotation: d.rotation || 0,
+              opacity: d.opacity == null ? 100 : d.opacity,
+              visible: d.visible !== false,
+              ref: d.ref || null
+            });
+            l.srcUrl = d.url;
+            l.thumb = makeThumb(im);
+            // 旧文档里擦过的层存的是"烘焙后的整板矩形"，按实际像素内容收紧，
+            // 否则二次进画布编辑框不贴合可见图像（普通图内容=整图，此步是空操作）
+            var bb = imgAlphaBBox(im);
+            if (bb && (bb.w < iw || bb.h < ih)){
+              var fx = w / iw, fy = h / ih;
+              l.w = Math.max(4, Math.round(bb.w * fx));
+              l.h = Math.max(4, Math.round(bb.h * fy));
+              l.x = Math.round(d.x + bb.x * fx);
+              l.y = Math.round(d.y + bb.y * fy);
+            }
+            layers.push(l);
+            return null;
+          }).catch(function(){ skipped++; return null; });
+        });
+      });
+      return seqChain.then(function(){
+        selected = layers.length ? layers.length - 1 : -1;
+        if (skipped){
+          setStatus('还原图层：' + skipped + ' 层图源已丢失（体积超限或加载失败），其余 ' +
+                    layers.length + ' 层已恢复');
+        }
+        // doc 还原出 0 层（图源全灭）时回退到底图，避免开天窗
+        if (!layers.length && o.baseUrl){
+          return loadImageEl(o.baseUrl).then(function(im){
+            var l = newLayer({
+              name: o.baseName || '底图', type: 'image', img: im,
+              natW: im.naturalWidth, natH: im.naturalHeight,
+              w: im.naturalWidth, h: im.naturalHeight, x: 0, y: 0
+            });
+            l.thumb = makeThumb(im);
+            l.srcUrl = o.baseUrl;
+            layers.push(l);
+            selected = 0;
+            return null;
+          });
+        }
+      });
+    });
+  } else if (o.baseUrl){
+    // ── 首次：用底图建单层 ──
+    chain = chain.then(function(){
+      return loadImageEl(o.baseUrl).then(function(im){
+        var nw = im.naturalWidth, nh = im.naturalHeight;
+        var l = newLayer({
+          name: o.baseName || '底图', type: 'image', img: im,
+          natW: nw, natH: nh, w: nw, h: nh, x: 0, y: 0
+        });
+        l.thumb = makeThumb(im);
+        l.srcUrl = o.baseUrl;
+        layers.push(l);
+        selected = 0;
+        // 没给 preset 就用底图原尺寸
+        if (!o.presetW || !o.presetH){
+          artW = snap32(nw); artH = snap32(nh);
+          resizeBackingStore();
+        }
+        // 诊断：画板与底图尺寸不一致时说明 preset 与真实图不同源
+        if (o.presetW && o.presetH &&
+            (Math.abs(o.presetW - nw) > 1 || Math.abs(o.presetH - nh) > 1)){
+          setStatus('提示：画板 ' + artW + '×' + artH +
+                    '，底图实际 ' + nw + '×' + nh + '（未铺满，可用「铺满」按钮）');
+        }
+      });
+    });
+  }
+  (o.layerUrls || []).forEach(function(it){
+    var url = typeof it === 'string' ? it : it.url;
+    var nm = typeof it === 'string' ? '图层' : (it.name || '图层');
+    var rf = (typeof it === 'object' && it.ref) ? it.ref : null;
+    if (!url) return;
+    // 初始化载入不入历史、不逐张渲染
+    chain = chain.then(function(){ return addImageLayer(url, nm, { noHistory: true, noRender: true, ref: rf }); });
+  });
+
+  return chain.then(function(){
+    // 载入不算可撤销步骤
+    history = []; future = [];
+    syncUndoBtns();
+    renderAll();
+    requestAnimationFrame(function(){ fitView(); fitView(); });
+  }).catch(function(err){
+    setStatus('载入失败：' + (err && err.message ? err.message : err));
+  });
+}
+
+/* ============================================================
+   与宿主通信
+   ============================================================ */
+var settled = false;
+
+/** 导出当前图层文档（图源用 base64 / 已有 URL），交给宿主上传并持久化 */
+/**
+ * data: URL 全量带出，体积闸移到宿主：上传成功换成 /view，上传失败才按
+ * DOC_DATAURL_MAX（512KB，宿主侧常量）丢图源。在这里设闸会把大图直接
+ * 掐死 —— 实测 bug：三图层第二次进入只剩 1 层（5MB 级 base64 全被丢）。
+ */
+function buildDoc(){
+  var doc = {
+    artW: artW, artH: artH, bgMode: bgMode,
+    // 重绘范围：仅第 1 张参考图的编辑器带出（元数据，不参与像素导出）
+    inpaintCrop: null,
+    layers: layers.map(function(l){
+      var src = l.srcUrl || "";
+      // 没有 URL 的图层（擦除产生的）需要把像素带出去
+      if (!src && l.img && l.img.src){
+        src = l.img.src;
+      }
+      return {
+        // data: URL 也带着，宿主会统一上传成 /view 可访问的 URL
+        url: src,
+        name: l.name,
+        ref: l.ref || undefined,   // 稳定引用 id：第 2+ 张卡重复编辑时定位用
+        x: Math.round(l.x), y: Math.round(l.y),
+        w: Math.round(l.w), h: Math.round(l.h),
+        rotation: Math.round(l.rotation || 0),
+        opacity: l.opacity == null ? 100 : Math.round(l.opacity),
+        visible: l.visible !== false
+      };
+    })
+  };
+  if (rcropEnabled && inpaintRect){
+    doc.inpaintCrop = {
+      x: Math.round(inpaintRect.x0), y: Math.round(inpaintRect.y0),
+      w: Math.round(inpaintRect.x1 - inpaintRect.x0),
+      h: Math.round(inpaintRect.y1 - inpaintRect.y0),
+      blend: rcropFeather,
+      ctx: rcropContext
+    };
+  }
+  return doc;
+}
+
+function finish(result){
+  if (settled) return;
+  settled = true;
+  var inHost = window.parent && window.parent !== window;
+  try {
+    if (inHost){
+      window.parent.postMessage({ type: 'ARES_CANVAS_RESULT', result: result }, '*');
+    }
+  } catch (_) {}
+  if (window.__aresCanvasResolve) window.__aresCanvasResolve(result);
+  // 独立打开时没有宿主接收，给个明确反馈
+  if (!inHost){
+    if (result && result.blob){
+      setStatus('DEMO 模式：已导出 ' + result.width + ' × ' + result.height + '（无宿主接收）');
+    } else {
+      setStatus('DEMO 模式：已取消（无宿主接收）');
+    }
+    // 没有宿主销毁 iframe，必须自己复位，否则第二次点按钮是死的
+    $('confirm').disabled = false;
+    $('cancel').disabled = false;
+    settled = false;
+  }
+}
+
+window.addEventListener('message', function(ev){
+  var d = ev.data;
+  if (!d || typeof d !== 'object') return;
+  if (d.type === 'ARES_CANVAS_INIT'){
+    settled = false;
+    resetSession(d.payload || {});
+  }
+});
+
+/* ============================================================
+   按钮绑定
+   ============================================================ */
+function setTool(name){
+  document.querySelectorAll('.tool[data-tool]').forEach(function(x){ x.classList.toggle('active', x.dataset.tool === name); });
+  tool = name;
+  $('eraserSection').style.display = name === 'eraser' ? '' : 'none';
+  $('cropSection').style.display = name === 'crop' ? '' : 'none';
+  $('rcropSection').style.display = name === 'rcrop' ? '' : 'none';
+  if (name === 'rcrop') syncRcropInfo();
+  $('brushRing').style.display = 'none';
+  canvas.style.cursor = (name === 'eraser' || name === 'crop' || name === 'rcrop') ? 'crosshair'
+    : (name === 'move' ? 'move' : 'default');
+  setStatus(name === 'move' ? '就绪'
+    : name === 'eraser' ? '擦除模式：拖动擦除当前选中图层'
+    : name === 'crop' ? '裁切模式：拖出裁切框，双击画布或回车应用'
+    : name === 'rcrop' ? '重绘范围：拖出裁切范围即生效，重画可改'
+    : '就绪');
+}
+document.querySelectorAll('.tool[data-tool]').forEach(function(b){
+  b.addEventListener('click', function(){ setTool(b.dataset.tool); });
+});
+// 按钮步进比滚轮大一些，但仍保持平顺（1.2 ≈ 滚轮 6 格）
+$('zoomIn').onclick = function(){ setZoomCentered(viewScale * 1.2); };
+$('zoomOut').onclick = function(){ setZoomCentered(viewScale / 1.2); };
+$('fitAll').onclick = function(){ fitView(); };
+$('zoom100').onclick = function(){ setZoomCentered(1); };
+$('boardSize').onclick = openSizeDialog;
+$('growBoard').onclick = growBoard;
+$('rcropDone').onclick = function(){ setTool('move'); };
+$('rcropCtx').oninput = function(){
+  rcropContext = (parseInt(this.value, 10) || 12) / 10;
+  $('rcropCtxVal').textContent = '×' + rcropContext.toFixed(1);
+};
+$('rcropFeather').addEventListener('input', function(){
+  rcropFeather = parseInt(this.value, 10) || 0;
+  $('rcropFeatherVal').textContent = rcropFeather + ' px';
+});
+$('rcropClear').onclick = function(){
+  inpaintRect = null;
+  syncRcropInfo();
+  draw();
+  setStatus('已清除重绘范围');
+};
+$('layerUp').onclick = function(){ reorder(1); };
+$('layerDown').onclick = function(){ reorder(-1); };
+$('layerCenter').onclick = centerLayer;
+$('addLayer').onclick = function(){ $('filePick').click(); };
+$('filePick').onchange = function(e){
+  var fs = Array.from(e.target.files || []);
+  e.target.value = '';
+  if (!fs.length) return;
+  var chain = Promise.resolve();
+  fs.forEach(function(f){ chain = chain.then(function(){ return addLayerByFile(f); }); });
+  chain.then(function(){ setStatus('已添加 ' + fs.length + ' 个图层'); })
+       .catch(function(err){ setStatus('添加失败：' + (err && err.message ? err.message : err)); });
+};
+$('opacity').oninput = function(e){
+  var l = curLayer(); if (!l) return;
+  l.opacity = +e.target.value;
+  $('opacityVal').textContent = Math.round(l.opacity) + '%';
+  draw();
+};
+$('rotation').oninput = function(e){
+  var l = curLayer(); if (!l) return;
+  l.rotation = +e.target.value;
+  $('rotationVal').textContent = Math.round(l.rotation) + '°';
+  draw();
+};
+$('scale').oninput = function(e){
+  var l = curLayer(); if (!l || !l.natW) return;
+  var s = (+e.target.value) / 100;
+  var cx = l.x + l.w / 2, cy = l.y + l.h / 2;
+  l.w = Math.round(l.natW * s); l.h = Math.round(l.natH * s);
+  l.x = Math.round(cx - l.w / 2); l.y = Math.round(cy - l.h / 2);
+  $('scaleVal').textContent = e.target.value + '%';
+  draw();
+};
+['opacity','rotation','scale'].forEach(function(id){
+  $(id).addEventListener('pointerdown', function(){ pushHistory(); });
+});
+$('center').onclick = centerLayer;
+$('fitLayer').onclick = fitLayerToBoard;
+$('resetLayer').onclick = resetLayer;
+$('delete').onclick = deleteLayer;
+$('bgTrans').onclick = function(){ setBg('transparent'); };
+$('bgWhite').onclick = function(){ setBg('white'); };
+$('bgBlack').onclick = function(){ setBg('black'); };
+$('ratio1').onclick = function(){ setRatio(1); };
+$('ratio43').onclick = function(){ setRatio(4/3); };
+$('ratio169').onclick = function(){ setRatio(16/9); };
+$('ratio34').onclick = function(){ setRatio(3/4); };
+$('ratio23').onclick = function(){ setRatio(2/3); };
+$('ratio916').onclick = function(){ setRatio(9/16); };
+$('undo').onclick = undo;
+$('redo').onclick = redo;
+$('preview').onclick = function(){
+  try {
+    var c = exportCanvas();
+    c.toBlob(function(blob){
+      if (!blob){ setStatus('预览生成失败'); return; }
+      var url = URL.createObjectURL(blob);
+      var w = window.open(url, '_blank');
+      if (!w){ setStatus('预览被浏览器拦截，请允许弹窗'); URL.revokeObjectURL(url); return; }
+      setTimeout(function(){ URL.revokeObjectURL(url); }, 60000);
+      setStatus('预览已在新窗口打开');
+    }, 'image/png');
+  } catch (err){
+    setStatus('预览失败：' + (err && err.message ? err.message : err));
+  }
+};
+$('cancel').onclick = function(){
+  setStatus('已取消');
+  finish(null);
+};
+$('confirm').onclick = function(){
+  if ($('confirm').disabled) return;
+  $('confirm').disabled = true;
+  $('cancel').disabled = true;
+  setStatus('导出中…');
+  var c = exportCanvas();
+  var doc;
+  try { doc = buildDoc(); } catch (err){ doc = null; }
+  c.toBlob(function(blob){
+    if (!blob){
+      setStatus('导出失败：画布过大或内存不足');
+      $('confirm').disabled = false;
+      $('cancel').disabled = false;
+      return;
+    }
+    finish({ blob: blob, width: artW, height: artH, doc: doc });
+  }, 'image/png');
+};
+$('szCancel').onclick = closeSizeDialog;
+$('cropApply').onclick = cropApply;
+$('cropCancel').onclick = cropCancel;
+$('erSize').oninput = function(e){
+  eraserSize = +e.target.value;
+  $('erSizeVal').textContent = eraserSize + ' px';
+};
+$('erSoft').oninput = function(e){
+  eraserSoft = (+e.target.value) / 100;
+  $('erSoftVal').textContent = e.target.value + '%';
+};
+/* 橡皮模式：笔刷圈跟随光标（直径 = 笔刷大小 × 视图缩放） */
+workspace.addEventListener('pointermove', function(e){
+  if (tool !== 'eraser') return;
+  var r = workspace.getBoundingClientRect();
+  var ring = $('brushRing');
+  var d = Math.max(2, eraserSize * viewScale);
+  ring.style.width = ring.style.height = d + 'px';
+  ring.style.left = (e.clientX - r.left) + 'px';
+  ring.style.top = (e.clientY - r.top) + 'px';
+  ring.style.display = 'block';
+});
+workspace.addEventListener('pointerleave', function(){ $('brushRing').style.display = 'none'; });
+$('szOk').onclick = commitSize;
+$('sizeMask').addEventListener('pointerdown', function(e){ if (e.target === $('sizeMask')) closeSizeDialog(); });
+
+window.addEventListener('resize', function(){ applyView(); });
+
+/* 独立打开时给示例数据方便调样式；嵌在宿主里则等 INIT 消息，避免空帧闪烁 */
+function boot(){
+  if (window.parent === window){
+    resetSession({ presetW: 1024, presetH: 1024, title: 'ARES CANVAS · DEMO' }).then(function(){
+      // 无外部依赖的示例图层，双击本文件即可看到完整布局
+      var c = document.createElement('canvas');
+      c.width = 640; c.height = 400;
+      var g = c.getContext('2d');
+      var grd = g.createLinearGradient(0, 0, 640, 400);
+      grd.addColorStop(0, '#1f4d5e');
+      grd.addColorStop(0.5, '#3f7f9c');
+      grd.addColorStop(1, '#b79cff');
+      g.fillStyle = grd; g.fillRect(0, 0, 640, 400);
+      g.strokeStyle = 'rgba(141,231,255,.55)'; g.lineWidth = 2;
+      for (var i = 0; i <= 640; i += 40){ g.beginPath(); g.moveTo(i, 0); g.lineTo(i, 400); g.stroke(); }
+      for (var j = 0; j <= 400; j += 40){ g.beginPath(); g.moveTo(0, j); g.lineTo(640, j); g.stroke(); }
+      g.fillStyle = '#eaf6ff';
+      g.font = 'bold 42px "Segoe UI",sans-serif';
+      g.textAlign = 'center'; g.textBaseline = 'middle';
+      g.fillText('LAYER 1', 320, 200);
+      var url = c.toDataURL('image/png');
+      return addImageLayer(url, '示例图层');
+    }).then(function(){
+      history = []; future = []; syncUndoBtns();
+      renderAll();
+      requestAnimationFrame(function(){ fitView(); fitView(); });
+    });
+    setStatus('DEMO 模式：滚轮缩放 · 中键平移 · 拖八向手柄改画板');
+    return;
+  }
+  // 宿主内：先摆好空画板骨架（不加载任何图），等 INIT
+  artW = snap32(900); artH = snap32(600);
+  resizeBackingStore();
+  wrap.classList.add('board-on');
+  renderAll();
+  requestAnimationFrame(function(){ fitView(); });
+}
+boot();
+
+/* 供宿主直接调用（同源 iframe 也能用） */
+window.__aresCanvas = {
+  init: function(payload){ settled = false; return resetSession(payload || {}); },
+  finish: finish,
+  getResult: function(){ return window.__aresCanvasResult; },
+  // 只读探针：自动化测试用，不参与业务逻辑
+  _probe: function(){
+    return {
+      artW: artW, artH: artH, selected: selected, bgMode: bgMode,
+      layers: layers.map(function(l){
+        return { name: l.name, x: l.x, y: l.y, w: l.w, h: l.h,
+                 rotation: l.rotation, opacity: l.opacity, visible: l.visible,
+                 srcUrl: l.srcUrl };
+      })
+    };
+  },
+  _buildDoc: buildDoc
+};
+window.openCanvasEditor = function(o){ return resetSession(o).then(function(){ return null; }); };
+
+})();
+</script>
+</body>
+</html>

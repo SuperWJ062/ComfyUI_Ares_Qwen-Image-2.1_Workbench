@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "repositories": [
+    {
+      "repo_id": "MIUProject/VNCCS_PoseLibrary_Main",
+      "title": "VNCCS Pose Library Main",
+      "description": "Default curated VNCCS Pose Studio pose library.",
+      "manifest_path": "pose_library.json",
+      "enabled": true
+    },
+    {
+      "repo_id": "Totemistyk/General_Poses_PoseStudio",
+      "title": "General Poses PoseStudio",
+      "description": "Default community pose library by Totemistyk.",
+      "manifest_path": "pose_library.json",
+      "enabled": true
+    }
+  ]
+}

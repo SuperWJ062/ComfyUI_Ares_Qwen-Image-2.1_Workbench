@@ -1,0 +1,514 @@
+[
+  {
+    "name": "Visceral Crimson Abstraction",
+    "prompt": "visceral crimson and black, biomorphic abstraction, high-contrast neural networks, gritty organic textures, macabre anatomical surrealism, shattered graphic composition, synthetic biology aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "内脏感绯红抽象",
+    "thumbnail": "samples/Visceral_Crimson_Abstraction.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Analog Cobalt Nocturne",
+    "prompt": "cobalt blue palette, analog VHS aesthetic, CRT scanlines, minimalist composition, lo-fi grain, dreamcore atmosphere, nocturnal surrealism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "模拟钴蓝夜曲",
+    "thumbnail": "samples/Analog_Cobalt_Nocturne.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Analog Digital Liminality",
+    "prompt": "CRT scanline effect, dithered shading, low-poly aesthetic, pixelated texture, retro computer graphics, liminal atmosphere, 90s software render. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "模拟数字阈限",
+    "thumbnail": "samples/Analog_Digital_Liminality.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Analytical Cybernetic Surveillance",
+    "prompt": "cyan HUD overlay, CRT scanlines, cybernetic surveillance, holographic telemetry, monochromatic blue-green, pixelated digital interface, high-contrast security footage. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "分析 控制论 监视",
+    "thumbnail": "samples/Analytical_Cybernetic_Surveillance.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Chromatic Retro Surrealism",
+    "prompt": "airbrush grain texture, vibrant color gradients, retro surrealism, minimalist composition, prismatic light leak, volumetric shading, vintage sci-fi atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "彩色复古超现实",
+    "thumbnail": "samples/Chromatic_Retro_Surrealism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Ethereal Spectral Dusk",
+    "prompt": "ethereal double exposure, spectral light leaks, dreamy motion blur, twilight gradient background, soft-focus silhouette, prismatic chromatic aberration, mystical hazy atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵光谱黄昏",
+    "thumbnail": "samples/Ethereal_Spectral_Dusk.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Luminescent Cosmic Surrealism",
+    "prompt": "cosmic surrealism, chromatic aberration, iridescent stardust, retro-digital aesthetic, prismatic light leaks, dreamlike atmosphere, starry void, glitter texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "荧光宇宙超现实",
+    "thumbnail": "samples/Luminescent_Cosmic_Surrealism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Luminous Prismatic Solarpunk",
+    "prompt": "solarpunk, macro photography, iridescent glass, chromatic aberration, glowing bokeh, lush greenery, prismatic light reflections, ethereal atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮棱镜太阳朋克",
+    "thumbnail": "samples/Luminous_Prismatic_Solarpunk.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Luminous Temporal Abstraction",
+    "prompt": "ethereal chromatic gradient, glowing ambient aura, slit-scan motion blur, vibrant thermal color palette, soft-focus digital abstraction, temporal distortion, luminous light leak. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮时间抽象",
+    "thumbnail": "samples/Luminous_Temporal_Abstraction.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Nocturnal Digital Noir",
+    "prompt": "deep indigo and cyan palette, high-contrast silhouettes, heavy digital grain, CRT scanline texture, liminal space, lo-fi retro-futurism, motion-blurred abstraction. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行数字黑色",
+    "thumbnail": "samples/Nocturnal_Digital_Noir.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Nostalgic Digital Phosphor",
+    "prompt": "retro computer aesthetic, pixel art, CRT scanlines, dithered shading, phosphor glow, low-resolution graphics, 1-bit minimalist style. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 数字 磷光",
+    "thumbnail": "samples/Nostalgic_Digital_Phosphor.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Retro Cursor Surrealism",
+    "prompt": "retro cursor art, CRT monitor texture, pixelated mosaic, vintage OS aesthetic, digital surrealism, blue screen background, net art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古光标超现实",
+    "thumbnail": "samples/Retro_Cursor_Surrealism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Spectral Digital Lume",
+    "prompt": "bioluminescent point cloud, electric blue glow, analog CRT scanlines, fluted glass distortion, high-contrast black void, digital spectral silhouette, cybernetic lidar aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光谱数字流明",
+    "thumbnail": "samples/Spectral_Digital_Lume.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Deconstructed Archival Minimalism",
+    "prompt": "minimalist gallery layout, deconstructed photo collage, staggered paper layers, archival photography aesthetic, fragmented cubist perspective, muted earth tones, tactile paper edges. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "解构档案极简主义",
+    "thumbnail": "samples/Deconstructed_Archival_Minimalism.webp",
+    "group": "拼贴"
+  },
+  {
+    "name": "Fragmented Noir Portraiture",
+    "prompt": "torn paper collage, chiaroscuro portraiture, distressed texture, monochromatic noir, fragmented composition, psychological atmosphere, raw emotional gaze. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "破碎黑色肖像摄影",
+    "thumbnail": "samples/Fragmented_Noir_Portraiture.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Fragmented Tactile Realism",
+    "prompt": "tactile paper collage, shattered mirror refraction, layered dimensional composition, analogue deconstruction, soft drop shadows, muted earth tones, fragmented perspective. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "破碎触觉写实",
+    "thumbnail": "samples/Fragmented_Tactile_Realism.webp",
+    "group": "拼贴"
+  },
+  {
+    "name": "Surreal Deconstructed Portraiture",
+    "prompt": "surreal portraiture, torn paper collage, shattered glass overlay, chiaroscuro lighting, muted earth tones, tactile mixed-media, fragmented identity. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实解构肖像摄影",
+    "thumbnail": "samples/Surreal_Deconstructed_Portraiture.webp",
+    "group": "拼贴"
+  },
+  {
+    "name": "Surreal Liminal Nostalgia — Oversaturated Y2K Collage",
+    "prompt": "frutiger eco, weirdcore, dreamcore, surreal digital collage, oversaturated green landscape, uncanny liminal space, nostalgic analog texture, first-person perspective. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实阈限怀旧过饱和千禧风拼贴",
+    "thumbnail": "samples/Surreal_Liminal_Nostalgia_—_Oversaturated_Y2K_Collage.webp",
+    "group": "拼贴"
+  },
+  {
+    "name": "Tactile Deconstructed Collage — Woven Mosaic Strips",
+    "prompt": "analogue paper collage, grid-based mosaic, woven vintage photography, tactile paper texture, fragmented geometric composition, muted retro color palette, deconstructed imagery. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "触感 解构 拼贴 — 编织 马赛克 条带",
+    "thumbnail": "samples/Tactile_Deconstructed_Collage_—_Woven_Mosaic_Strips.webp",
+    "group": "模拟胶片"
+  },
+  {
+    "name": "Translucent Bio-Cyber Assemblage",
+    "prompt": "translucent resin shell, exposed circuit board anatomy, biomorphic cybernetic sculpture, soft pastel and metallic color palette, stark black background, intricate fiber optic wiring, macro studio photography. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "半透明生物赛博集合艺术",
+    "thumbnail": "samples/Translucent_Bio-Cyber_Assemblage.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Translucent Cyber-Organic Assemblage — Mint-Copper Resin",
+    "prompt": "translucent resin, intricate circuitry, macro photography, stark black background, techno-organic hybrid, studio lighting, pastel and metallic palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "半透明 赛博有机 集合艺术 — 薄荷铜 树脂",
+    "thumbnail": "samples/Translucent_Cyber-Organic_Assemblage_—_Mint-Copper_Resin.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Translucent Cyber-Organic Assemblage — Vivid Circuit Glow",
+    "prompt": "translucent cybernetic anatomy, circuit board integration, glossy resin and glass, stark black background, biomechanical sculpture, retro-futuristic hardware, macro studio lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "半透明 赛博有机 集合艺术 — 鲜明 电路 辉光",
+    "thumbnail": "samples/Translucent_Cyber-Organic_Assemblage_—_Vivid_Circuit_Glow.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Vibrant Naive Collage",
+    "prompt": "naive folk art, vibrant gouache texture, hand-drawn aesthetic, bold flat shapes, whimsical collage, saturated color palette, tactile brushwork. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳稚拙拼贴",
+    "thumbnail": "samples/Vibrant_Naive_Collage.webp",
+    "group": "拼贴"
+  },
+  {
+    "name": "Analog Glitch Nostalgia — Cobalt Signal Burst",
+    "prompt": "analog glitch art, CRT scanlines, chromatic aberration, VHS tracking error, pixelated decay, interlaced signal, cobalt blue aesthetic, retro digital distortion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "模拟故障怀旧钴蓝信号爆闪",
+    "thumbnail": "samples/Analog_Glitch_Nostalgia_—_Cobalt_Signal_Burst.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Analog Liminal Glitchcore",
+    "prompt": "VHS analog glitch, low-poly PS1 aesthetic, liminal space, chromatic aberration, CRT texture, uncanny dreamcore, lo-fi CGI. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "模拟阈限故障核",
+    "thumbnail": "samples/Analog_Liminal_Glitchcore.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Clinical Cyber Noir",
+    "prompt": "minimalist avant-garde portrait, cool blue color palette, stark clinical lighting, futuristic noir atmosphere, metallic chrome accents, high-contrast chiaroscuro, digital glitch distortion, clean editorial composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "临床赛博黑色",
+    "thumbnail": "samples/Clinical_Cyber_Noir.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Cobalt Graphic Op-Print",
+    "prompt": "cobalt blue and off-white, op art, linocut print style, topographic line patterns, high contrast graphic, minimalist screenprint, monochromatic engraving. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "钴蓝图形欧普印刷",
+    "thumbnail": "samples/Cobalt_Graphic_Op-Print.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Corrupted Analog Nostalgia",
+    "prompt": "analog glitch art, VHS tracking error, chromatic aberration, CRT scanlines, datamoshing, retro digital noise, liminal aesthetic, corrupted video signal. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "损坏 模拟 怀旧",
+    "thumbnail": "samples/Corrupted_Analog_Nostalgia.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Cyanic Analog Decay",
+    "prompt": "monochromatic cyan and deep blue, analog VHS glitch, high-contrast chiaroscuro, horizontal scanlines, chromatic aberration, visceral skin texture, digital surveillance aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "青蓝模拟衰败",
+    "thumbnail": "samples/Cyanic_Analog_Decay.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Cybernetic Glitch Surrealism",
+    "prompt": "pixel sorting, digital glitch art, cybernetic surrealism, vertical datamoshing, stark chiaroscuro lighting, circuit board geometry, metallic disintegration. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "控制论故障超现实",
+    "thumbnail": "samples/Cybernetic_Glitch_Surrealism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Deconstructed Analog Surrealism — Woven Pixel Fade",
+    "prompt": "tactile paper weaving, analog glitch art, fragmented grid collage, muted earth tone palette, deconstructed landscape, vintage photographic texture, pixelated geometric overlay, handcrafted mixed media. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "解构 模拟 超现实主义 — 编织 像素 淡出",
+    "thumbnail": "samples/Deconstructed_Analog_Surrealism_—_Woven_Pixel_Fade.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Digital Blueprint Noir",
+    "prompt": "cyanotype blueprint aesthetic, CRT scanlines and digital noise, glowing thermal silhouette, machine vision HUD overlay, monochromatic cobalt and indigo, surveillance grain, retro-futuristic glitch art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "数字蓝图黑色",
+    "thumbnail": "samples/Digital_Blueprint_Noir.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Digital Decay Surrealism",
+    "prompt": "low-poly 3D render, digital glitch art, CRT scanlines, pixelated UI elements, datamoshing, retro game aesthetic, chromatic aberration, surreal digital decay. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "数字衰败超现实",
+    "thumbnail": "samples/Digital_Decay_Surrealism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Digital Distortion Minimalism",
+    "prompt": "pixel sorting, digital glitch art, minimalist composition, chromatic aberration, data-bending, scanline texture, clinical lighting, fragmented reality. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "数字畸变极简主义",
+    "thumbnail": "samples/Digital_Distortion_Minimalism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Digital Organic Glitch",
+    "prompt": "pixel sorting, digital glitch art, vertical databending, surreal nature, melting reality, chromatic aberration, computational decay. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "数字有机故障",
+    "thumbnail": "samples/Digital_Organic_Glitch.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Ethereal Melancholic Dreamscape — Pale Digital Decay",
+    "prompt": "ethereal, melancholic, soft-focus, muted color palette, cinematic diffusion, translucent textures, dreamlike atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵忧郁梦境苍白数字衰败",
+    "thumbnail": "samples/Ethereal_Melancholic_Dreamscape_—_Pale_Digital_Decay.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Fractured Prismatic Deconstruction",
+    "prompt": "shattered glass refraction, fractured geometric shards, high-contrast dramatic lighting, deconstructed mixed media, prismatic crystalline texture, glitch distortion, metallic sheen, tactile fragmentation. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "碎裂 棱镜 解构",
+    "thumbnail": "samples/Fractured_Prismatic_Deconstruction.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Fragmented Digital Brutalism",
+    "prompt": "fragmented photo assemblage, datamoshing, pixel sorting, brutalist texture, digital corruption, cubist montage, chromatic glitch. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "破碎 数字 粗野主义",
+    "thumbnail": "samples/Fragmented_Digital_Brutalism.webp",
+    "group": "像素"
+  },
+  {
+    "name": "Fragmented Digital Noir",
+    "prompt": "CRT glitch art, chromatic aberration, digital noise texture, distorted reeded glass, scanlines, pixel sorting, high-contrast silhouette, rainbow data corruption. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "破碎数字黑色",
+    "thumbnail": "samples/Fragmented_Digital_Noir.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Fragmented Digital Surrealism",
+    "prompt": "digital glitch art, pixel sorting, fragmented portraiture, minimalist studio lighting, surreal motion blur, high contrast composition, data corruption aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "破碎数字超现实",
+    "thumbnail": "samples/Fragmented_Digital_Surrealism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Glitch Botanical Synthesis",
+    "prompt": "botanical illustration, glitch art, analog grain, harsh flash photography, vintage paper texture, corrupted digital artifacts, mixed-media collage. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "故障植物合成",
+    "thumbnail": "samples/Glitch_Botanical_Synthesis.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Glitch-Infused Cinematic Realism",
+    "prompt": "cinematic realism, muted earth tones, chromatic aberration, digital glitch artifacts, motion blur, faded film aesthetic, melancholic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "故障浸染电影感写实",
+    "thumbnail": "samples/Glitch-Infused_Cinematic_Realism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Kinetic Digital Rupture",
+    "prompt": "dynamic radial motion, brutalist architecture, digital pixel sorting, fragmented reality, high contrast industrial lighting, chromatic aberration, seismic structural rupture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态数字断裂",
+    "thumbnail": "samples/Kinetic_Digital_Rupture.webp",
+    "group": "像素"
+  },
+  {
+    "name": "Kinetic Minimalist Impressionism",
+    "prompt": "intentional motion blur, cool blue and teal palette, minimalist abstract composition, painterly textures, ghostly silhouettes, high-contrast fluid motion, digital glitch interpretation. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态极简印象派",
+    "thumbnail": "samples/Kinetic_Minimalist_Impressionism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Luminous Digital Retrocore",
+    "prompt": "retro-futuristic, bioluminescent cyan glow, high-contrast dark background, pixel grid texture, glitch artifacts, digital pointillism, 16-bit aesthetic, CRT scanlines. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮数字复古核",
+    "thumbnail": "samples/Luminous_Digital_Retrocore.webp",
+    "group": "像素"
+  },
+  {
+    "name": "Minimalist Glitch Synthesis",
+    "prompt": "pixel sorting, digital glitch art, minimalist studio photography, datamoshing, avant-garde editorial, fragmented composition, neutral color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "极简故障合成",
+    "thumbnail": "samples/Minimalist_Glitch_Synthesis.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Monochromatic Crimson Noir — Scarlet Glitch Backlight",
+    "prompt": "monochromatic deep red, high-contrast silhouette, cinematic noir lighting, analog glitch artifact, glowing scarlet atmosphere, chiaroscuro, minimalist dark aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "单色绯红黑色猩红故障逆光",
+    "thumbnail": "samples/Monochromatic_Crimson_Noir_—_Scarlet_Glitch_Backlight.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Nostalgic Glitch Dreamscape",
+    "prompt": "vintage OS GUI, chromatic aberration, analog glitch art, pixelated aesthetic, lo-fi digital surrealism, CRT monitor texture, dreamcore, pastel vaporwave. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 故障 梦境",
+    "thumbnail": "samples/Nostalgic_Glitch_Dreamscape.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Organic Glitch Synthesis",
+    "prompt": "pixel sorting, glitch art, organic digital hybrid, data corruption, stretched textures, surreal nature, geological strata. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "有机故障合成",
+    "thumbnail": "samples/Organic_Glitch_Synthesis.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Prismatic Astral Dispersion",
+    "prompt": "chromatic aberration, prismatic light dispersion, stark black background, ethereal bioluminescence, shattered glass refraction, digital glitch disintegration, cosmic stardust silhouette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜星际色散",
+    "thumbnail": "samples/Prismatic_Astral_Dispersion.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Prismatic Chrome Glitch",
+    "prompt": "chromatic aberration, ultramarine blue background, liquid chrome texture, analog glitch art, spectral light refraction, 1980s retro-futurism, high-contrast digital noise. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜铬故障",
+    "thumbnail": "samples/Prismatic_Chrome_Glitch.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Prismatic Cosmic Surrealism",
+    "prompt": "chromatic aberration, prismatic light beams, retro-futuristic airbrush, cosmic surrealism, deep chiaroscuro, grainy texture, mystical silhouette, iridescent nebula. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜宇宙超现实",
+    "thumbnail": "samples/Prismatic_Cosmic_Surrealism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Prismatic Digital Fragmentation — Earthy Datamosh",
+    "prompt": "pixel sorting, chromatic aberration, digital glitch art, datamoshing, prismatic light leaks, iridescent textures, organic-cybernetic fusion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜数字碎片化泥土色数据摩什",
+    "thumbnail": "samples/Prismatic_Digital_Fragmentation_—_Earthy_Datamosh.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Refracted Organic Minimalism",
+    "prompt": "fluted glass distortion, botanical macro minimalism, ribbed texture refraction, high-key natural lighting, organic digital fusion, vertical linear abstraction, surreal minimalist composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "折射有机极简主义",
+    "thumbnail": "samples/Refracted_Organic_Minimalism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Refractive Glitch Impressionism",
+    "prompt": "rain-streaked glass, painterly impressionistic blur, chromatic aberration, refractive light bokeh, digital glitch decay, vertical motion smear, nostalgic atmospheric texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "折射故障印象派",
+    "thumbnail": "samples/Refractive_Glitch_Impressionism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Retro Digital Artifacts",
+    "prompt": "90s retro OS GUI, dithered pixel art, CRT scanline effect, chromatic aberration, webcore collage, cobalt blue duotone, lo-fi digital noise. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古数字伪影",
+    "thumbnail": "samples/Retro_Digital_Artifacts.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Retro-Digital Mythic Impressionism",
+    "prompt": "pixel art, digital glitch, terracotta and teal palette, dithering texture, chromatic aberration, scanlines, mythological motifs, retro-futurism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古数字神话印象派",
+    "thumbnail": "samples/Retro-Digital_Mythic_Impressionism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Spectral Glacial Motion",
+    "prompt": "cyanotype motion blur, monochromatic cobalt palette, spectral light leaks, long exposure decay, ethereal ghosting, analog digital hybrid, high contrast cool tones, dreamlike temporal smear. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光谱冰川运动",
+    "thumbnail": "samples/Spectral_Glacial_Motion.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Spectral Glitch Surrealism — Reeded Glass Flash",
+    "prompt": "analog glitch art, motion blur, cobalt blue and stark white, spectral silhouette, CRT scanlines, reeded glass distortion, high-contrast flash photography, digital decay. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "幽灵 故障 超现实主义 — 条纹 玻璃 闪光",
+    "thumbnail": "samples/Spectral_Glitch_Surrealism_—_Reeded_Glass_Flash.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Surreal Digital Erosion",
+    "prompt": "pixel sorting, glitch art, digital decay, vertical datamoshing, surreal landscape, generative error, linear distortion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实数字侵蚀",
+    "thumbnail": "samples/Surreal_Digital_Erosion.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Surreal Liminal Glitchcore",
+    "prompt": "liminal space, weirdcore, chromatic aberration, low-poly CGI, VHS glitch effect, retro computer UI, uncanny dreamcore. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实阈限故障核",
+    "thumbnail": "samples/Surreal_Liminal_Glitchcore.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Synthetic Glitch Surrealism",
+    "prompt": "glitch art, pixel sorting, chromatic aberration, datamoshing, digital corruption, surreal portraiture, VHS scanlines, techno-dystopian. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "合成故障超现实",
+    "thumbnail": "samples/Synthetic_Glitch_Surrealism.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Tactile Digital Synthesis",
+    "prompt": "tactile fiber art, pixelated tapestry, geometric yarn structure, digital glitch aesthetics, vibrant textile texture, minimalist gallery display, modular pattern design. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "触觉数字合成",
+    "thumbnail": "samples/Tactile_Digital_Synthesis.webp",
+    "group": "故障色差"
+  },
+  {
+    "name": "Thermal Liquid Chrome",
+    "prompt": "thermal imaging color palette, liquid chrome, chromatic distortion, dithered grainy texture, iridescent gradient, psychedelic liquefaction, soft fuzzy blur. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "热成像液态铬",
+    "thumbnail": "samples/Thermal_Liquid_Chrome.webp",
+    "group": "故障色差"
+  }
+]

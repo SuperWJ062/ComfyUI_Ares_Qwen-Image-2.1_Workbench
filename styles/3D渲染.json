@@ -1,0 +1,810 @@
+[
+  {
+    "name": "Ethereal Kawaii Whimsy",
+    "prompt": "3D digital render, pastel color palette, chibi character design, soft volumetric lighting, tactile plush textures, dreamy bokeh, shallow depth of field. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵可爱奇想",
+    "thumbnail": "samples/Ethereal_Kawaii_Whimsy.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Glossy Urban Surrealism",
+    "prompt": "glossy 3D vinyl character, urban surrealism, inflated balloon aesthetic, hyper-realistic street photography, vibrant candy colors, whimsical juxtaposition, smooth plastic texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光泽都市超现实",
+    "thumbnail": "samples/Glossy_Urban_Surrealism.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Organic Velvet Minimalism",
+    "prompt": "organic 3D sculpture, porous cellular texture, soft studio lighting, monochromatic violet palette, minimalist neutral background, tactile foam and clay, parametric bio-design. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "有机天鹅绒极简主义",
+    "thumbnail": "samples/Organic_Velvet_Minimalism.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Tactile Surrealist Dreamscape",
+    "prompt": "tactile felt and glossy textures, saturated primary color palette, surrealist whimsical composition, oversized organic elements, vibrant blue sky background, high-contrast lighting, 3d sculptural aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "触觉超现实梦境",
+    "thumbnail": "samples/Tactile_Surrealist_Dreamscape.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Whimsical Tactile 3D",
+    "prompt": "3D claymation style, tactile matte texture, chunky rounded geometries, soft studio lighting, vibrant minimalist background, cute vinyl toy aesthetic, whimsical character design. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "奇想触觉三维",
+    "thumbnail": "samples/Whimsical_Tactile_3D.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Cinematic Stylized Fantasy",
+    "prompt": "stylized 3D character, cinematic lighting, octane render, subsurface scattering, rich tactile textures, expressive character design, fantasy atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感风格化幻想",
+    "thumbnail": "samples/Cinematic_Stylized_Fantasy.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Ethereal Solarpunk Pastoral — Glossy 3D Utopia",
+    "prompt": "solarpunk, ethereal surrealism, vibrant saturated landscapes, high-gloss futuristic accents, whimsical pastoral, bright natural daylight, hyper-realistic 3D render. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵 太阳朋克 田园 — 光泽 3D 乌托邦",
+    "thumbnail": "samples/Ethereal_Solarpunk_Pastoral_—_Glossy_3D_Utopia.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Hyperreal Digital Dreamscapes",
+    "prompt": "hyperreal digital aesthetic, vibrant green and cobalt blue palette, surreal liminal landscape, clean 3D CGI render, miniature world diorama, nostalgic dreamscape, minimalist surrealism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超写实数字梦境",
+    "thumbnail": "samples/Hyperreal_Digital_Dreamscapes.webp",
+    "group": "写实渲染"
+  },
+  {
+    "name": "Luminous Porcelain Minimalism",
+    "prompt": "stylized 3D render, porcelain skin texture, soft subsurface scattering, minimalist composition, airbrushed makeup, vibrant rim lighting, matte clay aesthetic, octane render. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮瓷器极简主义",
+    "thumbnail": "samples/Luminous_Porcelain_Minimalism.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Luminous Retro-Surrealist Landscapes",
+    "prompt": "one-point perspective, retro-futurist airbrush, liminal surrealism, vibrant high-contrast palette, glowing neon atmosphere, geometric architectural elements, dreamlike cinematic lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮复古超现实风景",
+    "thumbnail": "samples/Luminous_Retro-Surrealist_Landscapes.webp",
+    "group": "复古渲染"
+  },
+  {
+    "name": "Minimalist Surreal Liminality",
+    "prompt": "liminal space, surrealist minimalism, vibrant blue sky, stark geometric shadows, dreamcore aesthetic, vast empty landscape, hyper-realistic 3D render, uncanny isolation. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "极简超现实阈限",
+    "thumbnail": "samples/Minimalist_Surreal_Liminality.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Surreal Liminal Pastoral — Early-CGI Smoothness",
+    "prompt": "dreamcore, liminal space, minimalist surrealism, saturated green hills, vibrant blue sky, nostalgic CGI aesthetic, solitary architectural elements. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实阈限田园早期CG柔光",
+    "thumbnail": "samples/Surreal_Liminal_Pastoral_—_Early-CGI_Smoothness.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Surreal Minimalist Pastoral",
+    "prompt": "surreal minimalism, vibrant grassy hills, vast clear sky, clean CGI render, sharp graphic shadows, toy-like aesthetic, liminal pastoral landscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实极简田园",
+    "thumbnail": "samples/Surreal_Minimalist_Pastoral.webp",
+    "group": "写实渲染"
+  },
+  {
+    "name": "Architectural Voxel Synthesis",
+    "prompt": "voxelized brutalism, aerial geometric architecture, miniature diorama style, overgrown ancient ruins, tilt-shift perspective, terracotta and sandstone palette, surreal digital decay. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "建筑 体素 合成",
+    "thumbnail": "samples/Architectural_Voxel_Synthesis.webp",
+    "group": "体素像素"
+  },
+  {
+    "name": "Charming Isometric Voxelworlds",
+    "prompt": "isometric voxel diorama, low-poly miniature world, stylized 3D block art, cozy warm lighting, clean studio background, magicavoxel aesthetic, tactile toy-like render. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "迷人 等距 体素世界",
+    "thumbnail": "samples/Charming_Isometric_Voxelworlds.webp",
+    "group": "体素像素"
+  },
+  {
+    "name": "Cinematic Voxel Dioramas",
+    "prompt": "voxel art, isometric diorama, cinematic lighting, tilt-shift photography, warm atmospheric bloom, blocky geometry, soft volumetric shadows. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感体素景箱",
+    "thumbnail": "samples/Cinematic_Voxel_Dioramas.webp",
+    "group": "体素像素"
+  },
+  {
+    "name": "Cobalt Digital Noir",
+    "prompt": "cobalt blue and black, high-contrast wireframe, dithered stipple texture, retro digital glitch, cinematic noir lighting, voxel topography, minimalist graphic silhouette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "钴蓝数字黑色",
+    "thumbnail": "samples/Cobalt_Digital_Noir.webp",
+    "group": "复古渲染"
+  },
+  {
+    "name": "Cozy Isometric Miniatures",
+    "prompt": "isometric perspective, miniature diorama, cozy fantasy atmosphere, vibrant earthy tones, soft ambient lighting, stylized world-building, charming retro aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "温馨 等距 微缩",
+    "thumbnail": "samples/Cozy_Isometric_Miniatures.webp",
+    "group": "等距"
+  },
+  {
+    "name": "Cozy Isometric Voxel",
+    "prompt": "isometric voxel diorama, low-poly blocky style, soft directional lighting, cozy miniature aesthetic, warm earthy color palette, clean solid background, MagicaVoxel render. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "温馨 等距 体素",
+    "thumbnail": "samples/Cozy_Isometric_Voxel.webp",
+    "group": "体素像素"
+  },
+  {
+    "name": "Cozy Pastel Voxel",
+    "prompt": "voxel art, pastel color scheme, isometric 3D diorama, miniature toy aesthetic, soft volumetric lighting, cute blocky design, shallow depth of field. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "温馨 粉彩 体素",
+    "thumbnail": "samples/Cozy_Pastel_Voxel.webp",
+    "group": "体素像素"
+  },
+  {
+    "name": "Digital Chlorophyll Glitch",
+    "prompt": "monochromatic green, pixel sorting, organic glitch art, datamoshing, hyper-detailed foliage, digital disintegration, voxel extrusion, surreal nature. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "数字叶绿素故障",
+    "thumbnail": "samples/Digital_Chlorophyll_Glitch.webp",
+    "group": "写实渲染"
+  },
+  {
+    "name": "Dreamy Pastel Futurism",
+    "prompt": "pastel color palette, retro-futurism, whimsical illustration, soft studio lighting, clean line art, dreamy surrealism, designer toy aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "梦幻 粉彩 未来主义",
+    "thumbnail": "samples/Dreamy_Pastel_Futurism.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Ethereal Glitch Synthesis",
+    "prompt": "vertical pixel sorting, digital decay, emerald and neon palette, glitched organic landscapes, liquid motion blur, high-contrast data corruption, dithered textures. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵故障合成",
+    "thumbnail": "samples/Ethereal_Glitch_Synthesis.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Gothic Nocturne",
+    "prompt": "gothic fantasy, chiaroscuro lighting, moonlit atmosphere, warm lantern glow, misty landscape, dark romanticism, stylized digital illustration. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵哥特夜曲",
+    "thumbnail": "samples/Ethereal_Gothic_Nocturne.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Glossy Isometric Voxel",
+    "prompt": "voxel art, isometric 3D render, minimalist blocky design, soft studio lighting, low-poly cubic aesthetic, toy-like glossy texture, clean solid background. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光泽等距体素",
+    "thumbnail": "samples/Glossy_Isometric_Voxel.webp",
+    "group": "体素像素"
+  },
+  {
+    "name": "Isometric Miniature Worlds",
+    "prompt": "voxel art, isometric diorama, tilt-shift photography, shallow depth of field, miniature model, soft global illumination, blocky 3D render. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "等距微缩世界",
+    "thumbnail": "samples/Isometric_Miniature_Worlds.webp",
+    "group": "体素像素"
+  },
+  {
+    "name": "Isometric Voxel Narratives",
+    "prompt": "isometric 3D voxel art, low poly blocky style, soft studio lighting, diorama composition, minimalist geometry, atmospheric shadow rendering, solid dark background. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "等距体素叙事",
+    "thumbnail": "samples/Isometric_Voxel_Narratives.webp",
+    "group": "体素像素"
+  },
+  {
+    "name": "Luminous Dollhouse Animation",
+    "prompt": "stylized digital portrait, soft-focus glow, porcelain skin texture, glossy highlights, warm radiant lighting, expressive oversized eyes, airbrushed digital painting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮玩偶屋动画",
+    "thumbnail": "samples/Luminous_Dollhouse_Animation.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Nostalgic Low-Poly Digital",
+    "prompt": "low-poly 3D, retro game graphics, flat shading, pixelated textures, 90s CGI aesthetic, sharp faceted geometry, vibrant saturated colors, nostalgic digital render. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧低模数字",
+    "thumbnail": "samples/Nostalgic_Low-Poly_Digital.webp",
+    "group": "低多边形"
+  },
+  {
+    "name": "Plush Whimsical 3D",
+    "prompt": "3D character render, tactile plush texture, knitted wool, soft studio lighting, saturated pastel palette, claymation aesthetic, rounded organic forms. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绒毛奇想三维",
+    "thumbnail": "samples/Plush_Whimsical_3D.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Recursive Voxel Surrealism",
+    "prompt": "voxelized extrusion, recursive droste spiral, digital glitch surrealism, pixelated mosaic landscape, atmospheric pastel gradients, chromatic aberration, parametric geometric fragmentation. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "递归体素超现实",
+    "thumbnail": "samples/Recursive_Voxel_Surrealism.webp",
+    "group": "体素像素"
+  },
+  {
+    "name": "Retro Digital Diorama",
+    "prompt": "isometric pixel art, dithered texture, 90s retro computing, low-poly 3D render, 16-bit aesthetic, high contrast digital palette, voxel diorama. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古数字立体景箱",
+    "thumbnail": "samples/Retro_Digital_Diorama.webp",
+    "group": "等距"
+  },
+  {
+    "name": "Retro Voxel Sunset",
+    "prompt": "low-poly 3D, voxel art style, golden hour sunset, nostalgic retro game graphics, volumetric lighting, pixelated textures, soft depth of field. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古体素日落",
+    "thumbnail": "samples/Retro_Voxel_Sunset.webp",
+    "group": "体素像素"
+  },
+  {
+    "name": "Surreal Pastoral Dreamscapes",
+    "prompt": "floating grassy island, vibrant blue sky, surreal dreamscape, painterly cumulus clouds, nostalgic summer atmosphere, minimalist surrealism, voxel-inspired geometry, anime-influenced serenity. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实田园梦境·低模",
+    "thumbnail": "samples/Surreal_Pastoral_Dreamscapes.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Tactile Clay Minimalist",
+    "prompt": "3D clay render, matte texture, minimalist rounded geometry, soft studio lighting, playful design, clean solid background, tactile digital sculpture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "触觉黏土极简",
+    "thumbnail": "samples/Tactile_Clay_Minimalist.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Tactile Voxel Whimsy",
+    "prompt": "tactile 3D render, voxel geometry, felt and clay textures, vibrant studio lighting, miniature diorama style, high-fidelity surface detail, playful toy aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "触觉体素奇想",
+    "thumbnail": "samples/Tactile_Voxel_Whimsy.webp",
+    "group": "体素像素"
+  },
+  {
+    "name": "Tactile Whimsy World",
+    "prompt": "3D claymation style, tactile toy aesthetic, soft pastel palette, matte and plush textures, chibi proportion, vibrant whimsical render, shallow depth of field. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "触觉奇想世界",
+    "thumbnail": "samples/Tactile_Whimsy_World.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Vibrant Stylized Fantasy",
+    "prompt": "stylized 3D digital art, painterly textures, vibrant high-fantasy landscape, warm inviting daylight, cozy rustic architecture, clean vector-like shapes, whimsical adventure atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳风格化幻想",
+    "thumbnail": "samples/Vibrant_Stylized_Fantasy.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "3D Render",
+    "prompt": "Style: A dimensionally precise digital-illustration style built on smooth, volumetric modeling that reads as fully three-dimensional through simulated geometry and light rather than drawn line, meticulously calculated illumination with soft ambient occlusion settling naturally into every contour, polished specular response giving forms convincing physical depth and weight, confident sculptural construction replacing traditional linework entirely, and a technically precise, computer-generated intensity built on simulated physical light behavior. Influenced by: real-time 3D-rendering technique, CGI modeling practice, physically based rendering (PBR) method, contemporary animated-render pipeline.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "3D渲染",
+    "thumbnail": "samples/3D_Render.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Pixar  Animation",
+    "prompt": "Style: A richly rendered 3D-illustration style built on soft, warm subsurface-scattered lighting that gives skin a believable inner glow, meticulously smooth volumetric modeling balancing appealing, rounded proportion with convincing dimensional weight, gentle, cinematic three-point lighting establishing wholesome, inviting mood within every frame, confident ambient occlusion and soft shadow settling naturally into every contour, and a polished, heartwarming studio-grade animation intensity built for broad, emotionally resonant appeal. Influenced by: Pixar, contemporary 3D-animation rendering technique, subsurface-scattering character-design practice, cinematic three-point lighting method, mainstream feature-animation studio pipeline.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "皮克斯动画",
+    "thumbnail": "samples/Pixar_Animation.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Cinematic Final Fantasy 3D Render",
+    "prompt": "Style: A richly cinematic 3D-illustration style built on meticulously detailed volumetric modeling rendered with near-photographic dimensional conviction, dramatic film-grade lighting establishing epic, emotionally charged mood within every frame, soft subsurface-scattered rendering giving skin a convincing, luminous depth, confident ambient occlusion and reflective response settling naturally into every contour, and a polished, blockbuster-grade rendering intensity built for sweeping, story-driven visual spectacle. Influenced by: Square Enix cinematic-rendering direction, real-time 3D-animation technique, subsurface-scattering character-design practice, cinematic three-point lighting method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感最终幻想3D渲染",
+    "thumbnail": "samples/Cinematic_Final_Fantasy_3D_Render.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Marble Sculpture",
+    "prompt": "Style: A dimensionally commanding sculptural form built on convincing volumetric mass shaped through confident tonal modeling rather than linear description, dramatic raking light that reveals every carved contour and recessed hollow with sculptural clarity, a translucent depth beneath the outermost extent that softens and catches illumination with quiet luminosity, a monumental stillness carried through deliberate, unhurried mass and proportion, and a timeless, classical gravitas that treats carved form itself as the entire subject. Influenced by: Michelangelo, Antonio Canova, classical figurative-sculpture tradition, academic tonal-modeling technique.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "大理石雕塑",
+    "thumbnail": "samples/Marble_Sculpture.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Playful Retro Pop",
+    "prompt": "Style: A bold, cheerful graphic illustration style built on flat, confidently bounded color-block construction separated by crisp, uniform outline, a bright, punchy simplicity that favors instant graphic charm over painterly nuance, exaggerated, bouncy proportion carrying lighthearted, nostalgic energy, a mid-century advertising-adjacent cheerfulness applied with contemporary graphic polish, and a fun, unmistakably retro-pop vibrancy that feels playful, confident, and effortlessly charming. Influenced by: mid-century advertising-illustration tradition, retro-pop graphic-design technique, flat-color commercial-illustration practice, contemporary retro-revival illustration method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "俏皮复古波普·3D渲染",
+    "thumbnail": "samples/Playful_Retro_Pop.webp",
+    "group": "复古渲染"
+  },
+  {
+    "name": "Low Poly",
+    "prompt": "Style: A geometrically reductive illustration style built on flat-shaded polygonal facets that construct form through angular simplification rather than smooth curvature, crisp hard-edged transitions between adjoining segments standing in for gradual shading, a deliberate faceted minimalism that abstracts detail into confident geometric approximation, a clean, mathematically precise rhythm carried through the visible triangulated structure, and a stylized, modern-craft elegance that celebrates simplified form as its own aesthetic statement. Influenced by: low-poly 3D-modeling technique, geometric abstraction tradition, procedural digital-art practice, minimalist polygonal design method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "低多边形",
+    "thumbnail": "samples/Low_Poly.webp",
+    "group": "低多边形"
+  },
+  {
+    "name": "LEGO Minifigure",
+    "prompt": "Style: A blocky, modular figure style built on cylindrical joint construction and simplified, interlocking geometric limbs standing in for naturalistic anatomy, a glossy, uniformly smooth plastic-like finish applied consistently across every segment, a distinctive rounded cylindrical head with minimal, printed-style facial simplification, confident, clean separation between individually distinguishable component pieces, and a cheerful, systematized toy-design precision rooted in decades of modular construction-set tradition. Influenced by: LEGO Group product-design tradition, modular construction-toy aesthetic, plastic-injection product-visualization practice, procedural toy-figure rendering method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "乐高小人仔",
+    "thumbnail": "samples/LEGO_Minifigure.webp",
+    "group": "其他"
+  },
+  {
+    "name": "LEGO Set Style",
+    "prompt": "Style: A blocky, modular illustration style built on cylindrical stud-and-brick construction logic standing in for all organic and structural form, glossy, uniformly smooth plastic-like surface finish applied consistently across every element, a deliberately simplified, interlocking geometric silhouette replacing naturalistic anatomy or structure, clean, confident graphic separation between individually distinguishable component pieces, and a cheerful, systematized toy-design precision rooted in decades of modular construction-set tradition. Influenced by: LEGO Group product-design tradition, modular construction-toy aesthetic, plastic-injection product-visualization practice, procedural brick-based 3D-rendering method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "乐高套装风格",
+    "thumbnail": "samples/LEGO_Set_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Paper Cutout",
+    "prompt": "Style: A layered, tactile illustration style built on flat, distinctly bounded shapes stacked with slight offset to suggest physical depth, crisp, clean-edged silhouette construction replacing any drawn linework, subtle drop-shadow separation between overlapping layers giving the composition a handcrafted dimensionality, a confident, graphic simplicity that favors bold shape over rendered detail, and a charming, tangible craft-quality that feels playful, dimensional, and unmistakably paper-built. Influenced by: paper-cutout collage tradition, stop-motion cutout-animation technique, layered-paper illustration practice, handcrafted collage-art method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "剪纸",
+    "thumbnail": "samples/Paper_Cutout.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Collage",
+    "prompt": "Style: A layered, tactile illustration style built on the deliberate assembly of disparate fragments arranged into a single unified composition, torn or cleanly cut edges coexisting to create unpredictable, overlapping juxtaposition, a confident compositional looseness that embraces visible seams and assembly rather than hiding them, mixed tonal registers colliding across each fragment for expressive, unexpected contrast, and a raw, handcrafted intensity that treats the act of piecing together itself as the compositional statement. Influenced by: Hannah Höch, Kurt Schwitters, collage-art tradition, mixed-media assemblage practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "拼贴",
+    "thumbnail": "samples/Collage.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Claymation",
+    "prompt": "Style: A charmingly tactile stop-motion illustration style built on soft, rounded forms carrying visible handcrafted imperfection, gentle fingerprint-like dents and subtle irregularity standing in for smooth digital finish, warm, even lighting that gives every contour a cozy, dimensional roundness, a slightly rigid, hand-manipulated quality to posing that carries endearing physical charm, and a nostalgic, cheerfully handmade warmth rooted in decades of stop-motion animation craft. Influenced by: Aardman Animations, stop-motion claymation technique, handcrafted figure-animation practice, British character-animation tradition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "黏土动画",
+    "thumbnail": "samples/Claymation.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Mixed Media",
+    "prompt": "Style: A layered, tactile illustration style built on the deliberate collision of disparate techniques — loose ink linework, painterly washes, and collaged textural fragments — coexisting within a single composition, unpredictable textural bleed and torn-edge layering that keeps the whole feeling handmade and accumulated rather than uniform, confident compositional looseness that embraces visible process over polished finish, a rich tactile depth built through overlapping transparency and material contrast, and an expressive, collage-driven intensity that feels spontaneous, layered, and richly textured. Influenced by: mixed-media collage art, Carne Griffiths, ink-and-collage illustration technique, contemporary fine-art assemblage.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "混合媒介",
+    "thumbnail": "samples/Mixed_Media.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Wallace and Gromit Style",
+    "prompt": "Style: A charmingly tactile stop-motion illustration style built on soft, rounded forms carrying visible handcrafted imperfection, gentle fingerprint-like dents and subtle irregularity standing in for smooth digital finish, warm, even lighting that gives every contour a cozy, dimensional roundness, exaggerated expressive proportions carrying subtle asymmetry and warm British whimsy, a hand-built, slightly wobbly charm that celebrates its own physical process, and a nostalgic, cheerfully eccentric handmade warmth. Influenced by: Aardman Animations, Nick Park, stop-motion claymation technique, British character-animation tradition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超级无敌掌门狗风格",
+    "thumbnail": "samples/Wallace_and_Gromit_Style.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Muppets Style",
+    "prompt": "Style: A charming, handcrafted puppet-illustration style built on soft, felted texture standing in for skin and fur alike, exaggerated, rounded proportions with oversized expressive features driving comedic readability, gentle, even stage-adjacent lighting that keeps the whole scene warmly lit and theatrical, a slightly rigid, hand-operated quality to posing that carries endearing physical charm, and a wholesome, joyfully theatrical warmth rooted in decades of beloved puppet-variety tradition. Influenced by: Jim Henson, Muppet Workshop puppet-fabrication tradition, television-variety-show staging practice, hand-puppet character-design method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "布偶秀风格",
+    "thumbnail": "samples/Muppets_Style.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Zelda Wind Waker Style",
+    "prompt": "Style: A vibrant, toon-shaded illustration style built on crisp, hard-edged cel shading with minimal tonal gradation, confident, thick outline holding clean, geometric silhouette design, warm painterly sky and terrain rendered with soft matte-painted texture, expressive, rounded character proportions carrying whimsical charm, and a bright, adventurous storybook vibrancy that feels playful, timeless, and quietly heroic.Influenced by: Nintendo character-art direction, cel-shaded toon-rendering technique, painterly matte-background practice, whimsical adventure-game illustration method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "塞尔达风之杖风格",
+    "thumbnail": "samples/Zelda_Wind_Waker_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "PS1 Graphics",
+    "prompt": "Style: A low-poly, texture-warped 3D-illustration style built on blocky, vertex-snapped geometry that jitters slightly with characteristic early-3D imprecision, low-resolution textures stretched and distorted across simplified polygonal surfaces, harsh, unfiltered pixelated edges replacing any smooth anti-aliasing, a flat, limited lighting model with minimal gradation or dynamic shadow, and a nostalgic, technically constrained charm rooted in early console-era 3D rendering limitation. Influenced by: mid-1990s PlayStation 3D-rendering technique, early polygonal-game aesthetic, retro survival-horror visual tradition, low-fidelity vertex-jitter rendering method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "PS1图形",
+    "thumbnail": "samples/PS1_Graphics.webp",
+    "group": "低多边形"
+  },
+  {
+    "name": "Woodcut",
+    "prompt": "Style: A bold, high-contrast printmaking style built on confident, gouged linework that constructs form through carved negative space rather than drawn detail, stark black-and-white division with minimal transitional tone, rough, deliberate edge-texture inherent to the carving process, a rhythmic, hand-pressed graphic clarity favoring bold shape over subtle nuance, and a rustic, timeworn print-craft gravitas rooted in centuries of relief-printing tradition. Influenced by: Albrecht Dürer, Käthe Kollwitz, woodblock relief-printing technique, expressionist print tradition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "木刻版画",
+    "thumbnail": "samples/Woodcut.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Contemporary Lithography",
+    "prompt": "Style: A refined printmaking-inspired illustration style built on flat, confidently limited color layers reminiscent of hand-pulled stone-plate printing, subtle grain and texture mimicking the imperfect registration of traditional lithographic process, clean bold linework holding each color plane with graphic precision, restrained tonal shading achieved through crosshatched or stippled print texture rather than smooth gradients, and a nostalgic yet contemporary print-craft polish that feels tactile, considered, and editorial. Influenced by: Toulouse-Lautrec, modern lithographic-printmaking technique, screenprint illustration practice, editorial print-design method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "当代石版画",
+    "thumbnail": "samples/Contemporary_Lithography.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Variable-Size Ben-Day Dots Illustration",
+    "prompt": "Style: A bold pop-art printing style built on dot patterning that varies deliberately in scale across the composition, larger dots concentrated where tone deepens and smaller dots thinning out toward lighter passages, constructing gradation entirely through dot-size modulation rather than blended shading, crisp confident outline holding each region with graphic precision, a mechanical, offset-print authenticity carried through deliberate registration texture, and a bold, retro commercial-print energy that feels instantly graphic and unmistakably mid-century. Influenced by: Roy Lichtenstein, variable Ben-Day dot printing technique, silver-age comic printing process, pop-art illustration tradition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "可变尺寸本戴点插画",
+    "thumbnail": "samples/Variable-Size_Ben-Day_Dots_Illustration.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Contemporary Ukiyo-E",
+    "prompt": "Style: A contemporary reinterpretation of traditional woodblock-print illustration built on flat, confidently bounded shape divisions layered with a cleaner, more graphic digital precision, fluid calligraphic linework retaining the rhythmic economy of the original medium while shedding its period-specific motifs, restrained tonal layering achieved through overlapping flat planes rather than gradation, a poised, contemplative stillness carried through balanced asymmetrical composition, and a refined print-craft elegance updated with a crisp, present-day graphic sensibility. Influenced by: Katsushika Hokusai, contemporary woodblock-inspired digital illustration, modern Japanese graphic design, Edo-period print technique reimagined.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "当代浮世绘",
+    "thumbnail": "samples/Contemporary_Ukiyo-E.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Mosaic Art",
+    "prompt": "Style: A tessellated illustration style built on countless discrete fragments assembled into a unified composition, each individual piece holding a single flat tone while collectively constructing gradual tonal transition through density and arrangement, confident geometric or organic fragment shapes fitted with deliberate, patient precision, a rhythmic, granular texture replacing any smooth or blended rendering entirely, and a timeless, meticulous craft intensity rooted in centuries of tessellated decorative tradition. Influenced by: Byzantine mosaic tradition, tessellation-based decorative technique, Antoni Gaudí trencadís practice, classical tile-assembly craft method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "马赛克艺术",
+    "thumbnail": "samples/Mosaic_Art.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Stained Glass Flat Art",
+    "prompt": "Style: decorative graphic aesthetics characterized by bold enclosed shapes, segmented composition, strong contour structures, ornamental patterning, and luminous mosaic-inspired design principles. The style builds imagery through interconnected flat regions separated by deliberate leading-like divisions, emphasizing symbolic clarity, visual rhythm, and harmonious decorative balance rather than volumetric realism. Rather than relying on shading or painterly texture, it communicates form through shape relationships, stylized silhouettes, and carefully arranged visual geometry, creating imagery that feels iconic, radiant, and timeless. The resulting aesthetic blends medieval craftsmanship, sacred decorative traditions, and modern graphic simplification into richly symbolic compositions with striking visual presence, reminiscent of Louis Comfort Tiffany and Alphonse Mucha, inspired by Chartres Cathedral stained glass and Tiffany Studios glass panels.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "彩色玻璃平面艺术",
+    "thumbnail": "samples/Stained_Glass_Flat_Art.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Isometric 3D Graphic",
+    "prompt": "Style: A compact, dimensionally clever illustration style built on a fixed isometric projection that renders three-dimensional form without true perspective convergence, clean, confidently simplified geometry reduced to its most essential recognizable shapes, flat-to-subtly-gradated shading applied consistently across matching angular faces to reinforce dimensional clarity, a tidy, modular compositional logic designed for small-scale, instantly legible readability, and a polished, contemporary UI-adjacent graphic precision built for consistent iconographic systems. Influenced by: isometric game-art tradition, modern UI/UX iconography practice, flat-design illustration technique, procedural icon-set design method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "等距3D图形",
+    "thumbnail": "samples/Isometric_3D_Graphic.webp",
+    "group": "等距"
+  },
+  {
+    "name": "Quilling",
+    "prompt": "Style: A delicately dimensional illustration style built on tightly coiled and shaped strips assembled into intricate, raised compositions, confident looping and scrolling forms constructing pattern through repeated coiled units rather than drawn line, a rhythmic, handcrafted precision carried through the deliberate arrangement of each individual coil, subtle raised depth and shadow where coiled edges catch light against the recessed ground, and a delicate, meticulous craft intensity rooted in centuries of paper-coiling tradition. Influenced by: traditional paper-quilling craft, filigree decorative-art technique, handcrafted coil-assembly practice, ornamental paper-art method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "衍纸",
+    "thumbnail": "samples/Quilling.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Lowbrow Style",
+    "prompt": "Style: A darkly whimsical illustration style built on cartoonish exaggeration mixed with unsettling, surreal juxtaposition, confident smooth rendering that gives every form a glossy, pop-adjacent polish, bold caricatured proportion pushed toward grotesque or absurd extremes, a rebellious, subversive humor woven through otherwise technically polished composition, and a bold, countercultural intensity that feels irreverent, playful, and quietly unsettling. Influenced by: Robert Williams, Mark Ryden, lowbrow-art movement tradition, pop-surrealist illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "低俗艺术风格",
+    "thumbnail": "samples/Lowbrow_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Fortnite Style",
+    "prompt": "Style: A glossy, saturated 3D-cartoon illustration style built on smooth, stylized proportion with exaggerated, action-figure-adjacent silhouette, bright, evenly saturated cel-adjacent shading that keeps every contour crisp and readable, confident volumetric rendering balancing cartoon simplicity with dimensional polish, dynamic, energetic posing charged with playful competitive flair, and a vibrant, high-production game-art vibrancy built for instant character appeal and broad accessibility. Influenced by: Epic Games character-art direction, stylized 3D-rendering technique, competitive-game key-art practice, cel-adjacent cartoon-render method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "堡垒之夜风格",
+    "thumbnail": "samples/Fortnite_Style.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Coraline Stop-Motion Style",
+    "prompt": "Style: A meticulously crafted stop-motion illustration style built on precise, doll-like proportion carrying an uncanny, porcelain-smooth finish, subtle handcrafted imperfection visible in gentle asymmetry rather than digital uniformity, moody, controlled lighting establishing a quietly unsettling, dreamlike atmosphere, meticulous attention to fine detail rendered with obsessive miniature-scale patience, and a whimsical yet faintly eerie handcrafted intensity that feels intimate, meticulous, and gently uncanny. Influenced by: Henry Selick, LAIKA Studios stop-motion tradition, meticulous puppet-fabrication technique, gothic-whimsical animation practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鬼妈妈定格动画风格",
+    "thumbnail": "samples/Coraline_Stop-Motion_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Kurzgesagt Style",
+    "prompt": "Style: A clean, flat vector-illustration style built on confident geometric simplification of every form into smooth, rounded shapes, minimal shading limited to subtle gradient or soft contact shadow, a friendly, approachable clarity that favors instant conceptual readability over naturalistic rendering, meticulous compositional organization guiding the eye through dense informational content with playful ease, and a bright, whimsical educational charm that feels scientific, cheerful, and effortlessly digestible. Influenced by: Kurzgesagt studio house style, flat-vector explainer-illustration tradition, minimalist infographic-design technique, contemporary educational-animation practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "Kurzgesagt风格",
+    "thumbnail": "samples/Kurzgesagt_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Modern Super Mario (Nintendo) Style",
+    "prompt": "Style: A vibrant, polished 3D-cartoon illustration style built on smooth, rounded proportion carrying confident, appealing simplicity, glossy, evenly saturated shading with soft, controlled specular highlight rather than gritty realism, bright, clean cinematic lighting establishing cheerful, family-friendly warmth within every frame, meticulous attention to bouncy, exaggerated posing charged with playful energy, and a polished, high-production platformer vibrancy that feels bright, joyful, and unmistakably iconic. Influenced by: Nintendo character-art direction, contemporary 3D-platformer rendering technique, stylized cartoon-render practice, family-adventure animation method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "现代超级马里奥（任天堂）风格",
+    "thumbnail": "samples/Modern_Super_Mario_(Nintendo)_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Star Wars: The Clone Wars Style",
+    "prompt": "Style: A bold, angular animation-illustration style built on stylized, geometric character proportion with sharply defined, faceted silhouette construction, confident cel-shaded rendering with graphic, high-contrast shadow blocking rather than smooth gradation, dramatic cinematic lighting establishing epic, sweeping mood within stylized composition, meticulous attention to dynamic, action-driven posing balanced against clean graphic clarity, and a bold, blockbuster-grade stylized-animation intensity that feels both angular and cinematically grand. Influenced by: Dave Filoni, stylized 3D-animation technique, geometric character-design practice, cinematic sci-fi animation method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "星球大战：克隆人战争风格",
+    "thumbnail": "samples/Star_Wars_The_Clone_Wars_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "M.C. Escher Style",
+    "prompt": "Style: A meticulously precise illustration style built on impossible, self-referential perspective that folds space back onto itself with mathematical rigor, confident, exacting linework rendering interlocking, tessellated form with obsessive geometric discipline, restrained tonal shading achieved through fine hatching that reinforces structural logic rather than atmosphere, a hypnotic, paradoxical rhythm carried through recursive, endlessly repeating pattern, and a meditative, intellectually rigorous precision that treats visual paradox itself as the compositional subject. Influenced by: M.C. Escher, tessellation-based printmaking technique, mathematical-illustration tradition, engraving-adjacent linework practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "M.C.埃舍尔风格",
+    "thumbnail": "samples/M.C._Escher_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Vignette-Framed Central Composition",
+    "prompt": "Style: A tightly unified illustration style built on a distinct central cluster containing figure and surrounding elements together as one cohesive silhouette, generous negative space extending outward on every side rather than a continuous filled composition, the enclosing elements arranged deliberately to form an implied frame-like boundary rather than a naturalistic full scene, meticulous compositional discipline keeping every detail confined within that central shape while the periphery stays quiet and empty, and a poised, deliberate graphic clarity that treats negative space itself as an essential compositional partner. Influenced by: contemporary editorial-illustration composition technique, vignette-portrait framing practice, negative-space compositional design, decorative-border illustration tradition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "晕影框中心构图",
+    "thumbnail": "samples/Vignette-Framed_Central_Composition.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "1960s Psychedelic Poster Art",
+    "prompt": "Style: A vibrant, maximalist illustration style built on radiating, sunburst-like linework fanning outward from a central focal point with hypnotic, rhythmic repetition, dense, swirling ornamental pattern-work filling every available extent with restless organic motion, bold, confidently bounded flat shapes separated by crisp, unmodulated outline, an ecstatic, kaleidoscopic energy that treats pattern density itself as the compositional subject, and a joyfully exuberant, retro commercial-art intensity that feels immersive, celebratory, and unmistakably era-defining. Influenced by: Peter Max, 1960s concert-poster illustration tradition, psychedelic advertising-art technique, Art Nouveau ornamental linework reimagined.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "1960年代迷幻海报艺术",
+    "thumbnail": "samples/1960s_Psychedelic_Poster_Art.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Frutiger Aero",
+    "prompt": "Style: A glossy, optimistic digital-aesthetic style built on smooth, dewy translucence layered over every surface like a soft protective sheen, bright, evenly diffused lighting that keeps the whole composition feeling clean and airy, gentle lens-flare bloom radiating with cheerful, tech-utopian positivity, crisp, rounded rendering logic that softens every edge into approachable, friendly polish, and a buoyant, forward-looking digital sincerity rooted in mid-2000s techno-optimism. Influenced by: mid-2000s tech-interface design tradition, Frutiger Aero aesthetic movement, glossy UI-rendering practice, early Web 2.0 digital-design technique.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "弗鲁提格 空气感风格",
+    "thumbnail": "samples/Frutiger_Aero.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Alex Grey Style",
+    "prompt": "Style: A visionary, anatomically luminous illustration style built on translucent layered rendering that reveals internal structure and energetic form simultaneously within a single figure, meticulous symmetrical composition radiating outward with mandala-like precision, an intense, glowing internal luminosity that seems to emanate from beneath the outermost extent, dense, interwoven detail merging scientific anatomical accuracy with spiritual, mystical iconography, and a mesmerizing, transcendent intensity that treats the body as both physical structure and radiant energy field. Influenced by: Alex Grey, visionary-art movement tradition, anatomical illustration technique, sacred-geometry digital-painting practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "亚历克斯·格雷风格",
+    "thumbnail": "samples/Alex_Grey_Style.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Vignette Tattoo Design (Flat Print Format)",
+    "prompt": "Style: A bold, graphic linework style built on confident unbroken contour lines contained within a distinct central cluster, generous negative space surrounding that cluster rather than a full-frame composition, deliberate simplification of form into clean readable shapes with minimal fine detail, restrained shading achieved through controlled linework density rather than gradation, a strong emphasis on symmetrical, balanced compositional flow suited for clean printable reproduction, and a bold, timeless graphic durability that reads clearly at both close range and a distance. Influenced by: traditional American tattoo flash-art tradition, Japanese irezumi technique, blackwork tattoo-design practice, negative-space compositional design.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "晕影纹身设计（平面印刷格式）",
+    "thumbnail": "samples/Vignette_Tattoo_Design_(Flat_Print_Format).webp",
+    "group": "其他"
+  },
+  {
+    "name": "Vignette Sticker",
+    "prompt": "Style: A bold, self-contained graphic illustration style built on a crisp, clean bold white outline that isolates the subject from a plain white background, as a single cohesive shape contained within a distinct central cluster, generous white negative space surrounding that cluster with a thick, uniform contour holding the entire boundary, confidently simplified color fields with minimal internal shading, a slightly raised, glossy die-cut quality suggested through a subtle contour highlight tracing the outer extent, and a cheerful, punchy graphic charm built for immediate, repeatable visual impact. Influenced by: vinyl sticker/decal design tradition, detailed vector illustration technique, die-cut print production method, negative-space compositional design.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "晕影贴纸",
+    "thumbnail": "samples/Vignette_Sticker.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Icon/Emoticon Vignette",
+    "prompt": "Style: A compact, simplified illustration style built on a distinct central cluster containing the subject reduced to its most essential recognizable shapes, generous negative space surrounding that cluster rather than a full-frame scene, bold, confidently bounded flat color fields separated by clean, uniform outline, minimal internal detail favoring instant small-scale readability over rendering complexity, and a cheerful, graphic economy that treats the whole composition as a single, immediately legible symbol. Influenced by: emoji/icon-design tradition, flat-vector illustration technique, minimalist symbol-design practice, negative-space compositional design.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图标/表情晕影",
+    "thumbnail": "samples/Icon_Emoticon_Vignette.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Blueprint",
+    "prompt": "Style: A precise, technical illustration style built on crisp white linework laid over a deep, uniform blue field, exacting mechanical accuracy in every construction line and dimensional marker, minimal to no shading beyond the line itself carrying all structural information, a rigorous, drafting-level clarity that favors exact proportion over expressive interpretation, and a clean, methodical exactness rooted in centuries of engineering and architectural drafting discipline. Influenced by: technical/engineering-drawing tradition, architectural-blueprint drafting technique, cyanotype printing process, orthographic-projection drawing method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "蓝图",
+    "thumbnail": "samples/Blueprint.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Bold Painterly Impasto",
+    "prompt": "Style: A richly textured painting style built on thick, confident circular brushstrokes that curl and swirl across every extent, dense impasto ridges catching directional light with sculptural, tactile weight, sweeping curved strokes carrying dynamic, windswept motion throughout the composition, a warm, glowing luminosity built through layered circular dabs rather than smooth blending, and a lush, expressive painterly grandeur that feels alive with rhythmic, swirling energy. Influenced by: J.C. Leyendecker, Vincent van Gogh, impasto oil-painting technique, contemporary digital-painting practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "大胆厚涂绘画",
+    "thumbnail": "samples/Bold_Painterly_Impasto.webp",
+    "group": "其他"
+  },
+  {
+    "name": "The Mitchells vs. The Machines animation Style",
+    "prompt": "Style: A vibrant, hybrid animation-illustration style built on smooth 3D-rendered character forms overlaid with wet fluid brushstrokes and painterly-like accents layered as texture directly into the frame, exaggerated, elastic proportion balancing 3D dimensionality with 2D cartoon energy, bold, expressive shading that mixes painterly gradient with graphic flat-color punch, meticulous attention to chaotic, personality-driven posing charged with comedic warmth, and a distinctive, boundary-breaking animation intensity that feels handmade, playful, and unmistakably contemporary. Influenced by: Sony Pictures Animation, mixed 2D/3D hybrid-animation technique, paint-overlay practice, contemporary indie-animation character-design method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "米切尔一家与机器人大战动画风格",
+    "thumbnail": "samples/The_Mitchells_vs._The_Machines_animation_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Spider-Verse Style",
+    "prompt": "Style: A kinetic mixed-media animation-illustration style built on visible halftone dot patterning and offset-print texture layered directly into character rendering, deliberate chromatic-fringe misregistration echoing vintage comic-printing imperfection, bold graphic linework,  animation intensity that feels handmade, glitchy, and alive. Influenced by: Sony Pictures Animation, Kris Anka, halftone comic-printing technique, mixed-media collage-animation practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "蜘蛛侠：平行宇宙风格",
+    "thumbnail": "samples/Spider-Verse_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Steampunk",
+    "prompt": "Style: A richly ornamental Victorian-industrial illustration style built on intricate mechanical detail rendered with meticulous, gear-and-cog precision, dramatic directional lighting catching every riveted contour and polished brass-adjacent gleam, confident linework blending vintage engraving discipline with fantastical technical invention, a hushed, adventurous grandeur carried through richly layered ornamental complexity, and a nostalgic, retro-futurist intensity that feels handcrafted, inventive, and unmistakably era-blending. Influenced by: Jules Verne illustration tradition, Victorian engraving technique, retro-futurist mechanical-design practice, steampunk concept-art method.,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "蒸汽朋克",
+    "thumbnail": "samples/Steampunk.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Unreal Engine",
+    "prompt": "Style: A dimensionally precise real-time rendering style built on smooth, volumetric modeling calculated through simulated physical light and geometry, meticulously computed illumination with soft ambient occlusion settling naturally into every contour, polished specular response giving forms convincing physical depth and weight, confident dynamic reflection and atmospheric scattering rendered in real time, and a technically precise, computer-generated intensity built for cinematic, game-ready visual fidelity. Influenced by: Unreal Engine 5 real-time rendering technique, physically based rendering (PBR) method, contemporary game-cinematic rendering practice, real-time ray-tracing technology.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "虚幻引擎",
+    "thumbnail": "samples/Unreal_Engine.webp",
+    "group": "写实渲染"
+  },
+  {
+    "name": "Jean-Gabriel Domergue Style",
+    "prompt": "Style: An elegant Art Deco portrait-illustration style built on smooth, confident linework tracing idealized, statuesque proportion with graceful economy, refined tonal shading applied with restrained, sophisticated subtlety rather than dramatic contrast, a poised, glamorous stillness carried through deliberate, composed posing, meticulous attention to graceful line quality over exhaustive detail, and a chic, timeless sophistication that feels effortlessly elegant and quietly luxurious. Influenced by: Jean-Gabriel Domergue, Art Deco portraiture but modern, French illustration contemporary technique , glamour-digital illustration,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "让-加布里埃尔·多梅尔格风格",
+    "thumbnail": "samples/Jean-Gabriel_Domergue_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Neon-Based Drawing",
+    "prompt": "Style: A vivid, glow-driven illustration style built on intensely saturated linework that appears to emit light rather than simply mark the surface, deep, engulfing darkness surrounding luminous, radiant contour, sharp electric bloom softening the edges of every glowing line, a hypnotic, nocturnal energy carried through dramatic tonal extremes, and a striking, electric vibrancy that feels charged, contemporary, and unmistakably illuminated from within. Influenced by: neon-sign illustration tradition, glow-line digital-rendering technique, contemporary vector-glow illustration practice, luminous linework design method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹绘画",
+    "thumbnail": "samples/Neon-Based_Drawing.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Op-Art Style",
+    "prompt": "Style: A minimalist line-based hypnotic optical-abstract-illustration style built on precise repeating geometric stylized and angular patterning that tricks the eye into perceived movement and depth, rhythmic curvy and angular bold linework or shape progressions that pulse and vibrate, a rigorous mathematical geometry replacing any painterly looseness, figure and pattern merging so the body itself becomes part of the rhythm, and a crisp, disorienting, almost hypnotic graphic intensity that rewards sustained looking.subject abstracted into shapes within shapes, Influenced by: Bridget Riley, Victor Vasarely, minimalist bold-fixed-width-lines geometric abstraction, kinetic op-art technique.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "欧普艺术风格",
+    "thumbnail": "samples/Op-Art_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Overwatch Concept Art",
+    "prompt": "Style: A polished, vibrant game-illustration style built on clean, confident linework blended with smooth painterly rendering, bright, saturated lighting logic establishing bold, heroic clarity within a single dynamic composition, clean, readable silhouette design, dynamic, energetic posing charged with confident personality and readable character archetype, and a polished, blockbuster-grade game-art vibrancy built for instant character appeal and franchise recognition. Influenced by: Overwatch video-game, Blizzard Entertainment concept-art direction, stylized hero-shooter character-design tradition, painterly game-illustration technique, vibrant franchise key-art practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "守望先锋概念艺术",
+    "thumbnail": "samples/Overwatch_Concept_Art.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Psychedelia Style",
+    "prompt": "Style: A hallucinatory, maximalist illustration style built on swirling, undulating linework that warps form into rhythmic, organic distortion, dense repeating pattern-work that pulses and radiates outward from every surface, a deliberate flattening of depth that lets ornamental motif and figure merge into a single continuous visual field, hypnotic radial or wave-based compositional energy charged with sensory overload, and an ecstatic, mind-bending intensity that feels perpetually in motion even in stillness. Influenced by: Peter Max, concert-poster illustration tradition, psychedelic rock album-art technique,drug induced art, Art Nouveau ornamental linework reimagined.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "迷幻风格",
+    "thumbnail": "samples/Psychedelia_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Camille Walala Style",
+    "prompt": "Style: A vibrant, maximalist illustration style built on bold, confidently bounded geometric shapes arranged in dense, rhythmic repetition, thick, uniform outline holding every flat-color region with graphic precision, an energetic, kaleidoscopic pattern-work covering nearly every extent of the composition, a playful, optical-pop confidence replacing any naturalistic rendering entirely, and a joyful, high-energy graphic-design intensity that feels bold, celebratory, and unmistakably contemporary. Influenced by: Camille Walala,  geometric pattern-illustration technique, contemporary mural-art practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "卡米尔·瓦拉拉风格",
+    "thumbnail": "samples/Camille_Walala_Style.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "C.F.A. Voysey illustration",
+    "prompt": "Style: An elegant decorative illustration built on flowing, stylized organic patterning arranged with disciplined, rhythmic repetition, flat, confidently bounded shape divisions replacing naturalistic shading entirely, meticulous linear precision tracing every motif with restrained, handcrafted care, a calm, orderly compositional harmony favoring balance over ornamental excess, and a quietly refined, timeless craft sincerity rooted in early-20th-century decorative-design reform. Influenced by: C.F.A. Voysey, Arts and Crafts movement tradition, William Morris decorative-pattern technique, English textile-and-wallpaper-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "C.F.A.沃伊西插画",
+    "thumbnail": "samples/C.F.A._Voysey_illustration.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Neon Halftone Retro-Thriller Illustration",
+    "prompt": "Style: A striking screenprint-inspired illustration style built on bold, high-contrast graphic shapes rendered through dense horizontal line-scan patterning that mimics offset-print texture, dramatic dual-toned lighting where sharp electric accents cross the subject against deep, silhouetted shadow, confident vector-clean contour holding every form with poster-ready precision, atmospheric radiating arcs suggesting motion and depth behind the central figure, and a bold, cinematic screenprint intensity that feels stylish, tense, and unmistakably retro-thriller. Influenced by: Jonathan Burton, contemporary screenprint movie-poster tradition, halftone scan-line illustration technique, synthwave-adjacent poster-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹半色调复古惊悚插画",
+    "thumbnail": "samples/Neon_Halftone_Retro-Thriller_Illustration.webp",
+    "group": "复古渲染"
+  },
+  {
+    "name": "Topographic Linework Illustration",
+    "prompt": "Style: intricate graphic aesthetics characterized by flowing contour networks, layered elevation-inspired line structures, organic spatial mapping, rhythmic density variation, and a strong emphasis on visual terrain-like construction. The style builds form through successive line accumulations rather than traditional shading, creating depth, volume, and movement through contour logic, directional patterning, and carefully orchestrated line repetition. Rather than relying on solid masses or painterly rendering, it celebrates structure, flow, and information-rich design, producing imagery that feels both analytical and artistic. The resulting aesthetic combines cartographic sophistication, decorative complexity, and contemporary illustration sensibilities into highly distinctive visual compositions, reminiscent of Matthew Cusick and Paula Scher, inspired by USGS Topographic Maps and The Atlas of Design.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "地形线条插画",
+    "thumbnail": "samples/Topographic_Linework_Illustration.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Negative Space Focused Illustration",
+    "prompt": "Style: A deliberately restrained illustration style built on a single confident focal cluster surrounded by vast, empty extent, minimal linework rendering only what's essential to read the subject clearly, a confident economy where the unmarked space carries as much compositional weight as the mark itself, silhouette and shape doing the primary storytelling work rather than internal detail, and a quiet, contemplative elegance that treats emptiness as an active, deliberate compositional partner. Influenced by: minimalist negative-space illustration tradition, Japanese ma compositional philosophy, contemporary editorial silhouette technique, reductive graphic-design practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "负空间聚焦插画",
+    "thumbnail": "samples/Negative_Space_Focused_Illustration.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Collectible Figure",
+    "prompt": "Style: A meticulously sculpted 1:12 scale action subject cast in rigid injection-molded ABS plastic with a glossy top coat, photographed under diffused lighting with a deep focus shot capturing every sculpted detail. Influenced by: the classic action figure toy, Hasbro product, 1980s action-toy.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "收藏手办",
+    "thumbnail": "samples/Collectible_Figure.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Tessellation-Based Illustration",
+    "prompt": "Style: A geometrically disciplined illustration style built on repeating interlocking shapes that fit together with mathematical precision leaving no gap between forms, flat, confidently bounded regions replacing any curved or blended transition, a rhythmic, meditative pattern-logic that treats the repeated unit itself as the compositional subject, confident symmetry and rotational repetition guiding the eye across the entire extent, and a hypnotic, meticulous graphic intensity rooted in centuries of geometric-pattern discipline. Influenced by: M.C. Escher, Islamic geometric-pattern tradition, tessellation-based printmaking technique, mathematical-illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "镶嵌式插画",
+    "thumbnail": "samples/Tessellation-Based_Illustration.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Neon Sign Design",
+    "prompt": "Style: A luminous graphic illustration style built on crisp, continuous linework that appears to glow rather than sit flat, an electric brightness concentrated along every contour with soft radiating bloom bleeding into the surrounding darkness, confident single-stroke construction mimicking the unbroken tubing of illuminated signage, minimal internal detail letting the glowing outline carry the entire composition, and a vibrant, nightlife-adjacent intensity that feels electric, retro-commercial, and unmistakably illuminated. Influenced by: neon-sign fabrication tradition, glow-line digital-rendering technique, mid-century commercial-signage design, contemporary vector-glow illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "霓虹灯招牌设计",
+    "thumbnail": "samples/Neon_Sign_Design.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Plastic Arts Sculpture",
+    "prompt": "Style: A synthetic figure built from glossy injection-molded vinyl and matte PVC, seam lines running subtly like a high-end designer art, the surface catching light with sharp specular falloff and glassy resin shine, translucent plastic edges glowing with internal light diffusion, microscopic surface scratches visible across the clear coat, soft gradient cyclorama lighting, soft shadows fall, the entire form reading as a physical collectible object rendered with ray-traced precision and shallow depth of field. Influenced by: Michael Lau's vinyl sculptures, Coarse's minimalism, KAWS' glossy sculpture, Parra's clean graphics, the rotocast vinyl tradition, the soft vinyl kaiju manufacturing aesthetic, and high-end product visualization photography.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "造型艺术雕塑",
+    "thumbnail": "samples/Plastic_Arts_Sculpture.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "PS1 Screenshot",
+    "prompt": "Style: A low-polygon 3D scene rendered with the distinct technical limitations of playstation 1996, the subject built from sharp, unblended triangular facets with visibly segmented joint connections and blocky geometric anatomy, texture maps stretched and warped across flat polygon surfaces with visible pixelation and bilinear filtering artifacts, the environment constructed from repeating tiled textures with harsh seams and obvious draw-distance fog creeping in at mid-range, jagged stair-step edges along every diagonal line and object silhouette, the lighting flat and vertex-shaded with abrupt transitions between lit and shadowed faces, 320x240 resolution, muted 16-bit color depth, dithering patterns visible in shadow gradients and transparency effects achieved through stippled pixel alternation, Influenced by: Tomb Raider 1995 screenshot, Tekken 1996 screenshot, PS1 rendering pipeline, the tile-based environment construction of early 1990s 3D games, 32-bit console hardware, low-poly modeling,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "PS1截图",
+    "thumbnail": "samples/PS1_Screenshot.webp",
+    "group": "低多边形"
+  },
+  {
+    "name": "Low Relief Sculpture",
+    "prompt": "Style: A dimensionally subtle sculptural style built on shallow, raised form projecting only slightly beyond its background rather than standing fully in the round, confident tonal modeling constructed entirely through carved depth and directional light rather than drawn line, dramatic raking illumination that reveals every subtle contour and recessed groove with graphic clarity, a restrained, disciplined economy of projection where even minimal relief conveys convincing volume, and a timeless, classical gravitas rooted in centuries of relief-carving tradition. Influenced by: classical bas-relief sculpture tradition, Lorenzo Ghiberti, architectural relief-carving technique, academic sculptural-modeling method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "浅浮雕雕塑",
+    "thumbnail": "samples/Low_Relief_Sculpture.webp",
+    "group": "其他"
+  },
+  {
+    "name": "The Sims Game Screenshot",
+    "prompt": "Style: A polished, gently stylized 3D-simulation illustration style built on smooth, rounded character proportion balancing cartoonish charm with grounded believability, bright, even lighting that keeps every scene warmly lit and legible, glossy specular response giving texture, sim-adjacent sheen, a confident, catalog-ready UI-clean rendering finish, and a cheerful, simulation intensity that feels bright, approachable, and unmistakably game-like. Influenced by: Maxis simulation-game rendering direction, The Sims Game, stylized 3D technique, cheerful lighting practice, simulation game-art,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "模拟人生游戏截图",
+    "thumbnail": "samples/The_Sims_Game_Screenshot.webp",
+    "group": "奇幻插画"
+  },
+  {
+    "name": "Animal Crossing Style",
+    "prompt": "Style: A soft, rounded 3D-simulation illustration style built on gentle, oversized proportion favoring charm, smooth subsurface-scattered shading giving forms a warm, inviting glow, bright, cheerful lighting logic that keeps every scene feeling wholesome and inviting, meticulous attention to whimsical, cozy detail rendered with cheerful simplicity rather than technical grit, and a wholesome, gentle life-simulation intensity that feels playful, comforting, and effortlessly charming. Influenced by: Animal Crossing Nintendo art, stylized 3D-simulation, cozy life-simulation game-art, whimsical cartoon-render,.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动物森友会风格",
+    "thumbnail": "samples/Animal_Crossing_Style.webp",
+    "group": "软胶质感"
+  },
+  {
+    "name": "Partial Wireframe 3D",
+    "prompt": "Style: A dimensionally precise digital-illustration style built on smooth, volumetric modeling that transitions abruptly into exposed geometric mesh across a portion of the extent, meticulously calculated illumination and specular response covering the fully rendered sections while the mesh-revealed areas stay flat and diagrammatic, confident sculptural construction contrasted against clean, technical grid-lines, a deliberate tension between finished dimensional realism and raw underlying structure, and a technically precise, computer-generated intensity that treats construction itself as part of the compositional subject. Influenced by: real-time 3D-rendering technique, wireframe-mesh visualization practice, physically based rendering (PBR) method, CGI production-pipeline aesthetic.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "部分线框3D",
+    "thumbnail": "samples/Partial_Wireframe_3D.webp",
+    "group": "奇幻插画"
+  }
+]

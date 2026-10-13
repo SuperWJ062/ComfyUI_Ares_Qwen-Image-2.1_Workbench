@@ -1,0 +1,2450 @@
+[
+  {
+    "name": "Abyssal Gothic Surrealism",
+    "prompt": "gothic romanticism, deep teal and indigo, painterly oil texture, liminal surrealism, chiaroscuro lighting, atmospheric dread, solitary silhouette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "深渊哥特超现实",
+    "thumbnail": "samples/Abyssal_Gothic_Surrealism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Amber Chiaroscuro Cinematic",
+    "prompt": "chiaroscuro, dramatic long shadows, amber and teal color palette, cinematic urban silhouette, high contrast lighting, atmospheric haze, minimalist composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "琥珀明暗对比电影感",
+    "thumbnail": "samples/Amber_Chiaroscuro_Cinematic.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Atmospheric Gothic Noir",
+    "prompt": "cinematic noir, chiaroscuro lighting, rain-slicked atmosphere, gothic architecture, deep blue and amber palette, moody urban mystery, dramatic silhouette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "氛围哥特黑色",
+    "thumbnail": "samples/Atmospheric_Gothic_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Atmospheric Somber Realism",
+    "prompt": "atmospheric digital painting, desaturated color palette, low-key moody lighting, textured brushwork, melancholic solitude, weathered surfaces, gothic surrealism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "氛围沉郁写实",
+    "thumbnail": "samples/Atmospheric_Somber_Realism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Bioluminescent Abyssal Resonance",
+    "prompt": "bioluminescent abyss, indigo midnight palette, concentric light tunnel, solitary silhouetted figure, ethereal atmospheric glow, surreal cosmic scale, high contrast chiaroscuro. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "生物荧光 深渊 共振",
+    "thumbnail": "samples/Bioluminescent_Abyssal_Resonance.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Chiaroscuro Nocturnal Fantasy",
+    "prompt": "chiaroscuro lighting, deep blue and amber contrast, atmospheric nocturnal fantasy, monumental scale, gothic architecture, mystical silhouettes, cinematic fog. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明暗对比夜行幻想",
+    "thumbnail": "samples/Chiaroscuro_Nocturnal_Fantasy.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Cyan Abyssal",
+    "prompt": "cinematic cyan lighting, volumetric fog, chiaroscuro, deep teal color palette, mysterious silhouette, liminal space, surreal spotlight. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感青色深渊",
+    "thumbnail": "samples/Cinematic_Cyan_Abyssal.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Cyan Noir — Sci-Fi Fog",
+    "prompt": "cinematic cyan noir, volumetric backlighting, dense atmospheric fog, monolithic industrial scale, high-contrast silhouette, cold teal color grading, cyberpunk tactical aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感青色黑色科幻雾",
+    "thumbnail": "samples/Cinematic_Cyan_Noir_—_Sci-Fi_Fog.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Gothic Nocturne — Rain-Slick Amber",
+    "prompt": "cinematic chiaroscuro, atmospheric twilight gothic, deep blue and amber color grading, looming architectural silhouettes, moody fog and weather effects, shallow depth of field, mysterious narrative lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感 哥特 夜曲 — 雨湿 琥珀",
+    "thumbnail": "samples/Cinematic_Gothic_Nocturne_—_Rain-Slick_Amber.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Volumetric Noir",
+    "prompt": "cinematic chiaroscuro, volumetric light beams, dramatic backlit silhouette, anamorphic lens flare, high contrast noir, hazy atmospheric lighting, rim lighting, minimalist dark aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感体积光黑色",
+    "thumbnail": "samples/Cinematic_Volumetric_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Crimson Industrial Surrealism",
+    "prompt": "biomorphic surrealism, gothic noir atmosphere, distressed industrial textures, high contrast duotone, weathered brick and concrete, sinister organic fusion, vibrant crimson and teal. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绯红工业超现实",
+    "thumbnail": "samples/Crimson_Industrial_Surrealism.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Crimson Noir Minimalism — Sculptural Editorial",
+    "prompt": "crimson and black palette, high-contrast studio lighting, sculptural silhouettes, gothic surrealism, minimalist composition, dramatic shadows, avant-garde fashion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绯红黑色极简主义雕塑感编辑",
+    "thumbnail": "samples/Crimson_Noir_Minimalism_—_Sculptural_Editorial.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Crimson Void Surrealism",
+    "prompt": "cinematic crimson lighting, high-contrast black void, surreal liminal landscape, minimalist silhouette, viscous red fluid, ominous atmospheric fog, existential scale. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绯红虚空超现实",
+    "thumbnail": "samples/Crimson_Void_Surrealism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Dystopian Gothic Noir",
+    "prompt": "dark gothic fantasy, atmospheric smog, high-contrast silhouette, industrial dystopian, painterly texture, teal and amber lighting, moody cinematic composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "反乌托邦哥特黑色",
+    "thumbnail": "samples/Dystopian_Gothic_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Ethereal Bioluminescent Nocturne — Painterly Indigo Glow",
+    "prompt": "bioluminescent glow, ethereal nocturne, deep teal and indigo palette, surreal soft-focus lighting, mystical spectral highlights, painterly dreamlike atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵生物荧光夜曲绘画感靛蓝发光",
+    "thumbnail": "samples/Ethereal_Bioluminescent_Nocturne_—_Painterly_Indigo_Glow.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Nocturnal Solitude — Star-Speckled Fog",
+    "prompt": "monochromatic midnight blue, atmospheric fog, solitary silhouette, cinematic chiaroscuro, starry night sky, mysterious luminous glow, gothic melancholy, high-contrast landscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵 夜间 孤寂 — 星点 雾",
+    "thumbnail": "samples/Ethereal_Nocturnal_Solitude_—_Star-Speckled_Fog.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Ethereal Painterly Botanica",
+    "prompt": "painterly floral, soft-focus atmosphere, dreamy ethereal glow, romantic botanical, impressionistic brushwork, vintage texture overlay, diffused lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵绘画感植物志",
+    "thumbnail": "samples/Ethereal_Painterly_Botanica.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Gilded Gothic Decay",
+    "prompt": "chiaroscuro lighting, gilded gold leaf, melancholic gothic portraiture, cracked plaster texture, high-contrast noir, metallic organic decay, surreal fragmentation. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鎏金哥特衰败",
+    "thumbnail": "samples/Gilded_Gothic_Decay.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Liquid Gothic Sovereign",
+    "prompt": "dark gothic fantasy, liquid chrome texture, sharp metallic spikes, high-contrast studio lighting, avant-garde armor, monochromatic palette, reflective metallic sheen, ritualistic elegance. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "液态 哥特 至尊",
+    "thumbnail": "samples/Liquid_Gothic_Sovereign.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Abyssal Dreamscape — Caustic Light Shafts",
+    "prompt": "underwater photography, chiaroscuro lighting, bioluminescent particles, caustic light ripples, deep blue and teal palette, ethereal light shafts, high contrast silhouettes, dreamlike cinematic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮 深渊 梦境 — 焦散 光 光束",
+    "thumbnail": "samples/Luminous_Abyssal_Dreamscape_—_Caustic_Light_Shafts.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Abyssal Dreamscape — Sapphire Bioluminescence",
+    "prompt": "bioluminescent glow, deep blue monochromatic, ethereal aquatic atmosphere, high-contrast chiaroscuro, shimmering light particles, surreal underwater dreamscape, nocturnal fantasy. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮深渊梦境蓝宝石生物荧光",
+    "thumbnail": "samples/Luminous_Abyssal_Dreamscape_—_Sapphire_Bioluminescence.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Abyssal Noir — Macro Liquid Caustics",
+    "prompt": "chiaroscuro lighting, deep teal and obsidian palette, intricate light caustics, macro liquid photography, translucent glass reflections, dramatic rim lighting, minimalist dark studio. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮深渊黑色微距液态焦散",
+    "thumbnail": "samples/Luminous_Abyssal_Noir_—_Macro_Liquid_Caustics.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Abyssal Radiance",
+    "prompt": "underwater photography, low-angle upward perspective, crepuscular rays, silhouette against sunburst, deep ocean blue, god rays, ethereal aquatic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮深渊光辉",
+    "thumbnail": "samples/Luminous_Abyssal_Radiance.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Abyssal Silhouette",
+    "prompt": "underwater photography, backlit silhouette, low angle shot, shimmering sun rays, deep blue and indigo palette, high contrast, ethereal aquatic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮深渊剪影",
+    "thumbnail": "samples/Luminous_Abyssal_Silhouette.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Nocturnal Dreamscapes — Bioluminescent Haze",
+    "prompt": "painterly digital art, bioluminescent glow, twilight blue hour palette, expressive brushwork, mystical atmosphere, atmospheric dreamscape, gothic fantasy lens. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮夜行梦境生物荧光雾霭",
+    "thumbnail": "samples/Luminous_Nocturnal_Dreamscapes_—_Bioluminescent_Haze.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Nocturnal Ether",
+    "prompt": "bioluminescent blue glow, ethereal light trails, deep indigo background, high-contrast noir, grainy film texture, fluid organic motion, mystical dark aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮夜行以太",
+    "thumbnail": "samples/Luminous_Nocturnal_Ether.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Surreal Twilight",
+    "prompt": "deep twilight blue and amber contrast, bioluminescent surrealism, volumetric golden lighting, dreamlike atmospheric composition, high-contrast chiaroscuro, ethereal organic textures. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮超现实暮光",
+    "thumbnail": "samples/Luminous_Surreal_Twilight.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Monochromatic Abyssal Brutalism",
+    "prompt": "monochromatic deep blue, volumetric lighting, brutalist monoliths, atmospheric fog, high-contrast chiaroscuro, liminal space, cinematic sci-fi, glowing ethereal light. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "单色深渊粗野主义",
+    "thumbnail": "samples/Monochromatic_Abyssal_Brutalism.webp",
+    "group": "冷蓝调"
+  },
+  {
+    "name": "Monochromatic Abyssal Chiaroscuro",
+    "prompt": "chiaroscuro lighting, volumetric light beams, deep blue and black palette, atmospheric haze, monolithic structures, high contrast, cinematic isolation, nocturnal atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "单色深渊明暗对比",
+    "thumbnail": "samples/Monochromatic_Abyssal_Chiaroscuro.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Monolithic Atmospheric Romanticism",
+    "prompt": "cinematic scale, atmospheric haze, monolithic architecture, muted earth tones, moody lighting, desolate landscape, volumetric light rays, gothic fantasy realism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "巨石氛围浪漫主义",
+    "thumbnail": "samples/Monolithic_Atmospheric_Romanticism.webp",
+    "group": "电影感"
+  },
+  {
+    "name": "Monolithic Brutalist Distortion",
+    "prompt": "brutalist architecture, extreme fisheye lens, desaturated moody palette, monolithic scale, atmospheric fog, high-contrast chiaroscuro, ominous storm clouds. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "巨石 粗野 畸变",
+    "thumbnail": "samples/Monolithic_Brutalist_Distortion.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Nocturnal Esoteric Surrealism",
+    "prompt": "high contrast noir, electric blue and crimson, stippled airbrush texture, retro-futuristic sci-fi, esoteric ritual, dendritic networks, Lovecraftian silhouette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行秘境超现实",
+    "thumbnail": "samples/Nocturnal_Esoteric_Surrealism.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Nocturnal Storybook Surrealism",
+    "prompt": "whimsical gothic illustration, glowing warm windows, dramatic twilight sky, textured colored pencil style, expressive hatch shading, surreal cosmic atmosphere, crooked fairytale architecture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行绘本超现实",
+    "thumbnail": "samples/Nocturnal_Storybook_Surrealism.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Nocturnal Sylvan Gothic",
+    "prompt": "dark gothic atmosphere, deep emerald and teal palette, chiaroscuro lighting, misty fog, painterly texture, desaturated sylvan landscape, grainy film aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行森林哥特",
+    "thumbnail": "samples/Nocturnal_Sylvan_Gothic.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Sacred Gothic Noir",
+    "prompt": "chiaroscuro lighting, gothic opulence, ethereal veiled figure, metallic halo crown, stark black background, dramatic rim light, macabre elegance. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "神圣哥特黑色",
+    "thumbnail": "samples/Sacred_Gothic_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Simulated Gothic Wilderness",
+    "prompt": "overcast natural light, desaturated forest greens, cinematic gloom, moody atmospheric texture, surreal wireframe overlay, high contrast shadows, solitary pastoral melancholy. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "模拟 哥特 荒野",
+    "thumbnail": "samples/Simulated_Gothic_Wilderness.webp",
+    "group": "电影感"
+  },
+  {
+    "name": "Spectral Pictorialist Noir",
+    "prompt": "pictorialism, spectral silhouette, motion blur, distressed film texture, gothic dreamscape, wet plate collodion, chiaroscuro. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光谱画意黑色·哥特",
+    "thumbnail": "samples/Spectral_Pictorialist_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Sublime Chiaroscuro Gothic",
+    "prompt": "chiaroscuro lighting, volcanic amber and deep blue palette, monumental gothic architecture, atmospheric volumetric fog, surreal entropic decay, cosmic surrealism, high-contrast cinematic composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "崇高明暗对比哥特",
+    "thumbnail": "samples/Sublime_Chiaroscuro_Gothic.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Surreal Abyssal Dreamscape",
+    "prompt": "ethereal surrealism, deep moody lighting, flowing translucent textures, bioluminescent highlights, chiaroscuro, dreamlike atmosphere, weightless composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实深渊梦境",
+    "thumbnail": "samples/Surreal_Abyssal_Dreamscape.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Surreal Botanical Synthesis",
+    "prompt": "mossy textures, verdant forest palette, chiaroscuro lighting, surreal organic structures, intricate fractal growth, botanical fantasy, dreamlike atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实植物合成",
+    "thumbnail": "samples/Surreal_Botanical_Synthesis.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Surreal Infrared Crimson",
+    "prompt": "infrared photography style, crimson and cyan palette, surreal nature, ethereal dreamscape, high-contrast color blocking, gothic atmosphere, glowing red foliage. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实红外绯红",
+    "thumbnail": "samples/Surreal_Infrared_Crimson.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Velvet Moss Surrealism — Subterranean Misty Gloom",
+    "prompt": "velvety green moss texture, chiaroscuro lighting, liminal subterranean landscape, surreal organic architecture, atmospheric mist, solitary silhouette, biophilic decay. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天鹅绒 苔藓 超现实主义 — 地下 薄雾 阴郁",
+    "thumbnail": "samples/Velvet_Moss_Surrealism_—_Subterranean_Misty_Gloom.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Volcanic Brutalist Abyss",
+    "prompt": "monumental brutalist architecture, volcanic subterranean landscape, fiery orange and teal contrast, cinematic atmospheric haze, industrial greeble textures, dystopian sci-fi scale, dramatic low-key lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "火山粗野主义深渊",
+    "thumbnail": "samples/Volcanic_Brutalist_Abyss.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Aerial Verdant Solitude",
+    "prompt": "high-angle aerial photography, lush forest canopy, moody diffused lighting, deep emerald and moss tones, minimalist composition, scale contrast, secluded wilderness. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空中翠绿孤寂",
+    "thumbnail": "samples/Aerial_Verdant_Solitude.webp",
+    "group": "冷蓝调"
+  },
+  {
+    "name": "Atmospheric Shin-Hanga Prints",
+    "prompt": "shin-hanga style, japanese woodblock print, textured washi paper, hasui kawase inspired, atmospheric perspective, traditional ukiyo-e, muted earth tones. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "氛围新版画",
+    "thumbnail": "samples/Atmospheric_Shin-Hanga_Prints.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Biophilic Organic Brutalism",
+    "prompt": "organic brutalism, board-formed concrete, biophilic architecture, dappled natural light, sculptural concrete, indoor-outdoor integration, earthy minimalist textures, cinematic architectural shadows. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "亲生物 有机 粗野主义",
+    "thumbnail": "samples/Biophilic_Organic_Brutalism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Cinematic Chiaroscuro Noir — Teal Gold Rim",
+    "prompt": "chiaroscuro, low-key portraiture, teal and gold palette, dramatic contrast, cinematic grain, rim lighting, mysterious mood. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感明暗对比黑色青蓝金边缘光",
+    "thumbnail": "samples/Cinematic_Chiaroscuro_Noir_—_Teal_Gold_Rim.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Nocturnal Solitude — Hazy Grain",
+    "prompt": "cinematic blue hour, glowing amber light, surreal melancholia, wet asphalt reflection, moody noir atmosphere, minimalist composition, deep indigo palette, vintage cinematic grain. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感夜行孤寂朦胧颗粒",
+    "thumbnail": "samples/Cinematic_Nocturnal_Solitude_—_Hazy_Grain.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Constructivist Folk Modernism",
+    "prompt": "constructivist graphic design, naive folk illustration, primary color palette, hard-edge geometric abstraction, gouache hand-painted texture, minimalist composition, vintage screenprint aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "构成主义民俗现代主义",
+    "thumbnail": "samples/Constructivist_Folk_Modernism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Cozy Retro Kawaii Pixels",
+    "prompt": "pixel art, kawaii aesthetic, pastel color palette, 8-bit retro style, chibi character design, clean isolated sprite, nostalgic game asset. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "温馨 复古 可爱 像素",
+    "thumbnail": "samples/Cozy_Retro_Kawaii_Pixels.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Dynamic Fisheye Action — Y2K Sun Glare",
+    "prompt": "fisheye lens, extreme low-angle, vivid sunlight, forced perspective, urban action, dynamic foreshortening, saturated blue sky, Y2K streetwear. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态鱼眼行动千禧风日眩光",
+    "thumbnail": "samples/Dynamic_Fisheye_Action_—_Y2K_Sun_Glare.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Dynamic Fisheye Perspective — Graphic Sun Shadow",
+    "prompt": "fisheye lens distortion, extreme wide-angle perspective, dynamic low-angle shot, saturated vibrant colors, high-contrast sunlight, Y2K street culture, sharp graphic composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态鱼眼透视图形日影",
+    "thumbnail": "samples/Dynamic_Fisheye_Perspective_—_Graphic_Sun_Shadow.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Dynamic Wide-Angle Realism",
+    "prompt": "fisheye lens distortion, extreme low angle shot, vibrant color saturation, clear blue sky, sharp daylight, tactile textures, wide-angle perspective. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态宽角写实",
+    "thumbnail": "samples/Dynamic_Wide-Angle_Realism.webp",
+    "group": "冷蓝调"
+  },
+  {
+    "name": "Dynamic Worm's-Eye Realism",
+    "prompt": "extreme low-angle shot, worm's-eye view, wide-angle lens distortion, vibrant blue sky, harsh direct sunlight, high-contrast action photography, forced perspective. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态蠕虫's眼写实",
+    "thumbnail": "samples/Dynamic_Worm's-Eye_Realism.webp",
+    "group": "冷蓝调"
+  },
+  {
+    "name": "Earthy Gouache Serenity",
+    "prompt": "digital gouache texture, earthy color palette, dappled sunlight, minimalist organic shapes, visible dry brushstrokes, serene nature illustration, muted sage and ochre. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "泥土色水粉宁静",
+    "thumbnail": "samples/Earthy_Gouache_Serenity.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Hyper-Saturated Pastoral Surrealism",
+    "prompt": "hyper-saturated, surreal pastoral, direct sunlight, dreamcore, clean studio minimalism, tactile textures, vivid color blocking, retro-modern editorial. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "高饱和 田园 超现实主义",
+    "thumbnail": "samples/Hyper-Saturated_Pastoral_Surrealism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Luminous Cosmic Folklore",
+    "prompt": "dark surrealism, painterly texture, glowing orange accents, nocturnal atmosphere, vintage lithograph style, mystical folklore, high-contrast chiaroscuro, grainy oil pastel finish. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮宇宙民俗",
+    "thumbnail": "samples/Luminous_Cosmic_Folklore.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Nocturnal Hatchwork",
+    "prompt": "dense cross-hatching, tactile pencil texture, luminous chiaroscuro, nocturnal atmospheric lighting, dreamlike impressionism, deep indigo and teal palette, vintage storybook aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮夜行排线",
+    "thumbnail": "samples/Luminous_Nocturnal_Hatchwork.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Painterly Solitude",
+    "prompt": "digital gouache, painterly texture, saturated emerald and cobalt palette, expressive brushstrokes, solitary wanderer, nostalgic anime background style, high contrast lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮绘画感孤寂",
+    "thumbnail": "samples/Luminous_Painterly_Solitude.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Pastoral Nostalgia",
+    "prompt": "painterly gouache texture, vibrant summer palette, dappled sunlight, nostalgic pastoral landscape, anime inspired background, soft brushstroke details, lush rolling hills. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮田园怀旧",
+    "thumbnail": "samples/Luminous_Pastoral_Nostalgia.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Melancholic Nocturnal Minimalism — Hand-Drawn Indigo",
+    "prompt": "deep indigo color palette, minimalist composition, nocturnal atmosphere, soft grainy texture, hand-drawn aesthetic, melancholic mood, subtle luminescence. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "忧郁夜行极简主义手手绘靛蓝",
+    "thumbnail": "samples/Melancholic_Nocturnal_Minimalism_—_Hand-Drawn_Indigo.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Minimalist Cobalt Pixelism",
+    "prompt": "1-bit pixel art, cobalt blue and white, dithered textures, retro computer UI, minimalist digital graphics, aliased edges, high contrast composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "极简钴蓝像素",
+    "thumbnail": "samples/Minimalist_Cobalt_Pixelism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Monochromatic Indigo Minimalism",
+    "prompt": "minimalist monochromatic, deep indigo blue, high contrast, linocut print texture, stark white illustration, negative space, tactile paper grain, graphic silhouette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "单色靛蓝极简主义",
+    "thumbnail": "samples/Monochromatic_Indigo_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Monolithic Summer Sky",
+    "prompt": "monumental cumulonimbus clouds, deep cobalt blue sky, low angle perspective, anime background aesthetic, volumetric lighting, nostalgic summer atmosphere, dramatic high contrast. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "巨石夏天空",
+    "thumbnail": "samples/Monolithic_Summer_Sky.webp",
+    "group": "冷蓝调"
+  },
+  {
+    "name": "Naive Cobalt Minimalist",
+    "prompt": "naive art style, cobalt blue palette, textured gouache illustration, minimalist folk art, hand-drawn aesthetic, warm cream background, whimsical simplified shapes. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "稚拙钴蓝极简",
+    "thumbnail": "samples/Naive_Cobalt_Minimalist.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Nocturnal Atmospheric Whimsy",
+    "prompt": "painterly nocturnal landscape, deep indigo and amber contrast, cozy glowing windows, atmospheric twilight mood, hand-drawn storybook texture, misty night environment. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行氛围奇想",
+    "thumbnail": "samples/Nocturnal_Atmospheric_Whimsy.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Nocturnal Woodblock Noir — Crimson Crosshatch Glow",
+    "prompt": "shin-hanga woodblock style, nocturnal indigo and crimson palette, graphic chiaroscuro, woodcut crosshatching texture, serene yet eerie atmosphere, traditional architectural silhouettes, high-contrast cinematic light. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜间 木刻 黑色电影 — 绯红 交叉排线 辉光",
+    "thumbnail": "samples/Nocturnal_Woodblock_Noir_—_Crimson_Crosshatch_Glow.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Nostalgic Folk Storybook",
+    "prompt": "children's book illustration, nostalgic folk art, textured paper aesthetic, muted earthy palette, whimsical character design, soft grainy texture, gouache and colored pencil. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 民俗 绘本",
+    "thumbnail": "samples/Nostalgic_Folk_Storybook.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Nostalgic Grain Storybook",
+    "prompt": "grainy colored pencil texture, minimalist character design, soft stipple shading, warm nostalgic color palette, whimsical storybook illustration, clean white background, organic shapes. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 颗粒 绘本",
+    "thumbnail": "samples/Nostalgic_Grain_Storybook.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Nostalgic Woodblock Landscapes",
+    "prompt": "Shin-Hanga woodblock print, WPA poster aesthetic, bold graphic ink outlines, visible woodgrain texture, atmospheric vintage landscape, saturated earth-toned palette, stylized nature illustration. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧 木刻 风景",
+    "thumbnail": "samples/Nostalgic_Woodblock_Landscapes.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Oneiric Ink Surrealism",
+    "prompt": "fine line crosshatching, surreal twilight atmosphere, vintage woodcut aesthetic, indigo and amber palette, mystical dreamscape, retro editorial illustration, organic digital fusion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "梦感墨超现实",
+    "thumbnail": "samples/Oneiric_Ink_Surrealism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Optimistic Urban Constructivism",
+    "prompt": "architectural low-angle perspective, vivid blue sky, clean geometric facades, painterly sunlight, terracotta and warm earth tones, stylized anime background aesthetic, urban optimism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "乐观 都市 构成主义",
+    "thumbnail": "samples/Optimistic_Urban_Constructivism.webp",
+    "group": "冷蓝调"
+  },
+  {
+    "name": "Rustic Artisanal Printmaking",
+    "prompt": "linocut print, monochromatic ink illustration, textured cream paper, rustic block print, hand-carved aesthetic, cross-hatching detail, vintage engraving style. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "乡土 手作 版画",
+    "thumbnail": "samples/Rustic_Artisanal_Printmaking.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Spherical Miniature Worlds",
+    "prompt": "tiny planet effect, stereographic projection, extreme fisheye lens, spherical distortion, curved horizon, vibrant nature palette, sunlight lens flare. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "球体 微缩 世界",
+    "thumbnail": "samples/Spherical_Miniature_Worlds.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Tactile Whimsical Stop-Motion",
+    "prompt": "tactile stop-motion style, felt and claymation textures, vibrant primary color palette, miniature diorama composition, shallow depth of field, whimsical character design, soft studio lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "触觉奇想停止运动",
+    "thumbnail": "samples/Tactile_Whimsical_Stop-Motion.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Textured Minimalist Narrative",
+    "prompt": "minimalist illustration, hand-painted gouache texture, bold graphic ink outlines, grainy paper overlay, flat stylized shapes, serene nostalgic atmosphere, muted vintage color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "有纹理极简叙事",
+    "thumbnail": "samples/Textured_Minimalist_Narrative.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Textured Naive Storybook",
+    "prompt": "naive art style, wax crayon and oil pastel texture, storybook illustration, vibrant primary color palette, thick textured strokes, childlike simplicity, flat graphic composition, isolated on white. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "有纹理稚拙绘本",
+    "thumbnail": "samples/Textured_Naive_Storybook.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Textured Naive Whimsy",
+    "prompt": "naive art style, wax crayon texture, minimalist folk illustration, bold black outlines, flat 2D composition, off-white paper background, whimsical childlike sketch. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "有纹理稚拙奇想",
+    "thumbnail": "samples/Textured_Naive_Whimsy.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Vibrant Anime Escapism",
+    "prompt": "painterly anime background, saturated color palette, towering cumulus clouds, vibrant landscape, serene water reflection, stylized digital art, nostalgic summer atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳动漫遁世",
+    "thumbnail": "samples/Vibrant_Anime_Escapism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Vibrant Low-Angle Perspective",
+    "prompt": "low-angle shot, worm's-eye view, vibrant blue sky, sun-drenched lighting, wide-angle lens, bokeh foreground framing, saturated color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳低角透视",
+    "thumbnail": "samples/Vibrant_Low-Angle_Perspective.webp",
+    "group": "冷蓝调"
+  },
+  {
+    "name": "Vibrant Painterly Landscapes",
+    "prompt": "digital painterly style, bold blocky brushstrokes, high-contrast lighting, vibrant color palette, stylized realism, atmospheric perspective, expressive texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳绘画感风景",
+    "thumbnail": "samples/Vibrant_Painterly_Landscapes.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Vibrant Solar Perspective",
+    "prompt": "extreme low-angle perspective, vibrant sun-drenched colors, dramatic lens flare, backlit botanical textures, hyper-saturated cobalt sky, wide-angle fisheye distortion, high-contrast natural light. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳太阳透视",
+    "thumbnail": "samples/Vibrant_Solar_Perspective.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Vibrant Sun-Drenched Coastal",
+    "prompt": "painterly digital art, vibrant saturated colors, sun-drenched coastal landscape, towering cumulus clouds, anime-inspired background, stylized geometric shapes, dramatic lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳日浸润海岸",
+    "thumbnail": "samples/Vibrant_Sun-Drenched_Coastal.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Vibrant Urban Impressionism",
+    "prompt": "digital gouache painting, painterly brushstrokes, urban impressionism, high contrast sunlight, sharp graphic shadows, vibrant saturated palette, stylized cityscape, slice of life. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳都市印象派",
+    "thumbnail": "samples/Vibrant_Urban_Impressionism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Vintage Japanese Naturalism",
+    "prompt": "Shin-Hanga style, Japanese woodblock print, vintage botanical illustration, aged parchment texture, hand-colored lithograph, delicate ink linework, muted earth tones. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古日式自然主义",
+    "thumbnail": "samples/Vintage_Japanese_Naturalism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Whimsical Earthy Storytelling",
+    "prompt": "whimsical illustration, earthy color palette, painterly texture, cozy atmosphere, isometric perspective, folk art influence, nature-inspired storytelling. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "奇想 土色 叙事",
+    "thumbnail": "samples/Whimsical_Earthy_Storytelling.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Minimalist Nocturnal Silhouettes",
+    "prompt": "stark black silhouette, deep twilight blue palette, minimalist composition, high-contrast lighting, nocturnal mood, vast negative space, cinematic solitude. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "极简夜行剪影",
+    "thumbnail": "samples/Minimalist_Nocturnal_Silhouettes.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Monochromatic Teal Void",
+    "prompt": "monochromatic teal, dense atmospheric fog, surreal solitude, minimalist composition, low-key lighting, cinematic wide shot, desolate landscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "单色青蓝虚空",
+    "thumbnail": "samples/Monochromatic_Teal_Void.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Stark Minimalist Horizon",
+    "prompt": "hyper-minimalism, vast negative space, stark blue sky, sharp horizon line, color field abstraction, atmospheric gradient, pristine desolation. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "冷峻极简地平线",
+    "thumbnail": "samples/Stark_Minimalist_Horizon.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Textured Alpine Folklore",
+    "prompt": "stylized alpine landscape, woodblock print aesthetic, intricate textural detail, deep indigo and gold palette, graphic minimalist composition, pointillist stippling, folk art sensibility. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "有纹理高山民俗",
+    "thumbnail": "samples/Textured_Alpine_Folklore.webp",
+    "group": "冷蓝调"
+  },
+  {
+    "name": "Atmospheric Pixel Nostalgia",
+    "prompt": "pixel art, atmospheric lighting, nostalgic mood, vibrant color palette, surreal landscape, retro digital art, painterly composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "氛围像素怀旧",
+    "thumbnail": "samples/Atmospheric_Pixel_Nostalgia.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Avant-Garde Cobalt Minimalism",
+    "prompt": "avant-garde beauty portrait, cobalt blue graphic makeup, high-contrast chiaroscuro lighting, macro skin texture, minimalist surrealism, moody desaturated palette, intimate editorial photography. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "先锋钴蓝极简主义",
+    "thumbnail": "samples/Avant-Garde_Cobalt_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Brutalist Liminal Decay",
+    "prompt": "brutalist architecture, liminal space, desaturated teal and green, cinematic industrial decay, overcast diffuse lighting, monolithic concrete textures, moody urban alienation. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "粗野主义阈限衰败",
+    "thumbnail": "samples/Brutalist_Liminal_Decay.webp",
+    "group": "电影感"
+  },
+  {
+    "name": "Celestial Emerald Opulence",
+    "prompt": "emerald and gold palette, starry cosmic background, ornate Art Nouveau filigree, medieval fantasy realism, jewel-encrusted textures, dramatic chiaroscuro lighting, opulent metallic surfaces. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天体翠绿奢华",
+    "thumbnail": "samples/Celestial_Emerald_Opulence.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Celestial Gilded Surrealism",
+    "prompt": "gilded surrealism, cosmic anatomy, kintsugi gold leaf, luminous gouache texture, ethereal celestial motifs, intricate fine linework, deep blue and gold palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天体鎏金超现实",
+    "thumbnail": "samples/Celestial_Gilded_Surrealism.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Celestial Glacial Solitude",
+    "prompt": "monochromatic icy blue, ethereal atmospheric lighting, cosmic scale, crystalline textures, spiritual isolation, deep sapphire indigo, surreal dreamscape, cinematic sci-fi. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天体冰川孤寂",
+    "thumbnail": "samples/Celestial_Glacial_Solitude.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Celestial Nocturnal Minimalism",
+    "prompt": "minimalist silhouette, deep indigo nocturnal, starlit cosmic void, high contrast composition, ethereal white highlights, fine grain texture, melancholic atmospheric. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天体夜行极简主义",
+    "thumbnail": "samples/Celestial_Nocturnal_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Celestial Nocturnal Sublime",
+    "prompt": "high contrast silhouette, volumetric golden glow, deep indigo night sky, celestial scale, cosmic surrealism, dramatic atmospheric lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天体夜行崇高",
+    "thumbnail": "samples/Celestial_Nocturnal_Sublime.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Chromatic Minimalist Abstraction",
+    "prompt": "minimalist 3D abstraction, volumetric gradient lighting, geometric precision, high-contrast composition, soft ambient glow, chromatic highlights, industrial graphic form. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "彩色极简抽象",
+    "thumbnail": "samples/Chromatic_Minimalist_Abstraction.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Cinematic Cobalt Abyss",
+    "prompt": "cinematic cobalt blue palette, high-contrast backlit silhouette, heavy atmospheric grain, mysterious liminal space, volumetric light diffusion, eerie nocturnal mood. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感钴蓝深渊",
+    "thumbnail": "samples/Cinematic_Cobalt_Abyss.webp",
+    "group": "冷蓝调"
+  },
+  {
+    "name": "Cinematic Cyan Noir — Electric Beam Haze",
+    "prompt": "cinematic cyan lighting, volumetric light, heavy fog and mist, stark silhouette, neo-noir atmosphere, deep indigo shadows, liminal space, high-contrast chiaroscuro. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感 青色 黑色电影 — 电子 光束 雾霭",
+    "thumbnail": "samples/Cinematic_Cyan_Noir_—_Electric_Beam_Haze.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Forest Chiaroscuro",
+    "prompt": "chiaroscuro lighting, dramatic sun shafts, deep forest shadows, cinematic moody atmosphere, ethereal light beams, lush organic textures, high contrast composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感森林明暗对比",
+    "thumbnail": "samples/Cinematic_Forest_Chiaroscuro.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Neo-Noir Liminality",
+    "prompt": "cinematic chiaroscuro, solitary silhouette, complementary color grading, volumetric atmospheric haze, minimalist geometric architecture, high-contrast neo-noir, liminal space. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感新黑色阈限",
+    "thumbnail": "samples/Cinematic_Neo-Noir_Liminality.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Nocturnal Cyan",
+    "prompt": "deep indigo and cyan palette, cinematic chiaroscuro, stark silhouette, luminous ethereal glow, grainy film texture, mysterious liminal space, atmospheric haze. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感夜行青色",
+    "thumbnail": "samples/Cinematic_Nocturnal_Cyan.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Void Minimalism",
+    "prompt": "cinematic minimalism, volumetric lighting, high-contrast chiaroscuro, glowing geometric portal, deep indigo and cyan, atmospheric fog, reflective surface. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感虚空极简主义",
+    "thumbnail": "samples/Cinematic_Void_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Clinical Ethereal Minimalism — High-Key Neutral",
+    "prompt": "extreme close-up, high-key studio lighting, clinical aesthetic, shallow depth of field, minimalist composition, desaturated color palette, sharp focus, ethereal naturalism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "临床 空灵 极简主义 — 高调 中性",
+    "thumbnail": "samples/Clinical_Ethereal_Minimalism_—_High-Key_Neutral.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Cosmic Prismatic Glow",
+    "prompt": "prismatic light dispersion, cosmic glitter makeup, shimmering stardust texture, starburst flare, ethereal glow, high contrast dark background, iridescent highlights. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "宇宙棱镜发光",
+    "thumbnail": "samples/Cosmic_Prismatic_Glow.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Crimson Occult Nouveau",
+    "prompt": "woodcut printmaking style, Art Nouveau linework, high-contrast graphic illustration, surreal occult fantasy, vintage paper texture, bold black ink outlines, crimson and cream palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绯红秘教新艺术",
+    "thumbnail": "samples/Crimson_Occult_Nouveau.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Dreamy Textured Minimalism",
+    "prompt": "colored pencil texture, minimalist illustration, soft pastel palette, grainy paper aesthetic, hazy diffused light, dreamy surrealism, whimsical solitude, expressive hand-drawn linework. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "梦幻有纹理极简主义",
+    "thumbnail": "samples/Dreamy_Textured_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Dynamic Kinetic Velocity — Chronophotographic Streak",
+    "prompt": "motion blur, panning shot, kinetic energy, long exposure action, high speed photography, dynamic velocity trails, high contrast action. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态动态速度连续摄影光痕",
+    "thumbnail": "samples/Dynamic_Kinetic_Velocity_—_Chronophotographic_Streak.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Ethereal Amber Radiance — Translucent Membrane",
+    "prompt": "translucent amber layers, soft-focus backlighting, ethereal golden glow, macro organic textures, minimalist warm palette, dreamy bokeh, fluid liquid movement. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵 琥珀 光辉 — 半透明 薄膜",
+    "thumbnail": "samples/Ethereal_Amber_Radiance_—_Translucent_Membrane.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Aquatic Melancholia",
+    "prompt": "underwater photography, ethereal floating, shimmering caustics, diffused soft lighting, cool blue palette, surreal melancholic mood, flowing fabric, wet skin texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵水生忧郁",
+    "thumbnail": "samples/Ethereal_Aquatic_Melancholia.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Atmospheric Solitude",
+    "prompt": "atmospheric fog, minimalist landscape, cool monochromatic palette, diffused soft lighting, vast negative space, cinematic desolation, dreamy ethereal mood. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵氛围孤寂",
+    "thumbnail": "samples/Ethereal_Atmospheric_Solitude.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Aura Minimalism — Airbrushed Deep Blue",
+    "prompt": "soft-focus gradient, ethereal blue aura, minimalist atmospheric abstraction, airbrushed color field, tactile grain texture, biomorphic silhouette, chromatic blur. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵 光晕 极简主义 — 喷绘 深邃 蓝",
+    "thumbnail": "samples/Ethereal_Aura_Minimalism_—_Airbrushed_Deep_Blue.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Blue Minimalism — High-Key Gossamer",
+    "prompt": "macro photography, ethereal blue palette, translucent textures, shallow depth of field, soft-focus background, high-key lighting, minimalist botanical. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵 蓝 极简主义 — 高调 薄纱",
+    "thumbnail": "samples/Ethereal_Blue_Minimalism_—_High-Key_Gossamer.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Blue Solitude",
+    "prompt": "monochromatic blue palette, ethereal heavy fog, minimalist silhouette, melancholic atmosphere, blue hour lighting, surreal solitude, diffused natural light. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵蓝色孤寂",
+    "thumbnail": "samples/Ethereal_Blue_Solitude.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Botanical Minimalism",
+    "prompt": "minimalist studio photography, pastel pink and cream palette, botanical still life, glass refraction, soft directional lighting, translucent textures, clean composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵植物极简主义",
+    "thumbnail": "samples/Ethereal_Botanical_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Celestial Dreamscapes",
+    "prompt": "celestial vortex, silhouetted figure, ethereal stardust, dreamy soft-focus, nocturnal fantasy, bioluminescent glow, deep indigo palette, cinematic cosmic scale. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵天体梦境",
+    "thumbnail": "samples/Ethereal_Celestial_Dreamscapes.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Ethereal Celestial Minimalism",
+    "prompt": "bioluminescent particles, cobalt blue gradient, ethereal stardust, glowing silhouette, minimalist digital art, soft radiant halo, hazy atmospheric texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵天体极简主义",
+    "thumbnail": "samples/Ethereal_Celestial_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Celestial Portraiture",
+    "prompt": "nebula portrait, cosmic glitter, double exposure, celestial skin textures, starry bokeh, ethereal lighting, surreal fusion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵天体肖像摄影",
+    "thumbnail": "samples/Ethereal_Celestial_Portraiture.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Chiaroscuro Botanicals",
+    "prompt": "chiaroscuro botanical, macro floral photography, translucent petal texture, minimalist dark background, soft directional lighting, sculptural organic forms, dreamy ethereal atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵明暗对比植物",
+    "thumbnail": "samples/Ethereal_Chiaroscuro_Botanicals.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Chromatic Grain",
+    "prompt": "airbrush stippling, soft-focus blur, chromatic gradient, grainy texture, dreamlike atmosphere, pointillist effect, ethereal lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵彩色颗粒",
+    "thumbnail": "samples/Ethereal_Chromatic_Grain.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Cloud Surrealism — Crisp Cerulean",
+    "prompt": "volumetric cumulus clouds, surreal fantasy landscape, ethereal dreamcore, sculptural cloud textures, deep cerulean sky, dreamy fisheye perspective, bright directional sunlight, high-definition rendering. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵云超现实清晰天青",
+    "thumbnail": "samples/Ethereal_Cloud_Surrealism_—_Crisp_Cerulean.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Cobalt Minimalism",
+    "prompt": "minimalist blue palette, atmospheric gradients, soft-focus abstraction, geometric vector layers, kinetic motion blur, luminous light energy, matte texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵钴蓝极简主义",
+    "thumbnail": "samples/Ethereal_Cobalt_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Crystalline Luminescence",
+    "prompt": "extreme macro photography, bioluminescent glow, translucent crystalline texture, deep blue and black background, rim lighting, soft bokeh, refractive glass aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵水晶冷光",
+    "thumbnail": "samples/Ethereal_Crystalline_Luminescence.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Cyan Silhouette",
+    "prompt": "high-contrast silhouette, minimalist portraiture, cool blue rim lighting, cyan gradient background, futuristic noir, organic chrome textures, sharp profile. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵青色剪影",
+    "thumbnail": "samples/Ethereal_Cyan_Silhouette.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Eco-Nostalgia",
+    "prompt": "Frutiger Aero, dreamcore, vibrant rolling hills, fluffy cumulus clouds, soft-focus bloom, nostalgic digital atmosphere, ethereal landscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵生态怀旧",
+    "thumbnail": "samples/Ethereal_Eco-Nostalgia.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Frost Mythos",
+    "prompt": "cinematic winter dark fantasy, misty blue and white palette, warm amber light accents, monumental frozen architecture, atmospheric volumetric fog, solitary explorer, ethereal chiaroscuro. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵霜神话",
+    "thumbnail": "samples/Ethereal_Frost_Mythos.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Ethereal Grainy Whimsy",
+    "prompt": "heavy grain noise, soft airbrush texture, ethereal glow, dreamy pastel palette, minimalist silhouettes, luminous hazy atmosphere, fuzzy nostalgic aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵颗粒感奇想",
+    "thumbnail": "samples/Ethereal_Grainy_Whimsy.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Granular Twilight",
+    "prompt": "pointillism, stippled texture, twilight gradient, atmospheric grain, surreal silhouette, minimalist composition, lo-fi film aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵颗粒暮光",
+    "thumbnail": "samples/Ethereal_Granular_Twilight.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Indigo Woodblock",
+    "prompt": "shin-hanga style, japanese woodblock print, indigo and teal palette, bokashi gradient, vintage paper texture, serene landscape, delicate ink linework. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵靛蓝木刻",
+    "thumbnail": "samples/Ethereal_Indigo_Woodblock.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Iridescent Futurism",
+    "prompt": "iridescent liquid chrome, stardust celestial texture, chromatic light refraction, starburst lens flare, bioluminescent fiber optics, surreal high-fashion metallic, deep cosmic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵虹彩未来",
+    "thumbnail": "samples/Ethereal_Iridescent_Futurism.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Kinetic Cyan",
+    "prompt": "long exposure, motion blur, ethereal ghosting effect, cobalt and cyan lighting, shutter drag, fluid kinetic energy, high-contrast silhouette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵动态青色",
+    "thumbnail": "samples/Ethereal_Kinetic_Cyan.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Kinetic Minimalism — Ghostly Desaturation",
+    "prompt": "intentional camera movement, ethereal motion blur, minimalist monochromatic, long exposure photography, spectral silhouette, dreamlike diffusion, high-contrast atmospheric. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵动态极简主义幽灵褪色",
+    "thumbnail": "samples/Ethereal_Kinetic_Minimalism_—_Ghostly_Desaturation.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Kinetic Minimalism — Saturated Field Streak",
+    "prompt": "motion blur, ethereal silhouettes, minimalist composition, high-contrast lighting, kinetic energy, shutter drag, saturated color field, botanical abstraction. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵动态极简主义高饱和场域光痕",
+    "thumbnail": "samples/Ethereal_Kinetic_Minimalism_—_Saturated_Field_Streak.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Kinetic Minimalism — Translucent Overlap",
+    "prompt": "long exposure, motion blur, ghostly silhouette, minimalist fine art, multiple exposure, desaturated tones, ethereal atmosphere, cinematic shadows. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵动态极简主义半透明叠印",
+    "thumbnail": "samples/Ethereal_Kinetic_Minimalism_—_Translucent_Overlap.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Kinetic Motion — Electric Cyan Veil",
+    "prompt": "long exposure motion blur, shutter drag, ethereal cyan glow, kinetic energy, abstract silhouette, high-key lighting, fluid dynamics. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵 动感 动态 — 电子 青色 薄纱",
+    "thumbnail": "samples/Ethereal_Kinetic_Motion_—_Electric_Cyan_Veil.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Liquid Iridescence",
+    "prompt": "translucent liquid glass, iridescent violet gradient, organic 3D fluid curves, soft studio lighting, glossy specular reflections, ethereal surrealism, minimalist digital tranquility. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵液态虹彩",
+    "thumbnail": "samples/Ethereal_Liquid_Iridescence.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Luminescent Gradient",
+    "prompt": "ethereal liquid gradients, translucent glassmorphism, soft pastel aura, iridescent pearlescent sheen, fine velvety noise texture, minimalist ambient light, fluid organic composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵荧光渐变",
+    "thumbnail": "samples/Ethereal_Luminescent_Gradient.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Luminescent Xenopastoral",
+    "prompt": "ethereal glow, xenopastoral landscape, soft golden lighting, surreal nature, vibrant mossy greens, dreamy macro depth of field, pearlescent textures. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵荧光异星田园",
+    "thumbnail": "samples/Ethereal_Luminescent_Xenopastoral.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Macro Wonders",
+    "prompt": "extreme macro photography, dreamy bokeh background, iridescent light, vibrant pastel tones, magical realism, pristine natural textures, soft ethereal glow. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵微距奇观",
+    "thumbnail": "samples/Ethereal_Macro_Wonders.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Minimalist Gradient",
+    "prompt": "minimalist macro, soft gradient transition, ethereal atmosphere, diffused ambient lighting, dreamlike serenity, clean composition, pastel color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵极简渐变",
+    "thumbnail": "samples/Ethereal_Minimalist_Gradient.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Monumental Dreamscapes",
+    "prompt": "colossal scale, mystical violet forest, atmospheric perspective, monolithic ruins, ethereal glowing mist, painterly textures, melancholic mood. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵宏大梦境",
+    "thumbnail": "samples/Ethereal_Monumental_Dreamscapes.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Mosaic Impressionism",
+    "prompt": "mosaic tile texture, pointillist style, ethereal pastel palette, shimmering iridescent light, tesserae pattern, dreamy atmospheric, soft gradient transitions. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵马赛克印象派",
+    "thumbnail": "samples/Ethereal_Mosaic_Impressionism.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Motion Minimalism",
+    "prompt": "intentional motion blur, ethereal high-key portrait, long-exposure ghosting, desaturated cool tones, minimalist monochromatic composition, dreamlike misty atmosphere, soft-focus painterly texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵运动极简主义",
+    "thumbnail": "samples/Ethereal_Motion_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Nocturnal Cosmicism",
+    "prompt": "digital painting, bioluminescent glow, indigo and cyan palette, cosmic atmosphere, ethereal lighting, surreal landscape, high contrast, painterly texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵夜行宇宙主义",
+    "thumbnail": "samples/Ethereal_Nocturnal_Cosmicism.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Ethereal Nocturnal Kinematics",
+    "prompt": "long exposure motion blur, ethereal spectral atmosphere, deep indigo and teal palette, ghostly kinetic silhouettes, painterly light streaks, cinematic nocturnal mood, high contrast shadows. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵夜行运动学",
+    "thumbnail": "samples/Ethereal_Nocturnal_Kinematics.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Ethereal Nocturnal Luminescence — Painterly Emerald Haze",
+    "prompt": "bioluminescent glow, nocturnal atmosphere, painterly texture, deep indigo and teal palette, ethereal silhouettes, chiaroscuro lighting, mystical surrealism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵 夜间 冷光 — 绘画感 祖母绿 雾霭",
+    "thumbnail": "samples/Ethereal_Nocturnal_Luminescence_—_Painterly_Emerald_Haze.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Ethereal Nocturnal Minimalism — Radiant Orb Backlight",
+    "prompt": "bioluminescent glow, nocturnal atmosphere, minimalist composition, deep indigo palette, ethereal light source, stark silhouette, dreamlike haze, celestial geometry. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵夜行极简主义光辉球体逆光",
+    "thumbnail": "samples/Ethereal_Nocturnal_Minimalism_—_Radiant_Orb_Backlight.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Nocturnal Noir — Liquid Prussian Light",
+    "prompt": "high-contrast silhouette, grainy analog texture, ethereal atmospheric mist, deep teal and Prussian blue palette, soft-focus glow, surreal liquid light, minimalist nocturne composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵夜行黑色液态普鲁士蓝浅",
+    "thumbnail": "samples/Ethereal_Nocturnal_Noir_—_Liquid_Prussian_Light.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Ethereal Nocturnal Silhouette",
+    "prompt": "nocturnal atmospheric silhouette, deep indigo and cyan palette, ethereal backlit glow, dense misty forest, cinematic high contrast, dreamy bokeh textures, mysterious midnight blue. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵夜行剪影",
+    "thumbnail": "samples/Ethereal_Nocturnal_Silhouette.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Ethereal Noir Stipple",
+    "prompt": "monochromatic high-contrast, stippled texture, ethereal glowing contours, chiaroscuro lighting, grainy xerox aesthetic, pitch black void, dissolving particle form. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵黑色点彩",
+    "thumbnail": "samples/Ethereal_Noir_Stipple.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Ethereal Nordic Solitude",
+    "prompt": "minimalist winter landscape, atmospheric fog, desaturated cool tones, warm amber light contrast, cinematic chiaroscuro, vast negative space, ethereal solitude. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵北欧孤寂",
+    "thumbnail": "samples/Ethereal_Nordic_Solitude.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Pastel Botanical",
+    "prompt": "ethereal botanical, soft pastel palette, shallow depth of field, diffused studio lighting, dreamy motion blur, minimalist composition, smooth gradient background. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵粉彩植物",
+    "thumbnail": "samples/Ethereal_Pastel_Botanical.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Pastel Dreamscape — Peach Airbrush Grain",
+    "prompt": "ethereal glow, soft airbrush texture, dreamlike haze, pastel gradient, heavy analog grain, backlit silhouette, shallow depth of field, nostalgic dreamscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵粉彩梦境桃色喷绘颗粒",
+    "thumbnail": "samples/Ethereal_Pastel_Dreamscape_—_Peach_Airbrush_Grain.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Pastel Impressionism — Gouache Dapple",
+    "prompt": "whimsical pastel aesthetic, dreamy impressionistic texture, soft gouache and colored pencil blend, hazy atmospheric lighting, minimalist organic forms, shimmering dappled sunlight, delicate hand-drawn character. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵粉彩印象派水粉斑驳",
+    "thumbnail": "samples/Ethereal_Pastel_Impressionism_—_Gouache_Dapple.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Pastoral Minimalism — Flat Cumulus",
+    "prompt": "minimalist anime background, vast horizon line, painterly cumulus clouds, serene solitude, retro-futuristic geometry, vibrant pastel palette, dreamcore atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵 田园 极简主义 — 平面 积云",
+    "thumbnail": "samples/Ethereal_Pastoral_Minimalism_—_Flat_Cumulus.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Pastoral Minimalism — Moss Green Haze",
+    "prompt": "minimalist landscape photography, rolling green hills, surreal pastoralism, cinematic scale contrast, diffused overcast lighting, atmospheric haze, solitary figure. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵 田园 极简主义 — 苔藓 绿 雾霭",
+    "thumbnail": "samples/Ethereal_Pastoral_Minimalism_—_Moss_Green_Haze.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Pointillist Botanical",
+    "prompt": "fine-line engraving, stippled pointillism, pastel botanical illustration, cross-hatching texture, whimsical storybook aesthetic, muted desaturated palette, intricate ink work. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵点彩植物",
+    "thumbnail": "samples/Ethereal_Pointillist_Botanical.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Porcelain Surrealism",
+    "prompt": "surreal 3D render, soft pastel palette, shattered porcelain, iridescent pearlescent sheen, ethereal botanical elements, dreamy studio lighting, tactile textures. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵瓷器超现实",
+    "thumbnail": "samples/Ethereal_Porcelain_Surrealism.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Prismatic Luminance",
+    "prompt": "chromatic dispersion, prismatic light refraction, stark black background, ethereal bloom effect, spectral glow, radial light symmetry, anamorphic lens flare. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵棱镜亮度",
+    "thumbnail": "samples/Ethereal_Prismatic_Luminance.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Shin-Hanga Revival",
+    "prompt": "Shin-hanga style, Japanese woodblock print, Hasui Kawase inspired, textured washi paper, clean black outlines, atmospheric color gradients, traditional architecture, vintage Showa era aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵新版画复兴",
+    "thumbnail": "samples/Ethereal_Shin-Hanga_Revival.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Sky Nostalgia",
+    "prompt": "low angle shot, soft natural daylight, ethereal atmosphere, pastel and earth tone palette, dreamy film-like texture, minimalist composition, cloud-inspired aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵天空怀旧",
+    "thumbnail": "samples/Ethereal_Sky_Nostalgia.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Solitary Minimalism",
+    "prompt": "minimalist silhouette, giant celestial body, grainy paper texture, muted earth tones, atmospheric scale, contemplative solitude, high-contrast composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵孤绝极简主义",
+    "thumbnail": "samples/Ethereal_Solitary_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Spectral Noir — Chemigram Solarized",
+    "prompt": "solarized photography, spectral glow, chemigram, high-contrast silhouette, darkroom distortion, bioluminescent halo, distressed texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵光谱黑色化学成像日晒",
+    "thumbnail": "samples/Ethereal_Spectral_Noir_—_Chemigram_Solarized.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Ethereal Surreal Minimalism — Pastel Cloud High-Key",
+    "prompt": "minimalist surrealism, dreamlike atmosphere, soft pastel palette, floating architectural elements, expansive blue sky, fluffy cumulus clouds, high-key natural lighting, magical realism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵超现实极简主义粉彩云高关键",
+    "thumbnail": "samples/Ethereal_Surreal_Minimalism_—_Pastel_Cloud_High-Key.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Surreal Minimalism — Sharp Cerulean",
+    "prompt": "minimalist surrealism, bright cerulean sky, sharp natural sunlight, high-contrast white textures, weightless floating objects, sculptural composition, airy dreamlike atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵超现实极简主义锐利天青",
+    "thumbnail": "samples/Ethereal_Surreal_Minimalism_—_Sharp_Cerulean.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Thermal Aura — Heat-Map Speckle",
+    "prompt": "airbrush gradient, thermal aura glow, soft-focus blur, grainy texture, psychedelic dreamscape, vibrant color bleed, silhouette halo. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵热成像光晕斑点",
+    "thumbnail": "samples/Ethereal_Thermal_Aura_—_Heat-Map_Speckle.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Thermal Luminescence",
+    "prompt": "ethereal thermal glow, grainy film texture, soft-focus silhouette, motion blur, moody indigo and orange palette, spectral light trails, dreamlike atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵热成像冷光",
+    "thumbnail": "samples/Ethereal_Thermal_Luminescence.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Tonalist Minimalism",
+    "prompt": "monochromatic blue, atmospheric pointillism, minimalist landscape, soft-focus silhouette, misty tonalism, stippled texture, ethereal light. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵色调主义极简主义",
+    "thumbnail": "samples/Ethereal_Tonalist_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Twilight Surrealism — Misty Cyan Glow",
+    "prompt": "surreal twilight blue hour, liminal dreamscape, glowing geometric portal, minimalist atmospheric composition, high-contrast silhouette, misty ethereal haze, monochromatic cool tones. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵暮光超现实薄雾青色发光",
+    "thumbnail": "samples/Ethereal_Twilight_Surrealism_—_Misty_Cyan_Glow.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Ethereal Verdant Landscapes",
+    "prompt": "velvety green textures, atmospheric haze, dappled forest light, undulating landscapes, soft-focus impressionism, muted moss palette, minimalist nature. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵翠绿风景",
+    "thumbnail": "samples/Ethereal_Verdant_Landscapes.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Ethereal Verdant Solitude",
+    "prompt": "heavy atmospheric fog, deep teal and jade palette, cinematic melancholic lighting, misty forest landscape, lone silhouette, desaturated natural textures, overcast moody sky. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "空灵翠绿孤寂",
+    "thumbnail": "samples/Ethereal_Verdant_Solitude.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Frozen Industrial Reclamation",
+    "prompt": "dieselpunk, arctic industrial, rusted metal decay, glowing crystalline frost, volumetric fog, cinematic sci-fi, atmospheric scale, desolate snowy landscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "冰封 工业 回收",
+    "thumbnail": "samples/Frozen_Industrial_Reclamation.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Hyper-Saturated Surreal Pastoralism",
+    "prompt": "liminal space, surreal pastoralism, vibrant cobalt sky, symmetrical composition, hyper-saturated colors, vanishing point perspective, uncanny diorama style. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "高饱和 超现实 田园主义",
+    "thumbnail": "samples/Hyper-Saturated_Surreal_Pastoralism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Infinite Nocturnal Solitude",
+    "prompt": "deep indigo monochromatic, minimalist silhouette, starlit night sky, mirror reflection, atmospheric mist, cosmic quietude, vast horizon. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "无限夜行孤寂",
+    "thumbnail": "samples/Infinite_Nocturnal_Solitude.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Intimate Amber Chiaroscuro",
+    "prompt": "chiaroscuro lighting, golden amber glow, extreme macro detail, shallow depth of field, warm bokeh, dramatic rim lighting, intimate portraiture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "亲密琥珀明暗对比",
+    "thumbnail": "samples/Intimate_Amber_Chiaroscuro.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Iridescent Biomorphic Whimsy",
+    "prompt": "macro photography, iridescent texture, shallow depth of field, biomorphic surrealism, soft-focus dreamy aesthetic, vibrant orange and blue palette, glistening dewdrops, rhinestone embellishments. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "虹彩 有机形态 奇想",
+    "thumbnail": "samples/Iridescent_Biomorphic_Whimsy.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Iridescent Chrome Celestial",
+    "prompt": "liquid chrome, iridescent shimmer, starburst lens flare, hyper-reflective metallic, ethereal stardust, high-gloss finish, surreal organic forms, cosmic luminosity. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "虹彩铬天体",
+    "thumbnail": "samples/Iridescent_Chrome_Celestial.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Iridescent Liquid Futurism",
+    "prompt": "liquid chrome, iridescent pearlescent sheen, soft lavender and violet palette, surreal 3D fluid shapes, ethereal high-gloss finish, dreamy soft-focus lighting, futuristic metallic textures. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "虹彩 液态 未来主义",
+    "thumbnail": "samples/Iridescent_Liquid_Futurism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Kinetic Amber Nocturne — Sepia Painterly Streaks",
+    "prompt": "intentional camera movement, long exposure motion blur, warm amber and sepia palette, kinetic light trails, liminal nocturnal dreamscape, painterly motion streaks, abstract light bokeh. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动感 琥珀 夜曲 — 棕褐 绘画感 光痕",
+    "thumbnail": "samples/Kinetic_Amber_Nocturne_—_Sepia_Painterly_Streaks.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Kinetic Ethereal Abstraction",
+    "prompt": "long exposure motion blur, intentional camera movement, ethereal fluid silhouettes, minimalist high-contrast backdrop, dreamy painterly streaks, cobalt and icy blue palette, atmospheric ghostly abstraction. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态空灵抽象",
+    "thumbnail": "samples/Kinetic_Ethereal_Abstraction.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Kinetic Ethereal Editorial",
+    "prompt": "long exposure motion blur, shutter drag, ethereal kinetic energy, high fashion editorial, dreamy panning shot, vibrant color blocking, spectral silhouette trails. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态空灵编辑",
+    "thumbnail": "samples/Kinetic_Ethereal_Editorial.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Kinetic Ethereal Motion — Warm Edge Streaks",
+    "prompt": "motion blur, shutter drag, long exposure, painterly abstraction, kinetic energy, dreamlike atmosphere, high-contrast lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态空灵运动暖边缘光痕",
+    "thumbnail": "samples/Kinetic_Ethereal_Motion_—_Warm_Edge_Streaks.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Kinetic Ethereal Velocity",
+    "prompt": "intentional camera movement, kinetic motion blur, high-speed shutter drag, directional streaks, ghostly motion trails, dynamic action photography, high contrast lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态空灵速度",
+    "thumbnail": "samples/Kinetic_Ethereal_Velocity.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Kinetic Impressionist Motion — Bleeding Gradient Streaks",
+    "prompt": "intentional camera movement, long exposure motion blur, painterly light streaks, ethereal ghosting effect, dynamic kinetic energy, abstract impressionistic photography, fluid motion trails. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动感 印象派 动态 — 渗色 渐变 光痕",
+    "thumbnail": "samples/Kinetic_Impressionist_Motion_—_Bleeding_Gradient_Streaks.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Kinetic Impressionist Motion — Green Summer Haze",
+    "prompt": "intentional camera movement, motion blur, impressionistic photography, kinetic energy, painterly texture, dreamy summer haze, vibrant green palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动感 印象派 动态 — 绿 夏日 雾霭",
+    "thumbnail": "samples/Kinetic_Impressionist_Motion_—_Green_Summer_Haze.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Kinetic Liminal Reflections",
+    "prompt": "intentional camera movement, dreamlike motion blur, liminal space, muted pastel palette, long exposure photography, minimalist symmetry, diffused twilight light. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态阈限倒影",
+    "thumbnail": "samples/Kinetic_Liminal_Reflections.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Kinetic Nostalgic Blur",
+    "prompt": "intentional camera blur, ethereal motion haze, chiaroscuro lighting, weathered urban textures, nostalgic pastel tones, dreamy long exposure, stark diagonal shadows. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "动态怀旧模糊",
+    "thumbnail": "samples/Kinetic_Nostalgic_Blur.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminescent Liminal Melancholy",
+    "prompt": "liminal space, deep twilight blue, minimalist composition, surreal solitude, volumetric light, cold digital glow, cinematic melancholia. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "荧光阈限忧郁",
+    "thumbnail": "samples/Luminescent_Liminal_Melancholy.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Luminescent Macro Ethereal",
+    "prompt": "extreme macro photography, bioluminescent blue glow, glowing bokeh, shallow depth of field, refracted light, ethereal atmosphere, translucent textures. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "荧光微距空灵",
+    "thumbnail": "samples/Luminescent_Macro_Ethereal.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminescent Spectral Noir — Acid Green Aura",
+    "prompt": "high-contrast silhouette, acid green gradient aura, fine grain paper texture, soft-focus diffusion, minimalist surrealism, bioluminescent glow, airbrushed ink bleed. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "荧光 幽灵 黑色电影 — 酸色 绿 光晕",
+    "thumbnail": "samples/Luminescent_Spectral_Noir_—_Acid_Green_Aura.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Amber Silhouette — Crimson Light Trails",
+    "prompt": "backlit silhouette, amber and red gradient, intentional motion blur, high contrast shadow, ethereal light trails, minimalist composition, warm cinematic glow, dreamy fluid motion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮琥珀剪影绯红浅光轨",
+    "thumbnail": "samples/Luminous_Amber_Silhouette_—_Crimson_Light_Trails.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Amber Transcendence",
+    "prompt": "backlit amber luminescence, translucent golden resin, ethereal divine glow, macro crystalline texture, warm honey-colored light, molten organic surfaces, symbolist painterly detail. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮琥珀超脱",
+    "thumbnail": "samples/Luminous_Amber_Transcendence.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Aquatic Refraction",
+    "prompt": "shimmering water ripples, sunlight caustics, translucent turquoise and emerald, refracted light distortion, macro organic textures, dreamy aquatic atmosphere, high-angle sunlight glare. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮水生折射",
+    "thumbnail": "samples/Luminous_Aquatic_Refraction.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Aqueous Solitude",
+    "prompt": "shimmering natural light, atmospheric mist, cool blue color palette, refractive glass distortion, minimalist arctic landscape, ethereal bokeh, high-contrast water ripples. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮水色孤寂",
+    "thumbnail": "samples/Luminous_Aqueous_Solitude.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Astral Void",
+    "prompt": "high-contrast black void, bioluminescent energy, glowing coronal ring, dendritic plasma texture, minimalist astrophotography, ethereal light explosion, vibrant cyan and orange. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮星际虚空",
+    "thumbnail": "samples/Luminous_Astral_Void.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Botanical Macro — Dewdrop Refraction",
+    "prompt": "macro photography, dewdrops, shallow depth of field, botanical details, soft bokeh, refractive light, vibrant emerald green. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮 植物 微距 — 露珠 折射",
+    "thumbnail": "samples/Luminous_Botanical_Macro_—_Dewdrop_Refraction.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Botanical Minimalism",
+    "prompt": "minimalist botanical, translucent floral macro, smooth gradient background, soft studio lighting, high-definition digital render, elegant organic curves. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮植物极简主义",
+    "thumbnail": "samples/Luminous_Botanical_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Luminous Chiaroscuro Noir — Blue-White Rim",
+    "prompt": "chiaroscuro, extreme backlighting, rim lighting, pitch black background, high-contrast noir, ethereal glow, dramatic silhouette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮 明暗对比 黑色电影 — 蓝白 轮廓",
+    "thumbnail": "samples/Luminous_Chiaroscuro_Noir_—_Blue-White_Rim.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Chromatic Morphism",
+    "prompt": "fluid chromatic gradients, frosted glass texture, soft-focus ambient lighting, 3D neomorphic geometry, spectral color refraction, tactile velvet grain, high-contrast minimalist composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮彩色形态",
+    "thumbnail": "samples/Luminous_Chromatic_Morphism.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Chromatic Pointillism",
+    "prompt": "pointillism, divisionism, neo-impressionism, stippled texture, optical color mixing, vibrant pastel gradients, luminous atmosphere, shimmering mosaic brushwork. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮彩色点彩",
+    "thumbnail": "samples/Luminous_Chromatic_Pointillism.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Cosmic Dreamscapes",
+    "prompt": "surreal dreamscape, luminescent glow, cosmic nebula background, prismatic light effects, painterly texture, starburst sparkles, ethereal aura. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮宇宙梦境",
+    "thumbnail": "samples/Luminous_Cosmic_Dreamscapes.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Cosmic Ether",
+    "prompt": "glowing granular light particles, deep indigo and pitch black void, ethereal spectral pointillism, bioluminescent crystalline shimmer, high-contrast chiaroscuro lighting, celestial golden ember accents, dreamy soft-focus atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮宇宙以太",
+    "thumbnail": "samples/Luminous_Cosmic_Ether.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Cosmic Pointillism",
+    "prompt": "glowing micro-particle rendering, stardust texture, chiaroscuro lighting, ethereal bioluminescence, prismatic light refraction, high-contrast digital art, cosmic pointillism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮宇宙点彩",
+    "thumbnail": "samples/Luminous_Cosmic_Pointillism.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Cyber Glitz",
+    "prompt": "macro beauty portrait, iridescent glitter makeup, prismatic light refraction, metallic chrome finish, cinematic lens flares, high-fashion editorial, ethereal glow, sharp focus skin texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮赛博闪耀",
+    "thumbnail": "samples/Luminous_Cyber_Glitz.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Cyber Noir",
+    "prompt": "cyberpunk high-fashion, chiaroscuro studio lighting, iridescent holographic textures, wet-look glossy skin, rhinestone and crystal embellishments, cool-toned metallic palette, avant-garde beauty portrait. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮赛博黑色",
+    "thumbnail": "samples/Luminous_Cyber_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Ethereal Fluidity",
+    "prompt": "ethereal atmosphere, liquid textures, chiaroscuro lighting, bioluminescent shimmer, weightless suspension, dreamy volumetric haze, magical realism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮空灵流动",
+    "thumbnail": "samples/Luminous_Ethereal_Fluidity.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Ethereal Mist",
+    "prompt": "ethereal aura, soft-focus mist, pastel gradient, grainy texture, backlit halo, dreamlike silhouette, luminous diffusion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮空灵雾",
+    "thumbnail": "samples/Luminous_Ethereal_Mist.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Ethereal Motion",
+    "prompt": "soft-focus blur, high-key minimalist, ethereal motion distortion, vibrant chromatic gradients, translucent abstract forms, dreamy infrared aesthetic, bleeding color fields. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮空灵运动",
+    "thumbnail": "samples/Luminous_Ethereal_Motion.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Luminous Liminal Landscapes",
+    "prompt": "liminal landscape, vibrant saturation, sculptural cumulus clouds, surreal digital realism, vast horizon, crisp daylight, nostalgic dreamcore. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮阈限风景",
+    "thumbnail": "samples/Luminous_Liminal_Landscapes.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Monolithic Minimalism",
+    "prompt": "minimalist geometric monolith, volumetric light, twilight atmosphere, surreal landscape, ethereal glowing portal, cinematic high contrast, atmospheric fog. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮巨石极简主义",
+    "thumbnail": "samples/Luminous_Monolithic_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Luminous Nocturnal Chiaroscuro — Golden Particulate Bloom",
+    "prompt": "chiaroscuro lighting, bioluminescent particles, pitch black background, golden amber glow, shimmering texture, ethereal light bloom, high contrast. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮 夜间 明暗对比 — 金色 微粒 泛光",
+    "thumbnail": "samples/Luminous_Nocturnal_Chiaroscuro_—_Golden_Particulate_Bloom.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Nocturnal Chiaroscuro — Painterly Indigo Amber",
+    "prompt": "chiaroscuro lighting, deep indigo and amber palette, painterly expressive brushstrokes, atmospheric dark fantasy, ethereal glowing light, minimalist nocturnal landscape, soft textured oil aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮夜行明暗对比绘画感靛蓝琥珀",
+    "thumbnail": "samples/Luminous_Nocturnal_Chiaroscuro_—_Painterly_Indigo_Amber.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Nocturnal Ethereality",
+    "prompt": "cinematic nocturnal atmosphere, bioluminescent glow, soft-focus depth, ethereal levitation, cosmic stardust bokeh, volumetric indigo light, surreal dreamscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮夜行空灵",
+    "thumbnail": "samples/Luminous_Nocturnal_Ethereality.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Nocturnal Mysticism",
+    "prompt": "magical realism, ethereal bioluminescence, nocturnal landscape, deep indigo and teal, atmospheric fog, high-contrast backlighting, solitary mystical figure. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮夜行神秘主义",
+    "thumbnail": "samples/Luminous_Nocturnal_Mysticism.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Nocturnal Silhouette — Amber Bokeh Haze",
+    "prompt": "cinematic backlighting, rim lighting, volumetric haze, nocturnal atmosphere, shallow depth of field, golden amber bokeh, mystical realism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮夜行剪影琥珀散景雾霭",
+    "thumbnail": "samples/Luminous_Nocturnal_Silhouette_—_Amber_Bokeh_Haze.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Nocturnal Whimsy — Swirling Storybook Glow",
+    "prompt": "whimsical storybook illustration, painterly texture, glowing celestial elements, dreamy nocturnal landscape, swirling brushstrokes, vibrant indigo and emerald palette, soft-focus fantasy. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮夜行奇想旋绕绘本发光",
+    "thumbnail": "samples/Luminous_Nocturnal_Whimsy_—_Swirling_Storybook_Glow.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Luminous Organic Surrealism — Peach Slit-Scan",
+    "prompt": "translucent organic curves, slit-scan light trails, warm gradient palette, volumetric luminosity, deep black background, ethereal fluid abstraction, velvety texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮有机超现实桃色裂隙扫描",
+    "thumbnail": "samples/Luminous_Organic_Surrealism_—_Peach_Slit-Scan.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Submerged Distortion",
+    "prompt": "low angle perspective, fisheye lens distortion, vibrant cerulean sky background, shimmering light caustics, high-contrast midday sunlight, hyper-saturated color palette, ethereal aquatic refraction, glossy reflective textures. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮沉没畸变",
+    "thumbnail": "samples/Luminous_Submerged_Distortion.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Submerged Etherealism",
+    "prompt": "underwater photography, looking up to surface, shimmering caustic light, translucent aquatic flora, ethereal subaquatic dreamscape, sunbeams filtering through water, low angle perspective. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮沉没空灵",
+    "thumbnail": "samples/Luminous_Submerged_Etherealism.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Twilight Liminality — Indigo-Peach Mirror",
+    "prompt": "twilight gradient sky, sharp industrial silhouette, liminal urban space, vivid water reflections, minimalist composition, nostalgic dusk atmosphere, indigo and peach color palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮 暮色 阈限 — 靛蓝桃色 镜像",
+    "thumbnail": "samples/Luminous_Twilight_Liminality_—_Indigo-Peach_Mirror.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Luminous Twilight Liminality — Volumetric Blue-Hour",
+    "prompt": "cinematic twilight, cool blue and warm amber contrast, liminal space, volumetric lighting, moody atmospheric, high-contrast silhouettes, surreal landscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮暮光阈限体积蓝时刻",
+    "thumbnail": "samples/Luminous_Twilight_Liminality_—_Volumetric_Blue-Hour.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Macro Miniature Whimsy",
+    "prompt": "miniature diorama, macro photography, tilt-shift effect, shallow depth of field, vibrant saturated colors, whimsical scale play, clean studio lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "微距微缩奇想",
+    "thumbnail": "samples/Macro_Miniature_Whimsy.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Midnight Cobalt Noir",
+    "prompt": "deep cobalt blue, high-contrast chiaroscuro, electric blue rim lighting, sleek minimalist curves, glossy metallic finish, moody cinematic atmosphere, volumetric blue glow. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "午夜钴蓝黑色",
+    "thumbnail": "samples/Midnight_Cobalt_Noir.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Minimalist Ethereal Surrealism",
+    "prompt": "minimalist surrealism, ethereal sky blue, floating objects, fluffy cumulus clouds, Magritte inspired, clean geometric composition, dreamlike isolation. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "极简空灵超现实",
+    "thumbnail": "samples/Minimalist_Ethereal_Surrealism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Minimalist Surreal Landscapes",
+    "prompt": "minimalist surrealism, 3D digital render, pristine natural landscape, reflective metallic geometry, conceptual art installation, hyper-realistic lighting, dreamlike atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "极简超现实风景",
+    "thumbnail": "samples/Minimalist_Surreal_Landscapes.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Monochromatic Cobalt Dreamcore",
+    "prompt": "monochromatic cobalt palette, liminal space, water caustics, surreal dreamcore, electric blue glow, minimalist architecture, wet reflective surfaces, melancholic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "单色钴蓝梦核",
+    "thumbnail": "samples/Monochromatic_Cobalt_Dreamcore.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Monochromatic Ethereal Motion",
+    "prompt": "intentional camera movement, long exposure motion blur, monochromatic deep blue palette, ghostly silhouettes, atmospheric haze, cyanotype aesthetic, fluid motion trails. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "单色空灵运动",
+    "thumbnail": "samples/Monochromatic_Ethereal_Motion.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Monochromatic Liminal Fluorescents",
+    "prompt": "liminal space, monochromatic color wash, symmetrical composition, fluorescent lighting, sterile architecture, cinematic atmosphere, one-point perspective. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "单色阈限荧光",
+    "thumbnail": "samples/Monochromatic_Liminal_Fluorescents.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Monolithic Cosmic Mysticism",
+    "prompt": "monolithic architecture, glowing cyan portal, atmospheric fog, cosmic brutalism, solitary silhouette, cinematic scale, deep blue twilight, surreal sci-fi. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "巨石 宇宙 神秘主义",
+    "thumbnail": "samples/Monolithic_Cosmic_Mysticism.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Monolithic Cosmic Void",
+    "prompt": "monolithic minimalism, deep indigo palette, volumetric light, surreal scale, chiaroscuro, atmospheric haze, brutalist architecture, contemplative silhouette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "巨石 宇宙 虚空",
+    "thumbnail": "samples/Monolithic_Cosmic_Void.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Moody Ethereal Minimalism",
+    "prompt": "minimalist landscape photography, long exposure water, atmospheric mist, muted blue and gray palette, sublime scale, surreal nature, moody overcast lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "阴郁空灵极简主义",
+    "thumbnail": "samples/Moody_Ethereal_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Nocturnal Cobalt Liminality — Hazy Monolithic Drift",
+    "prompt": "nocturnal surrealism, cobalt blue chiaroscuro, monolithic silhouette, liminal space, atmospheric haze, high-contrast lighting, chromatic aberration, minimalist composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜间 钴蓝 阈限 — 朦胧 巨石 漂移",
+    "thumbnail": "samples/Nocturnal_Cobalt_Liminality_—_Hazy_Monolithic_Drift.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Nocturnal Ultramarine Minimalism",
+    "prompt": "minimalist ultramarine background, nocturnal liminality, dramatic high-contrast lighting, isolated subject, surreal solitude, long sharp shadows, deep cobalt atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行群青极简主义",
+    "thumbnail": "samples/Nocturnal_Ultramarine_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Nostalgic Pastoral Realism",
+    "prompt": "nostalgic atmosphere, earthy color palette, liminal landscape, soft natural lighting, tactile artistic texture, historical realism, detailed architectural composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "怀旧田园写实",
+    "thumbnail": "samples/Nostalgic_Pastoral_Realism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Opulent Gemstone Surrealism",
+    "prompt": "rhinestone-encrusted, faceted gemstones, starburst lens flares, saturated pastel palette, surreal kitsch, hyper-detailed textures, glittering dreamscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "奢华宝石超现实",
+    "thumbnail": "samples/Opulent_Gemstone_Surrealism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Organic Earth Coastal",
+    "prompt": "macro photography, tactile organic textures, wet glistening surfaces, earthy and coastal color palette, sharp natural light, intricate knolling composition, translucent marine details. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "有机土海岸",
+    "thumbnail": "samples/Organic_Earth_Coastal.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Organic Geological Surrealism",
+    "prompt": "biomorphic topography, cellular fluid dynamics, geological abstraction, Voronoi tessellation, aerial organic patterns, earthy psychedelic palette, striated natural textures. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "有机地质超现实",
+    "thumbnail": "samples/Organic_Geological_Surrealism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Ornate Graphic Maximalism",
+    "prompt": "maximalist pattern integration, ligne claire graphic style, intricate mosaic textures, sharp ink outlines, saturated jewel tones, psychedelic surrealism, high-contrast graphic shadows. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "华丽 图形 极繁主义",
+    "thumbnail": "samples/Ornate_Graphic_Maximalism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Plush Pastel Surrealism",
+    "prompt": "3D digital render, soft pastel palette, tactile plush textures, dreamy surrealism, floating geometric forms, diffused studio lighting, whimsical minimalist landscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绒毛粉彩超现实",
+    "thumbnail": "samples/Plush_Pastel_Surrealism.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Prismatic Cosmic Glamour",
+    "prompt": "prismatic starburst lens flare, high-contrast moody lighting, iridescent crystalline textures, chromatic aberration, opulent jeweled embellishments, celestial stardust atmosphere, theatrical high-fashion portraiture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜宇宙华丽",
+    "thumbnail": "samples/Prismatic_Cosmic_Glamour.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Prismatic Ethereal Glass",
+    "prompt": "translucent glass, chromatic dispersion, ethereal blue sky, liquid gloss texture, prismatic caustics, surreal 3D render, high-fidelity highlights. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜空灵玻璃",
+    "thumbnail": "samples/Prismatic_Ethereal_Glass.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Serene Pastel Minimalism",
+    "prompt": "minimalist surrealism, soft pastel gradients, vast negative space, serene dreamlike atmosphere, fine-grained texture, symmetrical composition, liminal landscape. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "宁静粉彩极简主义",
+    "thumbnail": "samples/Serene_Pastel_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Spectral Bioluminescent Noir",
+    "prompt": "long exposure motion blur, bioluminescent cyan glow, chiaroscuro lighting, spectral silhouette, grainy film texture, stark black background, blown-out highlights, ethereal fluid motion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光谱生物荧光黑色",
+    "thumbnail": "samples/Spectral_Bioluminescent_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Spectral Cyan Luminescence",
+    "prompt": "spectral blue glow, ethereal motion blur, high contrast chiaroscuro, cyanotype negative aesthetic, low key ambient lighting, ghostly light trails, dreamlike liquid distortion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光谱青色冷光",
+    "thumbnail": "samples/Spectral_Cyan_Luminescence.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Spectral Kinetic Noir — Cold Desaturated Trails",
+    "prompt": "long exposure motion blur, low-key noir lighting, spectral light trails, cold desaturated palette, kinetic action photography, high contrast silhouettes, shutter drag effect. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光谱动态黑色冷去饱和光轨",
+    "thumbnail": "samples/Spectral_Kinetic_Noir_—_Cold_Desaturated_Trails.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Spectral Noir Luminescence",
+    "prompt": "cinematic noir, volumetric lighting, high contrast, ethereal silhouettes, cold color palette, mysterious haze, long exposure motion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光谱黑色冷光",
+    "thumbnail": "samples/Spectral_Noir_Luminescence.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Surreal Botanical Utopia",
+    "prompt": "surreal landscape, retro-futuristic architecture, flocked moss texture, vibrant blue sky, towering cumulus clouds, eco-surrealism, clean geometric forms, dreamcore aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实植物乌托邦",
+    "thumbnail": "samples/Surreal_Botanical_Utopia.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Surreal Chrome Futurism",
+    "prompt": "surreal avant-garde fashion, liquid chrome, biomorphic futurism, high-contrast metallic textures, cybernetic humanoid, minimalist studio lighting, prismatic refraction. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实铬未来主义",
+    "thumbnail": "samples/Surreal_Chrome_Futurism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Surreal Chrome Pastoralism",
+    "prompt": "liquid chrome, surreal pastoral landscape, dappled sunlight, vibrant greenery, hyper-reflective surface, dreamcore aesthetic, liminal space, 3d render. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实铬田园主义",
+    "thumbnail": "samples/Surreal_Chrome_Pastoralism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Surreal Cobalt Cloudscapes",
+    "prompt": "towering cumulus clouds, cobalt blue sky, surreal landscape, high contrast silhouettes, painterly texture, minimalist dreamscape, volumetric lighting, retro anime influence. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实钴蓝云景",
+    "thumbnail": "samples/Surreal_Cobalt_Cloudscapes.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Surreal Liminal Biomorphism",
+    "prompt": "biomorphic surrealism, minimalist landscape, tactile texture, liminal atmosphere, nostalgic CGI, isolated subject, dreamcore. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实阈限有机形态",
+    "thumbnail": "samples/Surreal_Liminal_Biomorphism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Surreal Liminal Chromatics",
+    "prompt": "surreal liminality, high-contrast saturation, glowing ethereal silhouette, minimalist composition, solid color sky, uncanny pastoral, vibrant dreamcore. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实阈限色彩学",
+    "thumbnail": "samples/Surreal_Liminal_Chromatics.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Surreal Pastoral Romanticism",
+    "prompt": "hyper-realistic surrealism, vibrant pastoral landscape, porcelain skin texture, soft romantic lighting, botanical fantasy, saturated natural colors, dreamy intimate portrait, crisp high-contrast details. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实田园浪漫主义",
+    "thumbnail": "samples/Surreal_Pastoral_Romanticism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Surreal Velvet Verdancy — Pristine Toy Brightness",
+    "prompt": "rolling mossy hills, surreal dreamscape, soft-focus photography, vibrant blue sky, tactile velvet texture, whimsical miniature landscape, ethereal lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实天鹅绒葱郁原始玩具亮度",
+    "thumbnail": "samples/Surreal_Velvet_Verdancy_—_Pristine_Toy_Brightness.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Tactile Ethereal Obscura",
+    "prompt": "soft-focus dreamscape, tactile braille overlay, frosted glass diffusion, sepia-toned vignette, hazy atmospheric texture, minimalist surrealism, high-contrast shadows. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "触觉空灵暗箱",
+    "thumbnail": "samples/Tactile_Ethereal_Obscura.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Tactile Organic Impressionism",
+    "prompt": "tactile organic texture, impressionistic motion blur, macro nature photography, warm earth tones, soft golden lighting, dreamy painterly atmosphere, fibrous botanical detail. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "触觉有机印象派",
+    "thumbnail": "samples/Tactile_Organic_Impressionism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Tactile Whimsical Craft",
+    "prompt": "tactile fiber textures, felted wool aesthetic, whimsical stop-motion style, soft pastel color palette, miniature diorama look, fuzzy flocked surfaces, bright optimistic daylight, cozy yarncraft details. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "触觉奇想工艺",
+    "thumbnail": "samples/Tactile_Whimsical_Craft.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Textured Fauvist Impressionism",
+    "prompt": "oil pastel texture, fauvist color palette, expressive gestural strokes, impressionistic haze, tactile paper grain, dreamy atmospheric light, vibrant broken color. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "有纹理野兽派印象派",
+    "thumbnail": "samples/Textured_Fauvist_Impressionism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Translucent Crimson Etherealism",
+    "prompt": "translucent layering, ethereal lighting, saturated crimson accents, soft-focus textures, fluid minimalist forms, subsurface scattering, romantic avant-garde, clean studio composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "半透明绯红空灵主义",
+    "thumbnail": "samples/Translucent_Crimson_Etherealism.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Velvet Pastoral Surrealism",
+    "prompt": "plush velvet texture, rolling mossy hills, towering cumulus clouds, surreal pastoral landscape, hyper-clean 3D render, liminal dreamcore, soft directional lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天鹅绒田园超现实",
+    "thumbnail": "samples/Velvet_Pastoral_Surrealism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Vibrant Macro Nostalgia",
+    "prompt": "extreme shallow depth of field, vibrant color saturation, dreamy bokeh background, low-angle perspective, high-contrast natural lighting, tactile textural detail, dynamic motion blur. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳微距怀旧",
+    "thumbnail": "samples/Vibrant_Macro_Nostalgia.webp",
+    "group": "梦幻发光"
+  },
+  {
+    "name": "Vibrant Psychedelic Minimalism",
+    "prompt": "vibrant saturated palette, psychedelic minimalism, bold graphic contours, fluid organic shapes, high-contrast color blocking, clean vector aesthetics, intricate mosaic texturing. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳迷幻极简主义",
+    "thumbnail": "samples/Vibrant_Psychedelic_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Vivid Liminal Surrealism",
+    "prompt": "hyper-saturated color-blocking, liminal space aesthetic, minimalist surrealism, stark geometric composition, harsh direct sunlight, vivid primary palette, symmetrical architecture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "生动阈限超现实",
+    "thumbnail": "samples/Vivid_Liminal_Surrealism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Volumetric Chiaroscuro Mysticism",
+    "prompt": "volumetric light beams, chiaroscuro lighting, atmospheric haze, dramatic silhouette, cinematic contrast, ethereal glow, misty environment. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "体积光 明暗对比 神秘主义",
+    "thumbnail": "samples/Volumetric_Chiaroscuro_Mysticism.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Whimsical Azure Surrealism",
+    "prompt": "surreal levitation, vibrant blue sky, whimsical dreamscape, magical realism, soft natural light, saturated color palette, low angle perspective. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "奇想蔚蓝超现实",
+    "thumbnail": "samples/Whimsical_Azure_Surrealism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Whimsical Pastel Storybook",
+    "prompt": "gouache painting texture, soft pastel palette, whimsical illustration, oil pastel brushstrokes, nostalgic storybook aesthetic, textured paper effect, minimalist surrealism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "奇想 粉彩 绘本",
+    "thumbnail": "samples/Whimsical_Pastel_Storybook.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Atmospheric Industrial Dystopia — Teal Amber Fog",
+    "prompt": "atmospheric cyan fog, dystopian industrial architecture, teal and amber lighting, vertiginous scale, retro-futuristic sci-fi, cinematic urban gloom. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "氛围工业反乌托邦青蓝琥珀雾",
+    "thumbnail": "samples/Atmospheric_Industrial_Dystopia_—_Teal_Amber_Fog.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Celestial Alchemical Opulence",
+    "prompt": "cosmic afrofuturism, emerald and gold palette, intricate filigree, mystical realism, starry background, high-gloss metallic sheen, dramatic chiaroscuro lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天体炼金奢华",
+    "thumbnail": "samples/Celestial_Alchemical_Opulence.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Celestial Solitude Landscapes",
+    "prompt": "painterly digital art, monolithic landscape, chiaroscuro lighting, twilight color palette, solitary traveler, retro-futurist atmosphere, warm glow against cool shadows. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "天体孤寂风景",
+    "thumbnail": "samples/Celestial_Solitude_Landscapes.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Atmospheric Decay",
+    "prompt": "cinematic atmosphere, high contrast chiaroscuro, weathered industrial textures, volumetric lighting, monumental scale, muted teal and slate palette, misty environmental storytelling. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感氛围衰败",
+    "thumbnail": "samples/Cinematic_Atmospheric_Decay.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Brutalist Sol",
+    "prompt": "cinematic low-angle perspective, dramatic golden backlight, high-contrast chiaroscuro, brutalist architectural scale, intricate gritty textures, atmospheric crepuscular rays, epic silhouette composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感粗野主义太阳",
+    "thumbnail": "samples/Cinematic_Brutalist_Sol.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Megastructural Realism",
+    "prompt": "cinematic scale, megastructure, hard sci-fi realism, high-contrast lighting, intricate greeble textures, atmospheric perspective, monumental decay. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感巨型结构写实",
+    "thumbnail": "samples/Cinematic_Megastructural_Realism.webp",
+    "group": "电影感"
+  },
+  {
+    "name": "Cinematic Nocturnal Minimalism — Sleek Shadow",
+    "prompt": "chiaroscuro, low-key lighting, cinematic noir, extreme close-up, monochromatic palette, high-contrast, clinical cool tones, shallow depth of field. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感夜行极简主义流线影",
+    "thumbnail": "samples/Cinematic_Nocturnal_Minimalism_—_Sleek_Shadow.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Cinematic Nocturnal Noir — Cold Grey Soft",
+    "prompt": "cinematic noir, low-key lighting, atmospheric rain, wet textures, desaturated cool tones, high contrast, introspective mood. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感夜行黑色冷灰柔和",
+    "thumbnail": "samples/Cinematic_Nocturnal_Noir_—_Cold_Grey_Soft.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Cinematic Nocturnal Noir — Retro Green Glint",
+    "prompt": "cinematic noir, low-key chiaroscuro lighting, moody green and amber palette, shallow depth of field, tactile textures, gritty retro-futurism, intimate filmic portraiture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "电影感夜行黑色复古绿意微光",
+    "thumbnail": "samples/Cinematic_Nocturnal_Noir_—_Retro_Green_Glint.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Clinical Avant-Garde Minimal",
+    "prompt": "high-key studio lighting, stark white background, deconstructed sportswear, minimalist fashion editorial, avant-garde silhouette, color blocking, clean surrealism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "临床 先锋 极简",
+    "thumbnail": "samples/Clinical_Avant-Garde_Minimal.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Clinical Avant-Garde Techwear",
+    "prompt": "minimalist studio photography, tactical techwear, muted cool tones, high-contrast lighting, avant-garde tailoring, technical fabric textures, neutral gray backdrop. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "临床 先锋 机能服饰",
+    "thumbnail": "samples/Clinical_Avant-Garde_Techwear.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Colossal Industrial Retro-Futurism",
+    "prompt": "industrial retro-futurism, colossal megastructures, weathered metal textures, atmospheric haze, hard surface engineering, painterly industrial detail, utilitarian sci-fi design. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "磅礴 工业 复古未来",
+    "thumbnail": "samples/Colossal_Industrial_Retro-Futurism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Crimson Chiaroscuro Noir",
+    "prompt": "chiaroscuro lighting, saturated crimson red, high-contrast portraiture, dramatic sharp shadows, cinematic noir, minimalist composition, editorial fashion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绯红明暗对比黑色",
+    "thumbnail": "samples/Crimson_Chiaroscuro_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Crimson Cyber Noir — Glossy Leather Studio",
+    "prompt": "high-contrast studio photography, vibrant crimson red background, sharp graphic shadows, cyberpunk editorial fashion, glossy leather and satin textures, avant-garde styling, hard direct lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绯红赛博黑色光泽皮革工作室",
+    "thumbnail": "samples/Crimson_Cyber_Noir_—_Glossy_Leather_Studio.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Distorted Skyward Futurism",
+    "prompt": "extreme low-angle shot, fisheye lens distortion, deep blue sky background, liquid chrome textures, forced perspective, high-contrast sunlight, futuristic streetwear. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "扭曲 仰望天空 未来主义",
+    "thumbnail": "samples/Distorted_Skyward_Futurism.webp",
+    "group": "冷蓝调"
+  },
+  {
+    "name": "Gilded Desert Surrealism",
+    "prompt": "retro-futurism, desert surrealism, polished chrome and gold, stark shadows, saturated azure sky, minimalist composition, high-contrast lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鎏金沙漠超现实",
+    "thumbnail": "samples/Gilded_Desert_Surrealism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Graphic Ligne Claire",
+    "prompt": "ligne claire style, clean black outlines, flat color illustration, retro-futuristic, graphic comic art, whimsical storytelling, saturated pastel palette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形清晰线条",
+    "thumbnail": "samples/Graphic_Ligne_Claire.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Hyper-Gloss Retro-Futurism",
+    "prompt": "1980s airbrush illustration, highly reflective chrome, retro-futurism, Hajime Sorayama style, prismatic lens flare, vibrant gradient background, metallic sheen. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "高光 复古未来",
+    "thumbnail": "samples/Hyper-Gloss_Retro-Futurism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Hyper-Vivid Chrome Pop",
+    "prompt": "fisheye lens distortion, hyper-saturated color palette, liquid chrome textures, extreme worm's-eye view, vibrant pop surrealism, crisp direct sunlight, iridescent reflections, futuristic street fashion. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超生动铬波普",
+    "thumbnail": "samples/Hyper-Vivid_Chrome_Pop.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Iridescent Liquid Chrome",
+    "prompt": "liquid chrome, iridescent metallic, 3D fluid sculpture, holographic reflection, minimalist studio lighting, gradient background, futuristic design. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "虹彩液态铬",
+    "thumbnail": "samples/Iridescent_Liquid_Chrome.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Luminescent Ocular Surrealism",
+    "prompt": "extreme macro eye photography, bioluminescent iris, high-contrast moody lighting, cybernetic texture, shallow depth of field, surreal light projection, cinematic close-up. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "荧光之眼超现实",
+    "thumbnail": "samples/Luminescent_Ocular_Surrealism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Luminous Chromatic Minimalism — Iridescent 3D Gloss",
+    "prompt": "translucent 3D render, vibrant chromatic gradient, soft internal glow, minimalist composition, subsurface scattering, high-contrast dark background, iridescent glass texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "明亮彩色极简主义虹彩三维光泽",
+    "thumbnail": "samples/Luminous_Chromatic_Minimalism_—_Iridescent_3D_Gloss.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Minimalist Noir Silhouette",
+    "prompt": "high-contrast silhouette, minimalist studio portrait, cool blue rim light, futuristic organic metal jewelry, dramatic chiaroscuro, sharp profile, sleek avant-garde aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "极简黑色剪影",
+    "thumbnail": "samples/Minimalist_Noir_Silhouette.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Monolithic Cosmic Noir",
+    "prompt": "brutalist sci-fi, monolithic scale, indigo and amber lighting, vortex perspective, volumetric atmospheric haze, high-contrast cinematic composition, tiny human silhouettes. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "巨石宇宙黑色",
+    "thumbnail": "samples/Monolithic_Cosmic_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Monolithic Industrial Futurism — Arctic Gray Gloom",
+    "prompt": "brutalist sci-fi megastructures, monolithic concrete architecture, atmospheric hazy environment, muted cold tones with warm accents, monumental industrial scale, dystopian cinematic realism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "巨石 工业 未来主义 — 极地 灰 阴郁",
+    "thumbnail": "samples/Monolithic_Industrial_Futurism_—_Arctic_Gray_Gloom.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Monolithic Overgrown Futurism",
+    "prompt": "monolithic industrial ruins, overgrown solarpunk, cinematic atmospheric scale, misty mountain megastructures, decaying futuristic architecture, high-angle vertical perspective, lush jungle reclamation. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "巨石 蔓生 未来主义",
+    "thumbnail": "samples/Monolithic_Overgrown_Futurism.webp",
+    "group": "电影感"
+  },
+  {
+    "name": "Nocturnal Bioluminescent Noir",
+    "prompt": "extreme close-up portrait, low-key chiaroscuro lighting, bioluminescent glowing eyes, monochromatic cobalt blue, glistening wet skin texture, cinematic noir atmosphere, high-contrast shadows. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行生物荧光黑色",
+    "thumbnail": "samples/Nocturnal_Bioluminescent_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Nocturnal Cyber Noir",
+    "prompt": "cinematic automotive photography, glowing LED light trails, sharp silhouette, moody atmospheric haze, deep teal and midnight blue palette, futuristic minimalist design, high-contrast low-key lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行赛博黑色",
+    "thumbnail": "samples/Nocturnal_Cyber_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Prismatic Chrome Futurism",
+    "prompt": "liquid chrome, biomorphic 3D render, chromatic aberration, stark black background, starburst lens flare, iridescent metallic reflections, Y2K cyber aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜铬未来主义",
+    "thumbnail": "samples/Prismatic_Chrome_Futurism.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Prismatic Crystalline Refraction",
+    "prompt": "prismatic chromatic dispersion, hyper-realistic glass refraction, stark black background, spectral rainbow caustics, biomechanical crystalline geometry, macro lens flare, glossy refractive surfaces. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜水晶折射",
+    "thumbnail": "samples/Prismatic_Crystalline_Refraction.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Prismatic Refraction Futurism",
+    "prompt": "chromatic dispersion, spectral light refraction, minimalist 3D render, high-contrast reflective surfaces, iridescent liquid metal, sharp geometric glass, pitch black background. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜折射未来",
+    "thumbnail": "samples/Prismatic_Refraction_Futurism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Prismatic Rhinestone Surrealism",
+    "prompt": "rhinestone-encrusted, glitter-texture, vibrant blue sky background, starburst lens flare, iridescent sheen, chromatic aberration, hyper-glossy surrealism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "棱镜水钻超现实",
+    "thumbnail": "samples/Prismatic_Rhinestone_Surrealism.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Refractive Cobalt Minimalism",
+    "prompt": "3D digital render, translucent glass and matte clay textures, minimalist studio lighting, cobalt blue color palette, smooth rounded contours, soft refractive gradients, clean neutral background. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "折射钴蓝极简主义",
+    "thumbnail": "samples/Refractive_Cobalt_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Retro Desert Noir",
+    "prompt": "ligne claire, stark ink outlines, warm desert palette, retro-futuristic, high-contrast shadows, vintage comic style, minimalist composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古沙漠黑色",
+    "thumbnail": "samples/Retro_Desert_Noir.webp",
+    "group": "暗夜"
+  },
+  {
+    "name": "Spectral Glass Minimalism",
+    "prompt": "chromatic dispersion, glass prism refraction, spectral rainbow light, stark black background, minimalist 3D glass render, caustic lighting, translucent crystalline geometry. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光谱玻璃极简主义",
+    "thumbnail": "samples/Spectral_Glass_Minimalism.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Surreal Hyper-Chromatic Fisheye",
+    "prompt": "fisheye lens distortion, vibrant primary color palette, high-contrast sunlight, saturated hyperpop aesthetic, surreal dreamlike composition, glossy texture, retro-futuristic editorial. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实超彩色鱼眼",
+    "thumbnail": "samples/Surreal_Hyper-Chromatic_Fisheye.webp",
+    "group": "超现实"
+  },
+  {
+    "name": "Surreal Terracotta Specimen",
+    "prompt": "terracotta color palette, sharp direct sunlight, refractive glass distortion, minimalist sculptural composition, retro-futuristic editorial, dramatic caustics, tactile textures. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超现实陶土标本",
+    "thumbnail": "samples/Surreal_Terracotta_Specimen.webp",
+    "group": "极简"
+  },
+  {
+    "name": "Vibrant Chrome Cyber-Surrealism",
+    "prompt": "liquid chrome texture, high-contrast pop surrealism, saturated crimson red, retro-futuristic airbrush style, reflective metallic surfaces, cybernetic aesthetic, bold studio lighting, starburst lens flares. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "鲜艳铬赛博超现实",
+    "thumbnail": "samples/Vibrant_Chrome_Cyber-Surrealism.webp",
+    "group": "超现实"
+  }
+]

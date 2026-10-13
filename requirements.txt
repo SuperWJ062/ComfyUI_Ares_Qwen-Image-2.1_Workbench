@@ -1,0 +1,24 @@
+# 仅 pose_studio/（Ares Pose Studio，从 ComfyUI_VNCCS_Utils 复制）需要。
+# 清单与原插件 ComfyUI_VNCCS_Utils 的 requirements.txt 保持一致；
+# torch / numpy / Pillow / aiohttp 本身也是 ComfyUI 核心依赖。
+# 缺包只影响 SAM 3D 图片转姿态（pose_image 输入）等对应功能，不影响其它节点。
+opencv-python
+huggingface_hub
+aiohttp
+av
+kornia
+requests
+torch
+torchvision
+numpy
+Pillow
+transformers
+safetensors
+pytorch-lightning
+omegaconf
+yacs
+timm
+einops
+roma
+tqdm
+color-matcher

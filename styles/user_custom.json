@@ -1,0 +1,194 @@
+[
+  {
+    "name": "四视图",
+    "name_cn": "四视图",
+    "prompt": "Convert the character in <image1> into a character reference sheet on a clean white background. The sheet contains exactly four views arranged side by side in one single row, in this order: a front-facing face close-up looking straight at the camera, a front full-body view, a side full-body view and a back full-body view, all with consistent identity, proportions and lighting. Include only the character — do not include any products, objects, props or text from the reference image. {prompt}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/d745b844c299411582a3fa869f43c88f.webp",
+    "custom": true
+  },
+  {
+    "name": "扩图",
+    "name_cn": "扩图",
+    "prompt": "Outpaint and extend the image on all sides, naturally continuing the scene, lighting and style beyond the original frame. Keep everything inside the original frame completely unchanged. {prompt}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/a300580406be4d668a2bfd807549819a.webp",
+    "custom": true
+  },
+  {
+    "name": "改动作",
+    "name_cn": "改动作",
+    "prompt": "Change the pose and action of the person in <image1> to: {prompt}. Keep the person's facial identity, clothing, hairstyle, anything they are holding and the background completely unchanged.",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/475e4959424b4c998571f9c282a164dc.webp",
+    "custom": true
+  },
+  {
+    "name": "文字换装",
+    "name_cn": "文字换装",
+    "prompt": "Change the clothing worn by the person in <image1> to: {prompt}. Keep the person's face, hairstyle, body proportions, pose, anything they are holding and the background completely unchanged.",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/94b3f729729d46278a1e209394998509.webp",
+    "custom": true
+  },
+  {
+    "name": "改发色",
+    "name_cn": "改发色",
+    "prompt": "Change the hair color of the person in <image1> to: {prompt}. Keep the hairstyle's shape and length, the facial identity and everything else in the image unchanged.",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/b60e792b730d49968651e7fcdacd6672.webp",
+    "custom": true
+  },
+  {
+    "name": "去除背景",
+    "name_cn": "去除背景",
+    "prompt": "Remove the background of the image and isolate the main subject on a clean pure white background, with accurate edges and fine hair detail. Keep the subject completely unchanged. {prompt}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/1e0beb02d97d4ee5b9e629bf61902949.webp",
+    "custom": true
+  },
+  {
+    "name": "抠图补全",
+    "name_cn": "抠图补全",
+    "prompt": "Extract the main subject in <image1> completely with a fully transparent background. Remove everything occluding the subject, and naturally complete the occluded and edge-cropped parts of the subject based on its original colors, materials and textures, so the subject is whole and undamaged. Remove all shadows on the subject. Keep the subject's appearance details, placement angle and position unchanged, with clean edges and no leftover artifacts. {prompt}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/e99c1ecd00fd4761a1e51ccd833345dc.webp",
+    "custom": true
+  },
+  {
+    "name": "换背景",
+    "name_cn": "换背景",
+    "prompt": "Replace the background of <image1> with: {prompt}. Keep the subject and any products or objects in the foreground completely unchanged, and naturally match the lighting and color tone on them to the new background.",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/3a4bfc76879d4d51bb80500cb60b9875.webp",
+    "custom": true
+  },
+  {
+    "name": "去除杂物",
+    "name_cn": "去除杂物",
+    "prompt": "Remove the following from <image1>: {prompt}. The target means the real objects in the scene — remove all of them completely, including partially visible parts, and naturally fill the areas with the surrounding background, textures and lighting. Do not remove similar-looking patterns that are part of the subject's clothing, hair accessories or product designs. Keep everything else completely unchanged.",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/cf3a5bca79bf414095af61903f0b6962.webp",
+    "custom": true
+  },
+  {
+    "name": "去水印文字",
+    "name_cn": "去水印文字",
+    "prompt": "Remove ALL text from <image1> — every title, heading, caption, poem line, label, watermark, logo and small print, wherever it appears, in any language. The text itself is the edit target. Erase it completely and naturally fill the covered areas with the surrounding background, continuing the textures and lighting. Keep the subject, background, colors and composition otherwise completely unchanged. {prompt}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/013e545e99064f93897de824d05b81f4.webp",
+    "custom": true
+  },
+  {
+    "name": "改表情",
+    "name_cn": "改表情",
+    "prompt": "Change the facial expression of the person in <image1> to: {prompt}. Keep the person's facial identity, hairstyle, clothing, pose and the background completely unchanged.",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/33100c2c1ed54b4da3a82156c1da9b97.webp",
+    "custom": true
+  },
+  {
+    "name": "高清修复",
+    "name_cn": "高清修复",
+    "prompt": "Enhance and restore the image in <image1>: remove noise and compression artifacts, recover fine details and natural textures, improve clarity and sharpness. Restore any text in the image to be crisp, sharp and readable, keeping the exact same characters, wording, language and layout — do not add, remove or rewrite any text. Keep the composition, colors and all content completely unchanged. {prompt}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/66d5988fd9944f8eae0c97feee40aae6.webp",
+    "custom": true
+  },
+  {
+    "name": "风格迁移",
+    "name_cn": "风格迁移",
+    "prompt": "Redraw the image in <image1> in the art style of <image2>. Keep the composition, content, pose and identity in <image1> completely unchanged, changing only the rendering style. {prompt}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/217c9482c716422aa482c5713b91ae6b.webp",
+    "custom": true
+  },
+  {
+    "name": "去水印",
+    "name_cn": "去水印",
+    "prompt": "Remove only the watermark or logo from <image1>. A watermark is a semi-transparent overlay, a repeated pattern, or a small signature mark sitting on top of the image — remove it cleanly and naturally fill the covered areas with the surrounding background, textures and lighting. Keep everything else completely unchanged: all text, titles, captions, the subject and the background must not be altered. {prompt}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/9620c3b6643e4a36a7ffd9260674d06b.webp",
+    "custom": true
+  },
+  {
+    "name": "添加水印",
+    "name_cn": "添加水印",
+    "prompt": "Overlay a protective tiled watermark on <image1>, in the style of a stock-photo anti-theft watermark: the text \"我的水印\" in a small semi-transparent white font, repeated in evenly spaced rows and columns across the entire image from edge to edge, and thin white dashed diagonal lines crossing the whole frame in both directions, forming a diamond lattice pattern. The watermark lies flat on top of the image as one uniform overlay layer — keep the underlying image, its colors and its composition completely unchanged. {prompt}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/d05b0595042440d8aa40b51a1447d112.webp",
+    "custom": true
+  },
+  {
+    "name": "参考图换装",
+    "name_cn": "参考图换装",
+    "prompt": "Dress the person in <image1> in the outfit worn by the person in <image2>. Transfer the outfit's design, colors, materials and details exactly as shown, fitted naturally to the person's body and pose. Keep the person's face, hairstyle, body proportions, pose, anything they are holding and the background completely unchanged. {prompt}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/84c000c168854f5c9eb44fc2bf15b347.webp",
+    "custom": true
+  },
+  {
+    "name": "参考图换脸：图1需要画面部遮罩",
+    "name_cn": "参考图换脸：图1需要画面部遮罩",
+    "prompt": "Replace only the face of the person in <image1> with the face of the person in <image2>. Transfer the facial identity — eyes, eyebrows, nose, mouth, face shape and skin — exactly as shown, blended seamlessly with matching lighting and skin tone. Position the transplanted eyes, eyebrows, nose and mouth at exactly the same locations, spacing and scale as the facial features of <image1> — the facial geometry and feature layout come from <image1>, only the appearance comes from <image2>. The swap ends at the hairline. All hair of <image1> stays exactly as in <image1>: the fringe, front hairline, sideburns, top and back hair, the hair color, hair length and every hair accessory, all covering the new face exactly as before. Take no hair, fringe or hairline shape from <image2>. Render the new face at the exact head pose, tilt, angle and size of <image1>. Do not copy the head angle, head size or expression from <image2>. Keep the neck, shoulders, body proportions, head-to-body ratio, pose, clothing, anything held and the background exactly as in <image1>. {prompt} {pe}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/cc92812a4f054549be7648a0a778c68e.webp",
+    "custom": true
+  },
+  {
+    "name": "图层融合换脸",
+    "name_cn": "图层融合换脸",
+    "prompt": "The overlaid face layer on <image1> is the edit target: blend it seamlessly into the photo — adapt its skin tone, lighting, grain and sharpness to the base image, refine all layer edges until undetectable, and fit the facial features naturally to the underlying head pose and proportions. The face must end up fully solid and native to the photo — no translucent, ghosted or double-exposed remnants of the overlay may remain. Keep everything outside the blended face region exactly as in <image1>. {prompt} {pe}",
+    "negative_prompt": "",
+    "thumbnail": "samples/custom/325d3aa471a748a69ebf67f01ea874d3.webp",
+    "custom": true
+  },
+  {
+    "name": "参考图换头：图1需要画头部遮罩",
+    "name_cn": "参考图换头：图1需要画头部遮罩",
+    "prompt": "Replace the entire head of the person in <image1> — face, hair, hairstyle, hair color, hairline and ears together — with the head of the person in <image2>. This is a head transplant, not a face swap: the head of <image2> is taken as a whole. Keep the facial identity, hairstyle, hair color, hair length, hair texture, hairline and head shape of <image2> exactly as shown; none of the hair of <image1> may remain — do not blend, mix or keep any fringe, sideburn or hair strand from <image1>. The transplant boundary ends at the neck: keep the neck, shoulders, body proportions, head-to-body ratio, pose, clothing, anything held and the background exactly as in <image1>. Blend the junction seamlessly — the neck skin tone must match both sides. The lighting and shadows of <image1> govern the transplanted head: match the light direction, hardness and intensity exactly, reproduce the shadows and highlights that fall on the original head — eye sockets, under the nose, cheekbones, under the chin, and the shading inside the hair — keeping the ambient color temperature and time of day of the <image1> scene. Import no lighting, shadow direction or highlight pattern from <image2>; the new head must look as if it were photographed under the original <image1> lighting. Fit the head pose, tilt and angle to the body of <image1>, and scale the head to the correct head-to-body proportion of <image1>; do not copy the body proportions from <image2>. {prompt} {pe}",
+    "negative_prompt": "",
+    "thumbnail": "custom/5ffc6c1e81bc4f85934ad24577b0e5f8.webp",
+    "custom": true
+  },
+  {
+    "name": "注意",
+    "name_cn": "注意",
+    "prompt": "1",
+    "negative_prompt": "",
+    "thumbnail": "",
+    "custom": true
+  },
+  {
+    "name": "模版不走改写",
+    "name_cn": "模版不走改写",
+    "prompt": "1",
+    "negative_prompt": "",
+    "thumbnail": "",
+    "custom": true
+  },
+  {
+    "name": "无模版自动改写",
+    "name_cn": "无模版自动改写",
+    "prompt": "1",
+    "negative_prompt": "",
+    "thumbnail": "",
+    "custom": true
+  },
+  {
+    "name": "{pe}的走改写",
+    "name_cn": "{pe}的走改写",
+    "prompt": "1",
+    "negative_prompt": "",
+    "thumbnail": "",
+    "custom": true
+  },
+  {
+    "name": "文生图1",
+    "name_cn": "文生图1",
+    "prompt": "一个20岁美丽的中国少女身穿居家浅色服装，坐在床上伸出漂亮的瘦小的双脚，镜头聚焦在美女的脚底",
+    "negative_prompt": "",
+    "thumbnail": "",
+    "custom": true
+  }
+]

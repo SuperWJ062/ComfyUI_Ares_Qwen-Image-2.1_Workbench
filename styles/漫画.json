@@ -1,0 +1,450 @@
+[
+  {
+    "name": "Bold Retro Pop Illustration",
+    "prompt": "bold black ink outlines, saturated pop art palette, risograph screenprint texture, flat graphic illustration, halftone dot shading, retro nostalgic mood, vibrant vector style. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "大胆复古波普插画",
+    "thumbnail": "samples/Bold_Retro_Pop_Illustration.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Crimson Noir Graphic — Anime Flat Ink",
+    "prompt": "crimson and black palette, high-contrast noir lighting, bold ink outlines, graphic novel style, nocturnal atmosphere, sharp anime-inspired linework, minimalist shading. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绯红黑色图形动漫平坦墨",
+    "thumbnail": "samples/Crimson_Noir_Graphic_—_Anime_Flat_Ink.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Crimson Noir Graphic — Blue Duotone Hatch",
+    "prompt": "high-contrast duotone, crimson and black aesthetic, woodcut print texture, halftone screenprint, gothic noir, gritty ink bleed, graphic novel style. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绯红 黑色电影 图形 — 蓝 双色调 排线",
+    "thumbnail": "samples/Crimson_Noir_Graphic_—_Blue_Duotone_Hatch.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Crimson Noir Graphic — Woodcut Triad",
+    "prompt": "high-contrast crimson and black, noir graphic novel style, halftone and woodcut texture, minimalist ink illustration, op-art psychological tension, gritty screenprint aesthetic, bold organic abstraction. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "绯红黑色图形木刻三色",
+    "thumbnail": "samples/Crimson_Noir_Graphic_—_Woodcut_Triad.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Distorted Graphic Noir",
+    "prompt": "fisheye lens perspective, bold black ink outlines, dense cross-hatching, triadic color scheme, graphic novel illustration, high contrast shadows, surreal gothic atmosphere. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "扭曲图形黑色",
+    "thumbnail": "samples/Distorted_Graphic_Noir.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Expressive Graphic Noir",
+    "prompt": "expressive ink linework, high-contrast chiaroscuro, rough digital sketch style, painterly texture, moody atmospheric lighting, limited color palette, graphic character illustration. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "表现图形黑色",
+    "thumbnail": "samples/Expressive_Graphic_Noir.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Graphic Halftone Minimalism",
+    "prompt": "halftone dot pattern, high-contrast graphic illustration, retro screenprint texture, minimalist silhouette, CMYK color palette, vintage comic book print style, stark white background. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形半色调极简主义",
+    "thumbnail": "samples/Graphic_Halftone_Minimalism.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Graphic Halftone Pop",
+    "prompt": "halftone dot pattern, screen print texture, high contrast pop art, retro comic book style, CMYK color separation, distressed ink texture, vibrant saturated colors, graphic silhouette. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形半色调波普",
+    "thumbnail": "samples/Graphic_Halftone_Pop.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Graphic Neon Noir",
+    "prompt": "high-contrast ink illustration, stark black and white, vibrant magenta accent, cross-hatching, graphic novel aesthetic, apocalyptic surrealism, sharp angular linework. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形霓虹黑色",
+    "thumbnail": "samples/Graphic_Neon_Noir.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Graphic Pop Surrealism — Inked Outline Melancholy",
+    "prompt": "flat vector illustration, bold black outlines, pop surrealism, saturated color palette, graphic novel aesthetic, minimalist shading, whimsical surrealism. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形波普超现实墨线轮廓忧郁",
+    "thumbnail": "samples/Graphic_Pop_Surrealism_—_Inked_Outline_Melancholy.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Graphic Retro Pop",
+    "prompt": "bold black ink outlines, saturated pop art palette, halftone and ben-day dots, retro risograph texture, graphic still life illustration, high-contrast screenprint aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图形复古波普",
+    "thumbnail": "samples/Graphic_Retro_Pop.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Gritty Neon Pop-Retro",
+    "prompt": "retro-futuristic comic illustration, bold black ink outlines, halftone dot texture, saturated pop art palette, distressed screenprint effect, cyberpunk aesthetic, high-contrast duotone. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "粗粝霓虹波普复古",
+    "thumbnail": "samples/Gritty_Neon_Pop-Retro.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Gritty Retro Pop",
+    "prompt": "halftone dots, CMYK screen print, vintage comic book style, chromatic aberration, bold ink outlines, distressed paper texture, high-contrast pop art. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "粗粝复古波普",
+    "thumbnail": "samples/Gritty_Retro_Pop.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Muted Graphic Retro-Ink",
+    "prompt": "bold black ink outlines, muted screenprint color palette, textured paper background, halftone and stipple shading, minimalist graphic illustration, retro indie comic style, flat composition. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "柔和图形复古墨",
+    "thumbnail": "samples/Muted_Graphic_Retro-Ink.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Nocturnal Graphic Surrealism",
+    "prompt": "cobalt and yellow duotone, high-contrast ink illustration, nocturnal atmosphere, surreal graphic narrative, luminous light source, textured grain finish, liminal space aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "夜行图形超现实",
+    "thumbnail": "samples/Nocturnal_Graphic_Surrealism.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Psychedelic Halftone Pop",
+    "prompt": "vintage screenprint texture, halftone dot pattern, psychedelic pop art, saturated electric blue and orange, distressed paper grain, bold comic outlines, high-contrast graphic illustration. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "迷幻半色调波普",
+    "thumbnail": "samples/Psychedelic_Halftone_Pop.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Retro Graphic Surrealism",
+    "prompt": "risograph print aesthetic, ligne claire style, vintage comic illustration, high-contrast ink linework, terracotta and teal palette, surreal desert landscape, screenprint grain texture. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古图形超现实",
+    "thumbnail": "samples/Retro_Graphic_Surrealism.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Retro Halftone Printworks",
+    "prompt": "halftone dot pattern, vintage screenprint texture, risograph print aesthetic, duotone color palette, retro analog grain, surreal graphic illustration, aged paper texture, bold ink outlines. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古半色调印刷",
+    "thumbnail": "samples/Retro_Halftone_Printworks.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Sun-Drenched Illustrative Mediterranean",
+    "prompt": "stylized digital illustration, warm terracotta and ochre palette, dramatic sharp shadows, painterly texture, bold ink outlines, European urban atmosphere, graphic architectural shapes, cinematic lighting. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "日浸润插画地中海",
+    "thumbnail": "samples/Sun-Drenched_Illustrative_Mediterranean.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Vintage Narrative Illustration",
+    "prompt": "vintage comic illustration, bold ink outlines, mid-century aesthetic, screen-print texture, muted earth tones, surreal narrative, retro pulp paper grain. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古叙事插画",
+    "thumbnail": "samples/Vintage_Narrative_Illustration.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Vivid Crimson Graphicism",
+    "prompt": "saturated crimson and gold palette, bold ink outlines, dynamic anime-inspired character design, painterly digital textures, high-contrast dramatic lighting, expressive emotive features, stylized graphic novel aesthetic. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "生动绯红图形主义",
+    "thumbnail": "samples/Vivid_Crimson_Graphicism.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Comics Style",
+    "prompt": "Style: A bold, graphic illustration style built on confident inked linework holding clearly defined, dynamic proportions, flat-to-lightly-shaded color fill applied with straightforward panel-ready clarity, dynamic, energetic posing designed for instant visual impact, a punchy, readable simplicity that favors narrative clarity over painterly nuance, and a versatile, accessible graphic-storytelling charm rooted in broad mainstream comic-illustration convention. Influenced by: mainstream American comic-illustration tradition, inked-and-colored panel technique, dynamic action-comic practice, classic comic-book character-design method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "美漫风格",
+    "thumbnail": "samples/Comics_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Alex Ross Style",
+    "prompt": "Style: A monumental, painterly superhero-realism style rendered in traditional gouache and oil technique translated into hyperreal digital polish, richly lit subject with photoreal textures grounded in classical painting light logic, epic, reverent compositions that frame subject like religious or historical icon, warm painterly color harmonies bathing every scene in golden, dignified light, and a grand, mythic gravitas that elevates comic-book imagery into fine-art portraiture. Influenced by: Alex Ross, Norman Rockwell, classical gouache painting technique, Kingdom Come comic art direction.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "亚历克斯·罗斯风格",
+    "thumbnail": "samples/Alex_Ross_Style.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Alternative Comics Style",
+    "prompt": "Style: A raw, personal illustration style built on deliberately imperfect, loose linework that resists mainstream polish in favor of authentic idiosyncratic mark-making, minimal or improvised shading applied with a sketchbook-like immediacy, unconventional panel logic and compositional looseness that prioritizes voice over convention, a candid, confessional intimacy carried through visibly handmade imperfection, and an independent, unpolished sincerity that feels personal, experimental, and unmistakably auteur-driven. Influenced by: Robert Crumb, underground comix tradition, indie/alternative comics movement, sketchbook-diary illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "另类漫画风格",
+    "thumbnail": "samples/Alternative_Comics_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Amanda Conner Illustration",
+    "prompt": "Style: expressive comic illustration defined by lively draftsmanship, fluid linework, dynamic visual rhythm, appealing stylization, confident character-centric design, polished rendering, and strong storytelling clarity, balancing playful energy with professional craftsmanship through highly readable forms and engaging visual expression, reminiscent of Amanda Conner and Bruce Timm, inspired by Harley Quinn and Power Girl.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "阿曼达·康纳插画",
+    "thumbnail": "samples/Amanda_Conner_Illustration.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "American Comic Realism",
+    "prompt": "Style: highly polished comic-book realism emphasizing convincing anatomy, dramatic visual storytelling, cinematic composition, realistic material rendering, strong volumetric lighting, and detailed environmental integration, combining classical illustration discipline with modern entertainment-art sensibilities to create imagery that feels both grounded and iconic, reminiscent of Bryan Hitch and Alex Ross, inspired by The Ultimates and Kingdom Come.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "美式漫画写实",
+    "thumbnail": "samples/American_Comic_Realism.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Comic Européen Prestige",
+    "prompt": "Style: sophisticated European graphic storytelling aesthetics characterized by meticulous draftsmanship, refined linework, atmospheric realism, rich visual detail, and mature narrative sensibilities, blending artistic individuality with exceptional craftsmanship through carefully structured composition, nuanced rendering, immersive worldbuilding, and album-quality presentation, reminiscent of François Schuiten and Enki Bilal, inspired by Les Cités Obscures and La Trilogie Nikopol.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "欧漫精品风格",
+    "thumbnail": "samples/Comic_Européen_Prestige.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "American Pulp Illustration",
+    "prompt": "Style: bold commercial illustration defined by dramatic storytelling, striking visual impact, confident draftsmanship, dynamic composition, rich painterly rendering, and a heightened sense of adventure and spectacle, combining accessible narrative clarity with highly crafted imagery through vibrant visual energy, polished execution, and iconic genre aesthetics, reminiscent of N.C. Wyeth and Frank McCarthy, inspired by Doc Savage magazine covers and The Shadow pulp illustrations.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "美式低俗小说插画",
+    "thumbnail": "samples/American_Pulp_Illustration.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Frank Miller Style",
+    "prompt": "Style: A stark, high-contrast graphic-novel illustration style built on bold, confident inking with dramatic, oversized spotted blacks that carve the composition into aggressive light-and-dark extremes, minimal internal detail replaced by sheer graphic silhouette, sharp angular linework rendering violent, kinetic composition with brutal economy, a hardboiled, noir-driven starkness charged with pulp menace, and a bold, unflinching graphic-novel intensity that feels stripped-down, aggressive, and unmistakably iconic. Influenced by: Frank Miller, Sin City graphic-novel tradition, high-contrast noir-comic technique, minimalist spotted-black inking practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "弗兰克·米勒风格",
+    "thumbnail": "samples/Frank_Miller_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Bengal Illustration",
+    "prompt": "Style: vibrant contemporary comic and illustration aesthetics characterized by fluid linework, dynamic visual energy, expressive anatomy, clean graphic readability, sophisticated shape language, and highly polished rendering, balancing stylization and realism through elegant design choices, refined draftsmanship, and cinematic storytelling sensibilities, reminiscent of Bengal and Olivier Vatine, inspired by Naja and Meka.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "孟加拉插画",
+    "thumbnail": "samples/Bengal_Illustration.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Crosshatched Graphic Novel",
+    "prompt": "Style: detailed graphic narrative aesthetics characterized by intricate crosshatching, rich tonal construction, disciplined draftsmanship, atmospheric realism, and handcrafted visual texture, blending traditional ink illustration techniques with mature storytelling through layered line density, strong value structure, refined composition, and immersive narrative depth, reminiscent of Bernie Wrightson and Franklin Booth, inspired by From Hell and The Sandman.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "交叉影线图像小说",
+    "thumbnail": "samples/Crosshatched_Graphic_Novel.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Graphic Novel",
+    "prompt": "Style: A refined, narrative-driven comic-illustration style built on confident, deliberate linework calibrated for long-form storytelling clarity, a measured, literary pacing carried through composed, thoughtful framing, tonal shading achieved through cross-hatching, wash, or restrained color rather than flat panel simplicity, a grounded, atmospheric weight even within stylized composition, and a sophisticated, contemplative illustration gravitas that feels considered, mature, and built for sustained visual reading. Influenced by: contemporary graphic-novel illustration tradition, long-form narrative-comic technique, literary comic-illustration practice, mature-audience sequential-art method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "图像小说",
+    "thumbnail": "samples/Graphic_Novel.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Franco-Belgian Ultradetailed Comics",
+    "prompt": "Style: A meticulously rendered bande dessinée illustration style built on dense, obsessively fine linework and layered crosshatching that constructs every texture with architectural patience, richly detailed surface rendering across fabric, skin, and structure that rewards close inspection, a measured, cinematic pacing carried through carefully composed, deliberate framing, subtle atmospheric depth achieved through fine tonal gradation rather than bold contrast, and a sophisticated, painstakingly crafted graphic-novel gravitas. Influenced by: Jean \"Mœbius\" Giraud, François Schuiten, Franco-Belgian bande dessinée tradition, ligne claire and hatching technique.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "法比超精细漫画",
+    "thumbnail": "samples/Franco-Belgian_Ultradetailed_Comics.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Frank Cho Style",
+    "prompt": "Style: A confident, curvaceous comic-illustration style built on smooth, fluid linework that traces form with athletic, idealized grace, clean cel-based shading applied with bold, uncomplicated clarity, a bouncy, dynamic sense of proportion charged with lighthearted charisma, dynamic action-driven posing balanced against playful, appealing character design, and a polished, mainstream comic-illustration vibrancy that feels equal parts adventurous and effortlessly charming. Influenced byy: Frank Cho, mainstream American comic-illustration tradition, cel-shaded character-illustration technique, dynamic adventure-comic practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "弗兰克·赵风格",
+    "thumbnail": "samples/Frank_Cho_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Enki Bilal-Inspired Comic and Digital Painting",
+    "prompt": "Style: A moody, dystopian illustration style built on desaturated, atmospheric color grading applied through layered painterly glazing over confident linework, richly weathered surface texture giving skin and structure a worn, melancholic gravity, muted directional lighting casting a cold, cinematic pall across every composition, a hushed, brooding stillness charged with quiet political and existential unease, and a meticulous, painterly European bande dessinée gravitas that feels both futuristic and haunted by history. Influenced by: Enki Bilal, French bande dessinée illustration, dystopian science-fiction comic art, painterly graphic-novel technique.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "恩基·比拉尔漫画与数字绘画",
+    "thumbnail": "samples/Enki_Bilal-Inspired_Comic_and_Digital_Painting.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Hellboy Style",
+    "prompt": "Style: A gritty, high-contrast comic-illustration style built on bold, confident inking with heavy spotted blacks that carve dramatic graphic shadow across every form, chunky, weighty linework rendering musculature and stonework with sculptural bluntness, muted, moody washes applied loosely beneath stark ink structure, a folkloric, pulp-horror gravitas charged with brooding atmosphere, and a bold, hand-inked graphic-novel intensity that feels ancient, weathered, and unmistakably hand-crafted. Influenced by: Mike Mignola, noir-inspired comic-inking technique, folk-horror illustration tradition, spotted-black ink-rendering method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "地狱男爵风格",
+    "thumbnail": "samples/Hellboy_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Archie Comics Style",
+    "prompt": "Style: A clean, wholesome cartoon illustration style built on confident, evenly weighted outline defining simplified, appealing proportions, flat, bright color fill with minimal shading beyond basic form-defining shadow, an approachable, mid-century newspaper-strip charm carried through rounded, friendly facial design, cheerful, uncomplicated composition prioritizing instant readability over rendering complexity, and a nostalgic, all-American wholesome energy that feels timeless and effortlessly friendly. Influenced by: Dan DeCarlo, mid-century American comic-strip tradition, flat-color comic-inking technique, newspaper-syndicate cartoon practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "阿奇漫画风格",
+    "thumbnail": "samples/Archie_Comics_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Bande Dessinée (Hergé/Goscinny Tradition)",
+    "prompt": "Style: A clean, confident ligne-claire illustration style built on uniform, unmodulated contour lines holding clearly bounded, evenly flat-colored shapes, minimal internal shading that lets crisp linework and bold color carry the entire compositional weight, meticulous, precise architectural and environmental detail rendered with the same graphic clarity as the figures themselves, a measured, orderly compositional rhythm favoring readability and charm over painterly nuance, and a timeless, wholesome European adventure-comic sincerity that feels meticulous, warm, and effortlessly classic. Influenced by: Hergé, René Goscinny, ligne-claire illustration technique, Franco-Belgian bande dessinée tradition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "法式连环画（埃尔热/戈西尼传统）",
+    "thumbnail": "samples/Bande_Dessinée_(Hergé_Goscinny_Tradition).webp",
+    "group": "其他"
+  },
+  {
+    "name": "Mark Brooks / Manapul Style",
+    "prompt": "Style: A refined modern comic illustration style merging crisp, glossy semi-realistic linework with loose, atmospheric painterly washes, confident anatomical precision balanced against fluid, watercolor-like softness bleeding through backgrounds and costume, delicate cross-hatched shading giving skin and fabric a tactile, hand-finished quality, dynamic yet quietly cinematic posing that favors mood over bombast, and a polished, contemporary mainstream-comic sensibility that bridges tight illustrative control with expressive brushwork. Influenced by: Mark Brooks, Francis Manapul, modern mainstream comic illustration, watercolor comic-art technique.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "马克·布鲁克斯/马纳普尔风格",
+    "thumbnail": "samples/Mark_Brooks_Manapul_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Marvel Comics Style",
+    "prompt": "Style: A bold, dynamic mainstream superhero comic illustration style built on confident heavy inking over energetic, muscular figure work, punchy primary color palettes laid in flat-to-cel-shaded color with sharp graphic contrast, dramatic action-driven poses and foreshortening designed for kinetic panel-to-panel storytelling, crisp halftone-inspired texture and bold speed lines heightening momentum, and an iconic, larger-than-life heroic energy instantly recognizable as classic American superhero art. Influenced by: Jack Kirby, John Romita Jr., Marvel Comics house style, Silver Age comic inking technique.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "漫威漫画风格",
+    "thumbnail": "samples/Marvel_Comics_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Marvel Cover Art",
+    "prompt": "Style: A striking, poster-worthy superhero illustration style built for maximum newsstand impact, dramatic hero-forward composition with bold dynamic posing thrust toward the viewer, richly rendered digital painting or ink-and-color hybrid technique giving weight and polish beyond interior panel art, saturated high-contrast color palettes anchored by an iconic focal color, dramatic rim lighting and glowing effects framing the central figure against a moody or explosive backdrop, and a bold, hyper-marketable heroic grandeur designed to sell a single unforgettable image. Influenced by: Alex Ross, J. Scott Campbell, Marvel Comics cover art direction, comic-cover painting technique.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "漫威封面艺术",
+    "thumbnail": "samples/Marvel_Cover_Art.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Milo Manara Style",
+    "prompt": "Style: An elegant, sensuous comic-illustration style built on fluid, confident linework that traces the female form with graceful anatomical precision, delicate fine crosshatching used sparingly to suggest shadow and volume rather than heavy rendering, warm sun-bleached Mediterranean color palettes applied in soft watercolor-like washes, playful, flirtatious poses charged with lighthearted erotic tension, and a refined, painterly European comic-book sensuality that feels classic yet unmistakably illustrated. Influenced by: Milo Manara, Italian fumetti comic art, Mediterranean watercolor illustration, erotic graphic-novel linework.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "米罗·马纳拉风格",
+    "thumbnail": "samples/Milo_Manara_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Psychological Thriller Pulp Digital Painting",
+    "prompt": "Style: A moody, high-contrast digital painting style built on pulp-novel cover sensibilities, with dramatic chiaroscuro lighting slicing across the face and figure, saturated noir color grading in deep colors, painterly brushwork that keeps edges slightly loose and expressive rather than photoreal, unsettling tilted or claustrophobic composition hinting at hidden threat or obsession, and a tense, voyeuristic atmosphere charged with paranoia and simmering danger. Influenced by: vintage pulp paperback cover art, Drew Struzan, film-noir movie posters, Gregory Manchess-style narrative illustration.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "心理惊悚低俗数字绘画",
+    "thumbnail": "samples/Psychological_Thriller_Pulp_Digital_Painting.webp",
+    "group": "其他"
+  },
+  {
+    "name": "DC Comics Style",
+    "prompt": "Style: A bold, dynamic mainstream superhero comic-illustration style built on confident heavy inking over powerful, heroic figure work, punchy saturated color-block application with sharp graphic contrast, dramatic action-driven posing and foreshortening designed for kinetic panel-to-panel storytelling, crisp linework balancing classic heroic silhouette with modern rendering polish, and an iconic, larger-than-life heroic gravitas instantly recognizable as classic mainstream American superhero comics. Influenced by: Jim Lee, Neal Adams, DC Comics house style, mainstream superhero-illustration tradition.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "DC漫画风格",
+    "thumbnail": "samples/DC_Comics_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Zenescope Illustration",
+    "prompt": "Style: polished fantasy-comic aesthetics characterized by premium character-focused rendering, elegant anatomy, contemporary fantasy glamour, intricate ornamental detailing, cinematic presentation, and highly refined digital craftsmanship. The style emphasizes visual impact, clarity, collector-edition quality, and a seamless balance between realism and stylization through sophisticated lighting, luxurious material treatment, dynamic composition, and meticulously rendered textures. Rather than relying on gritty realism or abstraction, it prioritizes beauty, readability, and high-end commercial appeal, producing imagery that feels dramatic, immersive, and immediately marketable. The visual language merges modern comic-book aesthetics with fantasy art sensibilities, creating artwork that is vibrant, aspirational, and visually striking, reminiscent of J. Scott Campbell and Elias Chatzoudis, inspired by Grimm Fairy Tales and Wonderland.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "Zenescope插画",
+    "thumbnail": "samples/Zenescope_Illustration.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Ryan Benjamin Style",
+    "prompt": "Style: A dynamic, high-detail comic illustration style combining gritty painterly digital rendering with powerful, dramatically foreshortened action poses, richly textured musculature and costume detail rendered with sharp directional lighting and deep contrast shadow, moody desaturated backgrounds punctuated by bold accent lighting, confident heavy inking blended into painted color for a weighty, tactile finish, and an intense, larger-than-life comic-book gravitas built for splash-page impact. Influenced by: Ryan Benjamin, comic art, digital comic painting technique, modern cover illustration.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "瑞恩·本杰明风格",
+    "thumbnail": "samples/Ryan_Benjamin_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Travis Charest Style",
+    "prompt": "Style: A hyper-clean, glossy comic-illustration style built on immaculately smooth gradient rendering that eliminates visible brushwork in favor of glassy precision, confident directional lighting carving sharp, polished highlight across every contour, meticulously controlled reflective sheen giving every form a slick, high-production finish, dynamic yet effortlessly composed posing charged with athletic grace, and a sleek, technically masterful comic-illustration intensity built for instantly striking visual impact. Influenced by: Travis Charest, painted comic-cover illustration tradition, hyper-glossy digital-rendering technique, athletic character-illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "特拉维斯·查雷斯特风格",
+    "thumbnail": "samples/Travis_Charest_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Adi Granov Style",
+    "prompt": "Style: A sleek, hyper-glossy painted comic-illustration style built on immaculately smooth gradient rendering that eliminates visible brushwork in favor of glassy precision, dramatic directional lighting carving crisp, confident highlight across every contour, meticulously controlled reflective sheen giving every form a polished, high-production finish, a restrained, technically disciplined realism balancing painterly depth with graphic clarity, and a sleek, cinematic comic-cover intensity built for instantly recognizable high-gloss impact. Influenced by: Adi Granov, painted comic-cover illustration tradition, hyper-glossy digital-rendering technique, cinematic character-illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "阿迪·格拉诺夫风格",
+    "thumbnail": "samples/Adi_Granov_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Bold Contour Style",
+    "prompt": "Style: graphic illustration aesthetics defined by strong outline emphasis, confident shape definition, clear visual hierarchy, impactful silhouette design, and highly readable forms, prioritizing visual clarity, structural strength, and compositional presence through disciplined line control, simplified volume construction, and deliberate graphic contrast, reminiscent of Mike Mignola and Frank Miller, inspired by Hellboy and Sin City.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "粗轮廓风格",
+    "thumbnail": "samples/Bold_Contour_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Clean Line Art",
+    "prompt": "Style: refined line-focused aesthetics characterized by crisp contours, exceptional visual clarity, disciplined draftsmanship, controlled line weight, and highly readable form construction, emphasizing precision, elegance, and structural coherence through polished execution, simplified visual noise, and a timeless graphic sensibility that balances sophistication with effortless readability, reminiscent of Hergé and Yves Chaland, inspired by Tintin and Blake et Mortimer.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "干净线稿",
+    "thumbnail": "samples/Clean_Line_Art.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Moebius-Inspired Illustration",
+    "prompt": "Style: A meticulously linear illustration style built on impossibly clean, confident linework that defines every form with fluid precision rather than heavy shading, expansive contemplative compositions that give equal weight to vast open space and intricate surface detail, delicate stippling and fine cross-hatching used sparingly to suggest volume and atmosphere, a serene, otherworldly stillness pervading even the most fantastical scenes, and a meditative, dreamlike clarity where technical mastery and imaginative wonder feel perfectly balanced. Influenced by: Jean \"Mœbius\" Giraud, French bande dessinée illustration, ligne claire technique, science-fantasy comic art.,. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "莫比乌斯启发插画",
+    "thumbnail": "samples/Moebius-Inspired_Illustration.webp",
+    "group": "其他"
+  },
+  {
+    "name": "Vintage Comics",
+    "prompt": "Style: A bold, graphic illustration style built on confident inked linework holding clearly defined, dynamic proportions, coarse halftone-dot patterning standing in for smooth shading, a slightly imperfect, offset-print texture giving the whole composition a worn, mass-produced charm, dynamic, energetic posing designed for instant visual impact within a small panel, and a nostalgic, unmistakably golden-age graphic-storytelling sincerity that feels handcrafted, punchy, and timeworn. Influenced by: Golden Age American comic-illustration tradition, halftone offset-printing technique, mid-century pulp-comic practice, classic newsstand comic-book method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "复古漫画",
+    "thumbnail": "samples/Vintage_Comics.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Jim Lee Style",
+    "prompt": "Style: A dynamic, high-detail mainstream comic-illustration style built on confident, powerful anatomy rendered with meticulous cross-hatched inking, dramatic musculature and dense linework carrying real sculptural weight, sharp, dynamic foreshortening charged with kinetic action-movie energy, richly detailed costume and texture rewarding close inspection, and a bold, blockbuster comic-cover intensity that feels polished, powerful, and instantly iconic. Influenced by: Jim Lee, WildStorm/DC/Marvel mainstream comic-illustration tradition, dynamic cross-hatched inking technique, action-driven cover-illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "吉姆·李风格",
+    "thumbnail": "samples/Jim_Lee_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Joe Quesada Style",
+    "prompt": "Style: A sleek, hyper-glossy painted comic-illustration style built on immaculately smooth gradient rendering that trades traditional inking for glassy, airbrushed precision, dramatic directional lighting carving sharp, confident highlight across muscular, dynamic anatomy, meticulously controlled reflective sheen giving every form a polished, high-production finish, a stylized, exaggerated silhouette balancing painterly depth with graphic mainstream-comic clarity, and a sleek, cinematic comic-cover intensity built for instantly striking newsstand impact. Influenced by: Joe Quesada, painted comic-cover illustration tradition, hyper-glossy digital-rendering technique, mainstream superhero-illustration practice.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "乔·奎萨达风格",
+    "thumbnail": "samples/Joe_Quesada_Style.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "glossy Comic-digital art",
+    "prompt": "Style: A vibrant, glossy comic-digital art style built on confident, clean design merged with extremely smooth airbrushed shading, luminous semi-realistic skin rendering with sharp specular highlights , a playful, curve-forward sensibility charged with confident vibes, a backdrop providing energetic contrast to the crisp central figure, and a polished, vibrant character-illustration intensity that feels contemporary, glossy, and effortlessly eye-catching. outlines are smoothed into invisibility,  Influenced by: contemporary digital illustration tradition, semi-realistic airbrush-rendering technique, centric compositional practice, glossy character-illustration method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "光泽漫画数字艺术",
+    "thumbnail": "samples/glossy_Comic-digital_art.webp",
+    "group": "美漫波普"
+  },
+  {
+    "name": "Photorealistic Comic Ink-and-Paint Hybrid",
+    "prompt": "Style: A meticulously detailed comic-illustration style built on crisp, confident inked structure providing the underlying graphic clarity, layered painterly rendering fills that structure with convincing photoreal depth and tonal nuance, dramatic directional lighting reinforcing form through both linework and rendered shadow simultaneously, a technically disciplined balance between graphic boldness and painterly subtlety, and a polished, high-production comic-illustration intensity that bridges traditional inking craft with photoreal rendering ambition. Influenced by: photorealistic comic-illustration tradition, ink-and-paint hybrid rendering technique, contemporary graphic-novel practice, painted-cover comic-art method.. Subject:{prompt}",
+    "negative_prompt": "",
+    "name_cn": "超写实漫画墨水与上色混合",
+    "thumbnail": "samples/Photorealistic_Comic_Ink-and-Paint_Hybrid.webp",
+    "group": "美漫波普"
+  }
+]
