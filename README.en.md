@@ -92,6 +92,7 @@ Built directly on the **official Qwen PE weights** (`qwen3.5_9b_qwen_image_2.1_p
 ### Reference Images
 
 - Up to 6 images, referenced as `<image1~6>` in order; any size (downstream auto-aligns to multiples of 32), transparent PNGs keep RGBA untouched;
+  - **6 is enough — no more needed**: thanks to the canvas editor's layer system, extra source material doesn't need extra cards — stack everything as layers into image 1's compositing canvas (multi-layer placement / 8-direction handles / layer documents saved per card), compose once, one slot holds it all;
 - Cards can be drag-reordered (adjusting `<imageN>` numbering); hover for a large preview (transparency shown as checkerboard);
 - ↩ restores the original (appears only after editing; history persists with the workflow);
 - **Each card's canvas editor is independent** (hover ✎):
