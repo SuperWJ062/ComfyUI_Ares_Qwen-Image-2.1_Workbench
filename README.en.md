@@ -175,8 +175,8 @@ When both are connected, only the one matching the current mode loads; the other
 
 ## Relationship to Source Projects
 
-- **Crop-and-redraw stitching**: blending strategy ported from [lquesada/ComfyUI-Inpaint-CropAndStitch](https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch) (`node/ares_inpaint_core.py`)
-- **Pose Studio**: adapted wholesale from [AHEKOT/ComfyUI_VNCCS_Utils](https://github.com/AHEKOT/ComfyUI_VNCCS_Utils) with renamed isolation (node ID, HTTP routes, WebSocket events all `ares_pose_*`), coexists with the original plugin
+- **Crop-and-redraw stitching**: blending strategy adapted from [lquesada/ComfyUI-Inpaint-CropAndStitch](https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch), refined and adapted for this project (feathered stitching / context factor / 32-alignment)
+- **Pose Studio**: partially adapted from [AHEKOT/ComfyUI_VNCCS_Utils](https://github.com/AHEKOT/ComfyUI_VNCCS_Utils), substantially refined and reworked for this project (control-map export / UI restructuring / depth rework), coexists with the original plugin
 - **Style library**: based on Krea's public moodboard catalog, aligned with ComfyUI-Krea-Moodboards' catalog crawl and de-duplication naming
 - Style / template JSON changes automatically invalidate the execution cache (the node fingerprint includes the style-file signature) — just re-run, no restart needed
 

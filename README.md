@@ -175,8 +175,8 @@ PE 权重放 `models/text_encoders/`，`CLIPLoader`（type=qwen_image）加载�
 
 ## 与来源项目的关系
 
-- **裁剪重绘缝合逻辑**：混合策略移植自 [lquesada/ComfyUI-Inpaint-CropAndStitch](https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch)（`node/ares_inpaint_core.py`）
-- **Pose Studio**：整套从 [AHEKOT/ComfyUI_VNCCS_Utils](https://github.com/AHEKOT/ComfyUI_VNCCS_Utils) 复制改名（节点 ID、HTTP 路由、WebSocket 事件全部 `ares_pose_*` 隔离），与原插件可并存
+- **裁剪重绘缝合**：缝合混合策略引用自 [lquesada/ComfyUI-Inpaint-CropAndStitch](https://github.com/lquesada/ComfyUI-Inpaint-CropAndStitch)，已完善修改适配本项目（羽化缝合 / 上下文系数 / 32 对齐）
+- **Pose Studio**：部分功能引用自 [AHEKOT/ComfyUI_VNCCS_Utils](https://github.com/AHEKOT/ComfyUI_VNCCS_Utils)，已大幅完善修改适配本项目（控制图导出 / 界面重构 / 深度图重做），与原插件可并存
 - **风格库**：母本为 Krea 官方公开 moodboard 目录，对齐 ComfyUI-Krea-Moodboards 的目录爬取与消重命名格式
 - 风格 / 模板 JSON 改动自动使执行缓存失效（节点指纹含风格文件签名），改完重跑即可，无需重启
 
