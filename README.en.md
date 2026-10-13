@@ -189,6 +189,7 @@ Place the PE weights in `models/text_encoders/`, loaded via `CLIPLoader` (type=q
 |---|---|---|
 | Qwen official PE repos | https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I · https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I | Official original releases (origin of the files above) |
 | Comfy-Org repackaged repo | https://huggingface.co/Comfy-Org/Qwen-Image-2.1 | `text_encoders/` folder — the int8_convrot files in the table come from here (9.47 GB each, SHA256 provided) |
+| Main model / Turbo | https://huggingface.co/Comfy-Org/Qwen-Image-2.1/tree/main/diffusion_models | `diffusion_models/` folder — the latest Turbo model used by the example workflow |
 | Base model | https://huggingface.co/Qwen/Qwen-Image-2.1 | Official base model |
 
 > Mainland China: replace `huggingface.co` with `hf-mirror.com` in any URL for the mirror.

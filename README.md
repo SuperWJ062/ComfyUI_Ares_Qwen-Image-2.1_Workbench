@@ -189,6 +189,7 @@ PE 权重放 `models/text_encoders/`，`CLIPLoader`（type=qwen_image）加载�
 |---|---|---|
 | Qwen 官方 PE 原始仓库 | https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I · https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I | 官方原始发布（本文件的出处） |
 | Comfy-Org 重打包仓库 | https://huggingface.co/Comfy-Org/Qwen-Image-2.1 | `text_encoders/` 目录，上表 int8_convrot 文件即出自此仓（9.47GB/个，附带 SHA256 校验） |
+| 主模型 / Turbo | https://huggingface.co/Comfy-Org/Qwen-Image-2.1/tree/main/diffusion_models | `diffusion_models/` 目录，示例工作流所用最新 Turbo 模型在此 |
 | 基座模型 | https://huggingface.co/Qwen/Qwen-Image-2.1 | 官方基座 |
 
 > 大陆网络：把地址里的 `huggingface.co` 换成 `hf-mirror.com` 即为镜像。
