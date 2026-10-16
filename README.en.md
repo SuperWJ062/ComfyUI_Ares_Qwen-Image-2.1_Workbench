@@ -8,7 +8,7 @@
 
 One node handles the entire pre-generation assembly for Qwen-Image-2.1 — style templates, reference images (canvas editing / mask annotation / crop-and-redraw), line-based batch prompts, with optional per-line rewriting through PE (the Prompt-Enhance model) before output. Bundled with an interactive 3D Pose Studio for one-stop control-map generation.
 
-> **Compatibility**: fully compatible with **Flux 3** as verified in testing — the assembled prompts can be plugged directly into Flux 3 workflows.
+> **Compatibility**: the plugin is fully compatible with **Flux 3**, as verified in testing.
 
 ## Screenshot
 
