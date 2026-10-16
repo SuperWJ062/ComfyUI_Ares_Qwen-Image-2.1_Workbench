@@ -8,6 +8,8 @@
 
 One node handles the entire pre-generation assembly for Qwen-Image-2.1 — style templates, reference images (canvas editing / mask annotation / crop-and-redraw), line-based batch prompts, with optional per-line rewriting through PE (the Prompt-Enhance model) before output. Bundled with an interactive 3D Pose Studio for one-stop control-map generation.
 
+> **Compatibility**: fully compatible with **Flux 3** as verified in testing — the assembled prompts can be plugged directly into Flux 3 workflows.
+
 ## Screenshot
 
 **Workbench** — style library / reference images / batch prompts assembled on one screen, 3941 styles with real output thumbnails
@@ -166,11 +168,11 @@ Prompts are one segment per line; `Start Index / Max Lines / Skip Empty Lines` s
 1. **Clone into ComfyUI's custom_nodes directory**
    ```
    cd ComfyUI/custom_nodes
-   git clone https://github.com/SuperWJ062/ComfyUI_Ares_Qwen2.1_Workbench.git
+   git clone https://github.com/SuperWJ062/ComfyUI_Ares_Qwen-Image-2.1_Workbench.git
    ```
 2. **Install dependencies** (using ComfyUI's bundled Python):
    ```
-   ComfyUI/python/python.exe -m pip install -r ComfyUI_Ares_Qwen2.1_Workbench/requirements.txt
+   ComfyUI/python/python.exe -m pip install -r ComfyUI_Ares_Qwen-Image-2.1_Workbench/requirements.txt
    ```
 3. **Restart ComfyUI**; all nodes appear under the `Ares` / `Ares/pose` categories.
 
@@ -227,7 +229,7 @@ requirements.txt                   Python dependencies (SAM 3D etc.)
 ## Updating
 
 ```
-cd ComfyUI/custom_nodes/ComfyUI_Ares_Qwen2.1_Workbench
+cd ComfyUI/custom_nodes/ComfyUI_Ares_Qwen-Image-2.1_Workbench
 git pull
 ```
 

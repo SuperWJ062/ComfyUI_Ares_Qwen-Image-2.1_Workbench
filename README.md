@@ -8,6 +8,8 @@
 
 一个节点完成 Qwen-Image-2.1 出图前的全部装配——风格模板、参考图（画布编辑 / 遮罩标注 / 裁剪重绘）、按行批量提示词，可选经 PE（提示词改写模型）逐行改写后输出。附带交互式 3D 姿态工作室，一站式出控制图。
 
+> **兼容性**：经实测完全兼容 **Flux 3**——装配产出的提示词可直接接入 Flux 3 工作流使用。
+
 ## 界面一览
 
 **工作台** — 风格库 / 参考图 / 批量提示词一屏装配，3941 条风格带真实出图缩略图
@@ -166,11 +168,11 @@ seed     ← 留空每行随机；填写各行同种子复现
 1. **克隆到 ComfyUI 的 custom_nodes 目录**
    ```
    cd ComfyUI/custom_nodes
-   git clone https://github.com/SuperWJ062/ComfyUI_Ares_Qwen2.1_Workbench.git
+   git clone https://github.com/SuperWJ062/ComfyUI_Ares_Qwen-Image-2.1_Workbench.git
    ```
 2. **安装依赖**（用 ComfyUI 自带 Python 环境）：
    ```
-   ComfyUI/python/python.exe -m pip install -r ComfyUI_Ares_Qwen2.1_Workbench/requirements.txt
+   ComfyUI/python/python.exe -m pip install -r ComfyUI_Ares_Qwen-Image-2.1_Workbench/requirements.txt
    ```
 3. **重启 ComfyUI**，节点分类 `Ares` / `Ares/pose` 下可找到全部节点。
 
@@ -227,7 +229,7 @@ requirements.txt                   Python 依赖（SAM 3D 等）
 ## 更新到新版本
 
 ```
-cd ComfyUI/custom_nodes/ComfyUI_Ares_Qwen2.1_Workbench
+cd ComfyUI/custom_nodes/ComfyUI_Ares_Qwen-Image-2.1_Workbench
 git pull
 ```
 
