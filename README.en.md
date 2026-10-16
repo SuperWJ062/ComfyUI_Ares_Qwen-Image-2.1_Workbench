@@ -237,7 +237,10 @@ Restart ComfyUI to take effect; frontend-only changes under `web/` need just a p
 
 ## Example Workflow
 
-[`example_workflows/Ares-Qwen2.1-全能版Turbo.json`](example_workflows/Ares-Qwen2.1-全能版Turbo.json) — full-feature assembly demo: style template + reference images + batch prompts + PE rewrite, wired straight into `TextEncodeQwenImage21`. **Sampling uses the official sigma values, 8 steps, on the latest Turbo model.** Drag the JSON into ComfyUI to load.
+- [`Ares-Qwen2.1全能版Turbo版.json`](example_workflows/Ares-Qwen2.1全能版Turbo版.json) — full-feature assembly demo: style template + reference images + batch prompts + PE rewrite, wired straight into `TextEncodeQwenImage21`. **Sampling uses the official sigma values, 8 steps, on the latest Turbo model.**
+- [`Flux3全能版.json`](example_workflows/Flux3全能版.json) — full-feature assembly demo for Flux 3.
+
+Drag the JSON into ComfyUI to load.
 
 ## Usage Notes
 
