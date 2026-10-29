@@ -325,6 +325,13 @@ class AresQwenWorkbench(io.ComfyNode):
                     default="",
                     tooltip="一行一段。",
                 ),
+                # 可选外部文本口：接上就用上游文本，框内文字本轮忽略（前端会把框置灰）
+                io.String.Input(
+                    "提示词接入",
+                    optional=True,
+                    force_input=True,
+                    tooltip="接上游文本（STRING）作为提示词。接上后忽略提示词框内容；未接时用框内文本。分批与风格、改写规则对两者一致。",
+                ),
                 io.Int.Input(
                     "起始索引", default=0, min=0, max=9999,
                     tooltip="从第几行开始取。",
@@ -525,8 +532,12 @@ class AresQwenWorkbench(io.ComfyNode):
             feather = parse_crop_blend(media[0].get("inpaintCrop")) if media else 32
             noise_out = feather_mask(hard, feather)
 
+        # 外部接入优先：接了「提示词接入」就用上游文本（空串也算明确输入），
+        # 未接（None）才回退框内文字。分批规则对两者一致。
+        fed = g("提示词接入", None)
+        text_src = fed if fed is not None else g("提示词文本", "")
         lines = _prompt_lines(
-            g("提示词文本", ""),
+            text_src,
             g("起始索引", 0),
             g("最大行数", 1000),
             bool(g("去除空行", False)),
@@ -630,8 +641,9 @@ class AresQwenWorkbench(io.ComfyNode):
         cfg = float(g("cfg_i2i", 3.0)) if is_i2i else float(g("cfg_t2i", 1.0))
 
         log.info(
-            "[AresQwenPE] 模式=%s 图=%d 提示段=%d 改写=%s 风格=%s/%s 遮罩=%s",
-            mode, n_img, len(rewritten), "是" if want_rewrite and clip is not None else "否",
+            "[AresQwenPE] 模式=%s 图=%d 提示段=%d 文本=%s 改写=%s 风格=%s/%s 遮罩=%s",
+            mode, n_img, len(rewritten), "接入" if fed is not None else "框内",
+            "是" if want_rewrite and clip is not None else "否",
             style_file, style_name,
             "裁剪" if crop else ("红罩" if has_overlay else "无"),
         )

@@ -163,6 +163,8 @@ Each card gets a canvas with an independent document (iframe + native canvas, no
 
 Prompts are one segment per line; `Start Index / Max Lines / Skip Empty Lines` selects which lines run this time; downstream executes per entry, one image per line; reference images are reused for every line.
 
+**External text input**: the `Prompt In` socket on the node's left edge accepts any STRING output (text node, LLM, other packs). When connected, the wired text wins (empty string counts) and the prompt box turns read-only; disconnect to edit it again. Batching, styles and PE rewriting behave the same for both sources.
+
 ## Installation (ComfyUI custom_nodes)
 
 1. **Clone into ComfyUI's custom_nodes directory**

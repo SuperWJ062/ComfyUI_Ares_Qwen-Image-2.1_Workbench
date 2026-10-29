@@ -1,2 +1,22 @@
 __pycache__/
 *.pyc
+
+# 本地快照备份（回滚用，绝不入库）
+backup_*/
+
+# 维护者内部文档（含本机路径与内部决策，留本地）
+项目约定.md
+
+# AI/工具工作目录
+.workbuddy/
+.workbuddy-ai/
+.zcodeignore
+
+# 风格库整理期产物（无代码引用）
+补齐缩略图.py
+补图日志*.txt
+高近似风格对.csv
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db

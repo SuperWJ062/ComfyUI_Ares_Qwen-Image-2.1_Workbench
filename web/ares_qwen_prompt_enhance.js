@@ -389,6 +389,7 @@ function setupWorkbench(node) {
   const wStyle = findW(node, "风格");
   const wMedia = findW(node, "图片数据");
   const wText = findW(node, "提示词文本");
+  const textWidgetOk = () => Boolean(wText && node.widgets?.includes(wText));
   const wStart = findW(node, "起始索引");
   const wRows = findW(node, "最大行数");
   const wEmpty = findW(node, "去除空行");
@@ -2938,11 +2939,44 @@ function setupWorkbench(node) {
   };
   promptArea.oninput = () => setVal(wText, promptArea.value);
   function renderPrompt() {
-    promptArea.value = wText?.value || "";
+    // widget 被原生「转输入」后仍保留原引用，此时只在框内留旧值、不再回写
+    if (textWidgetOk()) promptArea.value = wText?.value || "";
     startField.input.value = String(wStart?.value ?? 0);
     rowsField.input.value = String(wRows?.value ?? 1000);
     emptyInput.checked = Boolean(wEmpty?.value);
   }
+
+  // —— 提示词外部接入：接上「提示词接入」后框置灰只读，避免以为框内文字生效 ——
+  const FEED_INPUT = "提示词接入";
+  const HINT_IDLE = "一行一段 · 一行一张图 · 下方可分批";
+  const HINT_IDLE_TIP =
+    "一行一段，每行套用当前风格并出一张图；「起始索引/最大行数/去除空行」控制本次跑哪几行；节点开启「改写」时每行先经 PE 扩写再输出。";
+  const feedLinkOn = () => {
+    const slot = node.inputs?.find((i) => i?.name === FEED_INPUT);
+    return Boolean(slot && slot.link != null);
+  };
+  const paintFeed = () => {
+    const on = feedLinkOn() || !textWidgetOk();
+    promptTitle.textContent = on ? "③ 提示词 · 已接入" : "③ 提示词";
+    promptArea.readOnly = on;
+    promptArea.style.opacity = on ? "0.5" : "1";
+    promptArea.style.cursor = on ? "not-allowed" : "text";
+    promptArea.title = on
+      ? "文本由「提示词接入」连线提供，框内文字本轮不生效；断开连线即可继续编辑。"
+      : "";
+    promptHint.textContent = on ? "上游文本接入中 · 本框只读" : HINT_IDLE;
+    promptHint.title = on
+      ? "提示词来自「提示词接入」上游节点；起始索引/最大行数/去除空行、风格与 PE 改写照常生效。"
+      : HINT_IDLE_TIP;
+  };
+  const prevConnChange = node.onConnectionsChange;
+  node.onConnectionsChange = function (type, index, connected, linkInfo, ioSlot) {
+    try {
+      const name = ioSlot?.name || node.inputs?.[index]?.name;
+      if (name === FEED_INPUT) paintFeed();
+    } catch (_) {}
+    if (prevConnChange) return prevConnChange.apply(this, arguments);
+  };
 
   advBar = document.createElement("div");
   advBar.style.cssText =
@@ -2994,6 +3028,7 @@ function setupWorkbench(node) {
       loadStyleFavs().then(() => renderStyleCards(styleItemsCache));
       renderMedia();
       renderPrompt();
+      paintFeed();
       refreshDomSize();
     },
   };
@@ -3005,5 +3040,6 @@ function setupWorkbench(node) {
   loadStyleFavs().then(() => renderStyleCards(styleItemsCache));
   renderMedia();
   renderPrompt();
+  paintFeed();
   refreshDomSize();
 }
